@@ -1,0 +1,70 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>OVTLYR | Payment Failed</title>
+<meta name="description" content="Turning Investor Behavior into Stock Market Success" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.svg">
+<link rel="preconnect" href="https://fonts.gstatic.com" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="stylesheet" href="https://fonts.google.com/icons?selected=Material%20Icons%20Round%3Adashboard%3A" />
+<link rel="stylesheet" media="all" href="css/app.css">
+<link rel="stylesheet" href="css/bootstrap.min.css" />
+<link rel="stylesheet" href="css/chart.css" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/responsive.css" />
+<script>
+var viewportmeta = document.querySelector('meta[name="viewport"]');
+if(viewportmeta) {
+  if(screen.width < 320){
+    var newScale = screen.width / 320;
+    viewportmeta.content = 'width=320, minimum-scale=' + newScale + ', maximum-scale=1.0, user-scalable=no, initial-scale=' + newScale + '';
+  } else {
+    viewportmeta.content = 'width=device-width, maximum-scale=1.0, initial-scale=1.0';
+  }
+}
+</script>
+</head>
+<body>
+<script>
+console.log(localStorage.getItem('darkMode'));
+if (localStorage.getItem('darkMode') === "on") {
+	document.body.classList.add("dark");
+	document.addEventListener("DOMContentLoaded", function(){
+		document.querySelector('.js-switch-theme input').checked = true;
+  });
+}
+</script>
+<div class="page">
+  <div class="page__center">
+    <div class="dashboard_cont">
+      <div class="pageHeading">
+        <div>
+          <div>
+            <button type="button"><span class="material-symbols-outlined">chevron_left</span><h6>Back</h6></button>
+          </div>
+        </div>
+      </div>
+      <div class="empty_stock payment_failed">
+        <span class="material-icons">warning</span>
+        <h3>Payment Failed!</h3>
+        <p>Payment unsuccessful kindly click on retry</p>
+        <button type="button">Retry</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- scripts -->
+<script src="js/lib/jquery.min.js"></script>
+<script src="js/lib/svg4everybody.min.js"></script>
+<script src="js/lib/jquery.magnific-popup.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/jquery.min.js"></script>
+</body>
+</html>
+  

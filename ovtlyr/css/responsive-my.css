@@ -1,0 +1,33 @@
+@charset "UTF-8";
+/* CSS Document */
+@media only screen and (max-width: 576px) {
+.noPlanHide > span {
+    position: relative;
+}
+.noPlanHide span:nth-child(2):after {
+    content: '';
+    position: absolute;
+    right: -3px;
+    top: 50%;
+    padding: 0;
+    z-index: 9;
+    background: url('../images/mobile-blur-lock.png')no-repeat;
+    background-color: #ffffff;
+    background-position: center;
+    background-size: cover;
+    width: 90px;
+    height: 28px;
+    border-radius: 30px;
+    transform: translate(0, -50%);
+    display: none;
+}
+body.dark .noPlanHide span:nth-child(2):after {
+    background-color: #000000;
+}
+.blur_noPlan .noPlanHide span:nth-child(2):after {
+    display: block;
+}
+.blur_resPlan .resPlanHide span:nth-child(2):after {
+    display: block;
+}
+}

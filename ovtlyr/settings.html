@@ -1,0 +1,1320 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>OVTLYR | Settings</title>
+<meta name="description" content="Turning Investor Behavior into Stock Market Success" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.svg">
+<link rel="preconnect" href="https://fonts.gstatic.com" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="stylesheet" media="all" href="css/app.css">
+<link rel="stylesheet" href="css/bootstrap.min.css" />
+<link rel="stylesheet" href="css/chart.css" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/responsive.css" />
+<script>
+var viewportmeta = document.querySelector('meta[name="viewport"]');
+if(viewportmeta) {
+  if(screen.width < 320){
+    var newScale = screen.width / 320;
+    viewportmeta.content = 'width=320, minimum-scale=' + newScale + ', maximum-scale=1.0, user-scalable=no, initial-scale=' + newScale + '';
+  } else {
+    viewportmeta.content = 'width=device-width, maximum-scale=1.0, initial-scale=1.0';
+  }
+}
+</script>
+</head>
+<body>
+<script>
+console.log(localStorage.getItem('darkMode'));
+if (localStorage.getItem('darkMode') === "on") {
+	document.body.classList.add("dark");
+	document.addEventListener("DOMContentLoaded", function(){
+		document.querySelector('.js-switch-theme input').checked = true;
+  });
+}
+</script>
+<div class="page">
+  <div class="sidebar">
+    <div class="sidebar__top">
+      <button class="sidebar__close"><span class="material-symbols-outlined">close</span></button>
+      <a class="sidebar__logo" href="stock-detail.html">
+        <img class="sidebar__pic sidebar__pic_black" src="images/black-logo.svg" alt="OVTLYR Logo" />
+        <img class="sidebar__pic sidebar__pic_white" src="images/white-logo.svg" alt="OVTLYR Logo" />
+      </a>
+      <button class="sidebar__burger"></button>
+    </div>
+    <div class="sidebar__wrapper ovtlyr_sidebar">
+      <div class="sidebar__inner">
+        <a class="sidebar__logo" href="stock-detail.html">
+          <img class="sidebar__pic sidebar__pic_black" src="images/black-logo-small.svg" alt="OVTLYR Logo" />
+          <img class="sidebar__pic sidebar__pic_white" src="images/white-logo-small.svg" alt="OVTLYR Logo" />
+        </a>
+        <div class="sidebar__list">
+          <div class="sidebar__group">
+            <div class="searchbar_input">
+              <div class="sidebar__item">
+                <div class="sidebar__icon">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="sidebar__text">
+                  <input type="text" placeholder="Search" />
+                </div>
+              </div>
+            </div>
+            <div class="sidebar__caption caption-sm">Menu</div>
+            <div class="sidebar__menu">
+              <div class="side_dropdown arrow_drop">
+                <a class="sidebar__item" href="stock-detail.html">
+                  <div class="sidebar__icon">
+                    <img src="images/index-sectors.svg" alt="Dashboard" />
+                  </div>
+                  <div class="sidebar__text">Index & Sectors</div>
+                </a>
+                <span class="active">S&P</span>
+              </div>
+              <div class="side_dropdown arrow_drop">
+                <a class="sidebar__item" href="stocks-etfs.html">
+                  <div class="sidebar__icon">
+                    <img src="images/stock-etf.svg" alt="Stocks" />
+                  </div>
+                  <div class="sidebar__text">Stocks & ETFs</div>
+                </a>
+                <span class="active">AMD</span>
+              </div>
+              <div class="side_dropdown">
+                <a class="sidebar__item" href="watchlist.html">
+                  <div class="sidebar__icon">
+                    <img src="images/watchlist.svg" alt="Star" />
+                  </div>
+                  <div class="sidebar__text">Watchlist</div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="sidebar__group">
+            <div class="sidebar__caption caption-sm">General</div>
+            <div class="sidebar__menu">
+              <div class="side_dropdown">
+                <a class="sidebar__item" href="notification-2.html">
+                  <div class="sidebar__icon">
+                    <img src="images/notification.svg" alt="Notification" />
+                  </div>
+                  <div class="sidebar__text">Notification</div>
+                </a>
+              </div>
+              <div class="side_dropdown arrow_drop active">
+                <a class="sidebar__item" href="subscription.html">
+                  <div class="sidebar__icon">
+                    <img src="images/setting.svg" alt="Settings" />
+                  </div>
+                  <div class="sidebar__text">Settings</div>
+                </a>
+                <span><a href="subscription.html">Subscription</a></span>
+                <span><a href="activity.html">Activity</a></span>
+                <span><a href="notification.html">Notification Management</a></span>
+              </div>
+              <div class="side_dropdown arrow_drop">
+                <a class="sidebar__item" href="contact.html">
+                  <div class="sidebar__icon">
+                    <img src="images/support.svg" alt="Support" />
+                  </div>
+                  <div class="sidebar__text">Support</div>
+                </a>
+                <span class="active">Contact</span>
+              </div>
+              <div class="side_dropdown theme_switchBtn">
+                <div class="sidebar__item mb-0">
+                  <div class="sidebar__icon">
+                    <img src="images/theme.svg" alt="Theme" />
+                  </div>
+                  <div class="sidebar__text">Theme</div>
+                </div>
+                <div class="">
+                  <label class="switch switch_theme js-switch-theme">
+                    <input class="switch__input" type="checkbox" />
+                    <span class="switch__in">
+                      <span class="switch__box"></span>
+                      <span class="switch__icon">
+                        <span class="material-symbols-outlined icon-sun">dark_mode</span>
+                        <span class="material-symbols-outlined icon-moon">light_mode</span>
+                      </span>
+                    </span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sidebar__profile">
+          <div class="sidebar__details">
+            <a class="sidebar__link" href="#">
+              <div class="sidebar__icon">
+                <img src="images/user.svg" alt="Profile" />
+              </div>
+              <div class="sidebar__text">Profile</div>
+            </a>
+            <a class="sidebar__link" href="#">
+              <div class="sidebar__icon">
+                <img src="images/logout.svg" alt="Logout" />
+              </div>
+              <div class="sidebar__text">Log out</div>
+            </a>
+          </div>
+          <a class="sidebar__user" href="#">
+            <div class="sidebar__ava">FN</div>
+            <div class="sidebar__desc">
+              <div class="sidebar__man">Full Name</div>
+              <div class="sidebar__status caption">gmail@example.com</div>
+            </div>
+            <div class="sidebar__arrow">
+              <img src="images/logout.svg" alt="Logout" />
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="page__wrapper">
+    <div class="page__center">
+      <div class="header">
+        <button class="header__burger"></button>
+        <div class="mobile_header">
+          <a class="sidebar__logo" href="stock-detail.html">
+            <img class="sidebar__pic sidebar__pic_black" src="images/black-logo.svg" alt="OVTLYR Logo" />
+            <img class="sidebar__pic sidebar__pic_white" src="images/white-logo.svg" alt="OVTLYR Logo" />
+          </a>
+        </div>
+      </div>
+      <div class="dashboard_cont">
+        <div class="settings_head">
+          <div class="settings_head1">
+            <div class="page_head">
+              <div class="pageHeading">
+                <div>
+                  <div>
+                    <button type="button"><span class="material-symbols-outlined">chevron_left</span></button>
+                    <h5>Settings</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="settings_head2">
+            <div class="settings_tabs">
+              <ul class="nav nav-tabs" id="myTab" role="sattingstab">
+                <li class="nav-item" role="stocklist">
+                  <button class="nav-link active" id="notification-tab" data-bs-toggle="tab" data-bs-target="#notificationtab" type="button" role="tab" aria-controls="notificationtab" aria-selected="true">
+                  <show-desk>Notification Management</show-desk>
+                  <show-mob>Notifications</show-mob>
+                  </button>
+                </li>
+                <li class="nav-item" role="sattingstab">
+                  <button class="nav-link" id="subscription-tab" data-bs-toggle="tab" data-bs-target="#subscriptiontab" type="button" role="tab" aria-controls="subscriptiontab" aria-selected="false">Subscription</button>
+                </li>
+                <li class="nav-item" role="activitytab">
+                  <button class="nav-link" id="activity-tab" data-bs-toggle="tab" data-bs-target="#activitytab" type="button" role="tab" aria-controls="activitytab" aria-selected="false">Activity</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="settings_dash">
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="notificationtab" role="tabpanel" aria-labelledby="notification-tab"> 
+              <div class="settings_head3">
+                <div class="settings_head31">
+                  <h6>Notifications</h6>
+                </div>
+                <div class="settings_head32">
+                  <div class="pageSlot_drop">
+                    <p>Record slots per page:</p>
+                    <div class="dropdown js-dropdown">
+                      <div class="dropdown__head js-dropdown-head select_drop">10</div>
+                      <div class="dropdown__body js-dropdown-body pageCount_drop">
+                        <a class="dropdown__item" href="#">20</a>
+                        <a class="dropdown__item" href="#">30</a>
+                        <a class="dropdown__item" href="#">40</a>
+                      </div>
+                    </div>
+                    <div class="page_arrows">
+                      <a href="#"><span class="material-symbols-outlined">chevron_left</span></a>
+                      <a href="#"><span class="material-symbols-outlined">chevron_right</span></a>
+                    </div>
+                    <div class="notiTable_filter">
+                      <div class="filterDropd_box">
+                        <a href="#" class="show_dropdown"><span class="material-symbols-outlined">filter_alt</span><span>Filter</span></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="notifiTab_table">
+                <div class="table_scroll vertical_scroll">
+                  <table class="table notifi__table ovtlyr_table">
+                    <thead>
+                      <tr class="ovtlyr__row_head">
+                        <th style="width: 10%;" class="align__items">
+                          <label class="checkbox mt-1">
+                            <input class="checkbox__input" type="checkbox">
+                            <span class="checkbox__in">
+                              <span class="checkbox__tick"></span>
+                            </span>
+                          </label>
+                        </th>
+                        <th style="width: 20%;">Stocks</th>
+                        <th style="width: 20%;">BUY/SELL</th>
+                        <th style="width: 26%;">Down-Cycle Indicator</th>
+                        <th style="width: 24%;">Recovery Indicator</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="ovtlyr__row">
+                        <td class="align__items">
+                          <label class="checkbox mt-1">
+                            <input class="checkbox__input" type="checkbox">
+                            <span class="checkbox__in">
+                              <span class="checkbox__tick"></span>
+                            </span>
+                          </label>
+                        </td>
+                        <td>
+                          <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="American States Water Company">
+                            <div class="favSymbol_box"><span class="port_symbol">AAPL</span></div>
+                          </a>
+                        </td>             
+                        <td>
+                          <p class="d-flex align-items-center">
+                            <span class="switch1 switch-sm">
+                              <label>
+                                <input type="checkbox" checked="checked" name="select" />
+                                <span></span> 
+                              </label>
+                            </span>
+                          </p>
+                        </td>
+                        <td>
+                          <p class="d-flex align-items-center">
+                            <span class="switch1 switch-sm">
+                              <label>
+                                <input type="checkbox" checked="checked" name="select" />
+                                <span></span> 
+                              </label>
+                            </span>
+                          </p>
+                        </td>
+                        <td>
+                          <p class="d-flex align-items-center">
+                            <span class="switch1 switch-sm">
+                              <label>
+                                <input type="checkbox" checked="checked" name="select" />
+                                <span></span> 
+                              </label>
+                            </span>
+                          </p>
+                        </td>
+                        <!-- <td>
+                          <p class="d-flex align-items-center">
+                            <span class="switch1 switch-sm">
+                              <label>
+                                <input type="checkbox" checked="checked" name="select" />
+                                <span></span> 
+                              </label>
+                            </span>
+                          </p>
+                        </td>
+                        <td><p>2%<button type="button" class="edit_icon"><img src="images/pen.svg" alt="Pen" /></button></p></td>
+                        <td><p>5%<button type="button" class="edit_icon"><img src="images/pen.svg" alt="Pen" /></button></p></td> -->
+                      </tr>
+                      <tr class="ovtlyr__row">
+                        <td class="align__items">
+                          <label class="checkbox mt-1">
+                            <input class="checkbox__input" type="checkbox">
+                            <span class="checkbox__in">
+                              <span class="checkbox__tick"></span>
+                            </span>
+                          </label>
+                        </td>
+                        <td>
+                          <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="American States Water Company">
+                            <div class="favSymbol_box"><span class="port_symbol">AAPL</span></div>
+                          </a>
+                        </td>             
+                        <td>
+                          <p class="d-flex align-items-center">
+                            <span class="switch1 switch-sm">
+                              <label>
+                                <input type="checkbox" name="select" />
+                                <span></span> 
+                              </label>
+                            </span>
+                          </p>
+                        </td>
+                        <td>
+                          <p class="d-flex align-items-center">
+                            <span class="switch1 switch-sm">
+                              <label>
+                                <input type="checkbox" name="select" />
+                                <span></span> 
+                              </label>
+                            </span>
+                          </p>
+                        </td>
+                        <td>
+                          <p class="d-flex align-items-center">
+                            <span class="switch1 switch-sm">
+                              <label>
+                                <input type="checkbox" checked="checked" name="select" />
+                                <span></span> 
+                              </label>
+                            </span>
+                          </p>
+                        </td>
+                      </tr>
+                      <tr class="ovtlyr__row">
+                        <td class="align__items">
+                          <label class="checkbox mt-1">
+                            <input class="checkbox__input" type="checkbox">
+                            <span class="checkbox__in">
+                              <span class="checkbox__tick"></span>
+                            </span>
+                          </label>
+                        </td>
+                        <td>
+                          <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="American States Water Company">
+                            <div class="favSymbol_box"><span class="port_symbol">AAPL</span></div>
+                          </a>
+                        </td>             
+                        <td>
+                          <p class="d-flex align-items-center">
+                            <span class="switch1 switch-sm">
+                              <label>
+                                <input type="checkbox" checked="checked" name="select" />
+                                <span></span> 
+                              </label>
+                            </span>
+                          </p>
+                        </td>
+                        <td>
+                          <p class="d-flex align-items-center">
+                            <span class="switch1 switch-sm">
+                              <label>
+                                <input type="checkbox" checked="checked" name="select" />
+                                <span></span> 
+                              </label>
+                            </span>
+                          </p>
+                        </td>
+                        <td>
+                          <p class="d-flex align-items-center">
+                            <span class="switch1 switch-sm">
+                              <label>
+                                <input type="checkbox" checked="checked" name="select" />
+                                <span></span> 
+                              </label>
+                            </span>
+                          </p>
+                        </td>
+                      </tr>
+                      <tr class="ovtlyr__row">
+                        <td class="align__items">
+                          <label class="checkbox mt-1">
+                            <input class="checkbox__input" type="checkbox">
+                            <span class="checkbox__in">
+                              <span class="checkbox__tick"></span>
+                            </span>
+                          </label>
+                        </td>
+                        <td>
+                          <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="American States Water Company">
+                            <div class="favSymbol_box"><span class="port_symbol">AAPL</span></div>
+                          </a>
+                        </td>             
+                        <td>
+                          <p class="d-flex align-items-center">
+                            <span class="switch1 switch-sm">
+                              <label>
+                                <input type="checkbox" checked="checked" name="select" />
+                                <span></span> 
+                              </label>
+                            </span>
+                          </p>
+                        </td>
+                        <td>
+                          <p class="d-flex align-items-center">
+                            <span class="switch1 switch-sm">
+                              <label>
+                                <input type="checkbox" checked="checked" name="select" />
+                                <span></span> 
+                              </label>
+                            </span>
+                          </p>
+                        </td>
+                        <td>
+                          <p class="d-flex align-items-center">
+                            <span class="switch1 switch-sm">
+                              <label>
+                                <input type="checkbox" checked="checked" name="select" />
+                                <span></span> 
+                              </label>
+                            </span>
+                          </p>
+                        </td>
+                      </tr>
+                      <tr class="ovtlyr__row">
+                        <td class="align__items">
+                          <label class="checkbox mt-1">
+                            <input class="checkbox__input" type="checkbox">
+                            <span class="checkbox__in">
+                              <span class="checkbox__tick"></span>
+                            </span>
+                          </label>
+                        </td>
+                        <td>
+                          <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="American States Water Company">
+                            <div class="favSymbol_box"><span class="port_symbol">AAPL</span></div>
+                          </a>
+                        </td>             
+                        <td>
+                          <p class="d-flex align-items-center">
+                            <span class="switch1 switch-sm">
+                              <label>
+                                <input type="checkbox" name="select" />
+                                <span></span> 
+                              </label>
+                            </span>
+                          </p>
+                        </td>
+                        <td>
+                          <p class="d-flex align-items-center">
+                            <span class="switch1 switch-sm">
+                              <label>
+                                <input type="checkbox" checked="checked" name="select" />
+                                <span></span> 
+                              </label>
+                            </span>
+                          </p>
+                        </td>
+                        <td>
+                          <p class="d-flex align-items-center">
+                            <span class="switch1 switch-sm">
+                              <label>
+                                <input type="checkbox" checked="checked" name="select" />
+                                <span></span> 
+                              </label>
+                            </span>
+                          </p>
+                        </td>
+                      </tr>
+                      <tr class="ovtlyr__row">
+                        <td class="align__items">
+                          <label class="checkbox mt-1">
+                            <input class="checkbox__input" type="checkbox">
+                            <span class="checkbox__in">
+                              <span class="checkbox__tick"></span>
+                            </span>
+                          </label>
+                        </td>
+                        <td>
+                          <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="American States Water Company">
+                            <div class="favSymbol_box"><span class="port_symbol">AAPL</span></div>
+                          </a>
+                        </td>             
+                        <td>
+                          <p class="d-flex align-items-center">
+                            <span class="switch1 switch-sm">
+                              <label>
+                                <input type="checkbox" checked="checked" name="select" />
+                                <span></span> 
+                              </label>
+                            </span>
+                          </p>
+                        </td>
+                        <td>
+                          <p class="d-flex align-items-center">
+                            <span class="switch1 switch-sm">
+                              <label>
+                                <input type="checkbox" name="select" />
+                                <span></span> 
+                              </label>
+                            </span>
+                          </p>
+                        </td>
+                        <td>
+                          <p class="d-flex align-items-center">
+                            <span class="switch1 switch-sm">
+                              <label>
+                                <input type="checkbox" checked="checked" name="select" />
+                                <span></span> 
+                              </label>
+                            </span>
+                          </p>
+                        </td>
+                      </tr>
+                      <tr class="ovtlyr__row">
+                        <td class="align__items">
+                          <label class="checkbox mt-1">
+                            <input class="checkbox__input" type="checkbox">
+                            <span class="checkbox__in">
+                              <span class="checkbox__tick"></span>
+                            </span>
+                          </label>
+                        </td>
+                        <td>
+                          <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="American States Water Company">
+                            <div class="favSymbol_box"><span class="port_symbol">AAPL</span></div>
+                          </a>
+                        </td>             
+                        <td>
+                          <p class="d-flex align-items-center">
+                            <span class="switch1 switch-sm">
+                              <label>
+                                <input type="checkbox" checked="checked" name="select" />
+                                <span></span> 
+                              </label>
+                            </span>
+                          </p>
+                        </td>
+                        <td>
+                          <p class="d-flex align-items-center">
+                            <span class="switch1 switch-sm">
+                              <label>
+                                <input type="checkbox" checked="checked" name="select" />
+                                <span></span> 
+                              </label>
+                            </span>
+                          </p>
+                        </td>
+                        <td>
+                          <p class="d-flex align-items-center">
+                            <span class="switch1 switch-sm">
+                              <label>
+                                <input type="checkbox" checked="checked" name="select" />
+                                <span></span> 
+                              </label>
+                            </span>
+                          </p>
+                        </td>
+                      </tr>
+                      <tr class="ovtlyr__row">
+                        <td class="align__items">
+                          <label class="checkbox mt-1">
+                            <input class="checkbox__input" type="checkbox">
+                            <span class="checkbox__in">
+                              <span class="checkbox__tick"></span>
+                            </span>
+                          </label>
+                        </td>
+                        <td>
+                          <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="American States Water Company">
+                            <div class="favSymbol_box"><span class="port_symbol">AAPL</span></div>
+                          </a>
+                        </td>             
+                        <td>
+                          <p class="d-flex align-items-center">
+                            <span class="switch1 switch-sm">
+                              <label>
+                                <input type="checkbox" checked="checked" name="select" />
+                                <span></span> 
+                              </label>
+                            </span>
+                          </p>
+                        </td>
+                        <td>
+                          <p class="d-flex align-items-center">
+                            <span class="switch1 switch-sm">
+                              <label>
+                                <input type="checkbox" checked="checked" name="select" />
+                                <span></span> 
+                              </label>
+                            </span>
+                          </p>
+                        </td>
+                        <td>
+                          <p class="d-flex align-items-center">
+                            <span class="switch1 switch-sm">
+                              <label>
+                                <input type="checkbox" checked="checked" name="select" />
+                                <span></span> 
+                              </label>
+                            </span>
+                          </p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="favList_grid">
+                <div class="favList_item">
+                  <p>
+                    <span>Stocks</span>
+                    <span class="favSymbol_box"><span class="port_symbol">AAPL</span></span>
+                  </p>
+                  <p>
+                    <span>Down-cycle Indicator</span>
+                    <span class="d-flex align-items-center">
+                      <span class="switch1 switch-sm">
+                        <label>
+                          <input type="checkbox" checked="checked" name="select">
+                          <span></span> 
+                        </label>
+                      </span>
+                    </span>  
+                  </p>
+                  <p>
+                    <span>Recovery Indicator</span>
+                    <span class="d-flex align-items-center">
+                      <span class="switch1 switch-sm">
+                        <label>
+                          <input type="checkbox" checked="checked" name="select">
+                          <span></span> 
+                        </label>
+                      </span>
+                    </span>  
+                  </p>
+                  <p>
+                    <span>Buy/Sell</span>
+                    <span class="d-flex align-items-center">
+                      <span class="switch1 switch-sm">
+                        <label>
+                          <input type="checkbox" checked="checked" name="select">
+                          <span></span> 
+                        </label>
+                      </span>
+                    </span>  
+                  </p>
+                  <!-- <p>
+                    <span>Threshold</span>
+                    <span class="d-flex align-items-center">
+                      <span class="switch1 switch-sm">
+                        <label>
+                          <input type="checkbox" name="select">
+                          <span></span> 
+                        </label>
+                      </span>
+                    </span>
+                  </p>
+                  <p>
+                    <span>Upper</span>
+                    <span>2%<button type="button" class="edit_icon"><img src="images/pen.svg" alt="Pen"></button></span>
+                  </p>
+                  <p>
+                    <span>Lower</span>
+                    <span>2%<button type="button" class="edit_icon"><img src="images/pen.svg" alt="Pen"></button></span>
+                  </p> -->
+                </div>
+                <div class="favList_item active">
+                  <p>
+                    <span>Stocks</span>
+                    <span class="favSymbol_box"><span class="port_symbol">AAPL</span></span>
+                  </p>
+                  <p>
+                    <span>Buy/Sell</span>
+                    <span class="d-flex align-items-center">
+                      <span class="switch1 switch-sm">
+                        <label>
+                          <input type="checkbox" name="select">
+                          <span></span> 
+                        </label>
+                      </span>
+                    </span>  
+                  </p>
+                  <p>
+                    <span>Down-cycle Indicator</span>
+                    <span class="d-flex align-items-center">
+                      <span class="switch1 switch-sm">
+                        <label>
+                          <input type="checkbox" checked="checked" name="select">
+                          <span></span> 
+                        </label>
+                      </span>
+                    </span>  
+                  </p>
+                  <p>
+                    <span>Recovery Indicator</span>
+                    <span class="d-flex align-items-center">
+                      <span class="switch1 switch-sm">
+                        <label>
+                          <input type="checkbox" checked="checked" name="select">
+                          <span></span> 
+                        </label>
+                      </span>
+                    </span>  
+                  </p>
+                </div>
+                <div class="favList_item">
+                  <p>
+                    <span>Stocks</span>
+                    <span class="favSymbol_box"><span class="port_symbol">AAPL</span></span>
+                  </p>
+                  <p>
+                    <span>Buy/Sell</span>
+                    <span class="d-flex align-items-center">
+                      <span class="switch1 switch-sm">
+                        <label>
+                          <input type="checkbox" checked="checked" name="select">
+                          <span></span> 
+                        </label>
+                      </span>
+                    </span>  
+                  </p>
+                  <p>
+                    <span>Down-cycle Indicator</span>
+                    <span class="d-flex align-items-center">
+                      <span class="switch1 switch-sm">
+                        <label>
+                          <input type="checkbox" checked="checked" name="select">
+                          <span></span> 
+                        </label>
+                      </span>
+                    </span>  
+                  </p>
+                  <p>
+                    <span>Recovery Indicator</span>
+                    <span class="d-flex align-items-center">
+                      <span class="switch1 switch-sm">
+                        <label>
+                          <input type="checkbox" checked="checked" name="select">
+                          <span></span> 
+                        </label>
+                      </span>
+                    </span>  
+                  </p>
+                </div>
+                <div class="favList_item">
+                  <p>
+                    <span>Stocks</span>
+                    <span class="favSymbol_box"><span class="port_symbol">AAPL</span></span>
+                  </p>
+                  <p>
+                    <span>Buy/Sell</span>
+                    <span class="d-flex align-items-center">
+                      <span class="switch1 switch-sm">
+                        <label>
+                          <input type="checkbox" checked="checked" name="select">
+                          <span></span> 
+                        </label>
+                      </span>
+                    </span>  
+                  </p>
+                  <p>
+                    <span>Down-cycle Indicator</span>
+                    <span class="d-flex align-items-center">
+                      <span class="switch1 switch-sm">
+                        <label>
+                          <input type="checkbox" checked="checked" name="select">
+                          <span></span> 
+                        </label>
+                      </span>
+                    </span>  
+                  </p>
+                  <p>
+                    <span>Recovery Indicator</span>
+                    <span class="d-flex align-items-center">
+                      <span class="switch1 switch-sm">
+                        <label>
+                          <input type="checkbox" checked="checked" name="select">
+                          <span></span> 
+                        </label>
+                      </span>
+                    </span>  
+                  </p>
+                </div>
+                <div class="favList_item">
+                  <p>
+                    <span>Stocks</span>
+                    <span class="favSymbol_box"><span class="port_symbol">AAPL</span></span>
+                  </p>
+                  <p>
+                    <span>Buy/Sell</span>
+                    <span class="d-flex align-items-center">
+                      <span class="switch1 switch-sm">
+                        <label>
+                          <input type="checkbox" checked="checked" name="select">
+                          <span></span> 
+                        </label>
+                      </span>
+                    </span>  
+                  </p>
+                  <p>
+                    <span>Down-cycle Indicator</span>
+                    <span class="d-flex align-items-center">
+                      <span class="switch1 switch-sm">
+                        <label>
+                          <input type="checkbox" checked="checked" name="select">
+                          <span></span> 
+                        </label>
+                      </span>
+                    </span>  
+                  </p>
+                  <p>
+                    <span>Recovery Indicator</span>
+                    <span class="d-flex align-items-center">
+                      <span class="switch1 switch-sm">
+                        <label>
+                          <input type="checkbox" checked="checked" name="select">
+                          <span></span> 
+                        </label>
+                      </span>
+                    </span>  
+                  </p>
+                </div>
+                <div class="favList_item">
+                  <p>
+                    <span>Stocks</span>
+                    <span class="favSymbol_box"><span class="port_symbol">AAPL</span></span>
+                  </p>
+                  <p>
+                    <span>Buy/Sell</span>
+                    <span class="d-flex align-items-center">
+                      <span class="switch1 switch-sm">
+                        <label>
+                          <input type="checkbox" checked="checked" name="select">
+                          <span></span> 
+                        </label>
+                      </span>
+                    </span>  
+                  </p>
+                  <p>
+                    <span>Down-cycle Indicator</span>
+                    <span class="d-flex align-items-center">
+                      <span class="switch1 switch-sm">
+                        <label>
+                          <input type="checkbox" checked="checked" name="select">
+                          <span></span> 
+                        </label>
+                      </span>
+                    </span>  
+                  </p>
+                  <p>
+                    <span>Recovery Indicator</span>
+                    <span class="d-flex align-items-center">
+                      <span class="switch1 switch-sm">
+                        <label>
+                          <input type="checkbox" checked="checked" name="select">
+                          <span></span> 
+                        </label>
+                      </span>
+                    </span>  
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="subscriptiontab" role="tabpanel" aria-labelledby="subscription-tab">
+              <div class="subscription_box">
+                <div class="subscription_b1">
+                  <h6>Plan</h6>
+                  <div class="plan_boxes">
+                    <div class="plan_boxes1 blue_box">
+                      <div class="check_icon">
+                        <span class="material-symbols-outlined">done</span>
+                      </div>
+                      <div class="serial1">
+                        <div class="serial11">
+                          <h4>Active</h4>
+                        </div>
+                        <div class="serial12">
+                          <ul class="nav nav-tabs" role="tablist">
+                            <li class="nav-item">
+                              <a class="nav-link annual_link" data-bs-toggle="tab" href="#">
+                                <span>Annually</span>
+                              </a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link active" data-bs-toggle="tab" href="#">
+                                <span>Monthly</span>
+                              </a> 
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="serial2">
+                        <h3 class="show_txt" style="display: block;">$15<span>/month</span></h3>
+                        <h3 class="hide_txt" style="display: none;">$10<span>/month</span></h3>
+                        <p class="hide_txt" style="display: none;">$120, Billed Annually</p>
+                      </div>
+                      <div class="serial3">
+                        <div class="serial31">
+                          <a href="#" class="white_btn">Change Plan</a>
+                        </div>
+                        <div class="serial32">
+                          <p>Expiration date <b>23/03/23</b></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="plan_boxes1 blue_box" style="display: none;">
+                      <div class="check_icon">
+                        <span class="material-symbols-outlined">done</span>
+                      </div>
+                      <div class="serial1">
+                        <div class="serial11">
+                          <h4>Trial Plan</h4>
+                        </div>
+                      </div>
+                      <div class="serial2">
+                        <p>You have 21 days</p>
+                      </div>
+                      <div class="serial3">
+                        <div class="serial31">
+                          <a href="#" class="white_btn">Join Today</a>
+                        </div>
+                        <div class="serial32">
+                          <p>Expiration date <b>23/03/23</b></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="plan_boxes1 blue_box" style="display: none;">
+                      <div class="check_icon">
+                        <span class="material-symbols-outlined">done</span>
+                      </div>
+                      <div class="serial1">
+                        <div class="serial11">
+                          <h4>Inactive</h4>
+                        </div>
+                        <div class="serial12">
+                          <ul class="nav nav-tabs" role="tablist">
+                            <li class="nav-item">
+                              <a class="nav-link annual_link" data-bs-toggle="tab" href="#">
+                                <span>Annually</span>
+                              </a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link active" data-bs-toggle="tab" href="#">
+                                <span>Monthly</span>
+                              </a> 
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="serial2">
+                        <h3 class="show_txt" style="display: block;">$15<span>/month</span></h3>
+                        <h3 class="hide_txt" style="display: none;">$10<span>/month</span></h3>
+                        <p class="hide_txt" style="display: none;">$120, Billed Annually</p>
+                      </div>
+                      <div class="serial3">
+                        <div class="serial31">
+                          <a href="#" class="white_btn">Activate Today</a>
+                        </div>
+                        <div class="serial32">
+                          <p>Expiration date <b>23/03/23</b></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="plan_boxes1 purple_box">
+                      <div class="borderDesign">
+                        <span></span>
+                        <span class="borderCircle"></span>
+                        <span class="borderCircle"></span>
+                      </div>
+                      <div class="serial1">
+                        <div class="serial11">
+                          <h4>Benefits:</h4>
+                          <ul>
+                            <li>
+                              <p>No. of stocks + ETFs covered</p>
+                            </li>
+                            <li>
+                              <p>HeatTrail – Gives you the buy and sell opportunities</p>
+                            </li>
+                            <li>
+                              <p>Daily Risk On & Off Meter – Tells you where the market is headed</p>
+                            </li>
+                            <li>
+                              <p>Fear & Greed Score – A worthy tool for every investor</p>
+                            </li>
+                            <li>
+                              <p>Daily Sector Opportunity Map</p>
+                            </li>
+                            <li>
+                              <p>Daily Allocation Charts for each stock and ETF</p>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="subscription_b1">
+                  <h6>Payment Method</h6>
+                  <div class="card_boxes">
+                    <div class="card_boxes1 active">
+                      <div class="check_icon">
+                        <span class="material-symbols-outlined">done</span>
+                      </div>
+                      <div class="card_nme">Credit card</div>
+                      <div class="card_no">
+                        <img src="images/master-card.svg" alt="Card" />
+                        <span>**** **** **** <span>4575</span></span>
+                      </div>
+                      <div class="card_dlt">
+                        <button type="button"><span class="material-symbols-outlined">remove</span></button>
+                      </div>
+                    </div>
+                    <div class="card_boxes1">
+                      <div class="check_icon">
+                        <span class="material-symbols-outlined">done</span>
+                      </div>
+                      <div class="card_nme">Credit card</div>
+                      <div class="card_no">
+                        <img src="images/visa-card.svg" alt="Card" />
+                        <span>**** **** **** <span>0075</span></span>
+                      </div>
+                      <div class="card_dlt">
+                        <button type="button"><span class="material-symbols-outlined">remove</span></button>
+                      </div>
+                    </div>
+                    <div class="card_boxes1 cardAdd_box">
+                      <button type="button"><span class="material-symbols-outlined">add</span></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="subscription_b1">
+                  <h6>Billing History</h6>
+                  <div class="billingHis_table">
+                    <div class="table_scroll vertical_scroll horizontal_scroll">
+                      <table class="table billing__table ovtlyr_table">
+                        <thead>
+                          <tr class="ovtlyr__row_head">
+                            <th style="width: 25%;">Date</th>
+                            <th style="width: 25%;">Details</th>
+                            <th style="width: 25%;">Amount</th>
+                            <th style="width: 25%;">Download</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="ovtlyr__row">
+                            <td><p>01-02-2023</p></td>
+                            <td><p>Paid Plan</p></td>
+                            <td><p>$20.00</p></td>
+                            <td><p><a href="#">Invoice 25 Feb</a></p></td>
+                          </tr>
+                          <tr class="ovtlyr__row">
+                            <td><p>01-02-2023</p></td>
+                            <td><p>Trial Plan</p></td>
+                            <td><p>$20.00</p></td>
+                            <td><p><a href="#">Invoice 25 Feb</a></p></td>
+                          </tr>
+                          <tr class="ovtlyr__row">
+                            <td><p>01-02-2023</p></td>
+                            <td><p>Trial Plan</p></td>
+                            <td><p>$20.00</p></td>
+                            <td><p><a href="#">Invoice 25 Feb</a></p></td>
+                          </tr>
+                          <tr class="ovtlyr__row">
+                            <td><p>01-02-2023</p></td>
+                            <td><p>Trial Plan</p></td>
+                            <td><p>$20.00</p></td>
+                            <td><p><a href="#">Invoice 25 Feb</a></p></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="favList_grid">
+                    <div class="favList_item">
+                      <p>
+                        <span>Date</span>
+                        <span>01-02-2023</span>  
+                      </p>
+                      <p>
+                        <span>Details</span>
+                        <span>Paid Plan</span>
+                      </p>
+                      <p>
+                        <span>Amount</span>
+                        <span>$20.00</span>
+                      </p>
+                      <p>
+                        <span>Download</span>
+                        <span><a href="#">Invoice 25 Feb</a></span>
+                      </p>
+                    </div>
+                    <div class="favList_item active">
+                      <p>
+                        <span>Date</span>
+                        <span>01-02-2023</span>  
+                      </p>
+                      <p>
+                        <span>Details</span>
+                        <span>Paid Plan</span>
+                      </p>
+                      <p>
+                        <span>Amount</span>
+                        <span>$20.00</span>
+                      </p>
+                      <p>
+                        <span>Download</span>
+                        <span><a href="#">Invoice 25 Feb</a></span>
+                      </p>
+                    </div>
+                    <div class="favList_item">
+                      <p>
+                        <span>Date</span>
+                        <span>01-02-2023</span>  
+                      </p>
+                      <p>
+                        <span>Details</span>
+                        <span>Paid Plan</span>
+                      </p>
+                      <p>
+                        <span>Amount</span>
+                        <span>$20.00</span>
+                      </p>
+                      <p>
+                        <span>Download</span>
+                        <span><a href="#">Invoice 25 Feb</a></span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="activitytab" role="tabpanel" aria-labelledby="activity-tab">
+              <div class="activity_box border_box">
+                <h5>Activity</h5>
+                <ul class="vertical_scroll">
+                  <li>
+                    <div><span class="material-symbols-outlined up_arrow">north</span></div>
+                    <div>
+                      <h6>AMD: Upper Threshold changed to xx changed to x</h6>
+                      <p>01-02-2023</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div><span class="material-symbols-outlined up_arrow">north</span></div>
+                    <div>
+                      <h6>AMD: Upper Threshold changed to xx changed to x</h6>
+                      <p>01-02-2023</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div><span class="material-symbols-outlined up_arrow">north</span></div>
+                    <div>
+                      <h6>AMD: Upper Threshold changed to xx changed to x</h6>
+                      <p>01-02-2023</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div><span class="material-symbols-outlined up_arrow">north</span></div>
+                    <div>
+                      <h6>AMD: Upper Threshold changed to xx changed to x</h6>
+                      <p>01-02-2023</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div><span class="material-symbols-outlined up_arrow">north</span></div>
+                    <div>
+                      <h6>AMD: Upper Threshold changed to xx changed to x</h6>
+                      <p>01-02-2023</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div><span class="material-symbols-outlined up_arrow">north</span></div>
+                    <div>
+                      <h6>AMD: Upper Threshold changed to xx changed to x</h6>
+                      <p>01-02-2023</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div><span class="material-symbols-outlined down_arrow">north</span></div>
+                    <div>
+                      <h6>AMD: Upper Threshold changed to xx changed to x</h6>
+                      <p>01-02-2023</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div><span class="material-symbols-outlined down_arrow">north</span></div>
+                    <div>
+                      <h6>AMD: Upper Threshold changed to xx changed to x</h6>
+                      <p>01-02-2023</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div><span class="material-symbols-outlined down_arrow">north</span></div>
+                    <div>
+                      <h6>AMD: Upper Threshold changed to xx changed to x</h6>
+                      <p>01-02-2023</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div><span class="material-symbols-outlined down_arrow">north</span></div>
+                    <div>
+                      <h6>AMD: Upper Threshold changed to xx changed to x</h6>
+                      <p>01-02-2023</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div><span class="material-symbols-outlined down_arrow">north</span></div>
+                    <div>
+                      <h6>AMD: Upper Threshold changed to xx changed to x</h6>
+                      <p>01-02-2023</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- scripts-->
+<script src="js/lib/jquery.min.js"></script>
+<script src="js/lib/owl.carousel.min.js"></script>
+<script src="js/lib/svg4everybody.min.js"></script>
+<script src="js/lib/jquery.magnific-popup.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/sorttable.js"></script>
+<script>
+$('.select_drop').click(function (evt) {
+    evt.stopPropagation();
+    $('.pageCount_drop').toggle();
+  });
+  $('.pageCount_drop a ').click(function (evt) {
+    evt.stopPropagation();
+    $('.pageCount_drop').hide();
+  });
+  $('body,html').click(function (e) {
+    e.stopPropagation();
+    var container = $('.pageCount_drop , .select_drop');
+    if (!container.is(e.target) && container.has(e.target).length === 0) {
+      $('.pageCount_drop').hide();
+    }
+  });
+</script>
+<script>
+document.createElement('show-desk' , 'show-mob');
+</script>
+<script>
+$(document).ready(function(){
+  if($('a.nav-link.annual_link').hasClass('active')){
+    $('.show_txt').hide();
+    $('.hide_txt').show();
+  }
+  else{
+    $('.show_txt').show();
+    $('.hide_txt').hide();
+  }
+  if($('.serial12 a.nav-link').click(function(){
+    if($('a.nav-link.annual_link').hasClass('active')) {
+      $('.show_txt').hide();
+      $('.hide_txt').show();
+    }
+    else{
+      $('.show_txt').show();
+      $('.hide_txt').hide();
+    }
+  }));
+});
+</script>
+</body>
+</html>
+  
