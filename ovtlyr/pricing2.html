@@ -117,7 +117,7 @@
             <h6>Coming Soon</h6>
             <h3>API*<span>(Individual Access)</span></h3>
             <h4>$189/Month</h4>
-            <button type="buton">Coming Soon</buton>
+            <button type="buton">Coming Soon</button>
           </div>
           <div class="pric_sec2100 pric_sec215">
             <ul>
@@ -203,12 +203,12 @@
         <div class="pricingTable_slider">
           <div id="pricingTable" class="carousel slide carousel-fade" data-bs-ride="false">
             <ol class="carousel-indicators">
-              <li data-bs-target="#pricingTable" data-bs-slide-to="0" class="active"></li>
-              <li data-bs-target="#pricingTable" data-bs-slide-to="1"></li>
+              <li data-bs-target="#pricingTable" data-bs-slide-to="0"></li>
+              <li data-bs-target="#pricingTable" data-bs-slide-to="1" class="active"></li>
               <li data-bs-target="#pricingTable" data-bs-slide-to="2"></li>
             </ol>
             <div class="carousel-inner">
-              <div class="carousel-item active">
+              <div class="carousel-item">
                 <div class="pricing_sec21">
                   <div class="pric_sec210 pric_sec211 hideIn_mob">
                     <h4>Features List</h4>
@@ -317,7 +317,7 @@
                   </div>
                 </div>
               </div>
-              <div class="carousel-item">
+              <div class="carousel-item active">
                 <div class="pricing_sec21">
                   <div class="pric_sec210 pric_sec211 hideIn_mob">
                     <h4>Features List</h4>
@@ -536,6 +536,14 @@
                 </div>
               </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#pricingTable" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden material-icons-outlined">arrow_back_ios</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#pricingTable" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden material-icons-outlined">arrow_forward_ios</span>
+            </button>
           </div>
         </div>
         <div class="footer_text">
@@ -580,25 +588,12 @@
       <div class="container">
         <div class="testimonial_box">
           <h2>Testimonials</h2>
-          <div class="loop owl-carousel owl-theme mb-0">
-            <div class="item">
-              <div class="testimonial_box">
-                <div class="video_sec">
-                  <video width="100%" controlsList="noplaybackrate nodownload" controls disablepictureinpicture poster="images/mark-story-thumbnail.png">
-                    <source src="images/testimonial-video.mp4" type="video/mp4">
-                  </video>
-                </div>
-              </div>
+          <div class="testimonial_box">
+            <div class="video_sec">
+              <video width="100%" controlsList="noplaybackrate nodownload" controls disablepictureinpicture poster="images/mark-story-thumbnail.png">
+                <source src="images/testimonial-video.mp4" type="video/mp4">
+              </video>
             </div>
-            <!-- <div class="item">
-              <div class="testimonial_box">
-                <div class="video_sec">
-                  <video width="100%" controlsList="noplaybackrate nodownload" controls disablepictureinpicture poster="images/mark-story-thumbnail.png">
-                    <source src="images/ovtlyr-video.mp4" type="video/mp4">
-                  </video>
-                </div>
-              </div>
-            </div> -->
           </div>
         </div>
       </div>
@@ -845,22 +840,6 @@
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/jquery.min.js"></script>
   <!--====== TESTIMONIALS SLIDER SCRIPT ======--> 
-  <script src="js/owl.carousel.js"></script>
-  <script>
-    jQuery(document).ready(function($) {
-      $('.loop').owlCarousel({
-        center: false,
-        items: 1,
-        slideBy: 1,
-        loop: true,
-        margin: 10,
-        autoplay:false,
-        nav: true,
-        autoplayTimeout:3000,
-        autoplayHoverPause:true
-      });
-    });
-  </script>
   <script>
     $(document).ready(function(){
     if($('a.nav-link.annual_link').hasClass('active')){

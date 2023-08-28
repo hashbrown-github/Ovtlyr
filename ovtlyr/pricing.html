@@ -11,6 +11,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" /> -->
 <link rel="stylesheet" href="css/bootstrap.min.css" />
 <link rel="stylesheet" href="css/front-style.css" />
 </head>
@@ -583,7 +584,14 @@
       <div class="container">
         <div class="testimonial_box">
           <h2>Testimonials</h2>
-          <div class="loop owl-carousel owl-theme mb-0">
+          <div class="testimonial_box">
+            <div class="video_sec">
+              <video width="100%" controlsList="noplaybackrate nodownload" controls disablepictureinpicture poster="images/mark-story-thumbnail.png">
+                <source src="images/testimonial-video.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <!-- <div class="loop owl-carousel owl-theme mb-0">
             <div class="item">
               <div class="testimonial_box">
                 <div class="video_sec">
@@ -593,7 +601,7 @@
                 </div>
               </div>
             </div>
-            <!-- <div class="item">
+            <div class="item">
               <div class="testimonial_box">
                 <div class="video_sec">
                   <video width="100%" controlsList="noplaybackrate nodownload" controls disablepictureinpicture poster="images/mark-story-thumbnail.png">
@@ -601,8 +609,8 @@
                   </video>
                 </div>
               </div>
-            </div> -->
-          </div>
+            </div>
+          </div> -->
         </div>
       </div>
     </section>
@@ -848,7 +856,7 @@
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/jquery.min.js"></script>
   <!--====== TESTIMONIALS SLIDER SCRIPT ======--> 
-  <script src="js/owl.carousel.js"></script>
+  <!-- <script src="js/owl.carousel.js"></script>
   <script>
     jQuery(document).ready(function($) {
       $('.loop').owlCarousel({
@@ -863,7 +871,7 @@
         autoplayHoverPause:true
       });
     });
-  </script>
+  </script> -->
   <script>
     $(document).ready(function(){
     if($('a.nav-link.annual_link').hasClass('active')){
