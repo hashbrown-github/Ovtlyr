@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>OVTLYR | Activity</title>
+<title>OVTLYR | Become a Referer</title>
 <meta name="description" content="Turning Investor Behavior into Stock Market Success" />
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
@@ -62,6 +62,22 @@ if (localStorage.getItem('darkMode') === "on") {
                   <input type="text" placeholder="Search" />
                 </div>
               </div>
+              <div class="sidebarSearch__list">
+                <ul>
+                  <li><a href="#"><span>NASDAQ: </span><span>AAPL</span></a></li>
+                  <li><a href="#"><span>NASDAQ: </span><span>AMAT</span></a></li>
+                  <li class="active"><a href="#"><span>NYSE: </span><span>AIT</span></a></li>
+                  <li><a href="#"><span>NYSE: </span><span>APLE</span></a></li>
+                  <li><a href="#"><span>NASDAQ: </span><span>AAPL</span></a></li>
+                  <li><a href="#"><span>NASDAQ: </span><span>AMAT</span></a></li>
+                  <li><a href="#"><span>NYSE: </span><span>AIT</span></a></li>
+                  <li><a href="#"><span>NYSE: </span><span>APLE</span></a></li>
+                  <li><a href="#"><span>NASDAQ: </span><span>AAPL</span></a></li>
+                  <li><a href="#"><span>NASDAQ: </span><span>AMAT</span></a></li>
+                  <li><a href="#"><span>NYSE: </span><span>AIT</span></a></li>
+                  <li><a href="#"><span>NYSE: </span><span>APLE</span></a></li>
+                </ul>
+              </div>
             </div>
             <div class="sidebar__caption caption-sm">Menu</div>
             <div class="sidebar__menu">
@@ -104,19 +120,19 @@ if (localStorage.getItem('darkMode') === "on") {
                   <div class="sidebar__text">Notification</div>
                 </a>
               </div>
-              <div class="side_dropdown arrow_drop active">
+              <div class="side_dropdown arrow_drop">
                 <a class="sidebar__item" href="subscription.html">
                   <div class="sidebar__icon">
                     <img src="images/setting.svg" alt="Settings" />
                   </div>
                   <div class="sidebar__text">Settings</div>
                 </a>
-                <span><a href="subscription.html">Subscription</a></span>
-                <span class="active"><a href="activity.html">Activity</a></span>
-                <span><a href="notification.html">Notification Management</a></span>
+                <span>Subscription</span>
+                <span>Activity</span>
+                <span>Notification Management</span>
               </div>
               <div class="side_dropdown">
-                <a class="sidebar__item" href="become-a-referer.html">
+                <a class="sidebar__item active" href="become-a-referer.html">
                   <div class="sidebar__icon">
                     <img src="images/referer.svg" alt="Referer" />
                   </div>
@@ -128,7 +144,7 @@ if (localStorage.getItem('darkMode') === "on") {
                   <div class="sidebar__icon">
                     <img src="images/support.svg" alt="Support" />
                   </div>
-                  <div class="sidebar__text">Support</div>
+                  <div class="sidebar__text">Support</div> 
                 </a>
                 <span class="active">Contact</span>
               </div>
@@ -196,123 +212,48 @@ if (localStorage.getItem('darkMode') === "on") {
         </div>
       </div>
       <div class="dashboard_cont">
-        <div class="settings_head">
-          <div class="settings_head1">
-            <div class="page_head">
-              <div class="pageHeading">
-                <div>
-                  <div>
-                    <button type="button"><span class="material-symbols-outlined">chevron_left</span></button>
-                    <h5>Settings</h5>
-                  </div>
-                </div>
-              </div>
+        <div class="referral_sec">
+          <div class="referral_sec1">
+            <div class="referral_sec11">
+              <h3>Refer Talent. <span>Get Rewarded.</span></h3>
+              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore 
+                veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+              <a href="#">Sign Up to Become a Referer</a>
+            </div>
+            <div class="referral_sec12">
+              <img src="images/become-referer-light.svg" class="white_img" alt="Become a Referer" />
+              <img src="images/become-referer-dark.svg" class="black_img" alt="Become a Referer" />
             </div>
           </div>
-          <div class="settings_head2">
-            <div class="settings_tabs">
-              <ul class="nav nav-tabs" id="myTab" role="sattingstab">
-                <li class="nav-item" role="stocklist">
-                  <a href="notification.html" class="nav-link" id="notification-tab" data-bs-target="#notificationtab" type="button" role="tab" aria-controls="notificationtab" aria-selected="false">
-                  <show-desk>Notification Management</show-desk>
-                  <show-mob>Notifications</show-mob>
-                  </a>
+          <div class="referral_sec2">
+            <div class="referral_sec21">
+              <h3>How Referral Program Work</h3>
+              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                <span>laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</span></p>
+            </div>
+            <div class="referral_sec22">
+              <ul>
+                <li>
+                  <h4>1</h4>
+                  <img src="images/signup-icon.svg" alt="Sign Up Icon" />
+                  <p>Sign up for referral program.</p>
                 </li>
-                <li class="nav-item" role="sattingstab">
-                  <a href="subscription.html" class="nav-link" id="subscription-tab" data-bs-target="#subscriptiontab" type="button" role="tab" aria-controls="subscriptiontab" aria-selected="false">Subscription</a>
+                <li>
+                  <h4>2</h4>
+                  <img src="images/link-icon.svg" alt="Link Icon" />
+                  <p>Get your referral link.</p>
                 </li>
-                <li class="nav-item" role="activitytab">
-                  <a href="activity.html" class="nav-link active" id="activity-tab" data-bs-target="#activitytab" type="button" role="tab" aria-controls="activitytab" aria-selected="true">Activity</a>
+                <li>
+                  <h4>3</h4>
+                  <img src="images/share-icon.svg" alt="Share Icon" />
+                  <p>Share referral link with family and friends.</p>
+                </li>
+                <li>
+                  <h4>4</h4>
+                  <img src="images/comission-icon.svg" alt="Comission Icon" />
+                  <p>Get comission for paid user coming through your referral link.</p>
                 </li>
               </ul>
-            </div>
-          </div>
-        </div>
-        <div class="settings_dash">
-          <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="activitytab" role="tabpanel" aria-labelledby="activity-tab">
-              <div class="activity_box border_box">
-                <h5>Activity</h5>
-                <ul class="vertical_scroll">
-                  <li>
-                    <div><span class="material-symbols-outlined up_arrow">north</span></div>
-                    <div>
-                      <h6>AMD: Upper Threshold changed to xx changed to x</h6>
-                      <p>01-02-2023</p>
-                    </div>
-                  </li>
-                  <li>
-                    <div><span class="material-symbols-outlined up_arrow">north</span></div>
-                    <div>
-                      <h6>AMD: Upper Threshold changed to xx changed to x</h6>
-                      <p>01-02-2023</p>
-                    </div>
-                  </li>
-                  <li>
-                    <div><span class="material-symbols-outlined up_arrow">north</span></div>
-                    <div>
-                      <h6>AMD: Upper Threshold changed to xx changed to x</h6>
-                      <p>01-02-2023</p>
-                    </div>
-                  </li>
-                  <li>
-                    <div><span class="material-symbols-outlined up_arrow">north</span></div>
-                    <div>
-                      <h6>AMD: Upper Threshold changed to xx changed to x</h6>
-                      <p>01-02-2023</p>
-                    </div>
-                  </li>
-                  <li>
-                    <div><span class="material-symbols-outlined up_arrow">north</span></div>
-                    <div>
-                      <h6>AMD: Upper Threshold changed to xx changed to x</h6>
-                      <p>01-02-2023</p>
-                    </div>
-                  </li>
-                  <li>
-                    <div><span class="material-symbols-outlined up_arrow">north</span></div>
-                    <div>
-                      <h6>AMD: Upper Threshold changed to xx changed to x</h6>
-                      <p>01-02-2023</p>
-                    </div>
-                  </li>
-                  <li>
-                    <div><span class="material-symbols-outlined down_arrow">north</span></div>
-                    <div>
-                      <h6>AMD: Upper Threshold changed to xx changed to x</h6>
-                      <p>01-02-2023</p>
-                    </div>
-                  </li>
-                  <li>
-                    <div><span class="material-symbols-outlined down_arrow">north</span></div>
-                    <div>
-                      <h6>AMD: Upper Threshold changed to xx changed to x</h6>
-                      <p>01-02-2023</p>
-                    </div>
-                  </li>
-                  <li>
-                    <div><span class="material-symbols-outlined down_arrow">north</span></div>
-                    <div>
-                      <h6>AMD: Upper Threshold changed to xx changed to x</h6>
-                      <p>01-02-2023</p>
-                    </div>
-                  </li>
-                  <li>
-                    <div><span class="material-symbols-outlined down_arrow">north</span></div>
-                    <div>
-                      <h6>AMD: Upper Threshold changed to xx changed to x</h6>
-                      <p>01-02-2023</p>
-                    </div>
-                  </li>
-                  <li>
-                    <div><span class="material-symbols-outlined down_arrow">north</span></div>
-                    <div>
-                      <h6>AMD: Upper Threshold changed to xx changed to x</h6>
-                      <p>01-02-2023</p>
-                    </div>
-                  </li>
-                </ul>
-              </div>
             </div>
           </div>
         </div>
@@ -324,48 +265,27 @@ if (localStorage.getItem('darkMode') === "on") {
 <script src="js/jquery.min.js"></script>
 <script src="js/magnific-popup-svg4-app.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
+<!--========= SIDEBAR SEARCH DROPDOWN START =========-->
 <script>
-$('.select_drop').click(function (evt) {
-    evt.stopPropagation();
-    $('.pageCount_drop').toggle();
+  $(document).ready(function(){
+    $('.searchbar_input input').click(function(){
+      $(".sidebarSearch__list").css({
+        "visibility": "visible" , 
+        "opacity": "1"
+      });
+    });
   });
-  $('.pageCount_drop a ').click(function (evt) {
-    evt.stopPropagation();
-    $('.pageCount_drop').hide();
-  });
-  $('body,html').click(function (e) {
-    e.stopPropagation();
-    var container = $('.pageCount_drop , .select_drop');
-    if (!container.is(e.target) && container.has(e.target).length === 0) {
-      $('.pageCount_drop').hide();
+  $(document). click(function() {
+    var container = $(".searchbar_input");
+    if (! container. is(event. target) && ! container. has(event. target). length) {
+      $(".sidebarSearch__list").css({
+        "visibility": "hidden" , 
+        "opacity": "0"
+       });
     }
   });
 </script>
-<script>
-document.createElement('show-desk' , 'show-mob');
-</script>
-<script>
-$(document).ready(function(){
-  if($('a.nav-link.annual_link').hasClass('active')){
-    $('.show_txt').hide();
-    $('.hide_txt').show();
-  }
-  else{
-    $('.show_txt').show();
-    $('.hide_txt').hide();
-  }
-  if($('.serial12 a.nav-link').click(function(){
-    if($('a.nav-link.annual_link').hasClass('active')) {
-      $('.show_txt').hide();
-      $('.hide_txt').show();
-    }
-    else{
-      $('.show_txt').show();
-      $('.hide_txt').hide();
-    }
-  }));
-});
-</script>
+<!--========== SIDEBAR SEARCH DROPDOWN END ==========-->
 </body>
 </html>
   
