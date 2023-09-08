@@ -14442,7 +14442,10 @@ body.dark .referral_sec22 ul li img {
   padding: 0 5px 10px 5px;
 }
 .contactUs_sec1 {
-  margin: 10px auto;
+  margin: 0;
+}
+.contact_sec11 {
+  gap: 20px;
 }
 .contactUs_sec1 h3 {
   font-size: 24px;

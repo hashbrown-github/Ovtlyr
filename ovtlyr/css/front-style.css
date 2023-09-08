@@ -2291,6 +2291,9 @@ section {
     justify-content: flex-start;
     gap: 30px;
 }
+.featSec_9.featSec_919 {
+    padding-top: 30px;
+}
 .featSec_919 ul {
     margin-top: 30px;
 }
@@ -2537,6 +2540,7 @@ section {
     font-family: 'DMSans-Bold';
     font-size: 16px;
     line-height: 22px;
+    margin-bottom: 0;
     color: #4285f4;
     position: absolute;
     top: -25px;
@@ -3576,6 +3580,9 @@ section {
     font-size: 20px;
     line-height: 26px;
 }
+.pricingNew2 {
+    margin-bottom: 30px;
+}
 }
 @media only screen and (max-width: 991px) {
 /*========== MOBILE MENU BEGIN ===========*/
@@ -4030,6 +4037,9 @@ body.open {
     padding-top: 0;
     padding-bottom: 50px;
 }
+.featSec_9.featSec_919 {
+    padding-top: 0;
+}
 .featSec_916 {
     padding: 50px 0;
 }
@@ -4363,6 +4373,7 @@ body.open {
 }
 .pricing_sec21 {
     grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 5px;
 }
 .pric_sec210 {
     grid-row: 1;
@@ -4441,11 +4452,20 @@ body.open {
     font-size: 18px;
     line-height: 25px;
 }
+.pric_sec210 h6 {
+    top: 0;
+}
+.pric_sec210.pric_sec214 {
+    padding-top: 38px;
+}
+.pric_sec210.pric_sec214 h4 {
+    margin-bottom: 0;
+}
+/*==== PRICING SLIDER =====*/
 .faq_question h2 {
     font-size: 30px;
     line-height: 42px;
 }
-/*==== PRICING SLIDER =====*/
 .faq_question .accordion .card .card-header .card-title {
     font-size: 18px;
     line-height: 25px;
@@ -4767,7 +4787,7 @@ body.open {
 .featSec_920 .indexSec_1411 h2 {
     text-align: left;
 }
-.featSec_916 img.image_1, .featSec_911 img.image_1 {
+.featSec_916 img.image_1/* , .featSec_911 img.image_1 */ {
     display: none;
 }
 .featSec_916 img.image_2, .featSec_911 img.image_2 {
@@ -4818,6 +4838,9 @@ body.open {
     margin-top: 25px;
     margin-bottom: 20px;
     padding: 5px 15px;
+}
+.featSec_61, .featSec_71, .featSec_91, .featSec_10 .featSec_91, .featSec_919 .featSec_91, .featSec_918 .featSec_91 {
+    gap: 20px;
 }
 }
 @media only screen and (max-width: 480px) { 
