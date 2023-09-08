@@ -4227,6 +4227,9 @@ body.open {
 }
 }
 @media only screen and (max-width: 767px) { 
+.footer_outer11 ul {
+    gap: 12px;
+}
 .inner_banner ul {
     gap: 20px 26px;
     flex-wrap: wrap;
