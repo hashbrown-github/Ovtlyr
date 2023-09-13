@@ -102,6 +102,7 @@ if (localStorage.getItem('darkMode') === "on") {
                     <img src="images/notification.svg" alt="Notification" />
                   </div>
                   <div class="sidebar__text">Notification</div>
+                  <span class="noti_count">2</span>
                 </a>
               </div>
               <div class="side_dropdown arrow_drop active">
@@ -203,7 +204,7 @@ if (localStorage.getItem('darkMode') === "on") {
                 <div>
                   <div>
                     <button type="button"><span class="material-symbols-outlined">chevron_left</span></button>
-                    <h5>Settings</h5>
+                    <h5>Notification Management</h5>
                   </div>
                 </div>
               </div>
@@ -233,7 +234,7 @@ if (localStorage.getItem('darkMode') === "on") {
             <div class="tab-pane fade show active" id="notificationtab" role="tabpanel" aria-labelledby="notification-tab"> 
               <div class="settings_head3">
                 <div class="settings_head31">
-                  <h6>Notifications</h6>
+                  <!-- <h6>Notifications</h6> -->
                   <p>Notifications apply to stocks & ETFs currently in your "Favorite List"</p>
                 </div>
               </div>
@@ -269,7 +270,7 @@ if (localStorage.getItem('darkMode') === "on") {
                 </ul>
               </div>
               <div class="notifiLogs" style="display: none;">
-                <h6>Sep 05, 2023 | 05:00 AM</h6>
+                <h4>Sep 05, 2023 | 05:00 AM</h4>
                 <ul>
                   <li>
                     <p><a href="https://ovtlyr.com/stocks-etfs/AAPL">AAPL</a> lorem, ipsum dolor sit amet consectet.</p>
@@ -289,7 +290,7 @@ if (localStorage.getItem('darkMode') === "on") {
                 </ul>
               </div>
               <div class="subscription_b1 notifiLogs">
-                <h6>Activity Logs</h6>
+                <h6>Notifications</h6>
                 <div class="notifiLog_table">
                   <div class="table_scroll vertical_scroll horizontal_scroll">
                     <table class="table notiLog__table ovtlyr_table">
@@ -297,7 +298,7 @@ if (localStorage.getItem('darkMode') === "on") {
                         <tr class="ovtlyr__row_head">
                           <th style="width: 30%;">Date</th>
                           <th style="width: 20%;">Alert</th>
-                          <th style="width: 50%;">Description</th>
+                          <th style="width: 25%;">Description</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -324,68 +325,56 @@ if (localStorage.getItem('darkMode') === "on") {
                         <tr class="ovtlyr__row">
                           <td><p>Sep 05, 2023 | 05:00 AM</p></td>
                           <td><p>Down Cycle</p></td>
-                          <td><p><a href="https://ovtlyr.com/stocks-etfs/AAPL">AAPL</a> lorem, ipsum dolor sit amet consectet.</p></td>
+                          <td><p><a href="https://ovtlyr.com/stocks-etfs/AAPL">AAPL</a> lorem, ipsum dolor sit amet consectet.</p></td> 
                         </tr>
                       </tbody>
                     </table>
                   </div>
                 </div>
-                <div class="favList_grid">
+                <!-- <div class="favList_grid">
                   <div class="favList_item">
                     <p>
                       <span>Date</span>
-                      <span>01-02-2023</span>  
+                      <span>Sep 05, 2023 | 05:00 AM</span>  
                     </p>
                     <p>
-                      <span>Details</span>
-                      <span>Paid Plan</span>
+                      <span>Alert</span>
+                      <span class="buy_stock">Buy</span>
                     </p>
                     <p>
-                      <span>Amount</span>
-                      <span>$20.00</span>
-                    </p>
-                    <p>
-                      <span>Download</span>
-                      <span><a href="#">Invoice 25 Feb</a></span>
-                    </p>
-                  </div>
-                  <div class="favList_item active">
-                    <p>
-                      <span>Date</span>
-                      <span>01-02-2023</span>  
-                    </p>
-                    <p>
-                      <span>Details</span>
-                      <span>Paid Plan</span>
-                    </p>
-                    <p>
-                      <span>Amount</span>
-                      <span>$20.00</span>
-                    </p>
-                    <p>
-                      <span>Download</span>
-                      <span><a href="#">Invoice 25 Feb</a></span>
+                      <span>Description</span>
+                      <span><a href="https://ovtlyr.com/stocks-etfs/AAPL">AAPL</a> lorem, ipsum dolor sit amet consectet.</span>
                     </p>
                   </div>
                   <div class="favList_item">
                     <p>
                       <span>Date</span>
-                      <span>01-02-2023</span>  
+                      <span>Sep 05, 2023 | 05:00 AM</span>  
                     </p>
                     <p>
-                      <span>Details</span>
-                      <span>Paid Plan</span>
+                      <span>Alert</span>
+                      <span class="sell_stock">Sell</span>
                     </p>
                     <p>
-                      <span>Amount</span>
-                      <span>$20.00</span>
-                    </p>
-                    <p>
-                      <span>Download</span>
-                      <span><a href="#">Invoice 25 Feb</a></span>
+                      <span>Description</span>
+                      <span><a href="https://ovtlyr.com/stocks-etfs/NVDA">NVDA</a> eligendi laboriosam delectus odio asperiores.</span>
                     </p>
                   </div>
-                </div>
+                  <div class="favList_item">
+                    <p>
+                      <span>Date</span>
+                      <span>Sep 05, 2023 | 05:00 AM</span>  
+                    </p>
+                    <p>
+                      <span>Alert</span>
+                      <span class="buy_stock">Buy</span>
+                    </p>
+                    <p>
+                      <span>Description</span>
+                      <span><a href="https://ovtlyr.com/stocks-etfs/AAPL">AAPL</a> lorem, ipsum dolor sit amet consectet.</span>
+                    </p>
+                  </div>
+                </div> -->
               </div>
             </div>
           </div>
@@ -417,23 +406,6 @@ if (localStorage.getItem('darkMode') === "on") {
 <script src="js/jquery.min.js"></script>
 <script src="js/magnific-popup-svg4-app.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
-<script>
-$('.select_drop').click(function (evt) {
-    evt.stopPropagation();
-    $('.pageCount_drop').toggle();
-  });
-  $('.pageCount_drop a ').click(function (evt) {
-    evt.stopPropagation();
-    $('.pageCount_drop').hide();
-  });
-  $('body,html').click(function (e) {
-    e.stopPropagation();
-    var container = $('.pageCount_drop , .select_drop');
-    if (!container.is(e.target) && container.has(e.target).length === 0) {
-      $('.pageCount_drop').hide();
-    }
-  });
-</script>
 <script>
 document.createElement('show-desk' , 'show-mob');
 </script>

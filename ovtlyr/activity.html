@@ -325,23 +325,6 @@ if (localStorage.getItem('darkMode') === "on") {
 <script src="js/magnific-popup-svg4-app.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script>
-$('.select_drop').click(function (evt) {
-    evt.stopPropagation();
-    $('.pageCount_drop').toggle();
-  });
-  $('.pageCount_drop a ').click(function (evt) {
-    evt.stopPropagation();
-    $('.pageCount_drop').hide();
-  });
-  $('body,html').click(function (e) {
-    e.stopPropagation();
-    var container = $('.pageCount_drop , .select_drop');
-    if (!container.is(e.target) && container.has(e.target).length === 0) {
-      $('.pageCount_drop').hide();
-    }
-  });
-</script>
-<script>
 document.createElement('show-desk' , 'show-mob');
 </script>
 <script>
