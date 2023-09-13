@@ -4226,7 +4226,26 @@ body.open {
     margin-bottom: 5px;
 }
 }
-@media only screen and (max-width: 767px) { 
+@media only screen and (max-width: 820px) {
+.signup_links a p {
+    font-size: 14px;
+}
+.social_links {
+    width: 20px;
+    margin-right: 10px;
+}
+.social_links {
+    width: 20px;
+}
+}
+@media only screen and (max-width: 767px) {
+.signup_links a p {
+    font-size: 15px;
+}
+.social_links {
+    width: 25px;
+    margin-right: 12px;
+}
 .footer_outer11 ul {
     gap: 12px;
 }
