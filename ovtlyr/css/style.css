@@ -1656,9 +1656,9 @@ body.dark .page__content_pt64 {
   width: 86px;
   overflow: hidden;
 }
-.sidebar__item .sidebar__text {
+/* .sidebar__item .sidebar__text {
   margin-right: auto;
-}
+} */
 .sidebar__counter {
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -10226,17 +10226,22 @@ i.fa-solid.fa-star {
   text-align: center;
   position: relative;
 }
-.noti_box {
+/*.noti_box {
   position: absolute;
   top: -10px;
   right: -8px;
-  /* border: 1px solid #FF8F07;
+  border: 1px solid #FF8F07;
   width: 20px;
   height: 20px;
   display: flex;
   border-radius: 10px;
   justify-content: center;
-  align-items: center; */
+  align-items: center; 
+}*/
+.noti_box {
+  position: absolute;
+  top: -10px;
+  right: -8px;
 }
 .noti_count {
   width: 22px;
@@ -10251,6 +10256,17 @@ i.fa-solid.fa-star {
   justify-content: center;
   align-items: center;
   box-shadow: 0 2px 10px rgb(0 0 0 / 8%);
+}
+.sidebar__item .noti_count {
+  min-width: 27px;
+  min-height: 22px;
+  width: unset;
+  height: unset;
+  padding: 2px 5px;
+  font-size: 14px;
+  line-height: 20px;
+  background-color: #D93872;
+  margin-left: 8px;
 }
 .stocksTab_table {
   width: 100%;
