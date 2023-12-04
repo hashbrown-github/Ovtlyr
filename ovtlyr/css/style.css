@@ -26,7 +26,7 @@
   font-style: normal;
 }
 /*============== LOADER CSS START ==============*/
-/*html, body{
+/*html, body {
   width: 100%;
   height: 100%;
   margin: 0;
@@ -9355,7 +9355,7 @@ button {
   opacity: 0;
 }
 .sidebarSearch__list ul {
-  max-height: 250px;
+  max-height: 265px;
   overflow: auto;
   padding-right: 5px;
 }
@@ -9376,16 +9376,27 @@ button {
 .sidebarSearch__list li {
   width: 100%;
   border-radius: 5px;
+  border-bottom: 1px solid #ebe9e9;
 }
 .sidebarSearch__list li a {
   width: 100%;
-  display: inline-block;
-  font-family: 'DMSans-Medium';
-  font-size: 13px;
-  line-height: 20px;
+  font-family: 'DMSans-Regular';
+  font-size: 12px;
+  line-height: 22px;
   color: #2A353D;
   padding: 5px 10px;
   border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.sidebarSearch__list li a > span:first-of-type {
+  font-size: 15px;
+  display: -webkit-box;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  word-break: break-all;
 }
 .sidebarSearch__list li.active, .sidebarSearch__list li:hover {
   background-color: #F8FAFB;
@@ -10283,7 +10294,7 @@ i.fa-solid.fa-star {
   overflow: hidden;
   /* word-break: break-all; */
 }
-.buy_stock, .sell_stock {
+.buy_stock, .sell_stock, .downside_stock {
   font-family: 'DMSans-Bold' !important;
   font-size: 14px;
   line-height: 18px;
@@ -10299,6 +10310,10 @@ i.fa-solid.fa-star {
 .sell_stock {
   color: #D93872 !important;
   background-color: rgb(249 195 195 / 20%);
+}
+.downside_stock {
+  color: #FF8F07 !important;
+  background-color: rgb(255 143 7 / 20%);
 }
 .greenBox, .redBox, .orgBox, .blueBox {
   width: 12px;
@@ -11433,6 +11448,53 @@ show-mob {
   top: 2px;
   opacity: .8;
 }
+.notifi_blur {
+  width: 100%;
+  border: 1px solid #eaecec9e;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+.notifi_blur img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  object-position: top;
+}
+.noti_topTxt {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+}
+.notifi_blur p {
+  font-family: 'DMSans-Medium';
+  font-size: 20px;
+  line-height: 30px;
+  color: #2A353D;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+.notifi_blur a {
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: 1px solid #4285F4;
+  background: #4285F4;
+  font-family: 'DMSans-Regular';
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+}
 /*======= NOTIFICATION END =======*/
 /*======= SUBSCRIPTION END =======*/
 .subscription_box {
@@ -11450,6 +11512,14 @@ show-mob {
   line-height: 23px;
   color: #2A353D;
   margin-bottom: 15px;
+}
+.subscription_b1 .bot_txt {
+  font-family: 'DMSans-Regular';
+  font-size: 18px;
+  line-height: 25px;
+  color: #2A353D;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 .plan_boxes {
   width: 100%;
@@ -12885,7 +12955,7 @@ body.dark .contact_sec11, body.dark .account_fields input, body.dark .account_fi
 body.dark .contactUs_sec1 h3, body.dark .contact_sec111 h4, body.dark .account_fields label {
   color: #ffffff;
 }
-body.dark .range-slider .output, body.dark .upgrade_popup .close_btn, body.dark .modal_body h5, body.dark .modal_body p, body.dark .modal_body h6, body.dark .modal_btns a {
+body.dark .range-slider .output, body.dark .upgrade_popup .close_btn, body.dark .modal_body h5, body.dark .modal_body p, body.dark .modal_body h6, body.dark .modal_btns a, body.dark .notifi_blur p {
   color: #ffffff;
 }
 body.dark .stockEtf_filter span:first-child.material-icons, body.dark .show_dropdown span:first-child.material-icons {
@@ -12917,6 +12987,9 @@ body.dark .referral_sec22 ul li img {
 body.dark .coupon_div input {
   border-color: #4d4d4d;
   color: #ffffff;
+}
+body.dark .notifi_blur {
+  border-color: #2A353D;
 }
 /*=========== DARK THEME CSS END ===========*/
 /*============ MEDIA QUERY START ===========*/
@@ -13004,9 +13077,6 @@ body.dark .coupon_div input {
 .borderDesign span.borderCircle {
   width: 7px;
   height: 7px;
-}
-.subscription_b1 h6 {
-  margin-bottom: 10px;
 }
 .card_boxes1 {
   gap: 5px;
@@ -13428,6 +13498,9 @@ body.dark .coupon_div input {
 .contact_sec112 {
   width: calc(50% - 30px);
 }
+.notifi_blur img {
+  height: 350px;
+}
 }
 @media only screen and (max-width: 991px) {
 .stockEtf_header {
@@ -13788,6 +13861,12 @@ body.dark .coupon_div input {
 .referral_sec {
   padding: 0;
 }
+.notifi_blur img {
+  height: 300px;
+}
+.notifi_blur p {
+  margin-bottom: 20px;
+}
 }
 @media only screen and (max-width: 650px) {
 .serial1 {
@@ -13937,7 +14016,7 @@ body.dark .coupon_div input {
   border-color: #55565A;
   background-color: #000203;
 }
-  body.dark .stocksTab_item p,   body.dark .stocksTab_item p > span:first-child,   body.dark .stocksTab_item p > a {
+body.dark .stocksTab_item p, body.dark .stocksTab_item p > span:first-child, body.dark .stocksTab_item p > a {
   color: #ffffff;
 }
 .stockEtf_filter {
@@ -14112,20 +14191,20 @@ body.dark .coupon_div input {
   min-width: 140px;
   flex-shrink: 0;
 }
-  body.dark .favList_item {
+body.dark .favList_item {
   background-color: #111617;
 }
-  body.dark .favList_item.active {
+body.dark .favList_item.active {
   border-color: #55565A;
   background-color: #000203;
 }
-  body.dark .favList_item p,   body.dark .favList_item p > span:first-child {
+body.dark .favList_item p, body.dark .favList_item p > span:first-child {
   color: #ffffff;
 }
-  show-desk {
+show-desk {
   display: none;
 }
-  show-mob {
+show-mob {
   display: block;
 }
 .settings_head {
@@ -14185,7 +14264,7 @@ body.dark .coupon_div input {
 .purple_box .serial11 h4, .serial11 ul, .serial11 ul li p {
   color: #242947;
 }
-  body.dark .purple_box .serial11 h4,   body.dark .serial11 ul,   body.dark .serial11 ul li p {
+body.dark .purple_box .serial11 h4, body.dark .serial11 ul, body.dark .serial11 ul li p {
   color: #ffffff;
 }
 .card_boxes1 {
@@ -14290,6 +14369,19 @@ body.dark .coupon_div input {
 }
 .referral_sec12 img {
   max-width: 320px;
+}
+.notifi_blur img {
+  height: 250px;
+}
+.notifi_blur p {
+  max-width: 320px;
+}
+.notifi_blur p {
+  font-size: 18px;
+  line-height: 24px;
+}
+.notifiBoxes ul li {
+  padding: 10px 15px;
 }
 }
 @media only screen and (max-width: 480px) {
@@ -14454,6 +14546,11 @@ body.dark .coupon_div input {
   line-height: 32px;
   margin-bottom: 12px;
 }
+.subscription_b1 .bot_txt {
+  font-size: 16px;
+  line-height: 22px;
+  margin-top: 15px;
+}
 }
 @media only screen and (max-width: 430px) {
 .card_boxes1 {
@@ -14505,6 +14602,9 @@ body.dark .coupon_div input {
 }
 .referral_sec12 img {
   max-width: 280px;
+}
+.noti_topTxt {
+  padding: 15px;
 }
 }
 @media only screen and (max-width: 360px) {
@@ -14567,6 +14667,12 @@ body.dark .coupon_div input {
 }
 .watchlist_tabs > .nav-tabs .nav-link {
   font-size: 16px;
+}
+.notifi_blur p {
+  font-family: 'DMSans-Bold';
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 15px;
 }
 }
 /*=========== MEDIA QUERY END ===========*/
