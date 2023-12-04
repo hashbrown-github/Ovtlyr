@@ -114,7 +114,7 @@ if (localStorage.getItem('darkMode') === "on") {
                 </a>
                 <span><a href="subscription.html">Subscription</a></span>
                 <span><a href="activity.html">Activity</a></span>
-                <span class="active"><a href="notification.html">Notification Management</a></span>
+                <!-- <span class="active"><a href="notification.html">Notification Management</a></span> -->
               </div>
               <div class="side_dropdown">
                 <a class="sidebar__item" href="become-a-referer.html">
@@ -210,7 +210,7 @@ if (localStorage.getItem('darkMode') === "on") {
               </div>
             </div>
           </div>
-          <div class="settings_head2">
+          <!-- <div class="settings_head2">
             <div class="settings_tabs">
               <ul class="nav nav-tabs" id="myTab" role="sattingstab">
                 <li class="nav-item" role="stocklist">
@@ -227,7 +227,7 @@ if (localStorage.getItem('darkMode') === "on") {
                 </li>
               </ul>
             </div>
-          </div>
+          </div> -->
         </div>
         <div class="settings_dash">
           <div class="tab-content" id="myTabContent">
@@ -272,7 +272,15 @@ if (localStorage.getItem('darkMode') === "on") {
               <div class="subscription_b1 notifiLogs">
                 <h6>Notifications</h6>
                 <div class="notifiLog_table">
-                  <div class="table_scroll vertical_scroll horizontal_scroll">
+                  <div class="notifi_blur">
+                    <img src="images/noti-blur-light-img.jpg" class="white_img" alt="Blur Image">
+                    <img src="images/noti-blur-dark-img.jpg" class="black_img" alt="Blur Image">
+                    <div class="noti_topTxt">
+                      <p>To get access to notification logs, upgrade to Elite Plan.</p>
+                      <a href="#">Upgrade</a>
+                    </div>
+                  </div>
+                  <div class="table_scroll vertical_scroll horizontal_scroll" style="display: none;">
                     <table class="table notiLog__table ovtlyr_table">
                       <thead>
                         <tr class="ovtlyr__row_head">
@@ -294,17 +302,17 @@ if (localStorage.getItem('darkMode') === "on") {
                         </tr>
                         <tr class="ovtlyr__row">
                           <td><p>Sep 05, 2023 | 05:00 AM</p></td>
-                          <td><p>Recovery</p></td>
+                          <td><p class="downside_stock">Recovery</p></td>
                           <td><p><a href="https://ovtlyr.com/stocks-etfs/AAPL">AAPL</a> lorem, ipsum dolor sit amet consectet.</p></td>
                         </tr>
                         <tr class="ovtlyr__row">
                           <td><p>Sep 05, 2023 | 05:00 AM</p></td>
-                          <td><p class="buy_stock">Buy</p></td>
+                          <td><p>Buy</p></td>
                           <td><p><a href="https://ovtlyr.com/stocks-etfs/NVDA">NVDA</a> eligendi laboriosam delectus odio asperiores.</p></td>
                         </tr>
                         <tr class="ovtlyr__row">
                           <td><p>Sep 05, 2023 | 05:00 AM</p></td>
-                          <td><p>Down Cycle</p></td>
+                          <td><p class="buy_stock">Down Cycle</p></td>
                           <td><p><a href="https://ovtlyr.com/stocks-etfs/AAPL">AAPL</a> lorem, ipsum dolor sit amet consectet.</p></td> 
                         </tr>
                       </tbody>
