@@ -445,7 +445,7 @@ if (localStorage.getItem('darkMode') === "on") {
                           <li><p><span>Avg. Holding Period:</span><span>[xx] Days</span></p></li>
                           <li><p><span>Signal Return:</span><span>[x.xx]%</span></p></li>
                           <li><p><span>Risk-Adjusted</span><span></span></p></li>
-                          <li><p><span>Capital Efficiency:</span><span>[X.XX]x</span></p></li>
+                          <li><p><span>Capital Efficiency:</span><span>[X.XX]x</span></p></li> 
                         </ul>
                       </div>
                     </div>
@@ -19280,7 +19280,7 @@ $(document).ready(function(){
   /* End Timeline chart */
   var candleSeries = chart.series.push(  am5xy.CandlestickSeries.new(root, {
       xAxis: dateAxis,
-    yAxis: yAxis, 
+      yAxis: yAxis, 
       clustered: false,
       valueYField: "Close",
       openValueYField: "Open",
@@ -35776,1379 +35776,1367 @@ $(document).ready(function(){
 <!--========= RANK CHART END =========-->
 <!--====== HISTOGRAM CHART START ======-->
 <script> 
-  var data = [
-    {
-      "QuoteDate": "03-01-2017",
-      "Frequency": 0,
-      "Value": -100,
-      "frequnecy_norm_current": 0.000194103
-    },
-    {
-      "QuoteDate": "04-01-2017",
-      "Frequency": 0,
-      "Value": -99,
-      "frequnecy_norm_current": 0.000210485
-    },
-    {
-      "QuoteDate": "05-01-2017",
-      "Frequency": 0,
-      "Value": -98,
-      "frequnecy_norm_current": 0.000228063
-    },
-    {
-      "QuoteDate": "06-01-2017",
-      "Frequency": 0,
-      "Value": -97,
-      "frequnecy_norm_current": 0.000246909
-    },
-    {
-      "QuoteDate": "09-01-2017",
-      "Frequency": 0,
-      "Value": -96,
-      "frequnecy_norm_current": 0.000267094
-    },
-    {
-      "QuoteDate": "10-01-2017",
-      "Frequency": 0,
-      "Value": -95,
-      "frequnecy_norm_current": 0.000288695
-    },
-    {
-      "QuoteDate": "11-01-2017",
-      "Frequency": 0,
-      "Value": -94,
-      "frequnecy_norm_current": 0.000311788
-    },
-    {
-      "QuoteDate": "12-01-2017",
-      "Frequency": 0,
-      "Value": -93,
-      "frequnecy_norm_current": 0.000336454
-    },
-    {
-      "QuoteDate": "13-01-2017",
-      "Frequency": 0,
-      "Value": -92,
-      "frequnecy_norm_current": 0.000362776
-    },
-    {
-      "QuoteDate": "17-01-2017",
-      "Frequency": 0,
-      "Value": -91,
-      "frequnecy_norm_current": 0.000390839
-    },
-    {
-      "QuoteDate": "18-01-2017",
-      "Frequency": 0,
-      "Value": -90,
-      "frequnecy_norm_current": 0.000420731
-    },
-    {
-      "QuoteDate": "19-01-2017",
-      "Frequency": 0,
-      "Value": -89,
-      "frequnecy_norm_current": 0.000452539
-    },
-    {
-      "QuoteDate": "20-01-2017",
-      "Frequency": 0,
-      "Value": -88,
-      "frequnecy_norm_current": 0.000486357
-    },
-    {
-      "QuoteDate": "23-01-2017",
-      "Frequency": 0,
-      "Value": -87,
-      "frequnecy_norm_current": 0.000522275
-    },
-    {
-      "QuoteDate": "24-01-2017",
-      "Frequency": 0,
-      "Value": -86,
-      "frequnecy_norm_current": 0.000560391
-    },
-    {
-      "QuoteDate": "25-01-2017",
-      "Frequency": 0,
-      "Value": -85,
-      "frequnecy_norm_current": 0.000600798
-    },
-    {
-      "QuoteDate": "26-01-2017",
-      "Frequency": 0,
-      "Value": -84,
-      "frequnecy_norm_current": 0.000643594
-    },
-    {
-      "QuoteDate": "27-01-2017",
-      "Frequency": 0,
-      "Value": -83,
-      "frequnecy_norm_current": 0.000688878
-    },
-    {
-      "QuoteDate": "30-01-2017",
-      "Frequency": 0,
-      "Value": -82,
-      "frequnecy_norm_current": 0.000736748
-    },
-    {
-      "QuoteDate": "31-01-2017",
-      "Frequency": 0,
-      "Value": -81,
-      "frequnecy_norm_current": 0.000787303
-    },
-    {
-      "QuoteDate": "01-02-2017",
-      "Frequency": 0,
-      "Value": -80,
-      "frequnecy_norm_current": 0.000840642
-    },
-    {
-      "QuoteDate": "02-02-2017",
-      "Frequency": 0,
-      "Value": -79,
-      "frequnecy_norm_current": 0.000896864
-    },
-    {
-      "QuoteDate": "03-02-2017",
-      "Frequency": 0,
-      "Value": -78,
-      "frequnecy_norm_current": 0.000956068
-    },
-    {
-      "QuoteDate": "06-02-2017",
-      "Frequency": 0,
-      "Value": -77,
-      "frequnecy_norm_current": 0.00101835
-    },
-    {
-      "QuoteDate": "07-02-2017",
-      "Frequency": 0,
-      "Value": -76,
-      "frequnecy_norm_current": 0.001083806
-    },
-    {
-      "QuoteDate": "08-02-2017",
-      "Frequency": 0,
-      "Value": -75,
-      "frequnecy_norm_current": 0.001152531
-    },
-    {
-      "QuoteDate": "09-02-2017",
-      "Frequency": 0,
-      "Value": -74,
-      "frequnecy_norm_current": 0.001224616
-    },
-    {
-      "QuoteDate": "10-02-2017",
-      "Frequency": 0,
-      "Value": -73,
-      "frequnecy_norm_current": 0.00130015
-    },
-    {
-      "QuoteDate": "13-02-2017",
-      "Frequency": 0,
-      "Value": -72,
-      "frequnecy_norm_current": 0.00137922
-    },
-    {
-      "QuoteDate": "14-02-2017",
-      "Frequency": 0,
-      "Value": -71,
-      "frequnecy_norm_current": 0.001461907
-    },
-    {
-      "QuoteDate": "15-02-2017",
-      "Frequency": 1,
-      "Value": -70,
-      "frequnecy_norm_current": 0.001548291
-    },
-    {
-      "QuoteDate": "16-02-2017",
-      "Frequency": 0,
-      "Value": -69,
-      "frequnecy_norm_current": 0.001638444
-    },
-    {
-      "QuoteDate": "17-02-2017",
-      "Frequency": 0,
-      "Value": -68,
-      "frequnecy_norm_current": 0.001732435
-    },
-    {
-      "QuoteDate": "21-02-2017",
-      "Frequency": 0,
-      "Value": -67,
-      "frequnecy_norm_current": 0.001830327
-    },
-    {
-      "QuoteDate": "22-02-2017",
-      "Frequency": 0,
-      "Value": -66,
-      "frequnecy_norm_current": 0.001932177
-    },
-    {
-      "QuoteDate": "23-02-2017",
-      "Frequency": 0,
-      "Value": -65,
-      "frequnecy_norm_current": 0.002038033
-    },
-    {
-      "QuoteDate": "24-02-2017",
-      "Frequency": 0,
-      "Value": -64,
-      "frequnecy_norm_current": 0.002147939
-    },
-    {
-      "QuoteDate": "27-02-2017",
-      "Frequency": 0,
-      "Value": -63,
-      "frequnecy_norm_current": 0.00226193
-    },
-    {
-      "QuoteDate": "28-02-2017",
-      "Frequency": 0,
-      "Value": -62,
-      "frequnecy_norm_current": 0.002380031
-    },
-    {
-      "QuoteDate": "01-03-2017",
-      "Frequency": 0,
-      "Value": -61,
-      "frequnecy_norm_current": 0.00250226
-    },
-    {
-      "QuoteDate": "02-03-2017",
-      "Frequency": 0,
-      "Value": -60,
-      "frequnecy_norm_current": 0.002628624
-    },
-    {
-      "QuoteDate": "03-03-2017",
-      "Frequency": 0,
-      "Value": -59,
-      "frequnecy_norm_current": 0.002759123
-    },
-    {
-      "QuoteDate": "06-03-2017",
-      "Frequency": 0,
-      "Value": -58,
-      "frequnecy_norm_current": 0.002893742
-    },
-    {
-      "QuoteDate": "07-03-2017",
-      "Frequency": 0,
-      "Value": -57,
-      "frequnecy_norm_current": 0.003032459
-    },
-    {
-      "QuoteDate": "08-03-2017",
-      "Frequency": 0,
-      "Value": -56,
-      "frequnecy_norm_current": 0.00317524
-    },
-    {
-      "QuoteDate": "09-03-2017",
-      "Frequency": 1,
-      "Value": -55,
-      "frequnecy_norm_current": 0.003322036
-    },
-    {
-      "QuoteDate": "10-03-2017",
-      "Frequency": 1,
-      "Value": -54,
-      "frequnecy_norm_current": 0.003472791
-    },
-    {
-      "QuoteDate": "13-03-2017",
-      "Frequency": 0,
-      "Value": -53,
-      "frequnecy_norm_current": 0.003627431
-    },
-    {
-      "QuoteDate": "14-03-2017",
-      "Frequency": 1,
-      "Value": -52,
-      "frequnecy_norm_current": 0.003785873
-    },
-    {
-      "QuoteDate": "15-03-2017",
-      "Frequency": 0,
-      "Value": -51,
-      "frequnecy_norm_current": 0.00394802
-    },
-    {
-      "QuoteDate": "16-03-2017",
-      "Frequency": 0,
-      "Value": -50,
-      "frequnecy_norm_current": 0.004113759
-    },
-    {
-      "QuoteDate": "17-03-2017",
-      "Frequency": 0,
-      "Value": -49,
-      "frequnecy_norm_current": 0.004282968
-    },
-    {
-      "QuoteDate": "20-03-2017",
-      "Frequency": 0,
-      "Value": -48,
-      "frequnecy_norm_current": 0.004455507
-    },
-    {
-      "QuoteDate": "21-03-2017",
-      "Frequency": 2,
-      "Value": -47,
-      "frequnecy_norm_current": 0.004631223
-    },
-    {
-      "QuoteDate": "22-03-2017",
-      "Frequency": 0,
-      "Value": -46,
-      "frequnecy_norm_current": 0.004809952
-    },
-    {
-      "QuoteDate": "23-03-2017",
-      "Frequency": 0,
-      "Value": -45,
-      "frequnecy_norm_current": 0.004991511
-    },
-    {
-      "QuoteDate": "24-03-2017",
-      "Frequency": 2,
-      "Value": -44,
-      "frequnecy_norm_current": 0.005175707
-    },
-    {
-      "QuoteDate": "27-03-2017",
-      "Frequency": 1,
-      "Value": -43,
-      "frequnecy_norm_current": 0.005362332
-    },
-    {
-      "QuoteDate": "28-03-2017",
-      "Frequency": 1,
-      "Value": -42,
-      "frequnecy_norm_current": 0.005551164
-    },
-    {
-      "QuoteDate": "29-03-2017",
-      "Frequency": 1,
-      "Value": -41,
-      "frequnecy_norm_current": 0.005741967
-    },
-    {
-      "QuoteDate": "30-03-2017",
-      "Frequency": 4,
-      "Value": -40,
-      "frequnecy_norm_current": 0.005934495
-    },
-    {
-      "QuoteDate": "31-03-2017",
-      "Frequency": 1,
-      "Value": -39,
-      "frequnecy_norm_current": 0.006128485
-    },
-    {
-      "QuoteDate": "03-04-2017",
-      "Frequency": 3,
-      "Value": -38,
-      "frequnecy_norm_current": 0.006323665
-    },
-    {
-      "QuoteDate": "04-04-2017",
-      "Frequency": 0,
-      "Value": -37,
-      "frequnecy_norm_current": 0.00651975
-    },
-    {
-      "QuoteDate": "05-04-2017",
-      "Frequency": 5,
-      "Value": -36,
-      "frequnecy_norm_current": 0.006716443
-    },
-    {
-      "QuoteDate": "06-04-2017",
-      "Frequency": 1,
-      "Value": -35,
-      "frequnecy_norm_current": 0.006913439
-    },
-    {
-      "QuoteDate": "07-04-2017",
-      "Frequency": 1,
-      "Value": -34,
-      "frequnecy_norm_current": 0.00711042
-    },
-    {
-      "QuoteDate": "10-04-2017",
-      "Frequency": 3,
-      "Value": -33,
-      "frequnecy_norm_current": 0.00730706
-    },
-    {
-      "QuoteDate": "11-04-2017",
-      "Frequency": 4,
-      "Value": -32,
-      "frequnecy_norm_current": 0.007503026
-    },
-    {
-      "QuoteDate": "12-04-2017",
-      "Frequency": 2,
-      "Value": -31,
-      "frequnecy_norm_current": 0.007697977
-    },
-    {
-      "QuoteDate": "13-04-2017",
-      "Frequency": 1,
-      "Value": -30,
-      "frequnecy_norm_current": 0.007891564
-    },
-    {
-      "QuoteDate": "17-04-2017",
-      "Frequency": 4,
-      "Value": -29,
-      "frequnecy_norm_current": 0.008083435
-    },
-    {
-      "QuoteDate": "18-04-2017",
-      "Frequency": 6,
-      "Value": -28,
-      "frequnecy_norm_current": 0.00827323
-    },
-    {
-      "QuoteDate": "19-04-2017",
-      "Frequency": 6,
-      "Value": -27,
-      "frequnecy_norm_current": 0.00846059
-    },
-    {
-      "QuoteDate": "20-04-2017",
-      "Frequency": 5,
-      "Value": -26,
-      "frequnecy_norm_current": 0.008645149
-    },
-    {
-      "QuoteDate": "21-04-2017",
-      "Frequency": 2,
-      "Value": -25,
-      "frequnecy_norm_current": 0.008826544
-    },
-    {
-      "QuoteDate": "24-04-2017",
-      "Frequency": 5,
-      "Value": -24,
-      "frequnecy_norm_current": 0.00900441
-    },
-    {
-      "QuoteDate": "25-04-2017",
-      "Frequency": 2,
-      "Value": -23,
-      "frequnecy_norm_current": 0.009178383
-    },
-    {
-      "QuoteDate": "26-04-2017",
-      "Frequency": 4,
-      "Value": -22,
-      "frequnecy_norm_current": 0.009348101
-    },
-    {
-      "QuoteDate": "27-04-2017",
-      "Frequency": 10,
-      "Value": -21,
-      "frequnecy_norm_current": 0.009513208
-    },
-    {
-      "QuoteDate": "28-04-2017",
-      "Frequency": 4,
-      "Value": -20,
-      "frequnecy_norm_current": 0.00967335
-    },
-    {
-      "QuoteDate": "01-05-2017",
-      "Frequency": 3,
-      "Value": -19,
-      "frequnecy_norm_current": 0.009828182
-    },
-    {
-      "QuoteDate": "02-05-2017",
-      "Frequency": 2,
-      "Value": -18,
-      "frequnecy_norm_current": 0.009977364
-    },
-    {
-      "QuoteDate": "03-05-2017",
-      "Frequency": 6,
-      "Value": -17,
-      "frequnecy_norm_current": 0.010120566
-    },
-    {
-      "QuoteDate": "04-05-2017",
-      "Frequency": 3,
-      "Value": -16,
-      "frequnecy_norm_current": 0.010257466
-    },
-    {
-      "QuoteDate": "05-05-2017",
-      "Frequency": 5,
-      "Value": -15,
-      "frequnecy_norm_current": 0.010387756
-    },
-    {
-      "QuoteDate": "08-05-2017",
-      "Frequency": 6,
-      "Value": -14,
-      "frequnecy_norm_current": 0.010511138
-    },
-    {
-      "QuoteDate": "09-05-2017",
-      "Frequency": 8,
-      "Value": -13,
-      "frequnecy_norm_current": 0.010627328
-    },
-    {
-      "QuoteDate": "10-05-2017",
-      "Frequency": 5,
-      "Value": -12,
-      "frequnecy_norm_current": 0.010736057
-    },
-    {
-      "QuoteDate": "11-05-2017",
-      "Frequency": 6,
-      "Value": -11,
-      "frequnecy_norm_current": 0.010837069
-    },
-    {
-      "QuoteDate": "12-05-2017",
-      "Frequency": 10,
-      "Value": -10,
-      "frequnecy_norm_current": 0.010930127
-    },
-    {
-      "QuoteDate": "15-05-2017",
-      "Frequency": 6,
-      "Value": -9,
-      "frequnecy_norm_current": 0.011015011
-    },
-    {
-      "QuoteDate": "16-05-2017",
-      "Frequency": 9,
-      "Value": -8,
-      "frequnecy_norm_current": 0.011091518
-    },
-    {
-      "QuoteDate": "17-05-2017",
-      "Frequency": 11,
-      "Value": -7,
-      "frequnecy_norm_current": 0.011159466
-    },
-    {
-      "QuoteDate": "18-05-2017",
-      "Frequency": 4,
-      "Value": -6,
-      "frequnecy_norm_current": 0.011218691
-    },
-    {
-      "QuoteDate": "19-05-2017",
-      "Frequency": 8,
-      "Value": -5,
-      "frequnecy_norm_current": 0.011269049
-    },
-    {
-      "QuoteDate": "22-05-2017",
-      "Frequency": 13,
-      "Value": -4,
-      "frequnecy_norm_current": 0.01131042
-    },
-    {
-      "QuoteDate": "23-05-2017",
-      "Frequency": 11,
-      "Value": -3,
-      "frequnecy_norm_current": 0.011342702
-    },
-    {
-      "QuoteDate": "24-05-2017",
-      "Frequency": 10,
-      "Value": -2,
-      "frequnecy_norm_current": 0.011365817
-    },
-    {
-      "QuoteDate": "25-05-2017",
-      "Frequency": 14,
-      "Value": -1,
-      "frequnecy_norm_current": 0.011379709
-    },
-    {
-      "QuoteDate": "26-05-2017",
-      "Frequency": 15,
-      "Value": 0,
-      "frequnecy_norm_current": 0.011384343
-    },
-    {
-      "QuoteDate": "30-05-2017",
-      "Frequency": 14,
-      "Value": 1,
-      "frequnecy_norm_current": 0.011379709
-    },
-    {
-      "QuoteDate": "31-05-2017",
-      "Frequency": 19,
-      "Value": 2,
-      "frequnecy_norm_current": 0.011365817
-    },
-    {
-      "QuoteDate": "01-06-2017",
-      "Frequency": 17,
-      "Value": 3,
-      "frequnecy_norm_current": 0.011342702
-    },
-    {
-      "QuoteDate": "02-06-2017",
-      "Frequency": 20,
-      "Value": 4,
-      "frequnecy_norm_current": 0.01131042
-    },
-    {
-      "QuoteDate": "05-06-2017",
-      "Frequency": 15,
-      "Value": 5,
-      "frequnecy_norm_current": 0.011269049
-    },
-    {
-      "QuoteDate": "06-06-2017",
-      "Frequency": 17,
-      "Value": 6,
-      "frequnecy_norm_current": 0.011218691
-    },
-    {
-      "QuoteDate": "07-06-2017",
-      "Frequency": 14,
-      "Value": 7,
-      "frequnecy_norm_current": 0.011159466
-    },
-    {
-      "QuoteDate": "08-06-2017",
-      "Frequency": 15,
-      "Value": 8,
-      "frequnecy_norm_current": 0.011091518
-    },
-    {
-      "QuoteDate": "09-06-2017",
-      "Frequency": 12,
-      "Value": 9,
-      "frequnecy_norm_current": 0.011015011
-    },
-    {
-      "QuoteDate": "12-06-2017",
-      "Frequency": 16,
-      "Value": 10,
-      "frequnecy_norm_current": 0.010930127
-    },
-    {
-      "QuoteDate": "13-06-2017",
-      "Frequency": 16,
-      "Value": 11,
-      "frequnecy_norm_current": 0.010837069
-    },
-    {
-      "QuoteDate": "14-06-2017",
-      "Frequency": 11,
-      "Value": 12,
-      "frequnecy_norm_current": 0.010736057
-    },
-    {
-      "QuoteDate": "15-06-2017",
-      "Frequency": 17,
-      "Value": 13,
-      "frequnecy_norm_current": 0.010627328
-    },
-    {
-      "QuoteDate": "16-06-2017",
-      "Frequency": 19,
-      "Value": 14,
-      "frequnecy_norm_current": 0.010511138
-    },
-    {
-      "QuoteDate": "19-06-2017",
-      "Frequency": 15,
-      "Value": 15,
-      "frequnecy_norm_current": 0.010387756
-    },
-    {
-      "QuoteDate": "20-06-2017",
-      "Frequency": 15,
-      "Value": 16,
-      "frequnecy_norm_current": 0.010257466
-    },
-    {
-      "QuoteDate": "21-06-2017",
-      "Frequency": 17,
-      "Value": 17,
-      "frequnecy_norm_current": 0.010120566
-    },
-    {
-      "QuoteDate": "22-06-2017",
-      "Frequency": 18,
-      "Value": 18,
-      "frequnecy_norm_current": 0.009977364
-    },
-    {
-      "QuoteDate": "23-06-2017",
-      "Frequency": 22,
-      "Value": 19,
-      "frequnecy_norm_current": 0.009828182
-    },
-    {
-      "QuoteDate": "26-06-2017",
-      "Frequency": 22,
-      "Value": 20,
-      "frequnecy_norm_current": 0.00967335
-    },
-    {
-      "QuoteDate": "27-06-2017",
-      "Frequency": 23,
-      "Value": 21,
-      "frequnecy_norm_current": 0.009513208
-    },
-    {
-      "QuoteDate": "28-06-2017",
-      "Frequency": 27,
-      "Value": 22,
-      "frequnecy_norm_current": 0.009348101
-    },
-    {
-      "QuoteDate": "29-06-2017",
-      "Frequency": 21,
-      "Value": 23,
-      "frequnecy_norm_current": 0.009178383
-    },
-    {
-      "QuoteDate": "30-06-2017",
-      "Frequency": 16,
-      "Value": 24,
-      "frequnecy_norm_current": 0.00900441
-    },
-    {
-      "QuoteDate": "03-07-2017",
-      "Frequency": 26,
-      "Value": 25,
-      "frequnecy_norm_current": 0.008826544
-    },
-    {
-      "QuoteDate": "05-07-2017",
-      "Frequency": 30,
-      "Value": 26,
-      "frequnecy_norm_current": 0.008645149
-    },
-    {
-      "QuoteDate": "06-07-2017",
-      "Frequency": 17,
-      "Value": 27,
-      "frequnecy_norm_current": 0.00846059
-    },
-    {
-      "QuoteDate": "07-07-2017",
-      "Frequency": 27,
-      "Value": 28,
-      "frequnecy_norm_current": 0.00827323
-    },
-    {
-      "QuoteDate": "10-07-2017",
-      "Frequency": 13,
-      "Value": 29,
-      "frequnecy_norm_current": 0.008083435
-    },
-    {
-      "QuoteDate": "11-07-2017",
-      "Frequency": 18,
-      "Value": 30,
-      "frequnecy_norm_current": 0.007891564
-    },
-    {
-      "QuoteDate": "12-07-2017",
-      "Frequency": 11,
-      "Value": 31,
-      "frequnecy_norm_current": 0.007697977
-    },
-    {
-      "QuoteDate": "13-07-2017",
-      "Frequency": 21,
-      "Value": 32,
-      "frequnecy_norm_current": 0.007503026
-    },
-    {
-      "QuoteDate": "14-07-2017",
-      "Frequency": 15,
-      "Value": 33,
-      "frequnecy_norm_current": 0.00730706
-    },
-    {
-      "QuoteDate": "17-07-2017",
-      "Frequency": 20,
-      "Value": 34,
-      "frequnecy_norm_current": 0.00711042
-    },
-    {
-      "QuoteDate": "18-07-2017",
-      "Frequency": 20,
-      "Value": 35,
-      "frequnecy_norm_current": 0.006913439
-    },
-    {
-      "QuoteDate": "19-07-2017",
-      "Frequency": 13,
-      "Value": 36,
-      "frequnecy_norm_current": 0.006716443
-    },
-    {
-      "QuoteDate": "20-07-2017",
-      "Frequency": 15,
-      "Value": 37,
-      "frequnecy_norm_current": 0.00651975
-    },
-    {
-      "QuoteDate": "21-07-2017",
-      "Frequency": 9,
-      "Value": 38,
-      "frequnecy_norm_current": 0.006323665
-    },
-    {
-      "QuoteDate": "24-07-2017",
-      "Frequency": 13,
-      "Value": 39,
-      "frequnecy_norm_current": 0.006128485
-    },
-    {
-      "QuoteDate": "25-07-2017",
-      "Frequency": 13,
-      "Value": 40,
-      "frequnecy_norm_current": 0.005934495
-    },
-    {
-      "QuoteDate": "26-07-2017",
-      "Frequency": 17,
-      "Value": 41,
-      "frequnecy_norm_current": 0.005741967
-    },
-    {
-      "QuoteDate": "27-07-2017",
-      "Frequency": 6,
-      "Value": 42,
-      "frequnecy_norm_current": 0.005551164
-    },
-    {
-      "QuoteDate": "28-07-2017",
-      "Frequency": 9,
-      "Value": 43,
-      "frequnecy_norm_current": 0.005362332
-    },
-    {
-      "QuoteDate": "31-07-2017",
-      "Frequency": 10,
-      "Value": 44,
-      "frequnecy_norm_current": 0.005175707
-    },
-    {
-      "QuoteDate": "01-08-2017",
-      "Frequency": 9,
-      "Value": 45,
-      "frequnecy_norm_current": 0.004991511
-    },
-    {
-      "QuoteDate": "02-08-2017",
-      "Frequency": 11,
-      "Value": 46,
-      "frequnecy_norm_current": 0.004809952
-    },
-    {
-      "QuoteDate": "03-08-2017",
-      "Frequency": 10,
-      "Value": 47,
-      "frequnecy_norm_current": 0.004631223
-    },
-    {
-      "QuoteDate": "04-08-2017",
-      "Frequency": 8,
-      "Value": 48,
-      "frequnecy_norm_current": 0.004455507
-    },
-    {
-      "QuoteDate": "07-08-2017",
-      "Frequency": 5,
-      "Value": 49,
-      "frequnecy_norm_current": 0.004282968
-    },
-    {
-      "QuoteDate": "08-08-2017",
-      "Frequency": 2,
-      "Value": 50,
-      "frequnecy_norm_current": 0.004113759
-    },
-    {
-      "QuoteDate": "09-08-2017",
-      "Frequency": 5,
-      "Value": 51,
-      "frequnecy_norm_current": 0.00394802
-    },
-    {
-      "QuoteDate": "10-08-2017",
-      "Frequency": 7,
-      "Value": 52,
-      "frequnecy_norm_current": 0.003785873
-    },
-    {
-      "QuoteDate": "11-08-2017",
-      "Frequency": 8,
-      "Value": 53,
-      "frequnecy_norm_current": 0.003627431
-    },
-    {
-      "QuoteDate": "14-08-2017",
-      "Frequency": 6,
-      "Value": 54,
-      "frequnecy_norm_current": 0.003472791
-    },
-    {
-      "QuoteDate": "15-08-2017",
-      "Frequency": 5,
-      "Value": 55,
-      "frequnecy_norm_current": 0.003322036
-    },
-    {
-      "QuoteDate": "16-08-2017",
-      "Frequency": 5,
-      "Value": 56,
-      "frequnecy_norm_current": 0.00317524
-    },
-    {
-      "QuoteDate": "17-08-2017",
-      "Frequency": 1,
-      "Value": 57,
-      "frequnecy_norm_current": 0.003032459
-    },
-    {
-      "QuoteDate": "18-08-2017",
-      "Frequency": 1,
-      "Value": 58,
-      "frequnecy_norm_current": 0.002893742
-    },
-    {
-      "QuoteDate": "21-08-2017",
-      "Frequency": 4,
-      "Value": 59,
-      "frequnecy_norm_current": 0.002759123
-    },
-    {
-      "QuoteDate": "22-08-2017",
-      "Frequency": 3,
-      "Value": 60,
-      "frequnecy_norm_current": 0.002628624
-    },
-    {
-      "QuoteDate": "23-08-2017",
-      "Frequency": 0,
-      "Value": 61,
-      "frequnecy_norm_current": 0.00250226
-    },
-    {
-      "QuoteDate": "24-08-2017",
-      "Frequency": 0,
-      "Value": 62,
-      "frequnecy_norm_current": 0.002380031
-    },
-    {
-      "QuoteDate": "25-08-2017",
-      "Frequency": 1,
-      "Value": 63,
-      "frequnecy_norm_current": 0.00226193
-    },
-    {
-      "QuoteDate": "28-08-2017",
-      "Frequency": 1,
-      "Value": 64,
-      "frequnecy_norm_current": 0.002147939
-    },
-    {
-      "QuoteDate": "29-08-2017",
-      "Frequency": 0,
-      "Value": 65,
-      "frequnecy_norm_current": 0.002038033
-    },
-    {
-      "QuoteDate": "30-08-2017",
-      "Frequency": 0,
-      "Value": 66,
-      "frequnecy_norm_current": 0.001932177
-    },
-    {
-      "QuoteDate": "31-08-2017",
-      "Frequency": 0,
-      "Value": 67,
-      "frequnecy_norm_current": 0.001830327
-    },
-    {
-      "QuoteDate": "01-09-2017",
-      "Frequency": 1,
-      "Value": 68,
-      "frequnecy_norm_current": 0.001732435
-    },
-    {
-      "QuoteDate": "05-09-2017",
-      "Frequency": 0,
-      "Value": 69,
-      "frequnecy_norm_current": 0.001638444
-    },
-    {
-      "QuoteDate": "06-09-2017",
-      "Frequency": 0,
-      "Value": 70,
-      "frequnecy_norm_current": 0.001548291
-    },
-    {
-      "QuoteDate": "07-09-2017",
-      "Frequency": 0,
-      "Value": 71,
-      "frequnecy_norm_current": 0.001461907
-    },
-    {
-      "QuoteDate": "08-09-2017",
-      "Frequency": 0,
-      "Value": 72,
-      "frequnecy_norm_current": 0.00137922
-    },
-    {
-      "QuoteDate": "11-09-2017",
-      "Frequency": 1,
-      "Value": 73,
-      "frequnecy_norm_current": 0.00130015
-    },
-    {
-      "QuoteDate": "12-09-2017",
-      "Frequency": 1,
-      "Value": 74,
-      "frequnecy_norm_current": 0.001224616
-    },
-    {
-      "QuoteDate": "13-09-2017",
-      "Frequency": 1,
-      "Value": 75,
-      "frequnecy_norm_current": 0.001152531
-    },
-    {
-      "QuoteDate": "14-09-2017",
-      "Frequency": 1,
-      "Value": 76,
-      "frequnecy_norm_current": 0.001083806
-    },
-    {
-      "QuoteDate": "15-09-2017",
-      "Frequency": 2,
-      "Value": 77,
-      "frequnecy_norm_current": 0.00101835
-    },
-    {
-      "QuoteDate": "18-09-2017",
-      "Frequency": 2,
-      "Value": 78,
-      "frequnecy_norm_current": 0.000956068
-    },
-    {
-      "QuoteDate": "19-09-2017",
-      "Frequency": 4,
-      "Value": 79,
-      "frequnecy_norm_current": 0.000896864
-    },
-    {
-      "QuoteDate": "20-09-2017",
-      "Frequency": 1,
-      "Value": 80,
-      "frequnecy_norm_current": 0.000840642
-    },
-    {
-      "QuoteDate": "21-09-2017",
-      "Frequency": 0,
-      "Value": 81,
-      "frequnecy_norm_current": 0.000787303
-    },
-    {
-      "QuoteDate": "22-09-2017",
-      "Frequency": 1,
-      "Value": 82,
-      "frequnecy_norm_current": 0.000736748
-    },
-    {
-      "QuoteDate": "25-09-2017",
-      "Frequency": 0,
-      "Value": 83,
-      "frequnecy_norm_current": 0.000688878
-    },
-    {
-      "QuoteDate": "26-09-2017",
-      "Frequency": 1,
-      "Value": 84,
-      "frequnecy_norm_current": 0.000643594
-    },
-    {
-      "QuoteDate": "27-09-2017",
-      "Frequency": 0,
-      "Value": 85,
-      "frequnecy_norm_current": 0.000600798
-    },
-    {
-      "QuoteDate": "28-09-2017",
-      "Frequency": 1,
-      "Value": 86,
-      "frequnecy_norm_current": 0.000560391
-    },
-    {
-      "QuoteDate": "29-09-2017",
-      "Frequency": 0,
-      "Value": 87,
-      "frequnecy_norm_current": 0.000522275
-    },
-    {
-      "QuoteDate": "02-10-2017",
-      "Frequency": 1,
-      "Value": 88,
-      "frequnecy_norm_current": 0.000486357
-    },
-    {
-      "QuoteDate": "03-10-2017",
-      "Frequency": 0,
-      "Value": 89,
-      "frequnecy_norm_current": 0.000452539
-    },
-    {
-      "QuoteDate": "04-10-2017",
-      "Frequency": 2,
-      "Value": 90,
-      "frequnecy_norm_current": 0.000420731
-    },
-    {
-      "QuoteDate": "05-10-2017",
-      "Frequency": 1,
-      "Value": 91,
-      "frequnecy_norm_current": 0.000390839
-    },
-    {
-      "QuoteDate": "06-10-2017",
-      "Frequency": 1,
-      "Value": 92,
-      "frequnecy_norm_current": 0.000362776
-    },
-    {
-      "QuoteDate": "09-10-2017",
-      "Frequency": 1,
-      "Value": 93,
-      "frequnecy_norm_current": 0.000336454
-    },
-    {
-      "QuoteDate": "10-10-2017",
-      "Frequency": 0,
-      "Value": 94,
-      "frequnecy_norm_current": 0.000311788
-    },
-    {
-      "QuoteDate": "11-10-2017",
-      "Frequency": 0,
-      "Value": 95,
-      "frequnecy_norm_current": 0.000288695
-    },
-    {
-      "QuoteDate": "12-10-2017",
-      "Frequency": 0,
-      "Value": 96,
-      "frequnecy_norm_current": 0.000267094
-    },
-    {
-      "QuoteDate": "13-10-2017",
-      "Frequency": 0,
-      "Value": 97,
-      "frequnecy_norm_current": 0.000246909
-    },
-    {
-      "QuoteDate": "16-10-2017",
-      "Frequency": 0,
-      "Value": 98,
-      "frequnecy_norm_current": 0.000228063
-    },
-    {
-      "QuoteDate": "17-10-2017",
-      "Frequency": 1,
-      "Value": 99,
-      "frequnecy_norm_current": 0.000210485
-    },
-    {
-      "QuoteDate": "18-10-2017",
-      "Frequency": 0,
-      "Value": 100,
-      "frequnecy_norm_current": 0.000194103
-    }
-  ];
-    
-  am5.ready(function() {
-    am5.addLicense("AM5C311897715");
-    var root = am5.Root.new("histogram_chart");
-    root.setThemes([am5themes_Animated.new(root),
-    am5themes_Responsive.newEmpty(root)
-  ]);
-  var chart = root.container.children.push(am5xy.XYChart.new(root, {
-    panX: false,
-    panY: false,
-    focusable: false,
-    paddingLeft:0,paddingRight:0,
-    paddingTop:10,paddingBottom:0
-  }));
-  chart.zoomOutButton.set("forceHidden", true);
-  var cursor = chart.set("cursor", am5xy.XYCursor.new(root, {}));
-  cursor.lineY.set("visible", true);
-  cursor.lineX.set("visible", true);
-  cursor.lineX.setAll({
-    stroke: am5.color(0x703372),
-    strokeWidth: 1,
-    strokeDasharray: [2]
-  });
-  cursor.lineY.setAll({
-    stroke: am5.color(0x703372),
-    strokeWidth: 1,
-    strokeDasharray: [2]
-  });	
-    
-  var valueRenderer = am5xy.AxisRendererY.new(root, {});
-  valueRenderer.labels.template.setAll({
-    fill: am5.color(0x777E87),
-    fontSize: 10,
-    fontWeight: 600
-  });	
-  valueRenderer.grid.template.setAll({
-    forceHidden:"visible",
-  });
-    
-  var valueAxis = chart.yAxes.push(am5xy.ValueAxis.new(root, {
-    renderer: valueRenderer,
-    height: am5.percent(100),
-    min:0,max:30
-  }));
-  valueAxis.children.moveValue(am5.Label.new(root, {
-    rotation: -90,
-    text: "Frequency",
-    fill: am5.color(0x777E87),
-    fontSize:12,
-    fontWeight:600,
-    y: am5.p50,
-    paddingLeft:0,
-    paddingTop:0,
-    centerX: am5.p50
-  }),0);
-    
-    var bellAxisRenderer = am5xy.AxisRendererY.new(root, {opposite:true});
-  bellAxisRenderer.labels.template.setAll({
-    fill: am5.color(0x777E87),
-    fontSize: 10,
-    fontWeight: 600
-  });	
-  bellAxisRenderer.grid.template.setAll({
-    forceHidden:"visible",
-  });
-    
-  var bellAxis = chart.yAxes.push(am5xy.ValueAxis.new(root, {
-    renderer: bellAxisRenderer
-  }));
-    
-    
-  var dateAxisRenderer = am5xy.AxisRendererX.new(root, {minGridDistance: 30});
-  dateAxisRenderer.labels.template.setAll({
-    fill: am5.color(0x777E87),
-    fontSize: 10,
-    visible: true,
-    fontWeight:600,
-    paddingTop:10
-  });
-  dateAxisRenderer.grid.template.setAll({
-    forceHidden:"visible",
-  });
-  var dateAxis = chart.xAxes.push(am5xy.ValueAxis.new(root, {
-    min:-100,
-    max:100,
-    strictMinMax: true,
-    renderer: dateAxisRenderer
-  }));
-  dateAxis.set("numberFormat", "#'%");
-  dateAxis.children.moveValue(am5.Label.new(root, {
-    text: "Magnitude",
-    fill: am5.color(0x777E87),
-    fontSize:12,fontWeight:600,
-    x: am5.p50,
-    paddingBottom:0,
-    centerX: am5.p50
-  }));
-  root.interfaceColors.set("grid", am5.color(0x000000));
-  var histogram = chart.series.push(am5xy.ColumnSeries.new(root, {
-    name: "",
-    xAxis: dateAxis,
-    yAxis: valueAxis,
-    valueYField:"Frequency",
-    valueXField: "Value"
-  }));	
-  
-  histogram.columns.template.adapters.add("stroke", function (stroke, target) {
-    if (target.dataItem.get("valueX") <= 0) {
-     return am5.color(0xd93872)}
-     else if (target.dataItem.get("valueX") > 0) {
-     return am5.color(0x10a861)}
-     else {return stroke}});
-  
-  histogram.columns.template.setAll({
-    strokeWidth:2,strokeOpacity:1
-  });
-    var tooltip = am5.Tooltip.new(root, {
-      getFillFromSprite: true,
-      getStrokeFromSprite: true,
-      autoTextColor: true,
-      labelText: "Frequency | %ge of Occurrence : {valueY} | {frequency_percentage} %"
-  });
-  
-  histogram.set("tooltip", tooltip);	
-  histogram.get("tooltip").label.setAll({ fontSize: 12,fontWeight:600 })
-    
-    var seriesLine = chart.series.push(am5xy.SmoothedXLineSeries.new(root, {
-       xAxis: dateAxis,
-    yAxis: bellAxis,
-    valueYField:"frequnecy_norm_current",
-    valueXField: "Value",
-    clustered: true,
-        tension: 0.7
-      })
-    );
-    seriesLine.set("stroke", am5.color(0x19A7CE));
-    seriesLine.strokes.template.setAll({
-      visible: true,
-      strokeOpacity: 1,
-      strokeWidth: 2
-    });
-  
-    
-  var rangeDataItem = dateAxis.makeDataItem({
-    value: 0,
-    endValue: 0.3
-  });
-  var range = dateAxis.createAxisRange(rangeDataItem);
-    rangeDataItem.get("grid").setAll({
-      stroke: am5.color(0x000000),
-      strokeOpacity: 1,strokeWidth:5,visible:true
-    });
-    rangeDataItem.get("axisFill").setAll({
-    fill: am5.color(0x19A7CE),
-    fillOpacity:1,height:am5.percent(70),
-    visible:true
-  });
-    
-  
-  
-  
-  histogram.data.setAll(data);
-  seriesLine.data.setAll(data);
-  chart.appear(1000, 100);
-  });
+var data = [
+  {
+    "QuoteDate": "03-01-2017",
+    "Frequency": 0,
+    "Value": -100,
+    "frequnecy_norm_current": 0.000194103
+  },
+  {
+    "QuoteDate": "04-01-2017",
+    "Frequency": 0,
+    "Value": -99,
+    "frequnecy_norm_current": 0.000210485
+  },
+  {
+    "QuoteDate": "05-01-2017",
+    "Frequency": 0,
+    "Value": -98,
+    "frequnecy_norm_current": 0.000228063
+  },
+    {
+    "QuoteDate": "06-01-2017",
+    "Frequency": 0,
+    "Value": -97,
+    "frequnecy_norm_current": 0.000246909
+  },
+  {
+    "QuoteDate": "09-01-2017",
+    "Frequency": 0,
+    "Value": -96,
+    "frequnecy_norm_current": 0.000267094
+  },
+  {
+    "QuoteDate": "10-01-2017",
+    "Frequency": 0,
+    "Value": -95,
+    "frequnecy_norm_current": 0.000288695
+  },
+  {
+    "QuoteDate": "11-01-2017",
+    "Frequency": 0,
+    "Value": -94,
+    "frequnecy_norm_current": 0.000311788
+  },
+  {
+    "QuoteDate": "12-01-2017",
+    "Frequency": 0,
+    "Value": -93,
+    "frequnecy_norm_current": 0.000336454
+  },
+  {
+    "QuoteDate": "13-01-2017",
+    "Frequency": 0,
+    "Value": -92,
+    "frequnecy_norm_current": 0.000362776
+  },
+  {
+    "QuoteDate": "17-01-2017",
+    "Frequency": 0,
+    "Value": -91,
+    "frequnecy_norm_current": 0.000390839
+  },
+  {
+    "QuoteDate": "18-01-2017",
+    "Frequency": 0,
+    "Value": -90,
+    "frequnecy_norm_current": 0.000420731
+  },
+  {
+    "QuoteDate": "19-01-2017",
+    "Frequency": 0,
+    "Value": -89,
+    "frequnecy_norm_current": 0.000452539
+  },
+  {
+    "QuoteDate": "20-01-2017",
+    "Frequency": 0,
+    "Value": -88,
+    "frequnecy_norm_current": 0.000486357
+},
+  {
+    "QuoteDate": "23-01-2017",
+    "Frequency": 0,
+    "Value": -87,
+    "frequnecy_norm_current": 0.000522275
+  },
+  {
+    "QuoteDate": "24-01-2017",
+    "Frequency": 0,
+    "Value": -86,
+    "frequnecy_norm_current": 0.000560391
+  },
+  {
+    "QuoteDate": "25-01-2017",
+    "Frequency": 0,
+    "Value": -85,
+    "frequnecy_norm_current": 0.000600798
+  },
+  {
+    "QuoteDate": "26-01-2017",
+    "Frequency": 0,
+    "Value": -84,
+    "frequnecy_norm_current": 0.000643594
+  },
+  {
+    "QuoteDate": "27-01-2017",
+    "Frequency": 0,
+    "Value": -83,
+    "frequnecy_norm_current": 0.000688878
+  },
+  {
+    "QuoteDate": "30-01-2017",
+    "Frequency": 0,
+    "Value": -82,
+    "frequnecy_norm_current": 0.000736748
+  },
+  {
+    "QuoteDate": "31-01-2017",
+    "Frequency": 0,
+    "Value": -81,
+    "frequnecy_norm_current": 0.000787303
+  },
+  {
+    "QuoteDate": "01-02-2017",
+    "Frequency": 0,
+    "Value": -80,
+    "frequnecy_norm_current": 0.000840642
+  },
+  {
+    "QuoteDate": "02-02-2017",
+    "Frequency": 0,
+    "Value": -79,
+    "frequnecy_norm_current": 0.000896864
+  },
+  {
+    "QuoteDate": "03-02-2017",
+    "Frequency": 0,
+    "Value": -78,
+    "frequnecy_norm_current": 0.000956068
+  },
+  {
+    "QuoteDate": "06-02-2017",
+    "Frequency": 0,
+    "Value": -77,
+    "frequnecy_norm_current": 0.00101835
+  },
+  {
+    "QuoteDate": "07-02-2017",
+    "Frequency": 0,
+    "Value": -76,
+    "frequnecy_norm_current": 0.001083806
+  },
+  {
+    "QuoteDate": "08-02-2017",
+    "Frequency": 0,
+    "Value": -75,
+    "frequnecy_norm_current": 0.001152531
+  },
+  {
+    "QuoteDate": "09-02-2017",
+    "Frequency": 0,
+    "Value": -74,
+    "frequnecy_norm_current": 0.001224616
+  },
+  {
+    "QuoteDate": "10-02-2017",
+    "Frequency": 0,
+    "Value": -73,
+    "frequnecy_norm_current": 0.00130015
+  },
+  {
+    "QuoteDate": "13-02-2017",
+    "Frequency": 0,
+    "Value": -72,
+    "frequnecy_norm_current": 0.00137922
+  },
+  {
+    "QuoteDate": "14-02-2017",
+    "Frequency": 0,
+    "Value": -71,
+    "frequnecy_norm_current": 0.001461907
+  },
+  {
+    "QuoteDate": "15-02-2017",
+    "Frequency": 1,
+    "Value": -70,
+    "frequnecy_norm_current": 0.001548291
+  },
+  {
+    "QuoteDate": "16-02-2017",
+    "Frequency": 0,
+    "Value": -69,
+    "frequnecy_norm_current": 0.001638444
+  },
+  {
+    "QuoteDate": "17-02-2017",
+    "Frequency": 0,
+    "Value": -68,
+    "frequnecy_norm_current": 0.001732435
+  },
+  {
+    "QuoteDate": "21-02-2017",
+    "Frequency": 0,
+    "Value": -67,
+    "frequnecy_norm_current": 0.001830327
+  },
+  {
+    "QuoteDate": "22-02-2017",
+    "Frequency": 0,
+    "Value": -66,
+    "frequnecy_norm_current": 0.001932177
+  },
+  {
+    "QuoteDate": "23-02-2017",
+    "Frequency": 0,
+    "Value": -65,
+    "frequnecy_norm_current": 0.002038033
+  },
+  {
+    "QuoteDate": "24-02-2017",
+    "Frequency": 0,
+    "Value": -64,
+    "frequnecy_norm_current": 0.002147939
+  },
+  {
+    "QuoteDate": "27-02-2017",
+    "Frequency": 0,
+    "Value": -63,
+    "frequnecy_norm_current": 0.00226193
+  },
+  {
+    "QuoteDate": "28-02-2017",
+    "Frequency": 0,
+    "Value": -62,
+    "frequnecy_norm_current": 0.002380031
+  },
+  {
+    "QuoteDate": "01-03-2017",
+    "Frequency": 0,
+    "Value": -61,
+    "frequnecy_norm_current": 0.00250226
+  },
+  {
+    "QuoteDate": "02-03-2017",
+    "Frequency": 0,
+    "Value": -60,
+    "frequnecy_norm_current": 0.002628624
+  },
+  {
+    "QuoteDate": "03-03-2017",
+    "Frequency": 0,
+    "Value": -59,
+    "frequnecy_norm_current": 0.002759123
+  },
+  {
+    "QuoteDate": "06-03-2017",
+    "Frequency": 0,
+    "Value": -58,
+    "frequnecy_norm_current": 0.002893742
+  },
+  {
+    "QuoteDate": "07-03-2017",
+    "Frequency": 0,
+    "Value": -57,
+    "frequnecy_norm_current": 0.003032459
+  },
+  {
+    "QuoteDate": "08-03-2017",
+    "Frequency": 0,
+    "Value": -56,
+    "frequnecy_norm_current": 0.00317524
+  },
+  {
+    "QuoteDate": "09-03-2017",
+    "Frequency": 1,
+    "Value": -55,
+    "frequnecy_norm_current": 0.003322036
+  },
+  {
+    "QuoteDate": "10-03-2017",
+    "Frequency": 1,
+    "Value": -54,
+    "frequnecy_norm_current": 0.003472791
+  },
+  {
+    "QuoteDate": "13-03-2017",
+    "Frequency": 0,
+    "Value": -53,
+    "frequnecy_norm_current": 0.003627431
+  },
+  {
+    "QuoteDate": "14-03-2017",
+    "Frequency": 1,
+    "Value": -52,
+    "frequnecy_norm_current": 0.003785873
+  },
+  {
+    "QuoteDate": "15-03-2017",
+    "Frequency": 0,
+    "Value": -51,
+    "frequnecy_norm_current": 0.00394802
+  },
+  {
+    "QuoteDate": "16-03-2017",
+    "Frequency": 0,
+    "Value": -50,
+    "frequnecy_norm_current": 0.004113759
+  },
+  {
+    "QuoteDate": "17-03-2017",
+    "Frequency": 0,
+    "Value": -49,
+    "frequnecy_norm_current": 0.004282968
+  },
+  {
+    "QuoteDate": "20-03-2017",
+    "Frequency": 0,
+    "Value": -48,
+    "frequnecy_norm_current": 0.004455507
+  },
+  {
+    "QuoteDate": "21-03-2017",
+    "Frequency": 2,
+    "Value": -47,
+    "frequnecy_norm_current": 0.004631223
+  },
+  {
+    "QuoteDate": "22-03-2017",
+    "Frequency": 0,
+    "Value": -46,
+    "frequnecy_norm_current": 0.004809952
+  },
+  {
+    "QuoteDate": "23-03-2017",
+    "Frequency": 0,
+    "Value": -45,
+    "frequnecy_norm_current": 0.004991511
+  },
+  {
+    "QuoteDate": "24-03-2017",
+    "Frequency": 2,
+    "Value": -44,
+    "frequnecy_norm_current": 0.005175707
+  },
+  {
+    "QuoteDate": "27-03-2017",
+    "Frequency": 1,
+    "Value": -43,
+    "frequnecy_norm_current": 0.005362332
+  },
+  {
+    "QuoteDate": "28-03-2017",
+    "Frequency": 1,
+    "Value": -42,
+    "frequnecy_norm_current": 0.005551164
+  },
+  {
+    "QuoteDate": "29-03-2017",
+    "Frequency": 1,
+    "Value": -41,
+    "frequnecy_norm_current": 0.005741967
+  },
+  {
+    "QuoteDate": "30-03-2017",
+    "Frequency": 4,
+    "Value": -40,
+    "frequnecy_norm_current": 0.005934495
+  },
+  {
+    "QuoteDate": "31-03-2017",
+    "Frequency": 1,
+    "Value": -39,
+    "frequnecy_norm_current": 0.006128485
+  },
+  {
+    "QuoteDate": "03-04-2017",
+    "Frequency": 3,
+    "Value": -38,
+    "frequnecy_norm_current": 0.006323665
+  },
+  {
+    "QuoteDate": "04-04-2017",
+    "Frequency": 0,
+    "Value": -37,
+    "frequnecy_norm_current": 0.00651975
+  },
+  {
+    "QuoteDate": "05-04-2017",
+    "Frequency": 5,
+    "Value": -36,
+    "frequnecy_norm_current": 0.006716443
+  },
+  {
+    "QuoteDate": "06-04-2017",
+    "Frequency": 1,
+    "Value": -35,
+    "frequnecy_norm_current": 0.006913439
+  },
+  {
+    "QuoteDate": "07-04-2017",
+    "Frequency": 1,
+    "Value": -34,
+    "frequnecy_norm_current": 0.00711042
+  },
+  {
+    "QuoteDate": "10-04-2017",
+    "Frequency": 3,
+    "Value": -33,
+    "frequnecy_norm_current": 0.00730706
+  },
+  {
+    "QuoteDate": "11-04-2017",
+    "Frequency": 4,
+    "Value": -32,
+    "frequnecy_norm_current": 0.007503026
+  },
+  {
+    "QuoteDate": "12-04-2017",
+    "Frequency": 2,
+    "Value": -31,
+    "frequnecy_norm_current": 0.007697977
+  },
+  {
+    "QuoteDate": "13-04-2017",
+    "Frequency": 1,
+    "Value": -30,
+    "frequnecy_norm_current": 0.007891564
+  },
+  {
+    "QuoteDate": "17-04-2017",
+    "Frequency": 4,
+    "Value": -29,
+    "frequnecy_norm_current": 0.008083435
+  },
+  {
+    "QuoteDate": "18-04-2017",
+    "Frequency": 6,
+    "Value": -28,
+    "frequnecy_norm_current": 0.00827323
+  },
+  {
+    "QuoteDate": "19-04-2017",
+    "Frequency": 6,
+    "Value": -27,
+    "frequnecy_norm_current": 0.00846059
+  },
+  {
+    "QuoteDate": "20-04-2017",
+    "Frequency": 5,
+    "Value": -26,
+    "frequnecy_norm_current": 0.008645149
+  },
+  {
+    "QuoteDate": "21-04-2017",
+    "Frequency": 2,
+    "Value": -25,
+    "frequnecy_norm_current": 0.008826544
+  },
+  {
+    "QuoteDate": "24-04-2017",
+    "Frequency": 5,
+    "Value": -24,
+    "frequnecy_norm_current": 0.00900441
+  },
+  {
+    "QuoteDate": "25-04-2017",
+    "Frequency": 2,
+    "Value": -23,
+    "frequnecy_norm_current": 0.009178383
+  },
+  {
+    "QuoteDate": "26-04-2017",
+    "Frequency": 4,
+    "Value": -22,
+    "frequnecy_norm_current": 0.009348101
+  },
+  {
+    "QuoteDate": "27-04-2017",
+    "Frequency": 10,
+    "Value": -21,
+    "frequnecy_norm_current": 0.009513208
+  },
+  {
+    "QuoteDate": "28-04-2017",
+    "Frequency": 4,
+    "Value": -20,
+    "frequnecy_norm_current": 0.00967335
+  },
+  {
+    "QuoteDate": "01-05-2017",
+    "Frequency": 3,
+    "Value": -19,
+    "frequnecy_norm_current": 0.009828182
+  },
+  {
+    "QuoteDate": "02-05-2017",
+    "Frequency": 2,
+    "Value": -18,
+    "frequnecy_norm_current": 0.009977364
+  },
+  {
+    "QuoteDate": "03-05-2017",
+    "Frequency": 6,
+    "Value": -17,
+    "frequnecy_norm_current": 0.010120566
+  },
+  {
+    "QuoteDate": "04-05-2017",
+    "Frequency": 3,
+    "Value": -16,
+    "frequnecy_norm_current": 0.010257466
+  },
+  {
+    "QuoteDate": "05-05-2017",
+    "Frequency": 5,
+    "Value": -15,
+    "frequnecy_norm_current": 0.010387756
+  },
+  {
+    "QuoteDate": "08-05-2017",
+    "Frequency": 6,
+    "Value": -14,
+    "frequnecy_norm_current": 0.010511138
+  },
+  {
+    "QuoteDate": "09-05-2017",
+    "Frequency": 8,
+    "Value": -13,
+    "frequnecy_norm_current": 0.010627328
+  },
+  {
+    "QuoteDate": "10-05-2017",
+    "Frequency": 5,
+    "Value": -12,
+    "frequnecy_norm_current": 0.010736057
+  },
+  {
+    "QuoteDate": "11-05-2017",
+    "Frequency": 6,
+    "Value": -11,
+    "frequnecy_norm_current": 0.010837069
+  },
+  {
+    "QuoteDate": "12-05-2017",
+    "Frequency": 10,
+    "Value": -10,
+    "frequnecy_norm_current": 0.010930127
+  },
+  {
+    "QuoteDate": "15-05-2017",
+    "Frequency": 6,
+    "Value": -9,
+    "frequnecy_norm_current": 0.011015011
+  },
+  {
+    "QuoteDate": "16-05-2017",
+    "Frequency": 9,
+    "Value": -8,
+    "frequnecy_norm_current": 0.011091518
+  },
+  {
+    "QuoteDate": "17-05-2017",
+    "Frequency": 11,
+    "Value": -7,
+    "frequnecy_norm_current": 0.011159466
+  },
+  {
+    "QuoteDate": "18-05-2017",
+    "Frequency": 4,
+    "Value": -6,
+    "frequnecy_norm_current": 0.011218691
+  },
+  {
+    "QuoteDate": "19-05-2017",
+    "Frequency": 8,
+    "Value": -5,
+    "frequnecy_norm_current": 0.011269049
+  },
+  {
+    "QuoteDate": "22-05-2017",
+    "Frequency": 13,
+    "Value": -4,
+    "frequnecy_norm_current": 0.01131042
+  },
+  {
+    "QuoteDate": "23-05-2017",
+    "Frequency": 11,
+    "Value": -3,
+    "frequnecy_norm_current": 0.011342702
+  },
+  {
+    "QuoteDate": "24-05-2017",
+    "Frequency": 10,
+    "Value": -2,
+    "frequnecy_norm_current": 0.011365817
+  },
+  {
+    "QuoteDate": "25-05-2017",
+    "Frequency": 14,
+    "Value": -1,
+    "frequnecy_norm_current": 0.011379709
+  },
+  {
+    "QuoteDate": "26-05-2017",
+    "Frequency": 15,
+    "Value": 0,
+    "frequnecy_norm_current": 0.011384343
+  },
+  {
+    "QuoteDate": "30-05-2017",
+    "Frequency": 14,
+    "Value": 1,
+    "frequnecy_norm_current": 0.011379709
+  },
+  {
+    "QuoteDate": "31-05-2017",
+    "Frequency": 19,
+    "Value": 2,
+    "frequnecy_norm_current": 0.011365817
+  },
+  {
+    "QuoteDate": "01-06-2017",
+    "Frequency": 17,
+    "Value": 3,
+    "frequnecy_norm_current": 0.011342702
+  },
+  {
+    "QuoteDate": "02-06-2017",
+    "Frequency": 20,
+    "Value": 4,
+    "frequnecy_norm_current": 0.01131042
+  },
+  {
+    "QuoteDate": "05-06-2017",
+    "Frequency": 15,
+    "Value": 5,
+    "frequnecy_norm_current": 0.011269049
+  },
+  {
+    "QuoteDate": "06-06-2017",
+    "Frequency": 17,
+    "Value": 6,
+    "frequnecy_norm_current": 0.011218691
+  },
+  {
+    "QuoteDate": "07-06-2017",
+    "Frequency": 14,
+    "Value": 7,
+    "frequnecy_norm_current": 0.011159466
+  },
+  {
+    "QuoteDate": "08-06-2017",
+    "Frequency": 15,
+    "Value": 8,
+    "frequnecy_norm_current": 0.011091518
+  },
+  {
+    "QuoteDate": "09-06-2017",
+    "Frequency": 12,
+    "Value": 9,
+    "frequnecy_norm_current": 0.011015011
+  },
+  {
+    "QuoteDate": "12-06-2017",
+    "Frequency": 16,
+    "Value": 10,
+    "frequnecy_norm_current": 0.010930127
+  },
+  {
+    "QuoteDate": "13-06-2017",
+    "Frequency": 16,
+    "Value": 11,
+    "frequnecy_norm_current": 0.010837069
+  },
+  {
+    "QuoteDate": "14-06-2017",
+    "Frequency": 11,
+    "Value": 12,
+    "frequnecy_norm_current": 0.010736057
+  },
+  {
+    "QuoteDate": "15-06-2017",
+    "Frequency": 17,
+    "Value": 13,
+    "frequnecy_norm_current": 0.010627328
+  },
+  {
+    "QuoteDate": "16-06-2017",
+    "Frequency": 19,
+    "Value": 14,
+    "frequnecy_norm_current": 0.010511138
+  },
+  {
+    "QuoteDate": "19-06-2017",
+    "Frequency": 15,
+    "Value": 15,
+    "frequnecy_norm_current": 0.010387756
+  },
+  {
+    "QuoteDate": "20-06-2017",
+    "Frequency": 15,
+    "Value": 16,
+    "frequnecy_norm_current": 0.010257466
+  },
+  {
+    "QuoteDate": "21-06-2017",
+    "Frequency": 17,
+    "Value": 17,
+    "frequnecy_norm_current": 0.010120566
+  },
+  {
+    "QuoteDate": "22-06-2017",
+    "Frequency": 18,
+    "Value": 18,
+    "frequnecy_norm_current": 0.009977364
+  },
+  {
+    "QuoteDate": "23-06-2017",
+    "Frequency": 22,
+    "Value": 19,
+    "frequnecy_norm_current": 0.009828182
+  },
+  {
+    "QuoteDate": "26-06-2017",
+    "Frequency": 22,
+    "Value": 20,
+    "frequnecy_norm_current": 0.00967335
+  },
+  {
+    "QuoteDate": "27-06-2017",
+    "Frequency": 23,
+    "Value": 21,
+    "frequnecy_norm_current": 0.009513208
+  },
+  {
+    "QuoteDate": "28-06-2017",
+    "Frequency": 27,
+    "Value": 22,
+    "frequnecy_norm_current": 0.009348101
+  },
+  {
+    "QuoteDate": "29-06-2017",
+    "Frequency": 21,
+    "Value": 23,
+    "frequnecy_norm_current": 0.009178383
+  },
+  {
+    "QuoteDate": "30-06-2017",
+    "Frequency": 16,
+    "Value": 24,
+    "frequnecy_norm_current": 0.00900441
+  },
+  {
+    "QuoteDate": "03-07-2017",
+    "Frequency": 26,
+    "Value": 25,
+    "frequnecy_norm_current": 0.008826544
+  },
+  {
+    "QuoteDate": "05-07-2017",
+    "Frequency": 30,
+    "Value": 26,
+    "frequnecy_norm_current": 0.008645149
+  },
+  {
+    "QuoteDate": "06-07-2017",
+    "Frequency": 17,
+    "Value": 27,
+    "frequnecy_norm_current": 0.00846059
+  },
+  {
+    "QuoteDate": "07-07-2017",
+    "Frequency": 27,
+    "Value": 28,
+    "frequnecy_norm_current": 0.00827323
+  },
+  {
+    "QuoteDate": "10-07-2017",
+    "Frequency": 13,
+    "Value": 29,
+    "frequnecy_norm_current": 0.008083435
+  },
+  {
+    "QuoteDate": "11-07-2017",
+    "Frequency": 18,
+    "Value": 30,
+    "frequnecy_norm_current": 0.007891564
+  },
+  {
+    "QuoteDate": "12-07-2017",
+    "Frequency": 11,
+    "Value": 31,
+    "frequnecy_norm_current": 0.007697977
+  },
+  {
+    "QuoteDate": "13-07-2017",
+    "Frequency": 21,
+    "Value": 32,
+    "frequnecy_norm_current": 0.007503026
+  },
+  {
+    "QuoteDate": "14-07-2017",
+    "Frequency": 15,
+    "Value": 33,
+    "frequnecy_norm_current": 0.00730706
+  },
+  {
+    "QuoteDate": "17-07-2017",
+    "Frequency": 20,
+    "Value": 34,
+    "frequnecy_norm_current": 0.00711042
+  },
+  {
+    "QuoteDate": "18-07-2017",
+    "Frequency": 20,
+    "Value": 35,
+    "frequnecy_norm_current": 0.006913439
+  },
+  {
+    "QuoteDate": "19-07-2017",
+    "Frequency": 13,
+    "Value": 36,
+    "frequnecy_norm_current": 0.006716443
+  },
+  {
+    "QuoteDate": "20-07-2017",
+    "Frequency": 15,
+    "Value": 37,
+    "frequnecy_norm_current": 0.00651975
+  },
+  {
+    "QuoteDate": "21-07-2017",
+    "Frequency": 9,
+    "Value": 38,
+    "frequnecy_norm_current": 0.006323665
+  },
+  {
+    "QuoteDate": "24-07-2017",
+    "Frequency": 13,
+    "Value": 39,
+    "frequnecy_norm_current": 0.006128485
+  },
+  {
+    "QuoteDate": "25-07-2017",
+    "Frequency": 13,
+    "Value": 40,
+    "frequnecy_norm_current": 0.005934495
+  },
+  {
+    "QuoteDate": "26-07-2017",
+    "Frequency": 17,
+    "Value": 41,
+    "frequnecy_norm_current": 0.005741967
+  },
+  {
+    "QuoteDate": "27-07-2017",
+    "Frequency": 6,
+    "Value": 42,
+    "frequnecy_norm_current": 0.005551164
+  },
+  {
+    "QuoteDate": "28-07-2017",
+    "Frequency": 9,
+    "Value": 43,
+    "frequnecy_norm_current": 0.005362332
+  },
+  {
+    "QuoteDate": "31-07-2017",
+    "Frequency": 10,
+    "Value": 44,
+    "frequnecy_norm_current": 0.005175707
+  },
+  {
+    "QuoteDate": "01-08-2017",
+    "Frequency": 9,
+    "Value": 45,
+    "frequnecy_norm_current": 0.004991511
+  },
+  {
+    "QuoteDate": "02-08-2017",
+    "Frequency": 11,
+    "Value": 46,
+    "frequnecy_norm_current": 0.004809952
+  },
+  {
+    "QuoteDate": "03-08-2017",
+    "Frequency": 10,
+    "Value": 47,
+    "frequnecy_norm_current": 0.004631223
+  },
+  {
+    "QuoteDate": "04-08-2017",
+    "Frequency": 8,
+    "Value": 48,
+    "frequnecy_norm_current": 0.004455507
+  },
+  {
+    "QuoteDate": "07-08-2017",
+    "Frequency": 5,
+    "Value": 49,
+    "frequnecy_norm_current": 0.004282968
+  },
+  {
+    "QuoteDate": "08-08-2017",
+    "Frequency": 2,
+    "Value": 50,
+    "frequnecy_norm_current": 0.004113759
+  },
+  {
+    "QuoteDate": "09-08-2017",
+    "Frequency": 5,
+    "Value": 51,
+    "frequnecy_norm_current": 0.00394802
+  },
+  {
+    "QuoteDate": "10-08-2017",
+    "Frequency": 7,
+    "Value": 52,
+    "frequnecy_norm_current": 0.003785873
+  },
+  {
+    "QuoteDate": "11-08-2017",
+    "Frequency": 8,
+    "Value": 53,
+    "frequnecy_norm_current": 0.003627431
+  },
+  {
+    "QuoteDate": "14-08-2017",
+    "Frequency": 6,
+    "Value": 54,
+    "frequnecy_norm_current": 0.003472791
+  },
+  {
+    "QuoteDate": "15-08-2017",
+    "Frequency": 5,
+    "Value": 55,
+    "frequnecy_norm_current": 0.003322036
+  },
+  {
+    "QuoteDate": "16-08-2017",
+    "Frequency": 5,
+    "Value": 56,
+    "frequnecy_norm_current": 0.00317524
+  },
+  {
+    "QuoteDate": "17-08-2017",
+    "Frequency": 1,
+    "Value": 57,
+    "frequnecy_norm_current": 0.003032459
+  },
+  {
+    "QuoteDate": "18-08-2017",
+    "Frequency": 1,
+    "Value": 58,
+    "frequnecy_norm_current": 0.002893742
+  },
+  {
+    "QuoteDate": "21-08-2017",
+    "Frequency": 4,
+    "Value": 59,
+    "frequnecy_norm_current": 0.002759123
+  },
+  {
+    "QuoteDate": "22-08-2017",
+    "Frequency": 3,
+    "Value": 60,
+    "frequnecy_norm_current": 0.002628624
+  },
+  {
+    "QuoteDate": "23-08-2017",
+    "Frequency": 0,
+    "Value": 61,
+    "frequnecy_norm_current": 0.00250226
+  },
+  {
+    "QuoteDate": "24-08-2017",
+    "Frequency": 0,
+    "Value": 62,
+    "frequnecy_norm_current": 0.002380031
+  },
+  {
+    "QuoteDate": "25-08-2017",
+    "Frequency": 1,
+    "Value": 63,
+    "frequnecy_norm_current": 0.00226193
+  },
+  {
+    "QuoteDate": "28-08-2017",
+    "Frequency": 1,
+    "Value": 64,
+    "frequnecy_norm_current": 0.002147939
+  },
+  {
+    "QuoteDate": "29-08-2017",
+    "Frequency": 0,
+    "Value": 65,
+    "frequnecy_norm_current": 0.002038033
+  },
+  {
+    "QuoteDate": "30-08-2017",
+    "Frequency": 0,
+    "Value": 66,
+    "frequnecy_norm_current": 0.001932177
+  },
+  {
+    "QuoteDate": "31-08-2017",
+    "Frequency": 0,
+    "Value": 67,
+    "frequnecy_norm_current": 0.001830327
+  },
+  {
+    "QuoteDate": "01-09-2017",
+    "Frequency": 1,
+    "Value": 68,
+    "frequnecy_norm_current": 0.001732435
+  },
+  {
+    "QuoteDate": "05-09-2017",
+    "Frequency": 0,
+    "Value": 69,
+    "frequnecy_norm_current": 0.001638444
+  },
+  {
+    "QuoteDate": "06-09-2017",
+    "Frequency": 0,
+    "Value": 70,
+    "frequnecy_norm_current": 0.001548291
+  },
+  {
+    "QuoteDate": "07-09-2017",
+    "Frequency": 0,
+    "Value": 71,
+    "frequnecy_norm_current": 0.001461907
+  },
+  {
+    "QuoteDate": "08-09-2017",
+    "Frequency": 0,
+    "Value": 72,
+    "frequnecy_norm_current": 0.00137922
+  },
+  {
+    "QuoteDate": "11-09-2017",
+    "Frequency": 1,
+    "Value": 73,
+    "frequnecy_norm_current": 0.00130015
+  },
+  {
+    "QuoteDate": "12-09-2017",
+    "Frequency": 1,
+    "Value": 74,
+    "frequnecy_norm_current": 0.001224616
+  },
+  {
+    "QuoteDate": "13-09-2017",
+    "Frequency": 1,
+    "Value": 75,
+    "frequnecy_norm_current": 0.001152531
+  },
+  {
+    "QuoteDate": "14-09-2017",
+    "Frequency": 1,
+    "Value": 76,
+    "frequnecy_norm_current": 0.001083806
+  },
+  {
+    "QuoteDate": "15-09-2017",
+    "Frequency": 2,
+    "Value": 77,
+    "frequnecy_norm_current": 0.00101835
+  },
+  {
+    "QuoteDate": "18-09-2017",
+    "Frequency": 2,
+    "Value": 78,
+    "frequnecy_norm_current": 0.000956068
+  },
+  {
+    "QuoteDate": "19-09-2017",
+    "Frequency": 4,
+    "Value": 79,
+    "frequnecy_norm_current": 0.000896864
+  },
+  {
+    "QuoteDate": "20-09-2017",
+    "Frequency": 1,
+    "Value": 80,
+    "frequnecy_norm_current": 0.000840642
+  },
+  {
+    "QuoteDate": "21-09-2017",
+    "Frequency": 0,
+    "Value": 81,
+    "frequnecy_norm_current": 0.000787303
+  },
+  {
+    "QuoteDate": "22-09-2017",
+    "Frequency": 1,
+    "Value": 82,
+    "frequnecy_norm_current": 0.000736748
+  },
+  {
+    "QuoteDate": "25-09-2017",
+    "Frequency": 0,
+    "Value": 83,
+    "frequnecy_norm_current": 0.000688878
+  },
+  {
+    "QuoteDate": "26-09-2017",
+    "Frequency": 1,
+    "Value": 84,
+    "frequnecy_norm_current": 0.000643594
+  },
+  {
+    "QuoteDate": "27-09-2017",
+    "Frequency": 0,
+    "Value": 85,
+    "frequnecy_norm_current": 0.000600798
+  },
+  {
+    "QuoteDate": "28-09-2017",
+    "Frequency": 1,
+    "Value": 86,
+    "frequnecy_norm_current": 0.000560391
+  },
+  {
+    "QuoteDate": "29-09-2017",
+    "Frequency": 0,
+    "Value": 87,
+    "frequnecy_norm_current": 0.000522275
+  },
+  {
+    "QuoteDate": "02-10-2017",
+    "Frequency": 1,
+    "Value": 88,
+    "frequnecy_norm_current": 0.000486357
+  },
+  {
+    "QuoteDate": "03-10-2017",
+    "Frequency": 0,
+    "Value": 89,
+    "frequnecy_norm_current": 0.000452539
+  },
+  {
+    "QuoteDate": "04-10-2017",
+    "Frequency": 2,
+    "Value": 90,
+    "frequnecy_norm_current": 0.000420731
+  },
+  {
+    "QuoteDate": "05-10-2017",
+    "Frequency": 1,
+    "Value": 91,
+    "frequnecy_norm_current": 0.000390839
+  },
+  {
+    "QuoteDate": "06-10-2017",
+    "Frequency": 1,
+    "Value": 92,
+    "frequnecy_norm_current": 0.000362776
+  },
+  {
+    "QuoteDate": "09-10-2017",
+    "Frequency": 1,
+    "Value": 93,
+    "frequnecy_norm_current": 0.000336454
+  },
+  {
+    "QuoteDate": "10-10-2017",
+    "Frequency": 0,
+    "Value": 94,
+    "frequnecy_norm_current": 0.000311788
+  },
+  {
+    "QuoteDate": "11-10-2017",
+    "Frequency": 0,
+    "Value": 95,
+    "frequnecy_norm_current": 0.000288695
+  },
+  {
+    "QuoteDate": "12-10-2017",
+    "Frequency": 0,
+    "Value": 96,
+    "frequnecy_norm_current": 0.000267094
+  },
+  {
+    "QuoteDate": "13-10-2017",
+    "Frequency": 0,
+    "Value": 97,
+    "frequnecy_norm_current": 0.000246909
+  },
+  {
+    "QuoteDate": "16-10-2017",
+    "Frequency": 0,
+    "Value": 98,
+    "frequnecy_norm_current": 0.000228063
+  },
+  {
+    "QuoteDate": "17-10-2017",
+    "Frequency": 1,
+    "Value": 99,
+    "frequnecy_norm_current": 0.000210485
+  },
+  {
+    "QuoteDate": "18-10-2017",
+    "Frequency": 0,
+    "Value": 100,
+    "frequnecy_norm_current": 0.000194103
+  }
+];
+am5.ready(function() {
+  am5.addLicense("AM5C311897715");
+  var root = am5.Root.new("histogram_chart");
+  root.setThemes([am5themes_Animated.new(root),
+  am5themes_Responsive.newEmpty(root)
+]);
+var chart = root.container.children.push(am5xy.XYChart.new(root, {
+  panX: false,
+  panY: false,
+  focusable: false,
+  paddingLeft:0,paddingRight:0,
+  paddingTop:10,paddingBottom:0
+}));
+chart.zoomOutButton.set("forceHidden", true);
+var cursor = chart.set("cursor", am5xy.XYCursor.new(root, {}));
+cursor.lineY.set("visible", true);
+cursor.lineX.set("visible", true);
+cursor.lineX.setAll({
+  stroke: am5.color(0x703372),
+  strokeWidth: 1,
+  strokeDasharray: [2]
+});
+cursor.lineY.setAll({
+  stroke: am5.color(0x703372),
+  strokeWidth: 1,
+  strokeDasharray: [2]
+});	
+var valueRenderer = am5xy.AxisRendererY.new(root, {});
+valueRenderer.labels.template.setAll({
+  fill: am5.color(0x777E87),
+  fontSize: 10,
+  fontWeight: 600
+});	
+valueRenderer.grid.template.setAll({
+  forceHidden:"visible",
+});
+var valueAxis = chart.yAxes.push(am5xy.ValueAxis.new(root, {
+  renderer: valueRenderer,
+  height: am5.percent(100),
+  min:0,max:30
+}));
+valueAxis.children.moveValue(am5.Label.new(root, {
+  rotation: -90,
+  text: "Frequency",
+  fill: am5.color(0x777E87),
+  fontSize:12,
+  fontWeight:600,
+  y: am5.p50,
+  paddingLeft:0,
+  paddingTop:0,
+  centerX: am5.p50
+}),0);
+var bellAxisRenderer = am5xy.AxisRendererY.new(root, {opposite:true});
+bellAxisRenderer.labels.template.setAll({
+  fill: am5.color(0x777E87),
+  fontSize: 10,
+  fontWeight: 600
+});	
+bellAxisRenderer.grid.template.setAll({
+  forceHidden:"visible",
+});
+var bellAxis = chart.yAxes.push(am5xy.ValueAxis.new(root, {
+  renderer: bellAxisRenderer
+}));
+var dateAxisRenderer = am5xy.AxisRendererX.new(root, {minGridDistance: 30});
+dateAxisRenderer.labels.template.setAll({
+  fill: am5.color(0x777E87),
+  fontSize: 10,
+  visible: true,
+  fontWeight:600,
+  paddingTop:10
+});
+dateAxisRenderer.grid.template.setAll({
+  forceHidden:"visible",
+});
+var dateAxis = chart.xAxes.push(am5xy.ValueAxis.new(root, {
+  min:-100,
+  max:100,
+  strictMinMax: true,
+  renderer: dateAxisRenderer
+}));
+dateAxis.set("numberFormat", "#'%");
+dateAxis.children.moveValue(am5.Label.new(root, {
+  text: "Magnitude",
+  fill: am5.color(0x777E87),
+  fontSize:12,fontWeight:600,
+  x: am5.p50,
+  paddingBottom:0,
+  centerX: am5.p50
+}));
+root.interfaceColors.set("grid", am5.color(0x000000));
+var histogram = chart.series.push(am5xy.ColumnSeries.new(root, {
+  name: "",
+  xAxis: dateAxis,
+  yAxis: valueAxis,
+  valueYField:"Frequency",
+  valueXField: "Value"
+}));	
+histogram.columns.template.adapters.add("stroke", function (stroke, target) {
+  if (target.dataItem.get("valueX") <= 0) {
+    return am5.color(0xd93872)
+  }
+  else if (target.dataItem.get("valueX") > 0){
+    return am5.color(0x10a861)
+  }
+  else {
+    return stroke
+  }
+});
+histogram.columns.template.setAll({
+  strokeWidth:2,strokeOpacity:1
+});
+var tooltip = am5.Tooltip.new(root, {
+  getFillFromSprite: true,
+  getStrokeFromSprite: true,
+  autoTextColor: true,
+  labelText: "Frequency | %ge of Occurrence : {valueY} | {frequency_percentage} %"
+});
+histogram.set("tooltip", tooltip);	
+histogram.get("tooltip").label.setAll({ fontSize: 12,fontWeight:600 })
+var seriesLine = chart.series.push(am5xy.SmoothedXLineSeries.new(root, {
+  xAxis: dateAxis,
+  yAxis: bellAxis,
+  valueYField:"frequnecy_norm_current",
+  valueXField: "Value",
+  clustered: true,
+    tension: 0.7
+  })
+);
+seriesLine.set("stroke", am5.color(0x19A7CE));
+seriesLine.strokes.template.setAll({
+  visible: true,
+  strokeOpacity: 1,
+  strokeWidth: 2
+});
+var rangeDataItem = dateAxis.makeDataItem({
+  value: 0,
+  endValue: 0.3
+});
+var range = dateAxis.createAxisRange(rangeDataItem);
+rangeDataItem.get("grid").setAll({
+  stroke: am5.color(0x000000),
+  strokeOpacity: 1,strokeWidth:5,visible:true
+});
+rangeDataItem.get("axisFill").setAll({
+  fill: am5.color(0x19A7CE),
+  fillOpacity:1,height:am5.percent(70),
+  visible:true
+});
+histogram.data.setAll(data);
+seriesLine.data.setAll(data);
+chart.appear(1000, 100);
+});
 </script>
 <!--======= HISTOGRAM CHART END =======-->
 </body>
