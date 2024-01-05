@@ -9601,7 +9601,7 @@ button {
   border: 0;
   -webkit-box-shadow: 0 4px 30px rgb(118 139 171 / 25%);
   box-shadow: 0 4px 30px rgb(118 139 171 / 25%);
-  z-index: 999;
+  z-index: 10000;
 }
 .search_list {
   width: 100%;
@@ -12129,23 +12129,35 @@ show-mob {
   max-width: 1100px;
   margin: 20px auto;
 }
+.top_box {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #D0E3FF;
+  padding: 20px;
+}
+.top_box p {
+  font-family: 'DMSans-Medium';
+  font-size: 17px;
+  line-height: 23px;
+  color: #2A353D;
+  margin-bottom: 0;
+}
+.top_box p a, .top_box p span {
+  color: #4285F4;
+}
 .contactUs_sec1 h3 {
-  font-family: 'Inter-ExtraBold';
-  font-size: 34px;
-  line-height: 45px;
-  color: #242947;
-  margin-bottom: 40px;
-  text-align: center;
+  font-family: 'DMSans-Bold';
+  font-size: 22px;
+  line-height: 28px;
+  color: #2A353D;
+  margin-bottom: 20px;
 }
 .contact_sec11 {
   width: 100%;
-  border-radius: 10px;
   display: flex;
   gap: 60px;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid #D0E3FF;
-  padding: 20px;
 }
 .contact_sec111 {
   width: calc(50% - 30px);
@@ -12228,6 +12240,7 @@ show-mob {
   bottom: -20px;
   color: #e23f3f;
   font-size: 14px;
+  line-height: 18px;
 }
 /*========== CONTACT US CSS END ===========*/
 /*========== 404 ERROR PAGE BEGIN ===========*/
@@ -12690,7 +12703,7 @@ body.dark .add_filter_btn a span, body.dark .secPart_0 h4, body.dark .secPart_0 
 body.dark .watchlist_tabs .nav-tabs .nav-link, body.dark .show_dropdown, body.dark .show_dropdown span:first-child, body.dark .settings_tabs .nav-tabs .nav-link, body.dark .settings_head31 h6,
 body.dark .pageSlot_drop p, body.dark .pageCount_drop .dropdown__item, body.dark .subscription_b1 h6, body.dark .card_no, body.dark .card_dlt button span, body.dark .activity_box h5,
 body.dark .activity_box ul li h6, body.dark .stockEtf_filter span:first-child, body.dark .lineChart_dtl .card-title, body.dark .filterDropd_box .expand_btn span:before, body.dark .settings_head31 p,
-body.dark .notifiBoxes ul li h5, body.dark .warning_msg p {
+body.dark .notifiBoxes ul li h5, body.dark .warning_msg p, body.dark .subscription_b1 .bot_txt, body.dark .top_box p {
   color: #ffffff;
 }
 body.dark .sidebar__item img, body.dark .sidebar__arrow img, body.dark .sidebar__icon img, body.dark .chart_dtl.filterH_icon img, body.dark .ovtlyr_table th.sortTable_col > img,
@@ -12948,7 +12961,7 @@ body.dark .search_list li.active_red.active a {
 body.dark .item_box > p {
   color: #989898;
 }
-body.dark .contact_sec11, body.dark .account_fields input, body.dark .account_fields select, body.dark .account_fields textarea {
+body.dark .top_box, body.dark .account_fields input, body.dark .account_fields select, body.dark .account_fields textarea {
   border-color: #2E3031;
   color: #ffffff;
 }
@@ -12990,6 +13003,9 @@ body.dark .coupon_div input {
 }
 body.dark .notifi_blur {
   border-color: #2A353D;
+}
+body.dark .introjs-tooltiptext {
+  color: #000000 !important;
 }
 /*=========== DARK THEME CSS END ===========*/
 /*============ MEDIA QUERY START ===========*/
@@ -13491,9 +13507,6 @@ body.dark .notifi_blur {
 }
 .contact_sec11 {
   gap: 30px;
-}
-.contact_sec111 {
-  width: 50%;
 }
 .contact_sec112 {
   width: calc(50% - 30px);
@@ -14314,12 +14327,10 @@ body.dark .purple_box .serial11 h4, body.dark .serial11 ul, body.dark .serial11 
 }
 .contact_sec11 {
   flex-direction: column-reverse;
-  padding: 15px;
+  gap: 20px;
 }
-.contactUs_sec1 h3 {
-  font-size: 32px;
-  line-height: 42px;
-  margin-bottom: 20px;
+.top_box {
+  padding: 15px;
 }
 .upgrade_popup .modal-dialog {
   max-width: 450px;
@@ -14358,7 +14369,7 @@ body.dark .purple_box .serial11 h4, body.dark .serial11 ul, body.dark .serial11 
   transform: translate(0, -50%);
   display: none;
 }
-  body.dark .noPlanHide span:nth-child(2):after {
+body.dark .noPlanHide span:nth-child(2):after {
   background-color: #000000;
 }
 .blur_noPlan .noPlanHide span:nth-child(2):after {
@@ -14461,8 +14472,9 @@ body.dark .purple_box .serial11 h4, body.dark .serial11 ul, body.dark .serial11 
   line-height: 24px;
 }
 .contactUs_sec1 h3 {
-  font-size: 28px;
-  line-height: 37px;
+  font-size: 20px;
+  line-height: 26px;
+  margin-bottom: 15px;
 }
 .notifiBoxes ul li {
   width: 100%;
@@ -14551,6 +14563,9 @@ body.dark .purple_box .serial11 h4, body.dark .serial11 ul, body.dark .serial11 
   line-height: 22px;
   margin-top: 15px;
 }
+.contactUs_sec1 {
+  margin: 10px auto;
+}
 }
 @media only screen and (max-width: 430px) {
 .card_boxes1 {
@@ -14591,11 +14606,6 @@ body.dark .purple_box .serial11 h4, body.dark .serial11 ul, body.dark .serial11 
 .contact_sec11 {
   gap: 20px;
 }
-.contactUs_sec1 h3 {
-  font-size: 24px;
-  line-height: 34px;
-  margin-bottom: 15px;
-}
 .upgrade_popup .close_btn {
   top: 10px;
   right: 10px;
@@ -14620,8 +14630,8 @@ body.dark .purple_box .serial11 h4, body.dark .serial11 ul, body.dark .serial11 
   font-size: 17px;
 }
 .contactUs_sec1 h3 {
-  font-size: 22px;
-  line-height: 32px;
+  font-size: 18px;
+  line-height: 24px;
 }
 .upgrade_popup .modal-body {
   padding: 25px 15px;
