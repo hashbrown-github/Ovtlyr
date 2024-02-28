@@ -377,13 +377,37 @@ if (localStorage.getItem('darkMode') === "on") {
                       </div>
                     </div>
                   </div>
-                  <h4>
+                  <!-- <h4>
                     <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Information Technology">
                       <span>Information Technology</span>
                     </a>
                     <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="NYSE ARCA : Information Technology">
                       <span>NYSE ARCA : Information Technology</span>
                     </a>
+                    <span>Feb 07, 2024</span>
+                    <div class="lineChart_dtl">
+                      <div class="accordion accordion-solid accordion-toggle-plus" id="accordionperformSummary">
+                        <div class="card">
+                          <div class="card-header" id="headingOne6">
+                            <div class="card-title collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOne6" id="open_chartView">Performance Summary</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </h4> -->
+                  <h4>
+                    <span data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Information Technology">Information Technology</span>
+                    <span data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Technology">Sector : Technology</span>
+                    <span>Feb 07, 2024</span>
+                    <div class="lineChart_dtl">
+                      <div class="accordion accordion-solid accordion-toggle-plus" id="accordionperformSummary">
+                        <div class="card">
+                          <div class="card-header" id="headingOne6">
+                            <div class="card-title collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOne6" id="open_chartView">Performance Summary</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </h4>
                 </div>
                 <p><span>Favorite </span><button type="button" class="addTo_fav"><i class="fa-regular fa-star"></i></button></p>
@@ -420,36 +444,57 @@ if (localStorage.getItem('darkMode') === "on") {
         <div class="dashboard_grid">
           <div class="dash_gridLeft">
             <div class="mobileVer_box">
-              <div class="lineChart_dtl">
-                <div class="accordion accordion-solid accordion-toggle-plus" id="accordionperformSummary">
-                  <div class="card">
-                    <div class="card-header" id="headingOne6">
-                      <div class="card-title" data-bs-toggle="collapse" data-bs-target="#collapseOne6">Performance Summary</div>
+              <div class="lineChart_box0">
+                <div class="lineChart_box1">
+                  <div class="lineChart_dtl">
+                    <div class="accordion accordion-solid accordion-toggle-plus" id="accordionperformSummary">
+                      <div class="card">
+                        <div class="card-header" id="headingOne7">
+                          <div class="card-title" data-bs-toggle="collapse" data-bs-target="#collapseOne7">Performance Summary<span class="material-symbols-outlined" id="close_chartView">close</span></div>
+                        </div>
+                      </div>
                     </div>
-                    <div id="collapseOne6" class="collapse show" data-bs-parent="#accordionFAQ">
-                      <div class="card-body">
-                        <ul>
-                          <li><p><span>Total Trading Days:</span><span>[x,xxx] Days</span></p></li>
-                          <li><p><span>Signals Active:</span><span>[x,xxx] Days</span></p></li>
-                          <li><p><span>Buy Signals:</span><span>[xx]</span></p></li>
-                          <li><p><span>Avg. Holding Period:</span><span>[xx] Days</span></p></li>
-                          <li><p><span>Signal Return:</span><span>[x.xx]%</span></p></li>
-                          <li><p><span>Risk-Adjusted</span><span></span></p></li>
-                          <li><p><span>Capital Efficiency:</span><span>[X.XX]x</span></p></li> 
-                        </ul>
+                  </div>
+                  <div class="lineChart_chrt">
+                    <div class="lineChart_chrt1">
+                      <div id="combine_chart"></div>
+                    </div>
+                    <div class="lineChart_dtl">
+                      <div class="accordion accordion-solid accordion-toggle-plus" id="accordionperformSummary">
+                        <div class="card">
+                          <div id="collapseOne8" class="collapse show" data-bs-parent="#accordionFAQ">
+                            <div class="card-body border-top-0">
+                              <ul>
+                                <li><p><span>Total Trading Days:</span><span>[x,xxx] Days</span></p></li>
+                                <li><p><span>Signals Active:</span><span>[x,xxx] Days</span></p></li>
+                                <li><p><span>Buy Signals:</span><span>[xx]</span></p></li>
+                                <li><p><span>Avg. Holding Period:</span><span>[xx] Days</span></p></li>
+                                <li><p><span>Signal Return:</span><span>[x.xx]%</span></p></li>
+                                <li><p><span>Risk-Adjusted</span><span></span></p></li>
+                                <li><p><span>Capital Efficiency:</span><span>[X.XX]x</span></p></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>  
-              <div class="border_box lineChart_box chartBlur_data">
-                <div class="chartBox_1">
-                  <div id="stockChart"></div>
+              </div>
+              <div class="border_box lineChart_box">
+                <div class="chartBlur_data">
+                  <div class="chartBox_1">
+                    <div id="stockChart"></div>
+                  </div>
+                  <div class="lock_data" data-bs-toggle="modal" data-bs-target="#upgrade1_modal">
+                    <img src="images/chart-blur-white-img.jpg" class="white_img" alt="Blur Image" />
+                    <img src="images/chart-blur-black-img.jpg" class="black_img" alt="Blur Image" />
+                    <img src="images/lock.svg" class="lock_img" alt="Lock" />
+                  </div>
                 </div>
-                <div class="lock_data" data-bs-toggle="modal" data-bs-target="#upgrade1_modal">
-                  <img src="images/chart-blur-white-img.jpg" class="white_img" alt="Blur Image" />
-                  <img src="images/chart-blur-black-img.jpg" class="black_img" alt="Blur Image" />
-                  <img src="images/lock.svg" class="lock_img" alt="Lock" />
+                <div class="secMap_legends stok_crtLen">
+                  <p><img src="https://hashbrown.azureedge.net/otherimages/B_arrow-1.svg" alt="Buy" />Buy</p>
+                  <p><img src="https://hashbrown.azureedge.net/otherimages/S_arrow-1.svg" alt="Buy" />Sell</p>
                 </div>
               </div>
             </div>
@@ -527,6 +572,22 @@ $(document).ready(function(){
   });
 });
 </script> -->
+<script>
+  $(document).ready(function(){
+    $('#open_chartView').click(function(evt){
+      evt.stopPropagation();
+      $(".lineChart_box1").css({
+        "display" : "block"
+      });
+    });
+    $('#close_chartView').click(function(evt){
+      evt.stopPropagation();
+      $(".lineChart_box1").css({
+        "display" : "none"
+      });
+    });
+  });
+</script>
 <!--==== TOOLTIP SCRIPT 1 ====-->
 <script>
   $(document).ready(function(){

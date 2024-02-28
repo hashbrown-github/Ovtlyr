@@ -388,13 +388,37 @@ if (localStorage.getItem('darkMode') === "on") {
                       </div>
                     </div>
                   </div>
-                  <h4>
+                  <!-- <h4>
                     <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Information Technology">
                       <span>Information Technology</span>
                     </a>
                     <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="NYSE ARCA : Information Technology">
                       <span>NYSE ARCA : Information Technology</span>
                     </a>
+                    <span>Feb 07, 2024</span>
+                    <div class="lineChart_dtl">
+                      <div class="accordion accordion-solid accordion-toggle-plus" id="accordionperformSummary">
+                        <div class="card">
+                          <div class="card-header" id="headingOne6">
+                            <div class="card-title collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOne6" id="open_chartView">Performance Summary</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </h4> -->
+                  <h4>
+                    <span data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Information Technology">Information Technology</span>
+                    <span data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Technology">Sector : Technology</span>
+                    <span>Feb 07, 2024</span>
+                    <div class="lineChart_dtl">
+                      <div class="accordion accordion-solid accordion-toggle-plus" id="accordionperformSummary">
+                        <div class="card">
+                          <div class="card-header" id="headingOne6">
+                            <div class="card-title collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOne6" id="open_chartView">Performance Summary</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </h4>
                 </div>
                 <p><span>Favorite </span><button type="button" class="addTo_fav"><i class="fa-regular fa-star"></i></button></p>
@@ -431,31 +455,50 @@ if (localStorage.getItem('darkMode') === "on") {
         <div class="dashboard_grid">
           <div class="dash_gridLeft">
             <div class="mobileVer_box">
-              <div class="lineChart_dtl">
-                <div class="accordion accordion-solid accordion-toggle-plus" id="accordionperformSummary">
-                  <div class="card">
-                    <div class="card-header" id="headingOne6">
-                      <div class="card-title" data-bs-toggle="collapse" data-bs-target="#collapseOne6">Performance Summary</div>
+              <div class="lineChart_box0">
+                <div class="lineChart_box1">
+                  <div class="lineChart_dtl">
+                    <div class="accordion accordion-solid accordion-toggle-plus" id="accordionperformSummary">
+                      <div class="card">
+                        <div class="card-header" id="headingOne7">
+                          <div class="card-title" data-bs-toggle="collapse" data-bs-target="#collapseOne7">Performance Summary<span class="material-symbols-outlined" id="close_chartView">close</span></div>
+                        </div>
+                      </div>
                     </div>
-                    <div id="collapseOne6" class="collapse show" data-bs-parent="#accordionFAQ">
-                      <div class="card-body">
-                        <ul>
-                          <li><p><span>Total Trading Days:</span><span>[x,xxx] Days</span></p></li>
-                          <li><p><span>Signals Active:</span><span>[x,xxx] Days</span></p></li>
-                          <li><p><span>Buy Signals:</span><span>[xx]</span></p></li>
-                          <li><p><span>Avg. Holding Period:</span><span>[xx] Days</span></p></li>
-                          <li><p><span>Signal Return:</span><span>[x.xx]%</span></p></li>
-                          <li><p><span>Risk-Adjusted</span><span></span></p></li>
-                          <li><p><span>Capital Efficiency:</span><span>[X.XX]x</span></p></li> 
-                        </ul>
+                  </div>
+                  <div class="lineChart_chrt">
+                    <div class="lineChart_chrt1">
+                      <div id="combine_chart"></div>
+                    </div>
+                    <div class="lineChart_dtl">
+                      <div class="accordion accordion-solid accordion-toggle-plus" id="accordionperformSummary">
+                        <div class="card">
+                          <div id="collapseOne8" class="collapse show" data-bs-parent="#accordionFAQ">
+                            <div class="card-body border-top-0">
+                              <ul>
+                                <li><p><span>Total Trading Days:</span><span>[x,xxx] Days</span></p></li>
+                                <li><p><span>Signals Active:</span><span>[x,xxx] Days</span></p></li>
+                                <li><p><span>Buy Signals:</span><span>[xx]</span></p></li>
+                                <li><p><span>Avg. Holding Period:</span><span>[xx] Days</span></p></li>
+                                <li><p><span>Signal Return:</span><span>[x.xx]%</span></p></li>
+                                <li><p><span>Risk-Adjusted</span><span></span></p></li>
+                                <li><p><span>Capital Efficiency:</span><span>[X.XX]x</span></p></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>  
+              </div>
               <div class="border_box lineChart_box">
                 <div class="chartBox_1">
                   <div id="stockChart"></div>
+                </div>
+                <div class="secMap_legends stok_crtLen">
+                  <p><img src="https://hashbrown.azureedge.net/otherimages/B_arrow-1.svg" alt="Buy" />Buy</p>
+                  <p><img src="https://hashbrown.azureedge.net/otherimages/S_arrow-1.svg" alt="Buy" />Sell</p>
                 </div>
               </div>
             </div>
@@ -489,6 +532,12 @@ if (localStorage.getItem('darkMode') === "on") {
 <script src="js/jquery.min.js"></script>
 <script src="js/magnific-popup-svg4-app.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
+<!--====== TOOLTIP SCRIPT ======-->
+<script>
+  const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+  const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+</script>
+<!--==== TOOLTIP SCRIPT END ====-->
 <!--==== ADD TO FAV TOGGLE ====-->
 <script>
 $(document).ready(function(){
@@ -504,6 +553,40 @@ $(document).ready(function(){
     $(this).children().toggle();
   });
 });
+</script> -->
+<script>
+  $(document).ready(function(){
+    $('#open_chartView').click(function(evt){
+      evt.stopPropagation();
+      $(".lineChart_box1").css({
+        "display" : "block"
+      });
+    });
+    $('#close_chartView').click(function(evt){
+      evt.stopPropagation();
+      $(".lineChart_box1").css({
+        "display" : "none"
+      });
+    });
+  });
+</script>
+<!-- <script>
+  $(document).ready(function(){
+    $('#open_chartView').click(function(evt){
+      evt.stopPropagation();
+      $(".lineChart_box1").css({
+        "opacity" : "1",
+        "visibility" : "visible",
+      });
+    });
+    $('#close_chartView').click(function(evt){
+      evt.stopPropagation();
+      $(".lineChart_box1").css({
+        "opacity" : "0",
+        "visibility" : "hidden",
+      });
+    });
+  });
 </script> -->
 <!--==== TOOLTIP SCRIPT 1 ====-->
 <script>
@@ -37140,6 +37223,322 @@ chart.appear(1000, 100);
 });
 </script>
 <!--======= HISTOGRAM CHART END =======-->
+<!--Combine Chart New --> 
+<script>
+  am5.ready(function(){am5.addLicense("AM5C311897715");
+  var root=am5.Root.new("combine_chart");
+      root.setThemes([am5themes_Animated.new(root)
+  ]);
+  var chart=root.container.children.push(am5xy.XYChart.new(root, {
+      focusable:false,
+    paddingLeft:0,
+    paddingTop:30,
+    paddingRight:0,
+    paddingBottom:0
+  }));
+  var cursor=chart.set("cursor",am5xy.XYCursor.new(root,{}));
+  cursor.lineY.set("visible", true);
+  cursor.lineX.set("visible", true);
+  cursor.lineX.setAll({
+      stroke:am5.color(0x808191),
+      strokeWidth:1,
+      strokeDasharray:[2]
+  });
+  cursor.lineY.setAll({
+      stroke:am5.color(0x808191),
+      strokeWidth:1,
+      strokeDasharray:[2]
+  });  
+  function generateDatas(count){
+  var data = [
+   
+    {
+      "Date": "2023-11-22",
+      "StockSymbol": "XLY",
+      "Open": 168.29,
+      "High": 169.37,
+      "Low": 167.42,
+      "Close": 168.08,
+      "Oscillator": 0.715030752,
+      "Final_region_combined": 0,
+      "final_calls_cp_corr_orange": 0,
+      "continous_signal": -1,
+      "Final_region": 0,
+      "final_signal": 0,
+      "final_calls": "",
+      "Heatmap": 71.50307522,
+      "negative_heatmap": 0,
+      "positive_heatmap": 71.50307522
+    },
+    {
+      "Date": "2023-11-24",
+      "StockSymbol": "XLY",
+      "Open": 167.97,
+      "High": 168.53,
+      "Low": 167.68,
+      "Close": 168.24,
+      "Oscillator": 0.727632384,
+      "Final_region_combined": 0,
+      "final_calls_cp_corr_orange": 0,
+      "continous_signal": -1,
+      "Final_region": 0,
+      "final_signal": 0,
+      "final_calls": "",
+      "Heatmap": 72.76323836,
+      "negative_heatmap": 0,
+      "positive_heatmap": 72.76323836
+    },
+    {
+      "Date": "2023-11-27",
+      "StockSymbol": "XLY",
+      "Open": 168.34,
+      "High": 169.39,
+      "Low": 167.62,
+      "Close": 168.51,
+      "Oscillator": 0.737476869,
+      "Final_region_combined": 0,
+      "final_calls_cp_corr_orange": 0,
+      "continous_signal": -1,
+      "Final_region": 0,
+      "final_signal": 0,
+      "final_calls": "",
+      "Heatmap": 73.74768688,
+      "negative_heatmap": 0,
+      "positive_heatmap": 73.74768688
+    },
+    {
+      "Date": "2023-11-28",
+      "StockSymbol": "XLY",
+      "Open": 168.31,
+      "High": 169.57,
+      "Low": 167.39,
+      "Close": 169.48,
+      "Oscillator": 0.746142533,
+      "Final_region_combined": 0,
+      "final_calls_cp_corr_orange": 0,
+      "continous_signal": -1,
+      "Final_region": 0,
+      "final_signal": 0,
+      "final_calls": "",
+      "Heatmap": 74.61425327,
+      "negative_heatmap": 0,
+      "positive_heatmap": 74.61425327
+    },
+    {
+      "Date": "2023-11-29",
+      "StockSymbol": "XLY",
+      "Open": 170.74,
+      "High": 171.6,
+      "Low": 168.895,
+      "Close": 169.02,
+      "Oscillator": 0.750979403,
+      "Final_region_combined": 0,
+      "final_calls_cp_corr_orange": 0,
+      "continous_signal": -1,
+      "Final_region": 0,
+      "final_signal": 0,
+      "final_calls": "",
+      "Heatmap": 75.09794029,
+      "negative_heatmap": 0,
+      "positive_heatmap": 75.09794029
+    },
+    {
+      "Date": "2023-11-30",
+      "StockSymbol": "XLY",
+      "Open": 169.02,
+      "High": 169.09,
+      "Low": 167.46,
+      "Close": 168.78,
+      "Oscillator": 0.753520016,
+      "Final_region_combined": 0,
+      "final_calls_cp_corr_orange": 0,
+      "continous_signal": -1,
+      "Final_region": 0,
+      "final_signal": 0,
+      "final_calls": "",
+      "Heatmap": 75.35200162,
+      "negative_heatmap": 0,
+      "positive_heatmap": 75.35200162
+    },
+    {
+      "Date": "2023-12-01",
+      "StockSymbol": "XLY",
+      "Open": 168.06,
+      "High": 171.14,
+      "Low": 167.73,
+      "Close": 171.09,
+      "Oscillator": 0.75630649,
+      "Final_region_combined": 0,
+      "final_calls_cp_corr_orange": 0,
+      "continous_signal": -1,
+      "Final_region": 0,
+      "final_signal": 0,
+      "final_calls": "",
+      "Heatmap": 75.63064896,
+      "negative_heatmap": 0,
+      "positive_heatmap": 75.63064896
+    },
+    {
+      "Date": "2023-12-04",
+      "StockSymbol": "XLY",
+      "Open": 169.85,
+      "High": 171.18,
+      "Low": 169.435,
+      "Close": 170.44,
+      "Oscillator": 0.757129779,
+      "Final_region_combined": 0,
+      "final_calls_cp_corr_orange": 0,
+      "continous_signal": -1,
+      "Final_region": 0,
+      "final_signal": 0,
+      "final_calls": "",
+      "Heatmap": 75.71297789,
+      "negative_heatmap": 0,
+      "positive_heatmap": 75.71297789
+    },
+    {
+      "Date": "2023-12-05",
+      "StockSymbol": "XLY",
+      "Open": 169.52,
+      "High": 172.43,
+      "Low": 169.38,
+      "Close": 170.74,
+      "Oscillator": 0.756401575,
+      "Final_region_combined": 0,
+      "final_calls_cp_corr_orange": 1,
+      "continous_signal": 1,
+      "Final_region": 0,
+      "final_signal": 1,
+      "final_calls": "Sell",
+      "Heatmap": 75.64015754,
+      "negative_heatmap": 0,
+      "positive_heatmap": 75.64015754
+    },
+    {
+      "Date": "2023-12-06",
+      "StockSymbol": "XLY",
+      "Open": 172.02,
+      "High": 172.86,
+      "Low": 170.86,
+      "Close": 170.99,
+      "Oscillator": 0.753911882,
+      "Final_region_combined": 0,
+      "final_calls_cp_corr_orange": 0,
+      "continous_signal": 1,
+      "Final_region": 0,
+      "final_signal": 0,
+      "final_calls": "",
+      "Heatmap": "",
+      "negative_heatmap": "",
+      "positive_heatmap": ""
+    }
+  ]
+      return data;
+  }
+  var dateAxisRenderer=am5xy.AxisRendererX.new(root, {minGridDistance: 30});
+    dateAxisRenderer.labels.template.setAll({
+    fill:am5.color(0x777e87),
+    fontSize:12
+  });
+  dateAxisRenderer.grid.template.set("forceHidden", true);  
+  //xAxis
+  var dateAxis=chart.xAxes.push(am5xy.GaplessDateAxis.new(root, {
+    markUnitChange:true,
+    baseInterval:{timeUnit:"day",count:1},
+    renderer:dateAxisRenderer
+    }));    
+     
+  //Oscillator Y Axis Renderer
+  var OscillatorRenderer =am5xy.AxisRendererY.new(root,{opposite:true,minGridDistance:6});
+    OscillatorRenderer.labels.template.setAll({
+    fill:am5.color(0x777e87),
+    fontSize:12,forceHidden:true
+  });
+  OscillatorRenderer.grid.template.set("forceHidden",true); 
+  OscillatorRenderer.ticks.template.setAll({
+    stroke:am5.color(0x777e87),
+    visible:true,
+    strokeWidth:5,
+    rotation:-90
+  });
+  //Oscillator Y Axis 
+  var yAxisOscillator = chart.yAxes.push(am5xy.ValueAxis.new(root,{
+    maxDeviation:1,
+    height:am5.percent(90),numberFormat: "'$'#",
+    renderer:OscillatorRenderer
+  }));
+    
+   var Line_greenRenderer =am5xy.AxisRendererY.new(root,{opposite:true,minGridDistance:20});
+  Line_greenRenderer.labels.template.setAll({
+    fill:am5.color(0x777e87),
+    fontSize:12,forceHidden:true
+  });
+  Line_greenRenderer.grid.template.set("forceHidden",true);   
+  
+  
+  //Oscillator Y Axis 
+  var greenSeries=chart.yAxes.push(am5xy.ValueAxis.new(root,{
+    maxDeviation:1,
+    height:am5.percent(90),numberFormat: "'$'#",
+    renderer:Line_greenRenderer
+  }));	     
+                       
+  var series=chart.series.push(am5xy.SmoothedXLineSeries.new(root,{
+    xAxis:dateAxis,
+    yAxis:yAxisOscillator,
+    valueYField:"Oscillator",
+    valueXField:"Date"
+  }));
+  series.set("stroke",am5.color(0x19A7CE));
+  series.strokes.template.setAll({
+    visible:true,
+    strokeOpacity:1,
+    strokeWidth:3
+  });	
+                       
+  var seriesGreen=chart.series.push(am5xy.SmoothedXLineSeries.new(root,{
+    xAxis:dateAxis,
+    yAxis:greenSeries,
+    valueYField:"Close",
+    valueXField:"Date"
+  }));
+  seriesGreen.set("stroke",am5.color(0x306E05));
+  seriesGreen.strokes.template.setAll({
+    visible:true,
+    strokeOpacity:1,
+    strokeWidth:3
+  });	
+  
+   yAxisOscillator.children.moveValue(am5.Label.new(root,{
+        text:"Max,$",
+        fill:am5.color(0x777e87),
+        fontSize:12,
+        fontWeight:600,
+        y:am5.percent(-8),
+        x:am5.percent(-50)
+  }));
+  yAxisOscillator.children.moveValue(am5.Label.new(root,{
+        text:"Min,$",
+        fill:am5.color(0x777e87),
+        fontSize:12,
+        fontWeight:600,
+        y:am5.percent(99),
+        x:am5.percent(-50)
+  }));
+  var processor=am5.DataProcessor.new(root,{
+      dateFields:["Date"],
+      dateFormat:"dd-MM-yyyy",
+      numericFields:["Oscillator"]
+  });
+  chart.leftAxesContainer.set("layout",root.verticalLayout);
+  root.interfaceColors.set("grid",am5.color(0xffffff));
+  var data=generateDatas(0); 
+  processor.processMany(data);
+  series.data.setAll(data);seriesGreen.data.setAll(data);
+  dateAxis.data.setAll(data); 
+  chart.appear(1000, 100);
+  });
+</script>
 </body>
 </html>
   
