@@ -8943,7 +8943,8 @@ body.dark .mfp-bg {
 /*========== CHART STYLE CSS START ==========*/
 #stockChart {
   width: 100%;
-  height: 550px;
+  /* height: 550px; */
+  height: 517px;
 }
 #combine_chart {
   width: 100%;
@@ -8965,7 +8966,8 @@ body.dark .mfp-bg {
 }
 @media only screen and (max-width: 1920px) {
 #stockChart {
-  height: 440px;
+  /* height: 440px; */
+  height: 407px;
 }
 #histogram_chart, .heatChart_box img, .sectorMap_box img {
   height: 320px;
@@ -8976,7 +8978,8 @@ body.dark .mfp-bg {
 }
 @media only screen and (max-width: 1600px) {
 #stockChart {
-  height: 350px;
+  /* height: 350px; */
+  height: 317px;
 }
 #histogram_chart, .heatChart_box img, .sectorMap_box img {
   height: 230px;
@@ -8987,7 +8990,8 @@ body.dark .mfp-bg {
 }
 @media only screen and (max-width: 1366px) {
 #stockChart {
-  height: 300px;
+  /* height: 300px; */
+  height: 267px;
 }
 #histogram_chart, .heatChart_box img, .sectorMap_box img {
   height: 180px;
@@ -9055,39 +9059,45 @@ button {
 }
 .vertical_scroll {
   overflow-y: auto;
-  scrollbar-color: #D0E3FF #D0E3FF;
-  scrollbar-width: thin;
+/*   scrollbar-color: #4285F4 #4285F4;
+  scrollbar-width: auto; */
 }
 .vertical_scroll::-webkit-scrollbar {
-  width: 5px;
+  width: 7px;
+  border-radius: 7px;
 }
 .vertical_scroll::-webkit-scrollbar-track {
-  background: transparent;
+  background: #dddddd;
 }
 .vertical_scroll::-webkit-scrollbar-thumb {
-  background: #D0E3FF;
-  border-radius: 5px;
+  background: #4285F4;
+  border-radius: 7px;
+  cursor: pointer;
 }
 .vertical_scroll::-webkit-scrollbar-thumb:hover {
-  background: #D0E3FF;
+  background: #4285F4;
+  cursor: pointer;
 }
 .horizontal_scroll {
   overflow-x: auto;
-  scrollbar-color: #D0E3FF #D0E3FF;
-  scrollbar-width: thin;
+/*   scrollbar-color: #4285F4 #4285F4;
+  scrollbar-width: auto; */
 }
 .horizontal_scroll::-webkit-scrollbar {
-  height: 5px;
+  height: 7px;
+  border-radius: 7px;
 }
 .horizontal_scroll::-webkit-scrollbar-track {
-  background: transparent;
+  background: #dddddd;
 }
 .horizontal_scroll::-webkit-scrollbar-thumb {
-  background: #D0E3FF;
-  border-radius: 5px;
+  background: #4285F4;
+  border-radius: 7px;
+  cursor: pointer;
 }
 .horizontal_scroll::-webkit-scrollbar-thumb:hover {
-  background: #D0E3FF;
+  background: #4285F4;
+  cursor: pointer;
 }
 .tab-content {
   width: 100%;
@@ -9601,7 +9611,7 @@ button {
   width: 100%;
   padding: 25px;
   border-radius: 8px;
-  top: calc(100% + 15px);
+  top: calc(100% + 10px);
   border: 0;
   -webkit-box-shadow: 0 4px 30px rgb(118 139 171 / 25%);
   box-shadow: 0 4px 30px rgb(118 139 171 / 25%);
@@ -9837,28 +9847,29 @@ button {
   width: 100%;
   display: grid;
   grid-template-areas:
-  'IndSec_serial1 IndSec_serial1 IndSec_serial1'
-  'IndSec_serial2 IndSec_serial2 IndSec_serial3';
-  grid-template-columns: 1fr 1fr 1fr;
+      'IndSec_serial1 IndSec_serial1 IndSec_serial1 IndSec_serial1 IndSec_serial1'
+      'IndSec_serial2 IndSec_serial2 IndSec_serial2 IndSec_serial2 IndSec_serial3';
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 10px;
   align-items: center;
 }
 .IndSec_serial1 {
   width: 100%;
   grid-area: IndSec_serial1;
-  grid-column: 1 / 4;
+  grid-column: 1 / 6;
 }
 .IndSec_serial2 {
   grid-area: IndSec_serial2;
-  grid-column: 1 / 3;
+  grid-column: 1 / 5;
 }
 .IndSec_serial3 {
   grid-area: IndSec_serial3;
-  grid-column: 3 / 4;
+  grid-column: 5 / 6;
 }
 .pageHeading {
   display: flex;
   align-items: center;
+  position: relative;
 }
 .pageHeading > div, .pageHeading > div > div {
   display: flex;
@@ -9888,7 +9899,7 @@ button {
   line-height: 21px;
   color: #2A353D;
   margin-bottom: 0;
-  margin-left: 20px;
+  margin-left: 10px;
   display: flex;
   align-items: center;
   gap: 6px;
@@ -9896,7 +9907,7 @@ button {
 .pageHeading h4 {
   display: flex;
   gap: 10px;
-  margin-left: 20px;
+  margin-left: 15px;
   margin-bottom: 0;
 }
 .pageHeading h4 span {
@@ -10004,18 +10015,23 @@ i.fa-solid.fa-star {
   right: 10px;
   width: calc(100% - 20px);
   height: calc(100% - 20px);
-  z-index: 9;
+  z-index: 100;
   background-color: rgb(255 255 255 / 93%);
-  opacity: 0;
-  visibility: hidden;
+  /* opacity: 0; */
+  /* visibility: hidden; */
+  display: none;
 }
-.lineChart_dtl {
+/* .lineChart_dtl {
   position: absolute;
   top: 10px;
   left: 10px;
   z-index: 9;
   width: 250px;
-}
+} */
+.pageHeading .lineChart_dtl {
+  width: 198px;
+  flex-shrink: 0;
+}  
 .lineChart_chrt {
   width: 100%;
   height: calc(100% - 38px);
@@ -10036,15 +10052,15 @@ i.fa-solid.fa-star {
   margin-top: 8px;
 }
 .lineChart_dtl .card {
-  border-radius: 6px;
+  border-radius: 5px;
   border: 1px solid #D0E3FF;
   background: unset;
 }
 .lineChart_dtl .card-header {
   border: 0;
-  background-color: #f5f9ff;
+  background-color: unset;
   border-radius: 5px;
-  padding: 10px 15px;
+  padding: 4px 10px;
   cursor: pointer;
 }
 .lineChart_box1 > .lineChart_dtl .card {
@@ -10055,22 +10071,22 @@ i.fa-solid.fa-star {
   padding: 5px 10px;
 }
 .lineChart_dtl .card-title {
-  font-family: 'DMSans-Bold';
+  font-family: 'DMSans-Medium';
   font-size: 14px;
-  line-height: 21px;
-  color: #242947;
+  line-height: 20px;
+  color: #2A353D;
   margin-bottom: 0;
   position: relative;
+  padding-right: 24px;
 }
 .lineChart_dtl .card-title:before {
   font-family: 'Material Symbols Outlined';
   content: '\e56b';
   font-weight: 200;
-  font-size: 23px;
+  font-size: 22px;
   position: absolute;
   color: #242947;
-  top: 1px;
-  right: -4px;
+  right: -3px;
 }
 .lineChart_box1 > .lineChart_dtl .card-title:before {
   display: none;
@@ -10082,6 +10098,7 @@ i.fa-solid.fa-star {
   align-items: center;
   font-size: 16px;
   line-height: 22px;
+  padding: 0;
 }
 .lineChart_box1 > .lineChart_dtl .card-title span {
   font-weight: 300;
@@ -10122,6 +10139,16 @@ i.fa-solid.fa-star {
 .lineChart_dtl ul li p span:first-child {
   font-family: 'DMSans-Medium';
 }
+.secMap_legends.stok_crtLen {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+  align-items: center;
+  margin-top: 15px;
+}
+.secMap_legends.stok_crtLen p {
+  margin-bottom: 0;
+}
 .secMap_legends {
   width: 100%;
   margin-top: 15px;
@@ -10133,7 +10160,7 @@ i.fa-solid.fa-star {
   color: #242947;
   margin-bottom: 5px;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
 }
 .secMap_legends p:last-child {
   margin-bottom: 0;
@@ -10143,8 +10170,11 @@ i.fa-solid.fa-star {
   width: 10px;
   height: 10px;
   border-radius: 10px;
-  margin-right: 10px;
-  margin-top: 5px;
+  margin-right: 8px;
+}
+.secMap_legends img {
+  width: 16px;
+  margin-right: 8px;
 }
 /*======== INDEX & SECTORS END ========*/
 /*======== STOCKS & ETFs START ========*/
@@ -12352,22 +12382,34 @@ show-mob {
   margin-bottom: 30px;
   color: #242947;
 }
-.pageNot_Found2 a.blue_btn {
+.buttons_f {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+.pageNot_Found2 a {
   font-family: 'DMSans-Regular';
-  font-size: 18px;
-  line-height: 24px;
-  color: #ffffff;
-  background-color: #4285f4;
-  padding: 10px 20px;
-  padding-right: 17px;
+  font-size: 17px;
+  line-height: 21px;
+  color: #4285f4;
+  background-color: #ffffff;
+  border: 1px solid #4285f4;
+  padding: 10px 16px;
+  padding-right: 15px;
   border-radius: 4px;
   display: flex;
   align-items: center;
-  gap: 10px;
-  max-width: 173px;
+  gap: 8px;
+  max-width: 232px;
 }
-.pageNot_Found2 a.blue_btn span {
-  font-weight: 300;
+.pageNot_Found2 a.blue_btn {
+  color: #ffffff;
+  background-color: #4285f4;
+}
+.pageNot_Found2 a span {
+  font-size: 21px;
+  font-weight: 400;
 }
 body.dark .pageNot_Found2 h1, body.dark .pageNot_Found2 .error_msg, body.dark .pageNot_Found2 p {
   color: #ffffff;
@@ -12612,7 +12654,7 @@ body.dark .pageNot_Found2 h1, body.dark .pageNot_Found2 .error_msg, body.dark .p
 }
 /*== no plan hide column ===*/
 .stocks__table3 td:nth-child(5):before, .stocks__table3 td:nth-child(6):before, .stocks__table3 td:nth-child(7):before,
-.stocks__table4 td:nth-child(6):before, .stocks__table4 td:nth-child(7):before, .stocks__table4 td:nth-child(8):before,
+.stocks__table4 td:nth-child(7):before, .stocks__table4 td:nth-child(8):before,
 .blur_favList2 td:nth-child(4):before, .blur_favList2 td:nth-child(5):before,
 /*== research plan hide column ===*/
 .stocks__table1 td:nth-child(6):before, .stocks__table2 td:nth-child(7):before,
@@ -12633,7 +12675,7 @@ body.dark .pageNot_Found2 h1, body.dark .pageNot_Found2 .error_msg, body.dark .p
   border-radius: 0;
 }
 /*== no plan hide column ===*/
-.stocks__table3 th:nth-child(5):before, .stocks__table4 th:nth-child(6):before, .blur_favList2 th:nth-child(2):after,
+.stocks__table3 th:nth-child(5):before, .stocks__table4 th:nth-child(7):before, .blur_favList2 th:nth-child(2):after,
 /*== research plan lock position ===*/
 .stocks__table1 th:nth-child(6):before, .stocks__table2 th:nth-child(7):before,
 .blur_favList1 th:nth-child(2):after, .blur_bullList1 th:nth-child(1):before {
@@ -12642,7 +12684,7 @@ body.dark .pageNot_Found2 h1, body.dark .pageNot_Found2 .error_msg, body.dark .p
   top: 130px;
   bottom: 50%;
   left: 66%;
-  z-index: 9999;
+  z-index: 999;
   background-image: url('../images/lock.svg');
   width: 22px;
   height: 30px;
@@ -12694,9 +12736,9 @@ body.dark .pageNot_Found2 h1, body.dark .pageNot_Found2 .error_msg, body.dark .p
 .stocks__table3 th:nth-child(5):before {
   left: 82%;
 }
-.stocks__table4 th:nth-child(6):before {
+.stocks__table4 th:nth-child(7):before {
   margin: 0;
-  left: 84%;
+  left: 90%;
 }
 .blur_bullList1 th:nth-child(1):before {
   margin: 0;
@@ -12769,8 +12811,8 @@ body.dark .lineChart_box1 > .lineChart_dtl .card-title span {
 }
 body.dark .sidebar__item img, body.dark .sidebar__arrow img, body.dark .sidebar__icon img, body.dark .chart_dtl.filterH_icon img, body.dark .ovtlyr_table th.sortTable_col > img,
 body.dark .edit_icon img, body.dark .blur_favList1 th:nth-child(2):after, body.dark .blur_bullList1 th:nth-child(1):before, body.dark .lock_data img.lock_img, body.dark .stocks__table1 th:nth-child(6):before,
-body.dark .stocks__table2 th:nth-child(7):before, body.dark .locked_img:before, body.dark .stocks__table2 th:nth-child(8):before, body.dark .stocks__table3 th:nth-child(6):before,
-body.dark .stocks__table4 th:nth-child(6):before {
+body.dark .stocks__table2 th:nth-child(7):before, body.dark .locked_img:before, body.dark .stocks__table2 th:nth-child(8):before, body.dark .stocks__table3 th:nth-child(5):before, body.dark .stocks__table3 th:nth-child(6):before,
+body.dark .stocks__table4 th:nth-child(7):before {
   filter: brightness(100);
 }
 body.dark .item_box2 {
@@ -12848,17 +12890,8 @@ body.dark .sector_search .dropdown__body .scroll_list::-webkit-scrollbar-thumb:h
 body.dark .add_filter_btn a.active {
   background-color: transparent;
 }
-body.dark .horizontal_scroll {
-  scrollbar-color: #9E9E9E #9E9E9E;
-}
-body.dark .vertical_scroll {
-  scrollbar-color: #9E9E9E #9E9E9E;
-}
-body.dark .vertical_scroll::-webkit-scrollbar-thumb {
-  background: #9E9E9E;
-}
-body.dark .vertical_scroll::-webkit-scrollbar-thumb:hover, body.dark .horizontal_scroll::-webkit-scrollbar-thumb, body.dark .horizontal_scroll::-webkit-scrollbar-thumb:hover {
-  background: #9E9E9E;
+body.dark .vertical_scroll::-webkit-scrollbar-track, body.dark .horizontal_scroll::-webkit-scrollbar-track {
+  background: #4b5759;
 }
 body.dark .stockDtl_box {
   background-color: #111617;
@@ -13025,7 +13058,7 @@ body.dark .search_list li.active_red.active a {
 body.dark .item_box > p {
   color: #989898;
 }
-body.dark .top_box, body.dark .account_fields input, body.dark .account_fields select, body.dark .account_fields textarea {
+body.dark .contact_sec11, body.dark .top_box, body.dark .account_fields input, body.dark .account_fields select, body.dark .account_fields textarea {
   border-color: #2E3031;
   color: #ffffff;
 }
@@ -13044,7 +13077,7 @@ body.dark .notifiBoxes ul li, body.dark .modal_btns a.border_btn {
 body.dark .upgrade_popup .modal-content {
   background: #1a1f20;
 }
-body.dark .stocks__table3 td:nth-child(6):before, body.dark .stocks__table3 td:nth-child(7):before, body.dark .stocks__table3 td:nth-child(8):before, body.dark .stocks__table4 td:nth-child(6):before, body.dark .stocks__table4 td:nth-child(7):before,
+body.dark .stocks__table3 td:nth-child(5):before, body.dark .stocks__table3 td:nth-child(6):before, body.dark .stocks__table3 td:nth-child(7):before, body.dark .stocks__table3 td:nth-child(8):before, body.dark .stocks__table4 td:nth-child(7):before,
 body.dark .stocks__table4 td:nth-child(8):before, body.dark .blur_favList2 td:nth-child(4):before, body.dark .blur_favList2 td:nth-child(5):before, body.dark .stocks__table1 td:nth-child(6):before,
 body.dark .stocks__table2 td:nth-child(7):before, body.dark .blur_favList1 td:nth-child(2):before, body.dark .blur_favList1 td:nth-child(3):before, body.dark .blur_bullList1 td:nth-child(1):before {
   background-color: #323232;
@@ -13345,6 +13378,27 @@ body.dark .introjs-tooltiptext {
 .lineChart_box1 .lineChart_dtl .card-header {
   padding: 5px;
 }
+.IndSec_header {
+  grid-template-areas:
+    'IndSec_serial1 IndSec_serial1 IndSec_serial1 IndSec_serial1'
+    'IndSec_serial2 IndSec_serial2 IndSec_serial2 IndSec_serial2'
+    'IndSec_serial3 IndSec_serial3 IndSec_serial3 IndSec_serial3';
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.IndSec_header.StockSec_header {
+  grid-template-areas:
+      'IndSec_serial2 IndSec_serial2 IndSec_serial2 IndSec_serial2'
+      'IndSec_serial3 IndSec_serial3 IndSec_serial3 IndSec_serial3';
+}
+.IndSec_serial1 {
+  grid-column: 1 / 5;
+}
+.IndSec_serial2 {
+  grid-column: 1 / 5;
+}
+.IndSec_serial3 {
+  grid-column: 1 / 5;
+}
 }
 @media only screen and (max-width: 1199px) {
 .active_tabs {
@@ -13373,11 +13427,17 @@ body.dark .introjs-tooltiptext {
   flex-direction: column-reverse;
   gap: 10px;
 }
-.pageHeading h4, .pageHeading > p {
-  margin-left: 15px;
+.pageHeading h4 {
+  margin-left: 10px;
 }
 .pageHeading h4 span {
   font-size: 13px;
+}
+.lineChart_dtl .card-title {
+  font-size: 13px;
+}
+.pageHeading .lineChart_dtl {
+  width: 187px;
 }
 .pricingNew1 h3 {
   font-size: 32px;
@@ -13437,9 +13497,6 @@ body.dark .introjs-tooltiptext {
 .item_box > div {
   gap: 6px;
 }
-.sector_search {
-  max-width: 600px;
-}
 .item_box > div.arrow_up:after, .item_box > div.arrow_down:after {
   font-size: 25px;
   width: 25px;
@@ -13457,6 +13514,9 @@ body.dark .introjs-tooltiptext {
   align-items: flex-start;
   gap: 0;
   flex-direction: column;
+}
+.pageHeading > p span {
+  display: none;
 }
 }
 @media only screen and (max-width: 1100px) {
@@ -13524,9 +13584,6 @@ body.dark .introjs-tooltiptext {
   grid-template-areas:
   'IndSec_serial2'
   'IndSec_serial3';
-}
-.active_tabs {
-  justify-content: flex-start;
 }
 .referral_sec {
   padding: 30px 0;
@@ -13729,9 +13786,6 @@ body.dark .introjs-tooltiptext {
 .pageHeading .tooltip_hover1 span {
   margin-left: 5px;
   vertical-align: text-bottom;
-}
-.pageHeading > p {
-  margin-left: 20px;
 }
 .active_tabs .tabs__link {
   padding: 5px 10px;
@@ -13963,6 +14017,32 @@ body.dark .introjs-tooltiptext {
 .lineChart_dtl .card-body {
   padding: 10px;
 }
+.pageHeading {
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.pageHeading > p {
+  position: absolute;
+  right: 0;
+  top: 5px;
+}
+.pageHeading > p span {
+  display: block;
+}
+.pageHeading > div {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+.pageHeading h4 {
+  margin-left: 0;
+}
+.pageHeading h4 {
+  flex-wrap: wrap;
+}
+.active_tabs {
+  justify-content: flex-start;
+}
 }
 @media only screen and (max-width: 650px) {
 .serial1 {
@@ -13971,6 +14051,12 @@ body.dark .introjs-tooltiptext {
 /* .pricingNew1 p .block_box {
   display: inline;
 } */
+.secMap_legends.stok_crtLen {
+  gap: 10px 18px;
+}
+.secMap_legends span {
+  margin-right: 8px;
+}
 }
 @media only screen and (max-width: 576px) {
 .header {
@@ -14387,9 +14473,6 @@ body.dark .purple_box .serial11 h4, body.dark .serial11 ul, body.dark .serial11 
 .company_name {
   text-align: right;
 }
-.pageHeading h4, .pageHeading > p {
-  margin-left: 10px;
-}
 .Pricing_box {
   margin: 10px auto;
 }
@@ -14527,25 +14610,6 @@ body.dark .noPlanHide span:nth-child(2):after {
 .blue_box, .purple_box {
   background-position: bottom right;
 }
-.pageHeading {
-  align-items: flex-start;
-}
-.pageHeading > p {
-  margin-top: 7px;
-}
-.pageHeading h4, .pageHeading > p {
-  margin-left: 0;
-}
-.pageHeading > div {
-  flex-direction: column;
-  align-items: flex-start;
-}
-.pageHeading h4 {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  margin-top: 5px;
-}
 .pricingNew1 h3 {
   font-size: 30px;
   line-height: 40px;
@@ -14649,6 +14713,15 @@ body.dark .noPlanHide span:nth-child(2):after {
 .contactUs_sec1 {
   margin: 10px auto;
 }
+.lineChart_box1 .lineChart_chrt .lineChart_dtl {
+  display: none;
+}
+.lineChart_chrt1 {
+  width: 100%;
+}
+.lineChart_chrt {
+  padding: 0;
+}
 }
 @media only screen and (max-width: 430px) {
 .card_boxes1 {
@@ -14719,6 +14792,7 @@ body.dark .noPlanHide span:nth-child(2):after {
 .upgrade_popup .modal-body {
   padding: 25px 15px;
   padding-top: 30px;
+  position: unset;
 }
 .modal_body h5 {
   font-size: 21px;
