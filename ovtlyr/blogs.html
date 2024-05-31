@@ -19,7 +19,7 @@
     <div class="header_inner1 new_head">
       <div class="container">
         <div class="top_header">
-          <p><a href="pricing.html">Take Advantage of our Introductory Pricing While it Lasts!</a></p>
+          <p><a target="_blank" href="http://ovtlyrtraining.com/">Sign Up For Our Free Upcoming Webclass for Traders</a></p>
         </div>
       </div>
     </div>
@@ -81,9 +81,18 @@
         </div>
         <div class="header_1 header_2">
           <ul>
-            <li><a href="#">Browse All Blog</a></li>
+            <li class="active"><a href="#">Browse All Blog</a></li>
+          </ul>
+          <ul>
             <li><a href="#">Behavioral Finance</a></li>
             <li><a href="#">Market & Economy</a></li>
+            <li><a href="#">Wealth Management</a></li>
+            <li><a href="#">Real Estate</a></li>
+            <li><a href="#">Risk Management</a></li>
+            <li><a href="#">Mutual Fund</a></li>
+            <li><a href="#">Investment</a></li>
+            <li><a href="#">Portfolio Management</a></li>
+            <li><a href="#">Compliance</a></li>
           </ul>
         </div>
       </div>
@@ -302,5 +311,11 @@
     })();
   </script>
   <!--======== MOBILE MENU END ========-->
+  <!--===== UL MERGE SCRIPT START =====-->
+  <script>
+    $('.header_2 ul').children('li').appendTo('.header_2 ul:last');
+    $('.header_2 ul').not(':last').remove();
+  </script>
+  <!--====== UL MERGE SCRIPT END ======-->
 </body>
 </html>

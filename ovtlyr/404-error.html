@@ -27,15 +27,6 @@ if(viewportmeta) {
 </script>
 </head>
 <body>
-<script>
-console.log(localStorage.getItem('darkMode'));
-if (localStorage.getItem('darkMode') === "on") {
-	document.body.classList.add("dark");
-	document.addEventListener("DOMContentLoaded", function(){
-		document.querySelector('.js-switch-theme input').checked = true;
-  });
-}
-</script>
 <div class="page">
   <div class="pageNot_Found">
     <div class="pageNot_Found1">
@@ -46,7 +37,10 @@ if (localStorage.getItem('darkMode') === "on") {
       <h1>404</h1>
       <div class="error_msg">Looks like you're lost</div>
       <p>The page you are looking for not available!</p>
-      <a class="blue_btn" href="#">Go to Home<span class="material-symbols-outlined">east</span></a>
+      <div class="buttons_f">
+        <a class="blue_btn" href="coverage-list.html">Go to Coverage List<span class="material-symbols-outlined">east</span></a>
+        <a href="home.html">Go to Home<span class="material-symbols-outlined">east</span></a>
+      </div>
     </div>
   </div>
 </div>

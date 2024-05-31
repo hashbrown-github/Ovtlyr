@@ -38,7 +38,7 @@
               <li class="nav-item" role="stocklist">
                 <button class="nav-link" disabled id="chooseplan-tab" data-bs-toggle="tab" data-bs-target="#chooseplantab" type="button" role="tab" aria-controls="chooseplantab" aria-selected="false" tabindex="-1">
                   <span class="material-icons">done</span>
-                  <p>Choose Your Plan</p>
+                  <p>Select</p>
                 </button>
               </li>
               <li class="nav-item" role="stocklist">
@@ -52,8 +52,8 @@
           <div class="tab-content" id="myTabContent">
             <div class="tab-pane fade show active" id="createaccounttab" role="tabpanel" aria-labelledby="createaccount-tab">
               <div class="tForm_sec111 newTrial_Form">
-                <h3>Start Your 21 Day Free Trial</h3>
-                <p>You will only be charged for the plan you select after your free trial period ends.</p>
+                <h1>Start Your 21 Day Free Trial</h1>
+                <h2>You will only be charged for the plan you select after your free trial period ends.</h2>
               </div>
               <div class="flex_boxes">
                 <div class="flex_boxes1 flex_boxes12">
@@ -70,7 +70,7 @@
                     </div>
                     <div class="signup_links2">
                       <div class="sides_border"></div>
-                      <h4>Or</h4>
+                      <p>Or</p>
                     </div>
                   </div>
                   <div class="account_fields">
@@ -663,18 +663,6 @@
       }
     }));
     });
-  </script>
-  <script>
-    $('.expand_features').click(function(e) {
-      e.stopPropagation();
-      var featureList = $(this).parent().parent('.pri_body').find('ul');
-      var listHeight = featureList[0].scrollHeight;
-      $(this).hide();
-      featureList.animate({
-        'height': listHeight,
-        'margin-bottom': '0'
-      })
-    });  
   </script>
 </body>
 </html>
