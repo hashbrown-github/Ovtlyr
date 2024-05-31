@@ -101,11 +101,20 @@ if (localStorage.getItem('darkMode') === "on") {
                   <div class="sidebar__icon">
                     <img src="images/notification.svg" alt="Notification" />
                   </div>
-                  <div class="sidebar__text">Notification</div>
-                  <span class="noti_count">2</span>
+                  <div class="sidebar__text">Notifications</div>
+                  <span class="noti_count">99+</span>
                 </a>
               </div>
-              <div class="side_dropdown arrow_drop">
+              <div class="side_dropdown">
+                <a class="sidebar__item" href="https://discord.gg/DjgmSrdxUY" target="_blank">
+                  <div class="sidebar__icon">
+                    <img src="images/discord.svg" alt="Notification" />
+                  </div>
+                  <div class="sidebar__text">Discord</div>
+                </a>
+              </div>
+              <div class="side_dropdown arrow_drop dropdown_btn">
+                <p></p>
                 <a class="sidebar__item" href="subscription.html">
                   <div class="sidebar__icon">
                     <img src="images/setting.svg" alt="Settings" />
@@ -114,24 +123,27 @@ if (localStorage.getItem('darkMode') === "on") {
                 </a>
                 <span><a href="subscription.html">Subscription</a></span>
                 <span><a href="activity.html">Activity</a></span>
-                <span><a href="notification.html">Notification Management</a></span>
+                <!-- <span><a href="notification.html">Notification Management</a></span> -->
               </div>
               <div class="side_dropdown">
-                <a class="sidebar__item" href="become-a-referer.html">
+                <a class="sidebar__item" href="promoter.html">
                   <div class="sidebar__icon">
                     <img src="images/referer.svg" alt="Referer" />
                   </div>
-                  <div class="sidebar__text">Become a Referer</div>
+                  <div class="sidebar__text">Promoter</div>
                 </a>
               </div>
-              <div class="side_dropdown arrow_drop">
+              <div class="side_dropdown arrow_drop dropdown_btn">
+                <p></p>
                 <a class="sidebar__item" href="contact.html">
                   <div class="sidebar__icon">
                     <img src="images/support.svg" alt="Support" />
                   </div>
-                  <div class="sidebar__text">Support</div>
+                  <div class="sidebar__text">Resources</div>
                 </a>
-                <span class="active">Contact</span>
+                <span><a href="contact.html">Support</a></span>
+                <span><a href="tutorials.html">Tutorials</a></span>
+                <span><a href="https://ovtlyr.com/blog" target="_blank">Blog</a></span>
               </div>
               <div class="side_dropdown theme_switchBtn">
                 <div class="sidebar__item mb-0">
@@ -158,7 +170,7 @@ if (localStorage.getItem('darkMode') === "on") {
         </div>
         <div class="sidebar__profile">
           <div class="sidebar__details">
-            <a class="sidebar__link" href="#">
+            <a class="sidebar__link" href="profile.html">
               <div class="sidebar__icon">
                 <img src="images/user.svg" alt="Profile" />
               </div>
@@ -214,6 +226,15 @@ if (localStorage.getItem('darkMode') === "on") {
 <script>
 document.createElement('show-desk' , 'show-mob');
 </script>
+<!--==== SIDEBAR DROPDOWN OPEN START ====-->
+<script>
+  $(document).ready(function(){
+    $('.dropdown_btn p').on('click', function(e){
+      $(this).parent().toggleClass('active');
+    });
+  });
+</script>
+<!--==== SIDEBAR DROPDOWN OPEN END ====-->
 <script>
 $(document).ready(function(){
   if($('a.nav-link.annual_link').hasClass('active')){

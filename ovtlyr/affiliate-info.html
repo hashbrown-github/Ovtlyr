@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>OVTLYR | Index & Sectors</title>
+<title>OVTLYR | Affiliate Info</title>
 <meta name="description" content="Turning Investor Behavior into Stock Market Success" />
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
@@ -81,7 +81,7 @@ if (localStorage.getItem('darkMode') === "on") {
             </div>
             <div class="sidebar__caption caption-sm">Menu</div>
             <div class="sidebar__menu">
-              <div class="side_dropdown arrow_drop active">
+              <div class="side_dropdown arrow_drop">
                 <a class="sidebar__item" href="stock-detail.html">
                   <div class="sidebar__icon">
                     <img src="images/index-sectors.svg" alt="Dashboard" />
@@ -129,7 +129,7 @@ if (localStorage.getItem('darkMode') === "on") {
                   <div class="sidebar__text">Discord</div>
                 </a>
               </div>
-              <div class="side_dropdown arrow_drop dropdown_btn">
+              <div class="side_dropdown arrow_drop dropdown_btn active">
                 <p></p>
                 <a class="sidebar__item" href="affiliate-info.html">
                   <div class="sidebar__icon">
@@ -137,7 +137,7 @@ if (localStorage.getItem('darkMode') === "on") {
                   </div>
                   <div class="sidebar__text">Earn</div>
                 </a>
-                <span><a href="affiliate-info.html">Affiliate Info</a></span>
+                <span class="active"><a href="affiliate-info.html">Affiliate Info</a></span>
                 <span><a href="promoter.html">FirstPromoter</a></span>
               </div>
               <div class="side_dropdown arrow_drop dropdown_btn">
@@ -228,11 +228,43 @@ if (localStorage.getItem('darkMode') === "on") {
         </div>
       </div>
       <div class="dashboard_cont">
-        <div class="empty_stock">
-          <h3>Page Not Found</h3>
-          <img src="images/empty-stock.svg" class="white_img" alt="Empty Stock" />
-          <img src="images/empty-stock2.svg" class="black_img" alt="Empty Stock" />
-          <p>Stock/ETF you are looking for is not found.</p>
+        <div class="contactUs_sec1">
+          <div class="info_box">
+            <div>
+              <h4>Jenny</h4>
+              <h5><span class="material-symbols-outlined">email</span>jenny6_ovt@yopmail.com</h5>
+            </div>
+          </div>
+          <div class="info_box2">
+            <h4>Referral Information</h4>
+            <div class="affiliate_table">
+              <div class="head_tag head_tag1">
+                <h6>Referral Link</h6>
+                <p><span id="url_text1">https://ovtlyr.com?ref=jenny43</span><button type="button" onclick="copy1();"><span id="custom_tooltip1">Copied!</span><span class="material-symbols-outlined">content_copy</span></button></p>
+              </div>
+              <div class="head_tag head_tag2">
+                <h6>Campaign</h6>
+                <p><span class="red_dot"></span>30% Test Campaign</p>
+              </div>
+            </div>
+          </div>
+          <div class="info_box2">
+            <h4>Login Information</h4>
+            <div class="affiliate_table">
+              <div class="head_tag head_tag3">
+                <h6>Login Link</h6>
+                <p><span id="url_text2">https://promoter.ovtlyr.com/login</span><button type="button" onclick="copy2();"><span id="custom_tooltip2">Copied!</span><span class="material-symbols-outlined">content_copy</span></button></p>
+              </div>
+              <div class="head_tag head_tag4">
+                <h6>Email</h6>
+                <p>jenny6_ovt@yopmail.com</p>
+              </div>
+              <div class="head_tag head_tag5">
+                <h6>Temporary Password</h6>
+                <p>eh3cQZ</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -242,6 +274,25 @@ if (localStorage.getItem('darkMode') === "on") {
 <script src="js/jquery.min.js"></script>
 <script src="js/magnific-popup-svg4-app.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
+<script>
+  function copy1(){
+    var url1 = document.getElementById("url_text1").innerHTML;
+    document.getElementById("custom_tooltip1").style.display = "inline-block";
+    document.execCommand("copy");
+    setTimeout( function() {
+      document.getElementById("custom_tooltip1").style.display = "none";
+    }, 1500);
+  };
+
+  function copy2(){
+    var url2 = document.getElementById("url_text2").innerHTML;
+    document.getElementById("custom_tooltip2").style.display = "inline-block";
+    document.execCommand("copy");
+    setTimeout( function() {
+      document.getElementById("custom_tooltip2").style.display = "none";
+    }, 1500);
+  };
+</script>
 <!--==== SIDEBAR DROPDOWN OPEN START ====-->
 <script>
   $(document).ready(function(){

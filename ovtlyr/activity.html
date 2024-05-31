@@ -101,10 +101,31 @@ if (localStorage.getItem('darkMode') === "on") {
                   <div class="sidebar__icon">
                     <img src="images/notification.svg" alt="Notification" />
                   </div>
-                  <div class="sidebar__text">Notification</div>
+                  <div class="sidebar__text">Notifications</div>
+                  <span class="noti_count">99+</span>
                 </a>
               </div>
-              <div class="side_dropdown arrow_drop active">
+              <div class="side_dropdown">
+                <a class="sidebar__item" href="https://discord.gg/DjgmSrdxUY" target="_blank">
+                  <div class="sidebar__icon">
+                    <img src="images/discord.svg" alt="Notification" />
+                  </div>
+                  <div class="sidebar__text">Discord</div>
+                </a>
+              </div>
+              <div class="side_dropdown arrow_drop dropdown_btn">
+                <p></p>
+                <a class="sidebar__item" href="affiliate-info.html">
+                  <div class="sidebar__icon">
+                    <img src="images/earn.svg" alt="Settings" />
+                  </div>
+                  <div class="sidebar__text">Earn</div>
+                </a>
+                <span><a href="affiliate-info.html">Affiliate Info</a></span>
+                <span><a href="promoter.html">FirstPromoter</a></span>
+              </div>
+              <div class="side_dropdown arrow_drop dropdown_btn active">
+                <p></p>
                 <a class="sidebar__item" href="subscription.html">
                   <div class="sidebar__icon">
                     <img src="images/setting.svg" alt="Settings" />
@@ -115,22 +136,17 @@ if (localStorage.getItem('darkMode') === "on") {
                 <span class="active"><a href="activity.html">Activity</a></span>
                 <!-- <span><a href="notification.html">Notification Management</a></span> -->
               </div>
-              <div class="side_dropdown">
-                <a class="sidebar__item" href="become-a-referer.html">
-                  <div class="sidebar__icon">
-                    <img src="images/referer.svg" alt="Referer" />
-                  </div>
-                  <div class="sidebar__text">Become a Referer</div>
-                </a>
-              </div>
-              <div class="side_dropdown arrow_drop">
+              <div class="side_dropdown arrow_drop dropdown_btn">
+                <p></p>
                 <a class="sidebar__item" href="contact.html">
                   <div class="sidebar__icon">
                     <img src="images/support.svg" alt="Support" />
                   </div>
-                  <div class="sidebar__text">Support</div>
+                  <div class="sidebar__text">Resources</div>
                 </a>
-                <span class="active">Contact</span>
+                <span><a href="contact.html">Support</a></span>
+                <span><a href="tutorials.html">Tutorials</a></span>
+                <span><a href="https://ovtlyr.com/blog" target="_blank">Blog</a></span>
               </div>
               <div class="side_dropdown theme_switchBtn">
                 <div class="sidebar__item mb-0">
@@ -157,7 +173,7 @@ if (localStorage.getItem('darkMode') === "on") {
         </div>
         <div class="sidebar__profile">
           <div class="sidebar__details">
-            <a class="sidebar__link" href="#">
+            <a class="sidebar__link" href="profile.html">
               <div class="sidebar__icon">
                 <img src="images/user.svg" alt="Profile" />
               </div>
@@ -212,17 +228,17 @@ if (localStorage.getItem('darkMode') === "on") {
           <div class="settings_head2">
             <div class="settings_tabs">
               <ul class="nav nav-tabs" id="myTab" role="sattingstab">
-                <!-- <li class="nav-item" role="stocklist">
-                  <a href="notification.html" class="nav-link" id="notification-tab" data-bs-target="#notificationtab" type="button" role="tab" aria-controls="notificationtab" aria-selected="false">
-                  <show-desk>Notification Management</show-desk>
-                  <show-mob>Notifications</show-mob>
+                <li class="nav-item" role="stocklist">
+                  <a href="notification.html" class="nav-link" id="notification-tab" data-bs-target="#notificationtab" type="button" role="tab" aria-controls="notificationtab" aria-selected="true">
+                    <show-desk>Notification Management</show-desk>
+                    <show-mob>Notifications</show-mob>
                   </a>
-                </li> -->
+                </li>
                 <li class="nav-item" role="sattingstab">
                   <a href="subscription.html" class="nav-link" id="subscription-tab" data-bs-target="#subscriptiontab" type="button" role="tab" aria-controls="subscriptiontab" aria-selected="false">Subscription</a>
                 </li>
                 <li class="nav-item" role="activitytab">
-                  <a href="activity.html" class="nav-link active" id="activity-tab" data-bs-target="#activitytab" type="button" role="tab" aria-controls="activitytab" aria-selected="true">Activity</a>
+                  <a href="javascript:void(0);" class="nav-link active" id="activity-tab" data-bs-target="#activitytab" type="button" role="tab" aria-controls="activitytab" aria-selected="false">Activity</a>
                 </li>
               </ul>
             </div>
@@ -327,6 +343,15 @@ if (localStorage.getItem('darkMode') === "on") {
 <script>
 document.createElement('show-desk' , 'show-mob');
 </script>
+<!--==== SIDEBAR DROPDOWN OPEN START ====-->
+<script>
+  $(document).ready(function(){
+    $('.dropdown_btn p').on('click', function(e){
+      $(this).parent().toggleClass('active');
+    });
+  });
+</script>
+<!--==== SIDEBAR DROPDOWN OPEN END ====-->
 <script>
 $(document).ready(function(){
   if($('a.nav-link.annual_link').hasClass('active')){

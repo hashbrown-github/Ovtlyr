@@ -29,9 +29,9 @@ if(viewportmeta) {
 <script>
 console.log(localStorage.getItem('darkMode'));
 if (localStorage.getItem('darkMode') === "on") {
-	document.body.classList.add("dark");
-	document.addEventListener("DOMContentLoaded", function(){
-		document.querySelector('.js-switch-theme input').checked = true;
+  document.body.classList.add("dark");
+  document.addEventListener("DOMContentLoaded", function(){
+    document.querySelector('.js-switch-theme input').checked = true;
   });
 }
 </script>
@@ -40,16 +40,16 @@ if (localStorage.getItem('darkMode') === "on") {
     <div class="sidebar__top">
       <button class="sidebar__close"><span class="material-symbols-outlined">close</span></button>
       <a class="sidebar__logo" href="stock-detail.html">
-        <img class="sidebar__pic sidebar__pic_black" src="images/black-logo.svg" alt="OVTLYR Logo" />
-        <img class="sidebar__pic sidebar__pic_white" src="images/white-logo.svg" alt="OVTLYR Logo" />
+        <img class="sidebar__pic sidebar__pic_black" src="images/black-logo.svg" alt="OVTLYR Logo">
+        <img class="sidebar__pic sidebar__pic_white" src="images/white-logo.svg" alt="OVTLYR Logo">
       </a>
       <button class="sidebar__burger"></button>
     </div>
     <div class="sidebar__wrapper ovtlyr_sidebar">
       <div class="sidebar__inner">
         <a class="sidebar__logo" href="stock-detail.html">
-          <img class="sidebar__pic sidebar__pic_black" src="images/black-logo-small.svg" alt="OVTLYR Logo" />
-          <img class="sidebar__pic sidebar__pic_white" src="images/white-logo-small.svg" alt="OVTLYR Logo" />
+          <img class="sidebar__pic sidebar__pic_black" src="images/black-logo-small.svg" alt="OVTLYR Logo">
+          <img class="sidebar__pic sidebar__pic_white" src="images/white-logo-small.svg" alt="OVTLYR Logo">
         </a>
         <div class="sidebar__list">
           <div class="sidebar__group">
@@ -68,25 +68,25 @@ if (localStorage.getItem('darkMode') === "on") {
               <div class="side_dropdown arrow_drop">
                 <a class="sidebar__item" href="stock-detail.html">
                   <div class="sidebar__icon">
-                    <img src="images/index-sectors.svg" alt="Dashboard" />
+                    <img src="images/index-sectors.svg" alt="Dashboard">
                   </div>
-                  <div class="sidebar__text">Index & Sectors</div>
+                  <div class="sidebar__text">Index &amp; Sectors</div>
                 </a>
-                <span class="active">S&P</span>
+                <span class="active">S&amp;P</span>
               </div>
               <div class="side_dropdown arrow_drop">
                 <a class="sidebar__item" href="stocks-etfs.html">
                   <div class="sidebar__icon">
-                    <img src="images/stock-etf.svg" alt="Stocks" />
+                    <img src="images/stock-etf.svg" alt="Stocks">
                   </div>
-                  <div class="sidebar__text">Stocks & ETFs</div>
+                  <div class="sidebar__text">Stocks &amp; ETFs</div>
                 </a>
                 <span class="active">AMD</span>
               </div>
               <div class="side_dropdown">
                 <a class="sidebar__item active" href="watchlist.html">
                   <div class="sidebar__icon">
-                    <img src="images/watchlist.svg" alt="Star" />
+                    <img src="images/watchlist.svg" alt="Star">
                   </div>
                   <div class="sidebar__text">Watchlist</div>
                 </a>
@@ -99,50 +99,65 @@ if (localStorage.getItem('darkMode') === "on") {
               <div class="side_dropdown">
                 <a class="sidebar__item" href="notification.html">
                   <div class="sidebar__icon">
-                    <img src="images/notification.svg" alt="Notification" />
+                    <img src="images/notification.svg" alt="Notification">
                   </div>
-                  <div class="sidebar__text">Notification</div>
-                  <span class="noti_count">20</span>
+                  <div class="sidebar__text">Notifications</div>
+                  <span class="noti_count">99+</span>
                 </a>
               </div>
-              <div class="side_dropdown arrow_drop">
+              <div class="side_dropdown">
+                <a class="sidebar__item" href="https://discord.gg/DjgmSrdxUY" target="_blank">
+                  <div class="sidebar__icon">
+                    <img src="images/discord.svg" alt="Notification">
+                  </div>
+                  <div class="sidebar__text">Discord</div>
+                </a>
+              </div>
+              <div class="side_dropdown arrow_drop dropdown_btn">
+                <p></p>
+                <a class="sidebar__item" href="affiliate-info.html">
+                  <div class="sidebar__icon">
+                    <img src="images/earn.svg" alt="Settings" />
+                  </div>
+                  <div class="sidebar__text">Earn</div>
+                </a>
+                <span><a href="affiliate-info.html">Affiliate Info</a></span>
+                <span><a href="promoter.html">FirstPromoter</a></span>
+              </div>
+              <div class="side_dropdown arrow_drop dropdown_btn">
+                <p></p>
                 <a class="sidebar__item" href="subscription.html">
                   <div class="sidebar__icon">
-                    <img src="images/setting.svg" alt="Settings" />
+                    <img src="images/setting.svg" alt="Settings">
                   </div>
                   <div class="sidebar__text">Settings</div>
                 </a>
-                <span>Subscription</span>
-                <span>Activity</span>
-                <span>Notification Management</span> 
+                <span><a href="subscription.html">Subscription</a></span>
+                <span><a href="activity.html">Activity</a></span>
+                <!-- <span><a href="notification.html">Notification Management</a></span> -->
               </div>
-              <div class="side_dropdown">
-                <a class="sidebar__item" href="become-a-referer.html">
-                  <div class="sidebar__icon">
-                    <img src="images/referer.svg" alt="Referer" />
-                  </div>
-                  <div class="sidebar__text">Become a Referer</div>
-                </a>
-              </div>
-              <div class="side_dropdown arrow_drop">
+              <div class="side_dropdown arrow_drop dropdown_btn">
+                <p></p>
                 <a class="sidebar__item" href="contact.html">
                   <div class="sidebar__icon">
-                    <img src="images/support.svg" alt="Support" />
+                    <img src="images/support.svg" alt="Support">
                   </div>
-                  <div class="sidebar__text">Support</div>
+                  <div class="sidebar__text">Resources</div>
                 </a>
-                <span class="active">Contact</span>
+                <span><a href="contact.html">Support</a></span>
+                <span><a href="tutorials.html">Tutorials</a></span>
+                <span><a href="https://ovtlyr.com/blog" target="_blank">Blog</a></span>
               </div>
               <div class="side_dropdown theme_switchBtn">
                 <div class="sidebar__item mb-0">
                   <div class="sidebar__icon">
-                    <img src="images/theme.svg" alt="Theme" />
+                    <img src="images/theme.svg" alt="Theme">
                   </div>
                   <div class="sidebar__text">Theme</div>
                 </div>
                 <div class="">
                   <label class="switch switch_theme js-switch-theme">
-                    <input class="switch__input" type="checkbox" />
+                    <input class="switch__input" type="checkbox">
                     <span class="switch__in">
                       <span class="switch__box"></span>
                       <span class="switch__icon">
@@ -158,15 +173,15 @@ if (localStorage.getItem('darkMode') === "on") {
         </div>
         <div class="sidebar__profile">
           <div class="sidebar__details">
-            <a class="sidebar__link" href="#">
+            <a class="sidebar__link" href="profile.html">
               <div class="sidebar__icon">
-                <img src="images/user.svg" alt="Profile" />
+                <img src="images/user.svg" alt="Profile">
               </div>
               <div class="sidebar__text">Profile</div>
             </a>
             <a class="sidebar__link" href="#">
               <div class="sidebar__icon">
-                <img src="images/logout.svg" alt="Logout" />
+                <img src="images/logout.svg" alt="Logout">
               </div>
               <div class="sidebar__text">Log out</div>
             </a>
@@ -178,7 +193,7 @@ if (localStorage.getItem('darkMode') === "on") {
               <div class="sidebar__status caption">gmail@example.com</div>
             </div>
             <div class="sidebar__arrow">
-              <img src="images/logout.svg" alt="Logout" />
+              <img src="images/logout.svg" alt="Logout">
             </div>
           </a>
         </div>
@@ -191,8 +206,8 @@ if (localStorage.getItem('darkMode') === "on") {
         <button class="header__burger"></button>
         <div class="mobile_header">
           <a class="sidebar__logo" href="stock-detail.html">
-            <img class="sidebar__pic sidebar__pic_black" src="images/black-logo.svg" alt="OVTLYR Logo" />
-            <img class="sidebar__pic sidebar__pic_white" src="images/white-logo.svg" alt="OVTLYR Logo" />
+            <img class="sidebar__pic sidebar__pic_black" src="images/black-logo.svg" alt="OVTLYR Logo">
+            <img class="sidebar__pic sidebar__pic_white" src="images/white-logo.svg" alt="OVTLYR Logo">
           </a>
         </div>
       </div>
@@ -201,9 +216,18 @@ if (localStorage.getItem('darkMode') === "on") {
           <div class="page_head">
             <div class="pageHeading">
               <div>
-                <div>
+                <div class="video_head">
                   <!-- <button type="button"><span class="material-symbols-outlined">chevron_left</span></button> -->
                   <h5>Watchlist</h5>
+                  <div class="chart_dtl video_icon">
+                    <div class="sort_dropdown">
+                      <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><img src="images/video-icon.svg" alt="Video"></button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#favList"><p class="mb-0">Favorites List</p></a></li>
+                        <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#bullbearList"><p class="mb-0">Bull & Bear List</p></a></li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -218,13 +242,13 @@ if (localStorage.getItem('darkMode') === "on") {
                 </button>
               </li>
               <li class="nav-item bullList_tab" role="watchlist">
-                <button class="nav-link" id="bullslist-tab" data-bs-toggle="tab" data-bs-target="#bullslisttab" type="button" role="tab" aria-controls="bullslisttab" aria-selected="false">
-                  <div><img src="images/bull-box.svg" alt="Bull" />Bull List </div><span>(10 New, 550 Total)</span>
+                <button class="nav-link" id="bullslist-tab" data-bs-toggle="tab" data-bs-target="#bullslisttab" type="button" role="tab" aria-controls="bullslisttab" aria-selected="false" tabindex="-1">
+                  <div><img src="images/bull-box.svg" alt="Bull">Bull List </div><span>(10 New, 550 Total)</span>
                 </button>
               </li>
               <li class="nav-item bearList_tab" role="watchlist">
-                <button class="nav-link" id="bearslist-tab" data-bs-toggle="tab" data-bs-target="#bearslisttab" type="button" role="tab" aria-controls="bearslisttab" aria-selected="false">
-                  <div><img src="images/bear-box.svg" alt="Bear" />Bear List </div><span>(10 New, 550 Total)</span>
+                <button class="nav-link" id="bearslist-tab" data-bs-toggle="tab" data-bs-target="#bearslisttab" type="button" role="tab" aria-controls="bearslisttab" aria-selected="false" tabindex="-1">
+                  <div><img src="images/bear-box.svg" alt="Bear">Bear List </div><span>(10 New, 550 Total)</span>
                 </button>
               </li>
             </ul>
@@ -240,8 +264,8 @@ if (localStorage.getItem('darkMode') === "on") {
                           </button>
                         </li>
                         <li class="nav-item" role="favranklist2">
-                          <button class="nav-link" id="gridrank-tab1" data-bs-toggle="tab" data-bs-target="#gridranktab1" type="button" role="tab" aria-controls="#gridranktab1" aria-selected="false">
-                            <img src="images/grid-icon.svg" alt="Grid" />
+                          <button class="nav-link" id="gridrank-tab1" data-bs-toggle="tab" data-bs-target="#gridranktab1" type="button" role="tab" aria-controls="#gridranktab1" aria-selected="false" tabindex="-1">
+                            <img src="images/grid-icon.svg" alt="Grid">
                           </button>
                         </li>
                       </ul>
@@ -259,14 +283,42 @@ if (localStorage.getItem('darkMode') === "on") {
                       <div class="favList_tabC">
                         <div class="table_scroll vertical_scroll horizontal_scroll">
                           <table class="table ovtlyr_table favList__table favTable_1">
-                            <thead>
+                            <thead class="sticky-top">
                               <tr class="ovtlyr__row_head">
                                 <th>Symbol</th>
                                 <th>Current Signal</th>
-                                <th class="sortTable_col">Last Signal Date<img src="images/sort-arrows.svg" style="cursor: pointer; margin-left: 8px;"></th>
+                                <th class="dropdown drop_box">
+                                  <div class="sort_dropdown">
+                                    <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Last Signal Date</button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                      <li><a class="dropdown-item" href="#"><p class="mb-0">All</p></a></li>
+                                      <li><a class="dropdown-item" href="#"><p class="mb-0">Ascending</p></a></li>
+                                      <li><a class="dropdown-item" href="#"><p class="mb-0">Descending</p></a></li>
+                                    </ul>
+                                  </div>
+                                </th>
                                 <th>Sector</th>
-                                <th class="align__items">Downside/ Recovery</th>
-                                <th>Last Day Close</th>
+                                <th class="align__items">Overlay</th>
+                                <th class="dropdown drop_box">
+                                  <div class="sort_dropdown">
+                                    <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Last Day Close</button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                      <li><a class="dropdown-item" href="#"><p class="mb-0">All</p></a></li>
+                                      <li><a class="dropdown-item" href="#"><p class="mb-0">Ascending</p></a></li>
+                                      <li><a class="dropdown-item" href="#"><p class="mb-0">Descending</p></a></li>
+                                    </ul>
+                                  </div>
+                                </th>
+                                <th class="dropdown drop_box">
+                                  <div class="sort_dropdown">
+                                    <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">30-Day Avg. Vol.</button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                      <li><a class="dropdown-item" href="#"><p class="mb-0">All</p></a></li>
+                                      <li><a class="dropdown-item" href="#"><p class="mb-0">Ascending</p></a></li>
+                                      <li><a class="dropdown-item" href="#"><p class="mb-0">Descending</p></a></li>
+                                    </ul>
+                                  </div>
+                                </th>
                               </tr>
                             </thead>
                             <tbody>
@@ -284,6 +336,7 @@ if (localStorage.getItem('darkMode') === "on") {
                                 <td><p><span class="arrows arrow_up">Utilities</span></p></td>
                                 <td class="align__items"><p><span class="greenBox"></span></p></td>
                                 <td><p>$2.04</p></td>
+                                <td><p>4.3M</p></td>
                               </tr>
                               <tr class="ovtyr__row">
                                 <td>
@@ -299,6 +352,7 @@ if (localStorage.getItem('darkMode') === "on") {
                                 <td><p><span class="arrows arrow_up">Utilities</span></p></td>
                                 <td class="align__items"><p><span class="redBox"></span></p></td>
                                 <td><p>$2.04</p></td>
+                                <td><p>4.3M</p></td>
                               </tr>
                               <tr class="ovtyr__row">
                                 <td>
@@ -314,6 +368,7 @@ if (localStorage.getItem('darkMode') === "on") {
                                 <td><p><span class="arrows arrow_up">Utilities</span></p></td>
                                 <td class="align__items"><p><span class="redBox"></span></p></td>
                                 <td><p>$2.04</p></td>
+                                <td><p>4.3M</p></td>
                               </tr>
                               <tr class="ovtyr__row">
                                 <td>
@@ -329,6 +384,7 @@ if (localStorage.getItem('darkMode') === "on") {
                                 <td><p><span class="arrows arrow_up">Technology</span></p></td>
                                 <td class="align__items"><p><span class="orgBox"></span></p></td>
                                 <td><p>$2.04</p></td>
+                                <td><p>4.3M</p></td>
                               </tr>
                               <tr class="ovtyr__row">
                                 <td>
@@ -344,6 +400,7 @@ if (localStorage.getItem('darkMode') === "on") {
                                 <td><p><span class="arrows arrow_down">Technology</span></p></td>
                                 <td class="align__items"><p><span class="greenBox"></span></p></td>
                                 <td><p>$2.04</p></td>
+                                <td><p>4.3M</p></td>
                               </tr>
                             </tbody>
                           </table>
@@ -372,7 +429,7 @@ if (localStorage.getItem('darkMode') === "on") {
                               <span><span class="arrows arrow_up">Utilities</span></span>
                             </p>
                             <p>
-                              <span>Downside/Recovery</span>
+                              <span>Overlay</span>
                               <span class="greenBox"></span>
                             </p>
                             <p>
@@ -403,7 +460,7 @@ if (localStorage.getItem('darkMode') === "on") {
                               <span><span class="arrows arrow_down">Utilities</span></span>
                             </p>
                             <p>
-                              <span>Downside/Recovery</span>
+                              <span>Overlay</span>
                               <span class="greenBox"></span>
                             </p>
                             <p>
@@ -434,7 +491,7 @@ if (localStorage.getItem('darkMode') === "on") {
                               <span><span class="arrows arrow_up">Utilities</span></span>
                             </p>
                             <p>
-                              <span>Downside/Recovery</span>
+                              <span>Overlay</span>
                               <span class="greenBox"></span>
                             </p>
                             <p>
@@ -449,14 +506,42 @@ if (localStorage.getItem('darkMode') === "on") {
                       <div class="favList_tabC">
                         <div class="table_scroll vertical_scroll horizontal_scroll">
                           <table class="table ovtlyr_table favList__table favTable_1">
-                            <thead>
+                            <thead class="sticky-top">
                               <tr class="ovtlyr__row_head">
                                 <th>Symbol</th>
                                 <th>Current Signal</th>
-                                <th class="sortTable_col">Last Signal Date<img src="images/sort-arrows.svg" style="cursor: pointer; margin-left: 8px;"></th>
+                                <th class="dropdown drop_box">
+                                  <div class="sort_dropdown">
+                                    <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Last Signal Date</button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                      <li><a class="dropdown-item" href="#"><p class="mb-0">All</p></a></li>
+                                      <li><a class="dropdown-item" href="#"><p class="mb-0">Ascending</p></a></li>
+                                      <li><a class="dropdown-item" href="#"><p class="mb-0">Descending</p></a></li>
+                                    </ul>
+                                  </div>
+                                </th>
                                 <th>Sector/Index</th>
-                                <th class="align__items">Downside/ Recovery</th>
-                                <th>Last Day Close</th>
+                                <th class="align__items">Overlay</th>
+                                <th class="dropdown drop_box">
+                                  <div class="sort_dropdown">
+                                    <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Last Day Close</button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                      <li><a class="dropdown-item" href="#"><p class="mb-0">All</p></a></li>
+                                      <li><a class="dropdown-item" href="#"><p class="mb-0">Ascending</p></a></li>
+                                      <li><a class="dropdown-item" href="#"><p class="mb-0">Descending</p></a></li>
+                                    </ul>
+                                  </div>
+                                </th>
+                                <th class="dropdown drop_box">
+                                  <div class="sort_dropdown">
+                                    <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">30-Day Avg. Vol.</button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                      <li><a class="dropdown-item" href="#"><p class="mb-0">All</p></a></li>
+                                      <li><a class="dropdown-item" href="#"><p class="mb-0">Ascending</p></a></li>
+                                      <li><a class="dropdown-item" href="#"><p class="mb-0">Descending</p></a></li>
+                                    </ul>
+                                  </div>
+                                </th>
                               </tr>
                             </thead>
                             <tbody>
@@ -474,6 +559,7 @@ if (localStorage.getItem('darkMode') === "on") {
                                 <td><p><span class="arrows arrow_up">Technology</span></p></td>
                                 <td class="align__items"><p><span class="orgBox"></span></p></td>
                                 <td><p>$2.04</p></td>
+                                <td><p>4.3M</p></td>
                               </tr>
                               <tr class="ovtyr__row">
                                 <td>
@@ -489,6 +575,7 @@ if (localStorage.getItem('darkMode') === "on") {
                                 <td><p><span class="arrows arrow_up">Utilities</span></p></td>
                                 <td class="align__items"><p><span class="greenBox"></span></p></td>
                                 <td><p>$2.04</p></td>
+                                <td><p>4.3M</p></td>
                               </tr>
                             </tbody>
                           </table>
@@ -517,7 +604,7 @@ if (localStorage.getItem('darkMode') === "on") {
                               <span><span class="arrows arrow_down">Utilities</span></span>
                             </p>
                             <p>
-                              <span>Downside/Recovery</span>
+                              <span>Overlay</span>
                               <span class="greenBox"></span>
                             </p>
                             <p>
@@ -548,7 +635,7 @@ if (localStorage.getItem('darkMode') === "on") {
                               <span><span class="arrows arrow_up">Utilities</span></span>
                             </p>
                             <p>
-                              <span>Downside/Recovery</span>
+                              <span>Overlay</span>
                               <span class="greenBox"></span>
                             </p>
                             <p>
@@ -579,7 +666,7 @@ if (localStorage.getItem('darkMode') === "on") {
                               <span><span class="arrows arrow_up">Utilities</span></span>
                             </p>
                             <p>
-                              <span>Downside/Recovery</span>
+                              <span>Overlay</span>
                               <span class="redBox"></span>
                             </p>
                             <p>
@@ -603,7 +690,7 @@ if (localStorage.getItem('darkMode') === "on") {
                             </button>
                           </li>
                           <li class="nav-item" role="favranklist2">
-                            <button class="nav-link" id="etfs-tab1" data-bs-toggle="tab" data-bs-target="#etfstab1" type="button" role="tab" aria-controls="#etfstab1" aria-selected="false">
+                            <button class="nav-link" id="etfs-tab1" data-bs-toggle="tab" data-bs-target="#etfstab1" type="button" role="tab" aria-controls="#etfstab1" aria-selected="false" tabindex="-1">
                               ETFs
                             </button>
                           </li>
@@ -611,22 +698,58 @@ if (localStorage.getItem('darkMode') === "on") {
                       </div>
                       <div class="filterDropd_box">
                         <a href="javascript:void(0);" class="expand_btn" id="expand_btn2"><span></span></a>
-                        <a href="#" class="show_dropdown show_filters"><span class="material-symbols-outlined">filter_alt</span><span>Filter</span></a>
                       </div>
                     </div>
                     <div class="tab-content" id="myTab2Content">
                       <div class="tab-pane fade show active" id="stockstab1" role="tabpanel" aria-labelledby="stocks-tab1">
                         <div class="favList_tabC">
-                          <div class="table_scroll horizontal_scroll">
+                          <div class="table_scroll vertical_scroll horizontal_scroll">
                             <table class="table ovtlyr_table favList__table bullTable_2">
-                              <thead>
+                              <thead class="sticky-top">
                                 <tr class="ovtlyr__row_head">
                                   <th width="16%">Symbol</th>
                                   <th>Current Signal</th>
-                                  <th class="sortTable_col">Last Signal Date<img src="images/sort-arrows.svg" style="cursor: pointer; margin-left: 8px;"></th>
-                                  <th>Sector</th>
-                                  <th class="align__items">Downside/ Recovery</th>
-                                  <th>Last Day Close</th>
+                                  <th class="dropdown drop_box">
+                                    <div class="sort_dropdown">
+                                      <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Last Signal Date</button>
+                                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="#"><p class="mb-0">All</p></a></li>
+                                        <li><a class="dropdown-item" href="#"><p class="mb-0">Ascending</p></a></li>
+                                        <li><a class="dropdown-item" href="#"><p class="mb-0">Descending</p></a></li>
+                                      </ul>
+                                    </div>
+                                  </th>
+                                  <th>Sector <span class="material-symbols-outlined icon_filter">filter_alt</span></th>
+                                  <th class="align__items dropdown drop_box">
+                                    <div class="">
+                                      <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Overlay</button>
+                                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="#"><p><span class="whiteBox"><span class="drop_text">All</span></span></p></a></li>
+                                        <li><a class="dropdown-item" href="#"><p><span class="greenBox"><span class="drop_text">Uptrend</span></span></p></a></li>
+                                        <li><a class="dropdown-item" href="#"><p><span class="redBox"><span class="drop_text">Downtrend</span></span></p></a></li>
+                                      </ul>
+                                    </div>
+                                  </th>
+                                  <th class="dropdown drop_box">
+                                    <div class="sort_dropdown">
+                                      <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Last Day Close</button>
+                                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="#"><p class="mb-0">All</p></a></li>
+                                        <li><a class="dropdown-item" href="#"><p class="mb-0">Ascending</p></a></li>
+                                        <li><a class="dropdown-item" href="#"><p class="mb-0">Descending</p></a></li>
+                                      </ul>
+                                    </div>
+                                  </th>
+                                  <th class="dropdown drop_box">
+                                    <div class="sort_dropdown">
+                                      <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">30-Day Avg. Vol.</button>
+                                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="#"><p class="mb-0">All</p></a></li>
+                                        <li><a class="dropdown-item" href="#"><p class="mb-0">Ascending</p></a></li>
+                                        <li><a class="dropdown-item" href="#"><p class="mb-0">Descending</p></a></li>
+                                      </ul>
+                                    </div>
+                                  </th>
                                 </tr>
                               </thead>
                               <tbody>
@@ -644,6 +767,7 @@ if (localStorage.getItem('darkMode') === "on") {
                                   <td><p><span class="arrows arrow_up">Utilities</span></p></td>
                                   <td class="align__items"><p><span class="greenBox"></span></p></td>
                                   <td><p>$2.04</p></td>
+                                  <td><p>4.3M</p></td>
                                 </tr>
                                 <tr class="ovtyr__row">
                                   <td>
@@ -659,6 +783,7 @@ if (localStorage.getItem('darkMode') === "on") {
                                   <td><p><span class="arrows arrow_up">Utilities</span></p></td>
                                   <td class="align__items"><p><span class="greenBox"></span></p></td>
                                   <td><p>$2.04</p></td>
+                                  <td><p>4.3M</p></td>
                                 </tr>
                                 <tr class="ovtyr__row">
                                   <td>
@@ -674,6 +799,7 @@ if (localStorage.getItem('darkMode') === "on") {
                                   <td><p><span class="arrows arrow_down">Technology</span></p></td>
                                   <td class="align__items"><p><span class="greenBox"></span></p></td>
                                   <td><p>$2.04</p></td>
+                                  <td><p>4.3M</p></td>
                                 </tr>
                                 <tr class="ovtyr__row">
                                   <td>
@@ -689,6 +815,7 @@ if (localStorage.getItem('darkMode') === "on") {
                                   <td><p><span class="arrows arrow_up">Utilities</span></p></td>
                                   <td class="align__items"><p><span class="greenBox"></span></p></td>
                                   <td><p>$2.04</p></td>
+                                  <td><p>4.3M</p></td>
                                 </tr>
                                 <tr class="ovtyr__row">
                                   <td>
@@ -704,6 +831,7 @@ if (localStorage.getItem('darkMode') === "on") {
                                   <td><p><span class="arrows arrow_down">Technology</span></p></td>
                                   <td class="align__items"><p><span class="greenBox"></span></p></td>
                                   <td><p>$2.04</p></td>
+                                  <td><p>4.3M</p></td>
                                 </tr>
                               </tbody>
                             </table>
@@ -731,7 +859,7 @@ if (localStorage.getItem('darkMode') === "on") {
                               <span><span class="arrows arrow_up">Utilities</span></span>
                             </p>
                             <p>
-                              <span>Downside/Recovery</span>
+                              <span>Overlay</span>
                               <span class="orgBox"></span>
                             </p>
                             <p>
@@ -760,7 +888,7 @@ if (localStorage.getItem('darkMode') === "on") {
                               <span><span class="arrows arrow_up">Utilities</span></span>
                             </p>
                             <p>
-                              <span>Downside/Recovery</span>
+                              <span>Overlay</span>
                               <span class="redBox"></span>
                             </p>
                             <p>
@@ -789,7 +917,7 @@ if (localStorage.getItem('darkMode') === "on") {
                               <span><span class="arrows arrow_up">Utilities</span></span>
                             </p>
                             <p>
-                              <span>Downside/Recovery</span>
+                              <span>Overlay</span>
                               <span class="orgBox"></span>
                             </p>
                             <p>
@@ -803,11 +931,20 @@ if (localStorage.getItem('darkMode') === "on") {
                         <div class="favList_tabC">
                           <div class="table_scroll horizontal_scroll">
                             <table class="table ovtlyr_table favList__table bullTable_2">
-                              <thead>
+                              <thead class="sticky-top">
                                 <tr class="ovtlyr__row_head">
                                   <th width="16%">Symbol</th>
                                   <th>Current Signal</th>
-                                  <th class="sortTable_col">Last Signal Date<img src="images/sort-arrows.svg" style="cursor: pointer; margin-left: 8px;"></th>
+                                  <th class="dropdown drop_box">
+                                    <div class="sort_dropdown">
+                                      <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Last Signal Date</button>
+                                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="#"><p class="mb-0">All</p></a></li>
+                                        <li><a class="dropdown-item" href="#"><p class="mb-0">Ascending</p></a></li>
+                                        <li><a class="dropdown-item" href="#"><p class="mb-0">Descending</p></a></li>
+                                      </ul>
+                                    </div>
+                                  </th>
                                   <th>Expense Ratio</th>
                                   <th>Index Tracked</th>
                                   <th>Last Day Close</th>
@@ -950,7 +1087,7 @@ if (localStorage.getItem('darkMode') === "on") {
                             </button>
                           </li>
                           <li class="nav-item" role="favranklist3">
-                            <button class="nav-link" id="etfs-tab2" data-bs-toggle="tab" data-bs-target="#etfstab2" type="button" role="tab" aria-controls="#etfstab2" aria-selected="false">
+                            <button class="nav-link" id="etfs-tab2" data-bs-toggle="tab" data-bs-target="#etfstab2" type="button" role="tab" aria-controls="#etfstab2" aria-selected="false" tabindex="-1">
                               ETFs
                             </button>
                           </li>
@@ -958,22 +1095,58 @@ if (localStorage.getItem('darkMode') === "on") {
                       </div>
                       <div class="filterDropd_box">
                         <a href="javascript:void(0);" class="expand_btn" id="expand_btn3"><span></span></a>
-                        <a href="#" class="show_dropdown show_filters"><span class="material-symbols-outlined">filter_alt</span><span>Filter</span></a>
                       </div>
                     </div>
                     <div class="tab-content" id="myTab3Content">
                       <div class="tab-pane fade show active" id="stockstab2" role="tabpanel" aria-labelledby="stocks-tab2">
                         <div class="favList_tabC">
-                          <div class="table_scroll horizontal_scroll">
+                          <div class="table_scroll vertical_scroll horizontal_scroll">
                             <table class="table ovtlyr_table favList__table bearTable_2 bullTable_2">
-                              <thead>
+                              <thead class="sticky-top">
                                 <tr class="ovtlyr__row_head">
                                   <th width="16%">Symbol</th>
                                   <th>Current Signal</th>
-                                  <th class="sortTable_col">Last Signal Date<img src="images/sort-arrows.svg" style="cursor: pointer; margin-left: 8px; width: 9px;"></th>
-                                  <th>Sector</th>
-                                  <th class="align__items">Downside/ Recovery</th>
-                                  <th>Last Day Close</th>
+                                  <th class="dropdown drop_box">
+                                    <div class="sort_dropdown">
+                                      <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Last Signal Date</button>
+                                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="#"><p class="mb-0">All</p></a></li>
+                                        <li><a class="dropdown-item" href="#"><p class="mb-0">Ascending</p></a></li>
+                                        <li><a class="dropdown-item" href="#"><p class="mb-0">Descending</p></a></li>
+                                      </ul>
+                                    </div>
+                                  </th>
+                                  <th>Sector <span class="material-symbols-outlined icon_filter">filter_alt</span></th>
+                                  <th class="align__items dropdown drop_box">
+                                    <div class="">
+                                      <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Overlay</button>
+                                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="#"><p><span class="whiteBox"><span class="drop_text">All</span></span></p></a></li>
+                                        <li><a class="dropdown-item" href="#"><p><span class="greenBox"><span class="drop_text">Uptrend</span></span></p></a></li>
+                                        <li><a class="dropdown-item" href="#"><p><span class="redBox"><span class="drop_text">Downtrend</span></span></p></a></li>
+                                      </ul>
+                                    </div>
+                                  </th>
+                                  <th class="dropdown drop_box">
+                                    <div class="sort_dropdown">
+                                      <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Last Day Close</button>
+                                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="#"><p class="mb-0">All</p></a></li>
+                                        <li><a class="dropdown-item" href="#"><p class="mb-0">Ascending</p></a></li>
+                                        <li><a class="dropdown-item" href="#"><p class="mb-0">Descending</p></a></li>
+                                      </ul>
+                                    </div>
+                                  </th>
+                                  <th class="dropdown drop_box">
+                                    <div class="sort_dropdown">
+                                      <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">30-Day Avg. Vol.</button>
+                                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="#"><p class="mb-0">All</p></a></li>
+                                        <li><a class="dropdown-item" href="#"><p class="mb-0">Ascending</p></a></li>
+                                        <li><a class="dropdown-item" href="#"><p class="mb-0">Descending</p></a></li>
+                                      </ul>
+                                    </div>
+                                  </th>
                                 </tr>
                               </thead>
                               <tbody>
@@ -991,6 +1164,7 @@ if (localStorage.getItem('darkMode') === "on") {
                                   <td><p><span class="arrows arrow_up">Utilities</span></p></td>
                                   <td class="align__items"><p><span class="orgBox"></span></p></td>
                                   <td><p>$2.04</p></td>
+                                  <td><p>4.3M</p></td>
                                 </tr>
                                 <tr class="ovtyr__row">
                                   <td>
@@ -1006,6 +1180,7 @@ if (localStorage.getItem('darkMode') === "on") {
                                   <td><p><span class="arrows arrow_up">Utilities</span></p></td>
                                   <td class="align__items"><p><span class="orgBox"></span></p></td>
                                   <td><p>$2.04</p></td>
+                                  <td><p>4.3M</p></td>
                                 </tr>
                                 <tr class="ovtyr__row">
                                   <td>
@@ -1021,6 +1196,7 @@ if (localStorage.getItem('darkMode') === "on") {
                                   <td><p><span class="arrows arrow_up">Utilities</span></p></td>
                                   <td class="align__items"><p><span class="orgBox"></span></p></td>
                                   <td><p>$2.04</p></td>
+                                  <td><p>4.3M</p></td>
                                 </tr>
                                 <tr class="ovtyr__row">
                                   <td>
@@ -1036,6 +1212,7 @@ if (localStorage.getItem('darkMode') === "on") {
                                   <td><p><span class="arrows arrow_up">Utilities</span></p></td>
                                   <td class="align__items"><p><span class="orgBox"></span></p></td>
                                   <td><p>$2.04</p></td>
+                                  <td><p>4.3M</p></td>
                                 </tr>
                                 <tr class="ovtyr__row">
                                   <td>
@@ -1051,6 +1228,7 @@ if (localStorage.getItem('darkMode') === "on") {
                                   <td><p><span class="arrows arrow_up">Utilities</span></p></td>
                                   <td class="align__items"><p><span class="orgBox"></span></p></td>
                                   <td><p>$2.04</p></td>
+                                  <td><p>4.3M</p></td>
                                 </tr>
                               </tbody>
                             </table>
@@ -1074,11 +1252,11 @@ if (localStorage.getItem('darkMode') === "on") {
                               <span>01-02-2023</span>
                             </p>
                             <p>
-                              <span>Sector</span>
+                              <span>Sector </span>
                               <span><span class="arrows arrow_up">Utilities</span></span>
                             </p>
                             <p>
-                              <span>Downside/Recovery</span>
+                              <span>Overlay</span>
                               <span class="redBox"></span>
                             </p>
                             <p>
@@ -1107,7 +1285,7 @@ if (localStorage.getItem('darkMode') === "on") {
                               <span><span class="arrows arrow_up">Utilities</span></span>
                             </p>
                             <p>
-                              <span>Downside/Recovery</span>
+                              <span>Overlay</span>
                               <span class="greenBox"></span>
                             </p>
                             <p>
@@ -1136,7 +1314,7 @@ if (localStorage.getItem('darkMode') === "on") {
                               <span><span class="arrows arrow_up">Utilities</span></span>
                             </p>
                             <p>
-                              <span>Downside/Recovery</span>
+                              <span>Overlay</span>
                               <span class="orgBox"></span>
                             </p>
                             <p>
@@ -1150,11 +1328,20 @@ if (localStorage.getItem('darkMode') === "on") {
                         <div class="favList_tabC">
                           <div class="table_scroll horizontal_scroll">
                             <table class="table ovtlyr_table favList__table bearTable_2 bullTable_2">
-                              <thead>
+                              <thead class="sticky-top">
                                 <tr class="ovtlyr__row_head">
                                   <th width="16%">Symbol</th>
                                   <th>Current Signal</th>
-                                  <th class="sortTable_col">Last Signal Date<img src="images/sort-arrows.svg" style="cursor: pointer; margin-left: 8px;"></th>
+                                  <th class="dropdown drop_box">
+                                    <div class="sort_dropdown">
+                                      <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Last Signal Date</button>
+                                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="#"><p class="mb-0">All</p></a></li>
+                                        <li><a class="dropdown-item" href="#"><p class="mb-0">Ascending</p></a></li>
+                                        <li><a class="dropdown-item" href="#"><p class="mb-0">Descending</p></a></li>
+                                      </ul>
+                                    </div>
+                                  </th>
                                   <th>Expense Ratio</th>
                                   <th>Index Tracked</th>
                                   <th>Last Day Close</th>
@@ -1283,10 +1470,10 @@ if (localStorage.getItem('darkMode') === "on") {
             <div class="secPart_1">
               <h5>Market Cap</h5>
               <div class="range-slider">
-                <span class="output outputOne"></span>
-                <span class="output outputTwo"></span>
+                <span class="output outputOne" style="left: 0.2%;">$10B</span>
+                <span class="output outputTwo" style="left: 20%;">$1000B</span>
                 <span class="full-range"></span>
-                <span class="incl-range"></span>
+                <span class="incl-range" style="width: 19.8%; left: 0.2%;"></span>
                 <input name="rangeOne" value="10" min="0" max="5000" step="1" type="range">
                 <input name="rangeTwo" value="1000" min="0" max="5000" step="1" type="range">
               </div>
@@ -1498,6 +1685,34 @@ if (localStorage.getItem('darkMode') === "on") {
             </div>
           </div>
         </div>
+        <!--======== FAVORITES LIST VIDEO POPUP BEGIN ========-->
+        <div class="modal upgrade_popup watchVideo fade" id="favList" tabindex="-1" aria-labelledby="favList_modalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+                <button type="button" class="close_btn" data-bs-dismiss="modal" aria-label="Close"><span class="material-icons">close</span></button>
+                <div class="modal_body">
+                  <iframe src="https://www.youtube.com/embed/ja9TlIVE35A?si=krJL7Y6k9psuWH2S" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--======== FAVORITES LIST VIDEO POPUP END =========-->
+        <!--======== BULL & BEAR VIDEO POPUP BEGIN ========-->
+        <div class="modal upgrade_popup watchVideo fade" id="bullbearList" tabindex="-1" aria-labelledby="bullbearList_modalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+                <button type="button" class="close_btn" data-bs-dismiss="modal" aria-label="Close"><span class="material-icons">close</span></button>
+                <div class="modal_body">
+                  <iframe src="https://www.youtube.com/embed/38g-XWcTNyg?si=MQZGF0LZxNbvNbcX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--======== BULL & BEAR VIDEO POPUP END =========-->
       </div>
     </div>
   </div>
@@ -1506,6 +1721,15 @@ if (localStorage.getItem('darkMode') === "on") {
 <script src="js/jquery.min.js"></script>
 <script src="js/magnific-popup-svg4-app.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
+<!--==== SIDEBAR DROPDOWN OPEN START ====-->
+<script>
+  $(document).ready(function(){
+    $('.dropdown_btn p').on('click', function(e){
+      $(this).parent().toggleClass('active');
+    });
+  });
+</script>
+<!--==== SIDEBAR DROPDOWN OPEN END ====-->
 <!--==== ADD TO FAV TOGGLE ====-->
 <script>
   $(document).ready(function(){
@@ -1514,102 +1738,127 @@ if (localStorage.getItem('darkMode') === "on") {
     });
   });
 </script>
+<!--==== STOP MODAL PLAYING START ====-->
+<script>
+  $(document).ready(function(){
+    /* Get iframe src attribute value i.e. YouTube video url and store it in a variable */
+    var url1 = $("#favList iframe").attr('src');
+    var url2 = $("#bullbearList iframe").attr('src');
+      
+    /* Assign empty url value to the iframe src attribute when modal hide, which stop the video playing */
+    $("#favList").on('hide.bs.modal', function(){
+        $("#favList iframe").attr('src', '');
+    });
+    $("#bullbearList").on('hide.bs.modal', function(){
+        $("#bullbearList iframe").attr('src', '');
+    });
+    
+    /* Assign the initially stored url back to the iframe src attribute when modal is displayed again */
+    $("#favList").on('show.bs.modal', function(){
+        $("#favList iframe").attr('src', url1);
+    });
+    $("#bullbearList").on('show.bs.modal', function(){
+        $("#bullbearList iframe").attr('src', url2);
+    });
+  });
+</script>
+<!--===== STOP MODAL PLAYING END =====-->
 <!--======== FILTERS HIDE/SHOW SCRIPT 1 BEGIN =========-->
 <script>
-  document.querySelector('.show_filters').addEventListener('click', function(event) {
-    event.preventDefault();
-    var target1 = document.querySelector('.watchlist_sidebar');
-    if (target1.classList.contains('open')) {
-      target1.classList.remove('open');
-    } 
-    else {
-      target1.classList.add('open');
-    }
-  });
+    document.querySelector('.show_filters').addEventListener('click', function(event) {
+      event.preventDefault();
+      var target1 = document.querySelector('.watchlist_sidebar');
+      if (target1.classList.contains('open')) {
+        target1.classList.remove('open');
+      } 
+      else {
+        target1.classList.add('open');
+      }
+    });
+    
+    $('.close_btn').click(function (evt) {
+      evt.stopPropagation();
+      $('.watchlist_sidebar').removeClass('open');
+    });
   
-  $('.close_btn').click(function (evt) {
-    evt.stopPropagation();
-    $('.watchlist_sidebar').removeClass('open');
-  });
-
-  $('body,html').click(function (e) {
-    var container = $('.watchlist_sidebar , .show_filters');
-    if (!container.is(e.target) && container.has(e.target).length === 0) {
-      container.removeClass('open');
-    }
-  });
+    $('body,html').click(function (e) {
+      var container = $('.watchlist_sidebar , .show_filters');
+      if (!container.is(e.target) && container.has(e.target).length === 0) {
+        container.removeClass('open');
+      }
+    });
 </script>
 <!--========== FILTERS HIDE/SHOW SCRIPT 1 END =========-->
 <!-- <script src='https:cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script> -->
 <script>
-  var rangeOne = document.querySelector('input[name="rangeOne"]'),
-		rangeTwo = document.querySelector('input[name="rangeTwo"]'),
-		outputOne = document.querySelector('.outputOne'),
-		outputTwo = document.querySelector('.outputTwo'),
-		inclRange = document.querySelector('.incl-range'),
-		updateView = function () {
-			if (this.getAttribute('name') === 'rangeOne') {
-				outputOne.innerHTML = '$' + this.value + 'B';
-				outputOne.style.left = this.value / this.getAttribute('max') * 100 + '%';
-			} else {
-				outputTwo.style.left = this.value / this.getAttribute('max') * 100 + '%';
-				outputTwo.innerHTML = '$' + this.value + 'B';
-			}
-			if (parseInt(rangeOne.value) > parseInt(rangeTwo.value)) {
-				inclRange.style.width = (rangeOne.value - rangeTwo.value) / this.getAttribute('max') * 100 + '%';
-				inclRange.style.left = rangeTwo.value / this.getAttribute('max') * 100 + '%';
-			} else {
-				inclRange.style.width = (rangeTwo.value - rangeOne.value) / this.getAttribute('max') * 100 + '%';
-				inclRange.style.left = rangeOne.value / this.getAttribute('max') * 100 + '%';
-			}
-		};
-
-	document.addEventListener('DOMContentLoaded', function () {
-		updateView.call(rangeOne);
-		updateView.call(rangeTwo);
-		$('input[type="range"]').on('mouseup', function() {
-			this.blur();
-		}).on('mousedown input', function () {
-			updateView.call(this);
-		});
-	});
+    var rangeOne = document.querySelector('input[name="rangeOne"]'),
+      rangeTwo = document.querySelector('input[name="rangeTwo"]'),
+      outputOne = document.querySelector('.outputOne'),
+      outputTwo = document.querySelector('.outputTwo'),
+      inclRange = document.querySelector('.incl-range'),
+      updateView = function () {
+        if (this.getAttribute('name') === 'rangeOne') {
+          outputOne.innerHTML = '$' + this.value + 'B';
+          outputOne.style.left = this.value / this.getAttribute('max') * 100 + '%';
+        } else {
+          outputTwo.style.left = this.value / this.getAttribute('max') * 100 + '%';
+          outputTwo.innerHTML = '$' + this.value + 'B';
+        }
+        if (parseInt(rangeOne.value) > parseInt(rangeTwo.value)) {
+          inclRange.style.width = (rangeOne.value - rangeTwo.value) / this.getAttribute('max') * 100 + '%';
+          inclRange.style.left = rangeTwo.value / this.getAttribute('max') * 100 + '%';
+        } else {
+          inclRange.style.width = (rangeTwo.value - rangeOne.value) / this.getAttribute('max') * 100 + '%';
+          inclRange.style.left = rangeOne.value / this.getAttribute('max') * 100 + '%';
+        }
+      };
+  
+    document.addEventListener('DOMContentLoaded', function () {
+      updateView.call(rangeOne);
+      updateView.call(rangeTwo);
+      $('input[type="range"]').on('mouseup', function() {
+        this.blur();
+      }).on('mousedown input', function () {
+        updateView.call(this);
+      });
+    });
 </script>
 <!--========= EXPAND SCRIPT START ===========-->
 <script>
-$(document).ready(function(){
-  $('#expand_btn1').on('click', function(e){
-    if($('.watchlist_tabs').hasClass('full_listHead')){
-      $('.watchlist_tabs').removeClass('full_listHead full_listHead1');
-      $('.watchlist_listing').removeClass('full_listTable full_listTable1');
-    }
-    else {
-      $('.watchlist_tabs').addClass('full_listHead full_listHead1');
-      $('.watchlist_listing').addClass('full_listTable full_listTable1');
-    }
+  $(document).ready(function(){
+    $('#expand_btn1').on('click', function(e){
+      if($('.watchlist_tabs').hasClass('full_listHead')){
+        $('.watchlist_tabs').removeClass('full_listHead full_listHead1');
+        $('.watchlist_listing').removeClass('full_listTable full_listTable1');
+      }
+      else {
+        $('.watchlist_tabs').addClass('full_listHead full_listHead1');
+        $('.watchlist_listing').addClass('full_listTable full_listTable1');
+      }
+    });
+      
+    $('#expand_btn2').on('click', function(e){
+      if($('.watchlist_tabs').hasClass('full_listHead')){
+        $('.watchlist_tabs').removeClass('full_listHead full_listHead2');
+        $('.watchlist_listing').removeClass('full_listTable full_listTable2');
+      }
+      else {
+        $('.watchlist_tabs').addClass('full_listHead full_listHead2');
+        $('.watchlist_listing').addClass('full_listTable full_listTable2');
+      }
+    });
+  
+    $('#expand_btn3').on('click', function(e){
+      if($('.watchlist_tabs').hasClass('full_listHead')){
+        $('.watchlist_tabs').removeClass('full_listHead full_listHead3');
+        $('.watchlist_listing').removeClass('full_listTable full_listTable3');
+      }
+      else {
+        $('.watchlist_tabs').addClass('full_listHead full_listHead3');
+        $('.watchlist_listing').addClass('full_listTable full_listTable3');
+      }
+    });
   });
-    
-  $('#expand_btn2').on('click', function(e){
-    if($('.watchlist_tabs').hasClass('full_listHead')){
-      $('.watchlist_tabs').removeClass('full_listHead full_listHead2');
-      $('.watchlist_listing').removeClass('full_listTable full_listTable2');
-    }
-    else {
-      $('.watchlist_tabs').addClass('full_listHead full_listHead2');
-      $('.watchlist_listing').addClass('full_listTable full_listTable2');
-    }
-  });
-
-  $('#expand_btn3').on('click', function(e){
-    if($('.watchlist_tabs').hasClass('full_listHead')){
-      $('.watchlist_tabs').removeClass('full_listHead full_listHead3');
-      $('.watchlist_listing').removeClass('full_listTable full_listTable3');
-    }
-    else {
-      $('.watchlist_tabs').addClass('full_listHead full_listHead3');
-      $('.watchlist_listing').addClass('full_listTable full_listTable3');
-    }
-  });
-});
 </script>
 </body>
 </html>

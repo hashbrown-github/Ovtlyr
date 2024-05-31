@@ -117,37 +117,49 @@ if (localStorage.getItem('darkMode') === "on") {
                   <div class="sidebar__icon">
                     <img src="images/notification.svg" alt="Notification" />
                   </div>
-                  <div class="sidebar__text">Notification</div>
-                  <span class="noti_count">30</span>
+                  <div class="sidebar__text">Notifications</div>
+                  <span class="noti_count">99+</span>
                 </a>
               </div>
-              <div class="side_dropdown arrow_drop">
+              <div class="side_dropdown">
+                <a class="sidebar__item" href="https://discord.gg/DjgmSrdxUY" target="_blank">
+                  <div class="sidebar__icon">
+                    <img src="images/discord.svg" alt="Notification" />
+                  </div>
+                  <div class="sidebar__text">Discord</div>
+                </a>
+              </div>
+              <div class="side_dropdown arrow_drop dropdown_btn">
+                <p></p>
                 <a class="sidebar__item" href="subscription.html">
                   <div class="sidebar__icon">
                     <img src="images/setting.svg" alt="Settings" />
                   </div>
                   <div class="sidebar__text">Settings</div>
                 </a>
-                <span>Subscription</span>
-                <span>Activity</span>
-                <span>Notification Management</span>
+                <span><a href="subscription.html">Subscription</a></span>
+                <span><a href="activity.html">Activity</a></span>
+                <!-- <span><a href="notification.html">Notification Management</a></span> -->
               </div>
               <div class="side_dropdown">
-                <a class="sidebar__item" href="become-a-referer.html">
+                <a class="sidebar__item" href="promoter.html">
                   <div class="sidebar__icon">
                     <img src="images/referer.svg" alt="Referer" />
                   </div>
-                  <div class="sidebar__text">Become a Referer</div>
+                  <div class="sidebar__text">Promoter</div>
                 </a>
               </div>
-              <div class="side_dropdown arrow_drop">
+              <div class="side_dropdown arrow_drop dropdown_btn">
+                <p></p>
                 <a class="sidebar__item" href="contact.html">
                   <div class="sidebar__icon">
                     <img src="images/support.svg" alt="Support" />
                   </div>
-                  <div class="sidebar__text">Support</div>
+                  <div class="sidebar__text">Resources</div>
                 </a>
-                <span class="active">Contact</span>
+                <span><a href="contact.html">Support</a></span>
+                <span><a href="tutorials.html">Tutorials</a></span>
+                <span><a href="https://ovtlyr.com/blog" target="_blank">Blog</a></span>
               </div>
               <div class="side_dropdown theme_switchBtn">
                 <div class="sidebar__item mb-0">
@@ -174,7 +186,7 @@ if (localStorage.getItem('darkMode') === "on") {
         </div>
         <div class="sidebar__profile">
           <div class="sidebar__details">
-            <a class="sidebar__link" href="#">
+            <a class="sidebar__link" href="profile.html">
               <div class="sidebar__icon">
                 <img src="images/user.svg" alt="Profile" />
               </div>
@@ -248,7 +260,7 @@ if (localStorage.getItem('darkMode') === "on") {
                     <div class="stocksTab_table">
                       <div class="table_scroll vertical_scroll horizontal_scroll">
                         <table class="table stocks__table0 stocks__table1 ovtlyr_table" id="dest">
-                          <thead>
+                          <thead class="sticky-top">
                             <tr class="ovtlyr__row_head">
                               <!-- <th style="width: 5%;" class="align__items">
                                 <label class="checkbox mt-1">
@@ -258,13 +270,14 @@ if (localStorage.getItem('darkMode') === "on") {
                                   </span>
                                 </label>
                               </th> -->
-                              <th style="width: 13%;">Symbol</th>
-                              <th style="width: 14%;" class="sortTable_col">Name</th>
-                              <th style="width: 12%;">Sector</th>
-                              <th style="width: 18%;">Industry</th>
-                              <th style="width: 12%;" class="align__items">Downside/ Recovery</th>
+                              <th style="width: 10%;">Symbol</th>
+                              <th style="width: 13%;" class="sortTable_col">Name</th>
+                              <th style="width: 12%;" class="sortTable_col">Sector</th>
+                              <th style="width: 16%;" class="sortTable_col">Industry</th>
+                              <th style="width: 12%;" class="align__items">Overlay</th>
                               <th style="width: 12%;">Signal</th>
                               <th style="width: 13%;" class="sortTable_col">Last Signal Date</th>
+                              <th style="width: 12%;">30-Day Avg. Vol.</th>
                             </tr>
                           </thead>
                           <tbody>
@@ -299,16 +312,9 @@ if (localStorage.getItem('darkMode') === "on") {
                               <td class="align__items"><p><span class="greenBox"></span></p></td>
                               <td data-bs-toggle="modal" data-bs-target="#upgrade1_modal"><p class="buy_stock">Buy</p></td>
                               <td><p>01-02-2022</p></td>
+                              <td><p>6.7M</p></td>
                             </tr>
                             <tr class="ovtlyr__row">
-                              <!-- <td class="align__items">
-                                <label class="checkbox mt-1">
-                                  <input class="checkbox__input" type="checkbox">
-                                  <span class="checkbox__in">
-                                    <span class="checkbox__tick"></span>
-                                  </span>
-                                </label>
-                              </td> -->
                               <td>
                                 <div class="fav_symbol">
                                   <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Google">
@@ -331,16 +337,9 @@ if (localStorage.getItem('darkMode') === "on") {
                               <td class="align__items"><p><span class="redBox"></span></p></td>
                               <td data-bs-toggle="modal" data-bs-target="#upgrade1_modal"><p class="sell_stock">Sell</p></td>
                               <td><p>18-12-2020</p></td>
+                              <td><p>8M</p></td>
                             </tr>
                             <tr class="ovtlyr__row">
-                              <!-- <td class="align__items">
-                                <label class="checkbox mt-1">
-                                  <input class="checkbox__input" type="checkbox">
-                                  <span class="checkbox__in">
-                                    <span class="checkbox__tick"></span>
-                                  </span>
-                                </label>
-                              </td> -->
                               <td>
                                 <div class="fav_symbol">
                                   <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Google">
@@ -363,16 +362,9 @@ if (localStorage.getItem('darkMode') === "on") {
                               <td class="align__items"><p><span class="orgBox"></span></p></td>
                               <td data-bs-toggle="modal" data-bs-target="#upgrade1_modal"><p class="buy_stock">Buy</p></td>
                               <td><p>01-02-2023</p></td>
+                              <td><p>8M</p></td>
                             </tr>
                             <tr class="ovtlyr__row">
-                              <!-- <td class="align__items">
-                                <label class="checkbox mt-1">
-                                  <input class="checkbox__input" type="checkbox">
-                                  <span class="checkbox__in">
-                                    <span class="checkbox__tick"></span>
-                                  </span>
-                                </label>
-                              </td> -->
                               <td>
                                 <div class="fav_symbol">
                                   <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Google">
@@ -395,16 +387,9 @@ if (localStorage.getItem('darkMode') === "on") {
                               <td class="align__items"><p><span class="greenBox"></span></p></td>
                               <td data-bs-toggle="modal" data-bs-target="#upgrade1_modal"><p class="sell_stock">Sell</p></td>
                               <td><p>01-02-2023</p></td>
+                              <td><p>8M</p></td>
                             </tr>
                             <tr class="ovtlyr__row">
-                              <!-- <td class="align__items">
-                                <label class="checkbox mt-1">
-                                  <input class="checkbox__input" type="checkbox">
-                                  <span class="checkbox__in">
-                                    <span class="checkbox__tick"></span>
-                                  </span>
-                                </label>
-                              </td> -->
                               <td>
                                 <div class="fav_symbol">
                                   <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Google">
@@ -427,16 +412,9 @@ if (localStorage.getItem('darkMode') === "on") {
                               <td class="align__items"><p><span class="greenBox"></span></p></td>
                               <td data-bs-toggle="modal" data-bs-target="#upgrade1_modal"><p class="buy_stock">Buy</p></td>
                               <td><p>01-02-2023</p></td>
+                              <td><p>5.5M</p></td>
                             </tr>
                             <tr class="ovtlyr__row">
-                              <!-- <td class="align__items">
-                                <label class="checkbox mt-1">
-                                  <input class="checkbox__input" type="checkbox">
-                                  <span class="checkbox__in">
-                                    <span class="checkbox__tick"></span>
-                                  </span>
-                                </label>
-                              </td> -->
                               <td>
                                 <div class="fav_symbol">
                                   <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Google">
@@ -459,16 +437,9 @@ if (localStorage.getItem('darkMode') === "on") {
                               <td class="align__items"><p><span class="redBox"></span></p></td>
                               <td data-bs-toggle="modal" data-bs-target="#upgrade1_modal"><p class="sell_stock">Sell</p></td>
                               <td><p>01-02-2023</p></td>
+                              <td><p>5.5M</p></td>
                             </tr>
                             <tr class="ovtlyr__row">
-                              <!-- <td class="align__items">
-                                <label class="checkbox mt-1">
-                                  <input class="checkbox__input" type="checkbox">
-                                  <span class="checkbox__in">
-                                    <span class="checkbox__tick"></span>
-                                  </span>
-                                </label>
-                              </td> -->
                               <td>
                                 <div class="fav_symbol">
                                   <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Google">
@@ -491,16 +462,9 @@ if (localStorage.getItem('darkMode') === "on") {
                               <td class="align__items"><p><span class="orgBox"></span></p></td>
                               <td data-bs-toggle="modal" data-bs-target="#upgrade1_modal"><p class="buy_stock">Buy</p></td>
                               <td><p>01-02-2023</p></td>
+                              <td><p>4.3M</p></td>
                             </tr>
                             <tr class="ovtlyr__row">
-                              <!-- <td class="align__items">
-                                <label class="checkbox mt-1">
-                                  <input class="checkbox__input" type="checkbox">
-                                  <span class="checkbox__in">
-                                    <span class="checkbox__tick"></span>
-                                  </span>
-                                </label>
-                              </td> -->
                               <td>
                                 <div class="fav_symbol">
                                   <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Google">
@@ -523,16 +487,9 @@ if (localStorage.getItem('darkMode') === "on") {
                               <td class="align__items"><p><span class="redBox"></span></p></td>
                               <td data-bs-toggle="modal" data-bs-target="#upgrade1_modal"><p class="sell_stock">Sell</p></td>
                               <td><p>01-02-2023</p></td>
+                              <td><p>4.0M</p></td>
                             </tr>
                             <tr class="ovtlyr__row">
-                              <!-- <td class="align__items">
-                                <label class="checkbox mt-1">
-                                  <input class="checkbox__input" type="checkbox">
-                                  <span class="checkbox__in">
-                                    <span class="checkbox__tick"></span>
-                                  </span>
-                                </label>
-                              </td> -->
                               <td>
                                 <div class="fav_symbol">
                                   <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Google">
@@ -555,16 +512,9 @@ if (localStorage.getItem('darkMode') === "on") {
                               <td class="align__items"><p><span class="orgBox"></span></p></td>
                               <td data-bs-toggle="modal" data-bs-target="#upgrade1_modal"><p class="buy_stock">Buy</p></td>
                               <td><p>01-02-2023</p></td>
+                              <td><p>4.3M</p></td>
                             </tr>
                             <tr class="ovtlyr__row">
-                              <!-- <td class="align__items">
-                                <label class="checkbox mt-1">
-                                  <input class="checkbox__input" type="checkbox">
-                                  <span class="checkbox__in">
-                                    <span class="checkbox__tick"></span>
-                                  </span>
-                                </label>
-                              </td> -->
                               <td>
                                 <div class="fav_symbol">
                                   <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Google">
@@ -587,16 +537,9 @@ if (localStorage.getItem('darkMode') === "on") {
                               <td class="align__items"><p><span class="greenBox"></span></p></td>
                               <td data-bs-toggle="modal" data-bs-target="#upgrade1_modal"><p class="buy_stock">Buy</p></td>
                               <td><p>01-02-2023</p></td>
+                              <td><p>2.1M</p></td>
                             </tr>
                             <tr class="ovtlyr__row">
-                              <!-- <td class="align__items">
-                                <label class="checkbox mt-1">
-                                  <input class="checkbox__input" type="checkbox">
-                                  <span class="checkbox__in">
-                                    <span class="checkbox__tick"></span>
-                                  </span>
-                                </label>
-                              </td> -->
                               <td>
                                 <div class="fav_symbol">
                                   <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Google">
@@ -619,16 +562,9 @@ if (localStorage.getItem('darkMode') === "on") {
                               <td class="align__items"><p><span class="redBox"></span></p></td>
                               <td data-bs-toggle="modal" data-bs-target="#upgrade1_modal"><p class="sell_stock">Sell</p></td>
                               <td><p>01-02-2023</p></td>
+                              <td><p>4.3M</p></td>
                             </tr>
                             <tr class="ovtlyr__row">
-                              <!-- <td class="align__items">
-                                <label class="checkbox mt-1">
-                                  <input class="checkbox__input" type="checkbox">
-                                  <span class="checkbox__in">
-                                    <span class="checkbox__tick"></span>
-                                  </span>
-                                </label>
-                              </td> -->
                               <td>
                                 <div class="fav_symbol">
                                   <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Google">
@@ -651,16 +587,9 @@ if (localStorage.getItem('darkMode') === "on") {
                               <td class="align__items"><p><span class="orgBox"></span></p></td>
                               <td data-bs-toggle="modal" data-bs-target="#upgrade1_modal"><p class="buy_stock">Buy</p></td>
                               <td><p>01-02-2023</p></td>
+                              <td><p>9.2M</p></td>
                             </tr>
                             <tr class="ovtlyr__row">
-                              <!-- <td class="align__items">
-                                <label class="checkbox mt-1">
-                                  <input class="checkbox__input" type="checkbox">
-                                  <span class="checkbox__in">
-                                    <span class="checkbox__tick"></span>
-                                  </span>
-                                </label>
-                              </td> -->
                               <td>
                                 <div class="fav_symbol">
                                   <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Google">
@@ -683,6 +612,7 @@ if (localStorage.getItem('darkMode') === "on") {
                               <td class="align__items"><p><span class="greenBox"></span></p></td>
                               <td data-bs-toggle="modal" data-bs-target="#upgrade1_modal"><p class="buy_stock">Buy</p></td>
                               <td><p>01-02-2023</p></td>
+                              <td><p>4.3M</p></td>
                             </tr>
                           </tbody>
                         </table>
@@ -719,7 +649,7 @@ if (localStorage.getItem('darkMode') === "on") {
                             <span class="company_name">American States Water Company</span>
                           </p>
                           <p class="noPlanHide">
-                            <span>Downside/Recovery</span>
+                            <span>Overlay</span>
                             <span class="greenBox"></span>
                           </p>
                           <p class="noPlanHide resPlanHide">
@@ -762,7 +692,7 @@ if (localStorage.getItem('darkMode') === "on") {
                             <span class="company_name">American States Water Company</span>
                           </p>
                           <p class="noPlanHide">
-                            <span>Downside/Recovery</span>
+                            <span>Overlay</span>
                             <span class="redBox"></span>
                           </p>
                           <p class="noPlanHide resPlanHide">
@@ -805,7 +735,7 @@ if (localStorage.getItem('darkMode') === "on") {
                             <span class="company_name">American States Water Company</span>
                           </p>
                           <p class="noPlanHide">
-                            <span>Downside/Recovery</span>
+                            <span>Overlay</span>
                             <span class="orgBox"></span>
                           </p>
                           <p class="noPlanHide resPlanHide">
@@ -1053,15 +983,15 @@ if (localStorage.getItem('darkMode') === "on") {
                     <div class="stocksTab_table">
                       <div class="table_scroll vertical_scroll horizontal_scroll">
                         <table class="table stocks__table0 stocks__table2 ovtlyr_table" id="dest">
-                          <thead>
+                          <thead class="sticky-top">
                             <tr class="ovtlyr__row_head">
-                              <th style="width: 8%;">Symbol</th>
-                              <th style="width: 15%;" class="sortTable_col">Name</th>
-                              <th style="width: 8%;">Last Close Price</th>
-                              <th style="width: 18%;">Issuer</th>
+                              <th style="width: 10%;">Symbol</th>
+                              <th style="width: 15%;">Name</th>
+                              <th style="width: 11%;">Last Close Price</th>
+                              <th style="width: 15%;">Issuer</th>
                               <th style="width: 18%;">Index Tracked</th>
-                              <th style="width: 11%;">Expense Ratio</th>
-                              <th style="width: 11%;">Signal</th>
+                              <th style="width: 10%;">Expense Ratio</th>
+                              <th style="width: 10%;">Signal</th>
                               <th style="width: 11%;">Last Signal Date</th>
                             </tr>
                           </thead>
@@ -1254,6 +1184,15 @@ if (localStorage.getItem('darkMode') === "on") {
 <script src="js/jquery.min.js"></script>
 <script src="js/magnific-popup-svg4-app.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
+<!--==== SIDEBAR DROPDOWN OPEN START ====-->
+<script>
+  $(document).ready(function(){
+    $('.dropdown_btn p').on('click', function(e){
+      $(this).parent().toggleClass('active');
+    });
+  });
+</script>
+<!--==== SIDEBAR DROPDOWN OPEN END ====-->
 <!--==== ADD TO FAV TOGGLE ====-->
 <script>
 $(document).ready(function(){

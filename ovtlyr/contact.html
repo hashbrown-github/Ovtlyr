@@ -117,37 +117,52 @@ if (localStorage.getItem('darkMode') === "on") {
                   <div class="sidebar__icon">
                     <img src="images/notification.svg" alt="Notification" />
                   </div>
-                  <div class="sidebar__text">Notification</div>
-                  <span class="noti_count">2</span>
+                  <div class="sidebar__text">Notifications</div>
+                  <span class="noti_count">99+</span>
                 </a>
               </div>
-              <div class="side_dropdown arrow_drop">
+              <div class="side_dropdown">
+                <a class="sidebar__item" href="https://discord.gg/DjgmSrdxUY" target="_blank">
+                  <div class="sidebar__icon">
+                    <img src="images/discord.svg" alt="Notification" />
+                  </div>
+                  <div class="sidebar__text">Discord</div>
+                </a>
+              </div>
+              <div class="side_dropdown arrow_drop dropdown_btn">
+                <p></p>
+                <a class="sidebar__item" href="affiliate-info.html">
+                  <div class="sidebar__icon">
+                    <img src="images/earn.svg" alt="Settings" />
+                  </div>
+                  <div class="sidebar__text">Earn</div>
+                </a>
+                <span><a href="affiliate-info.html">Affiliate Info</a></span>
+                <span><a href="promoter.html">FirstPromoter</a></span>
+              </div>
+              <div class="side_dropdown arrow_drop dropdown_btn">
+                <p></p>
                 <a class="sidebar__item" href="subscription.html">
                   <div class="sidebar__icon">
                     <img src="images/setting.svg" alt="Settings" />
                   </div>
                   <div class="sidebar__text">Settings</div>
                 </a>
-                <span>Subscription</span>
-                <span>Activity</span>
-                <span>Notification Management</span>
+                <span><a href="subscription.html">Subscription</a></span>
+                <span><a href="activity.html">Activity</a></span>
+                <!-- <span><a href="notification.html">Notification Management</a></span> -->
               </div>
-              <div class="side_dropdown">
-                <a class="sidebar__item" href="become-a-referer.html">
-                  <div class="sidebar__icon">
-                    <img src="images/referer.svg" alt="Referer" />
-                  </div>
-                  <div class="sidebar__text">Become a Referer</div>
-                </a>
-              </div>
-              <div class="side_dropdown arrow_drop active">
+              <div class="side_dropdown arrow_drop dropdown_btn active">
+                <p></p>
                 <a class="sidebar__item" href="contact.html">
                   <div class="sidebar__icon">
                     <img src="images/support.svg" alt="Support" />
                   </div>
-                  <div class="sidebar__text">Support</div>
+                  <div class="sidebar__text">Resources</div>
                 </a>
-                <span class="active">Contact</span>
+                <span class="active"><a href="contact.html">Support</a></span>
+                <span><a href="tutorials.html">Tutorials</a></span>
+                <span><a href="https://ovtlyr.com/blog" target="_blank">Blog</a></span>
               </div>
               <div class="side_dropdown theme_switchBtn">
                 <div class="sidebar__item mb-0">
@@ -174,7 +189,7 @@ if (localStorage.getItem('darkMode') === "on") {
         </div>
         <div class="sidebar__profile">
           <div class="sidebar__details">
-            <a class="sidebar__link" href="#">
+            <a class="sidebar__link" href="profile.html">
               <div class="sidebar__icon">
                 <img src="images/user.svg" alt="Profile" />
               </div>
@@ -218,7 +233,7 @@ if (localStorage.getItem('darkMode') === "on") {
             <p>Need technical support or any other help with OVTLYR platform? Create a Helpdesk Ticket <a href="mailto:support@ovtlyr.zendesk.com">Here</a>, or Send an email to <span>support@ovtlyr.zendesk.com</span> to create ticket.</p>
           </div>
           <div class="top_box">
-            <h3>For any other questions write us here...</h3>
+            <h3>For any other questions write us here... <button type="button" class="video_icon" data-bs-toggle="modal" data-bs-target="#supportPopup"><img src="images/video-icon.svg" alt="Video"></button></h3>
             <div class="contact_sec11">
               <div class="contact_sec111">
                 <!-- <div class="form_head">
@@ -282,6 +297,20 @@ if (localStorage.getItem('darkMode') === "on") {
                 <img src="images/contact-us-dark.svg" class="black_img" alt="Contact Us" />
               </div>
             </div>
+            <!--======== SETTINGS VIDEO POPUP BEGIN ========-->
+            <div class="modal upgrade_popup watchVideo fade" id="supportPopup" tabindex="-1" aria-labelledby="support_modalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <button type="button" class="close_btn" data-bs-dismiss="modal" aria-label="Close"><span class="material-icons">close</span></button>
+                    <div class="modal_body">
+                      <iframe src="https://www.youtube.com/embed/K6XFk0akEEc?si=bbtnDoMd-sB8htt_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--======== SETTINGS VIDEO POPUP END =========-->
           </div>
         </div>
       </div>
@@ -292,6 +321,33 @@ if (localStorage.getItem('darkMode') === "on") {
 <script src="js/jquery.min.js"></script>
 <script src="js/magnific-popup-svg4-app.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
+<!--==== SIDEBAR DROPDOWN OPEN START ====-->
+<script>
+  $(document).ready(function(){
+    $('.dropdown_btn p').on('click', function(e){
+      $(this).parent().toggleClass('active');
+    });
+  });
+</script>
+<!--==== SIDEBAR DROPDOWN OPEN END ====-->
+<!--==== STOP MODAL PLAYING START ====-->
+<script>
+  $(document).ready(function(){
+    /* Get iframe src attribute value i.e. YouTube video url and store it in a variable */
+    var url1 = $("#supportPopup iframe").attr('src');
+      
+    /* Assign empty url value to the iframe src attribute when modal hide, which stop the video playing */
+    $("#supportPopup").on('hide.bs.modal', function(){
+        $("#supportPopup iframe").attr('src', '');
+    });
+    
+    /* Assign the initially stored url back to the iframe src attribute when modal is displayed again */
+    $("#supportPopup").on('show.bs.modal', function(){
+        $("#supportPopup iframe").attr('src', url1);
+    });
+  });
+</script>
+<!--===== STOP MODAL PLAYING END =====-->
 <!--========= SIDEBAR SEARCH DROPDOWN START =========-->
 <script>
   $(document).ready(function(){

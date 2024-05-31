@@ -101,37 +101,49 @@ if (localStorage.getItem('darkMode') === "on") {
                   <div class="sidebar__icon">
                     <img src="images/notification.svg" alt="Notification" />
                   </div>
-                  <div class="sidebar__text">Notification</div>
-                  <span class="noti_count">20</span>
+                  <div class="sidebar__text">Notifications</div>
+                  <span class="noti_count">99+</span>
                 </a>
               </div>
-              <div class="side_dropdown arrow_drop">
+              <div class="side_dropdown">
+                <a class="sidebar__item" href="https://discord.gg/DjgmSrdxUY" target="_blank">
+                  <div class="sidebar__icon">
+                    <img src="images/discord.svg" alt="Notification" />
+                  </div>
+                  <div class="sidebar__text">Discord</div>
+                </a>
+              </div>
+              <div class="side_dropdown arrow_drop dropdown_btn">
+                <p></p>
                 <a class="sidebar__item" href="subscription.html">
                   <div class="sidebar__icon">
                     <img src="images/setting.svg" alt="Settings" />
                   </div>
                   <div class="sidebar__text">Settings</div>
                 </a>
-                <span>Subscription</span>
-                <span>Activity</span>
-                <span>Notification Management</span>
+                <span><a href="subscription.html">Subscription</a></span>
+                <span><a href="activity.html">Activity</a></span>
+                <!-- <span><a href="notification.html">Notification Management</a></span> -->
               </div>
               <div class="side_dropdown">
-                <a class="sidebar__item" href="become-a-referer.html">
+                <a class="sidebar__item" href="promoter.html">
                   <div class="sidebar__icon">
                     <img src="images/referer.svg" alt="Referer" />
                   </div>
-                  <div class="sidebar__text">Become a Referer</div>
+                  <div class="sidebar__text">Promoter</div>
                 </a>
               </div>
-              <div class="side_dropdown arrow_drop">
+              <div class="side_dropdown arrow_drop dropdown_btn">
+                <p></p>
                 <a class="sidebar__item" href="contact.html">
                   <div class="sidebar__icon">
                     <img src="images/support.svg" alt="Support" />
                   </div>
-                  <div class="sidebar__text">Support</div>
+                  <div class="sidebar__text">Resources</div>
                 </a>
-                <span class="active">Contact</span>
+                <span><a href="contact.html">Support</a></span>
+                <span><a href="tutorials.html">Tutorials</a></span>
+                <span><a href="https://ovtlyr.com/blog" target="_blank">Blog</a></span>
               </div>
               <div class="side_dropdown theme_switchBtn">
                 <div class="sidebar__item mb-0">
@@ -158,7 +170,7 @@ if (localStorage.getItem('darkMode') === "on") {
         </div>
         <div class="sidebar__profile">
           <div class="sidebar__details">
-            <a class="sidebar__link" href="#">
+            <a class="sidebar__link" href="profile.html">
               <div class="sidebar__icon">
                 <img src="images/user.svg" alt="Profile" />
               </div>
@@ -222,13 +234,37 @@ if (localStorage.getItem('darkMode') === "on") {
                       </div>
                     </div>
                   </div>
-                  <h4>
+                  <!-- <h4>
                     <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Information Technology">
                       <span>Information Technology</span>
                     </a>
                     <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="NYSE ARCA : Information Technology">
                       <span>NYSE ARCA : Information Technology</span>
                     </a>
+                    <span>Feb 07, 2024</span>
+                    <div class="lineChart_dtl">
+                      <div class="accordion accordion-solid accordion-toggle-plus" id="accordionperformSummary">
+                        <div class="card">
+                          <div class="card-header" id="headingOne6">
+                            <div class="card-title collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOne6" id="open_chartView">Performance Summary</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </h4> -->
+                  <h4>
+                    <span data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Information Technology">Information Technology</span>
+                    <span data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Technology">Sector : Technology</span>
+                    <span>Feb 07, 2024</span>
+                    <div class="lineChart_dtl">
+                      <div class="accordion accordion-solid accordion-toggle-plus" id="accordionperformSummary">
+                        <div class="card">
+                          <div class="card-header" id="headingOne6">
+                            <div class="card-title collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOne6" id="open_chartView">Performance Summary</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </h4>
                 </div>
                 <p><span>Favorite </span><button type="button" class="addTo_fav"><i class="fa-regular fa-star"></i></button></p>
@@ -237,9 +273,22 @@ if (localStorage.getItem('darkMode') === "on") {
           </div>
           <div class="IndSec_serial3">
             <div class="active_tabs">
+              <div class="chart_dtl video_icon">
+                <div class="sort_dropdown">
+                  <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><img src="images/video-icon.svg" alt="Video" /></button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#watchVideo"><p class="mb-0">Watch: Buy & Sell</p></a></li>
+                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#watchVideo"><p class="mb-0">Watch: Heatmap</p></a></li>
+                    <li><a class="dropdown-item" href="#"><p class="mb-0">Watch:</p></a></li>
+                  </ul>
+                </div>
+              </div>
               <div class="tabs__nav">
                 <a class="tabs__link" href="#">
                   <div class="tabs__text">3M</div>
+                </a>
+                <a class="tabs__link" href="#">
+                  <div class="tabs__text">6M</div>
                 </a>
                 <a class="tabs__link active" href="#">
                   <div class="tabs__text">1Y</div>
@@ -248,7 +297,7 @@ if (localStorage.getItem('darkMode') === "on") {
                   <div class="tabs__text">Max</div>
                 </a>
               </div>
-              <div class="chart_dtl stockDtl_pg">
+              <!-- <div class="chart_dtl stockDtl_pg">
                 <button type="button" class="toggle_chart">
                   <img src="images/line-chart.svg" class="candleChart" alt="Candle Chart" style="display: none;" />
                   <img src="images/heatmap-chart.svg" class="heatmapChart" alt="Heatmap Chart" />
@@ -258,24 +307,97 @@ if (localStorage.getItem('darkMode') === "on") {
                 <button type="button">
                   <img src="images/filter-horizontal.svg" alt="Arrows" />
                 </button>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
         <div class="dashboard_grid">
           <div class="dash_gridLeft">
             <div class="mobileVer_box">
+              <div class="lineChart_box0">
+                <div class="lineChart_box1">
+                  <div class="lineChart_dtl">
+                    <div class="accordion accordion-solid accordion-toggle-plus" id="accordionperformSummary">
+                      <div class="card">
+                        <div class="card-header" id="headingOne7">
+                          <div class="card-title" data-bs-toggle="collapse" data-bs-target="#collapseOne7">Performance Summary<span class="material-symbols-outlined" id="close_chartView">close</span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="lineChart_chrt">
+                    <div class="lineChart_chrt1">
+                      <div id="performance_chart"></div>
+                      <div class="secMap_legends stok_crtLen">
+                        <p><span class="blue_box2"></span>OVTLYR: <em class="green_txt">80%</em></p>
+                        <p><span class="red_box"></span>Buy & Hold: <em class="red_txt">-20%</em></p>
+                      </div>
+                    </div>
+                    <div class="lineChart_dtl">
+                      <div class="accordion accordion-solid accordion-toggle-plus" id="accordionperformSummary">
+                        <div class="card">
+                          <div id="collapseOne8" class="collapse show" data-bs-parent="#accordionFAQ">
+                            <div class="card-body border-top-0">
+                              <ul>
+                                <li><p><span></span><span>Buy & Hold</span><span>OVTLYR</span></p></li>
+                                <li><p><span>Total Trading Days:</span><span>1058 Days</span><span>585 Days</span></p></li>
+                                <!-- <li><p><span>Signals Active:</span><span>73 Days</span><span>84 Days</span></p></li> -->
+                                <li><p><span>Buy Signals:</span><span>2</span><span>22</span></p></li>
+                                <li><p><span>Avg. Holding Period:</span><span>20 Days</span><span>27 Days</span></p></li>
+                                <li><p><span>Exposure:</span><span>100%</span><span>55%</span></p></li>
+                                <li><p><span>Signal Return:</span><span>60.44%</span><span>71.85%</span></p></li>
+                                <li><p><span>Capital Efficiency:</span><span>0.82x</span><span>2.15x</span></p></li>
+                                <li><p><span>Max Drawdown:</span><span>-33.70%</span><span>-8.90%</span></p></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div class="border_box lineChart_box">
                 <div class="chartBox_1">
                   <div id="chartcontrols"></div>
                   <div id="stockChart"></div>
+                </div>
+                <div class="secMap_legends stok_crtLen">
+                  <p><img src="https://hashbrown.azureedge.net/otherimages/Buy_arrow-1.svg" alt="Buy" />Buy</p>
+                  <p><img src="https://hashbrown.azureedge.net/otherimages/S_arrow-1.svg" alt="Buy" />Sell</p>
+                </div>
+              </div>
+            </div>
+            <div class="mobileDiv">
+              <div class="lineChart_dtl">
+                <div class="accordion">
+                  <div class="card">
+                    <div class="card-header">
+                      <div class="card-title">Performance Summary</div>
+                    </div>
+                    <div class="collapse show">
+                      <div class="card-body">
+                        <ul>
+                          <li><p><span></span><span>Buy & Hold</span><span>OVTLYR</span></p></li>
+                          <li><p><span>Total Trading Days:</span><span>1058 Days</span><span>585 Days</span></p></li>
+                          <!-- <li><p><span>Signals Active:</span><span>73 Days</span><span>84 Days</span></p></li> -->
+                          <li><p><span>Buy Signals:</span><span>2</span><span>22</span></p></li>
+                          <li><p><span>Avg. Holding Period:</span><span>20 Days</span><span>27 Days</span></p></li>
+                          <li><p><span>Exposure:</span><span>100%</span><span>55%</span></p></li>
+                          <li><p><span>Signal Return:</span><span>60.44%</span><span>71.85%</span></p></li>
+                          <li><p><span>Capital Efficiency:</span><span>0.82x</span><span>2.15x</span></p></li>
+                          <li><p><span>Max Drawdown:</span><span>-33.70%</span><span>-8.90%</span></p></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="dash_gridCenter">
             <div class="border_box">
-              <h6>Directional Volatility Histogram</h6>
+              <h6>Directional Volatility Histogram <button type="button" class="video_icon" data-bs-toggle="modal" data-bs-target="#watchVideo"><img src="images/video-icon.svg" alt="Video" /></button></h6>
               <div class="chartBox_1">
                 <div id="histogram_chart"></div>
               </div>
@@ -321,6 +443,15 @@ if (localStorage.getItem('darkMode') === "on") {
 <script src="js/jquery.min.js"></script>
 <script src="js/magnific-popup-svg4-app.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
+<!--==== SIDEBAR DROPDOWN OPEN START ====-->
+<script>
+  $(document).ready(function(){
+    $('.dropdown_btn p').on('click', function(e){
+      $(this).parent().toggleClass('active');
+    });
+  });
+</script>
+<!--==== SIDEBAR DROPDOWN OPEN END ====-->
 <!--==== ADD TO FAV TOGGLE ====-->
 <script>
 $(document).ready(function(){
@@ -329,6 +460,24 @@ $(document).ready(function(){
   });
 });
 </script>
+<!--==== STOP MODAL PLAYING START ====-->
+<script>
+  $(document).ready(function(){
+    /* Get iframe src attribute value i.e. YouTube video url and store it in a variable */
+    var url = $("#watchVideo iframe").attr('src');
+      
+    /* Assign empty url value to the iframe src attribute when modal hide, which stop the video playing */
+    $("#watchVideo").on('hide.bs.modal', function(){
+        $("#watchVideo iframe").attr('src', '');
+    });
+    
+    /* Assign the initially stored url back to the iframe src attribute when modal is displayed again */
+    $("#watchVideo").on('show.bs.modal', function(){
+        $("#watchVideo iframe").attr('src', url);
+    });
+  });
+</script>
+<!--===== STOP MODAL PLAYING END =====-->
 <!--==== CHART TOGGLE ====-->
 <!-- <script>
 $(document).ready(function(){
@@ -337,6 +486,22 @@ $(document).ready(function(){
   });
 });
 </script> -->
+<script>
+  $(document).ready(function(){
+    $('#open_chartView').click(function(evt){
+      evt.stopPropagation();
+      $(".lineChart_box1").css({
+        "display" : "block"
+      });
+    });
+    $('#close_chartView').click(function(evt){
+      evt.stopPropagation();
+      $(".lineChart_box1").css({
+        "display" : "none"
+      });
+    });
+  });
+</script>
 <!--==== TOOLTIP SCRIPT 1 ====-->
 <script>
   $(document).ready(function(){
@@ -19552,6 +19717,1591 @@ $(document).ready(function(){
   });
   </script>
 <!--======= HISTOGRAM CHART END =======-->
+<!--===== PERFORMANCE CHART START ======--> 
+<script>
+  am5.ready(function(){am5.addLicense("AM5C311897715");
+  var root=am5.Root.new("performance_chart");
+      root.setThemes([am5themes_Animated.new(root)
+  ]);
+  var chart=root.container.children.push(am5xy.XYChart.new(root, {
+    paddingLeft:20,
+    paddingTop:0,
+    paddingRight:0,
+    paddingBottom:0,
+      marginRight:0,
+      maxOpacity:1
+  }));
+      
+  var cursor=chart.set("cursor",am5xy.XYCursor.new(root,{}));
+  cursor.lineY.set("visible", false);
+  cursor.lineX.set("visible", false);
+  cursor.lineX.setAll({
+      stroke:am5.color(0x808191),
+      strokeWidth:1,
+      strokeDasharray:[2]
+  });
+  cursor.lineY.setAll({
+      stroke:am5.color(0x808191),
+      strokeWidth:1,
+      strokeDasharray:[2]
+  });  
+  function generateDatas(count){
+  var data = [
+    {
+      "Quotedate": "28-08-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 65.63,
+      "Profit_Loss": 37.42661304,
+      "prevQuoteDate": "",
+      "prevClosePrice": "",
+      "prevProfit_Loss": "",
+      "deltaCP": "",
+      "deltaPL": "",
+      "cum_CP": "",
+      "cum_PL": "",
+      "cum_CP_perc": "",
+      "cum_PL_perc": "",
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "29-08-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 66.94,
+      "Profit_Loss": 37.42661304,
+      "prevQuoteDate": "28-08-2023",
+      "prevClosePrice": 65.63,
+      "prevProfit_Loss": 37.42661304,
+      "deltaCP": 1.31,
+      "deltaPL": 0,
+      "cum_CP": 1.31,
+      "cum_PL": 0,
+      "cum_CP_perc": 1.996038397,
+      "cum_PL_perc": 1.996038397,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "30-08-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 68.1,
+      "Profit_Loss": 37.42661304,
+      "prevQuoteDate": "29-08-2023",
+      "prevClosePrice": 66.94,
+      "prevProfit_Loss": 37.42661304,
+      "deltaCP": 1.16,
+      "deltaPL": 0,
+      "cum_CP": 2.47,
+      "cum_PL": 0,
+      "cum_CP_perc": 3.763522779,
+      "cum_PL_perc": 3.763522779,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "31-08-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 68.82,
+      "Profit_Loss": 37.42661304,
+      "prevQuoteDate": "30-08-2023",
+      "prevClosePrice": 68.1,
+      "prevProfit_Loss": 37.42661304,
+      "deltaCP": 0.72,
+      "deltaPL": 0,
+      "cum_CP": 3.19,
+      "cum_PL": 0,
+      "cum_CP_perc": 4.860582051,
+      "cum_PL_perc": 4.860582051,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "01-09-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 67.65,
+      "Profit_Loss": 37.42661304,
+      "prevQuoteDate": "31-08-2023",
+      "prevClosePrice": 68.82,
+      "prevProfit_Loss": 37.42661304,
+      "deltaCP": -1.17,
+      "deltaPL": 0,
+      "cum_CP": 2.02,
+      "cum_PL": 0,
+      "cum_CP_perc": 3.077860734,
+      "cum_PL_perc": 3.077860734,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "05-09-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 67.56,
+      "Profit_Loss": 37.42661304,
+      "prevQuoteDate": "01-09-2023",
+      "prevClosePrice": 67.65,
+      "prevProfit_Loss": 37.42661304,
+      "deltaCP": -0.09,
+      "deltaPL": 0,
+      "cum_CP": 1.93,
+      "cum_PL": 0,
+      "cum_CP_perc": 2.940728325,
+      "cum_PL_perc": 2.940728325,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "06-09-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 67,
+      "Profit_Loss": 37.42661304,
+      "prevQuoteDate": "05-09-2023",
+      "prevClosePrice": 67.56,
+      "prevProfit_Loss": 37.42661304,
+      "deltaCP": -0.56,
+      "deltaPL": 0,
+      "cum_CP": 1.37,
+      "cum_PL": 0,
+      "cum_CP_perc": 2.087460003,
+      "cum_PL_perc": 2.087460003,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "07-09-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 63.39,
+      "Profit_Loss": 37.42661304,
+      "prevQuoteDate": "06-09-2023",
+      "prevClosePrice": 67,
+      "prevProfit_Loss": 37.42661304,
+      "deltaCP": -3.61,
+      "deltaPL": 0,
+      "cum_CP": -2.24,
+      "cum_PL": 0,
+      "cum_CP_perc": -3.41307329,
+      "cum_PL_perc": -3.41307329,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "08-09-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 64.61,
+      "Profit_Loss": 37.42661304,
+      "prevQuoteDate": "07-09-2023",
+      "prevClosePrice": 63.39,
+      "prevProfit_Loss": 37.42661304,
+      "deltaCP": 1.22,
+      "deltaPL": 0,
+      "cum_CP": -1.02,
+      "cum_PL": 0,
+      "cum_CP_perc": -1.554167302,
+      "cum_PL_perc": -1.554167302,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "11-09-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 62.54,
+      "Profit_Loss": 37.42661304,
+      "prevQuoteDate": "08-09-2023",
+      "prevClosePrice": 64.61,
+      "prevProfit_Loss": 37.42661304,
+      "deltaCP": -2.07,
+      "deltaPL": 0,
+      "cum_CP": -3.09,
+      "cum_PL": 0,
+      "cum_CP_perc": -4.708212708,
+      "cum_PL_perc": -4.708212708,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "12-09-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 57.46,
+      "Profit_Loss": 37.42661304,
+      "prevQuoteDate": "11-09-2023",
+      "prevClosePrice": 62.54,
+      "prevProfit_Loss": 37.42661304,
+      "deltaCP": -5.08,
+      "deltaPL": 0,
+      "cum_CP": -8.17,
+      "cum_PL": 0,
+      "cum_CP_perc": -12.44857535,
+      "cum_PL_perc": 0,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "13-09-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 57.93,
+      "Profit_Loss": 37.42661304,
+      "prevQuoteDate": "12-09-2023",
+      "prevClosePrice": 57.46,
+      "prevProfit_Loss": 37.42661304,
+      "deltaCP": 0.47,
+      "deltaPL": 0,
+      "cum_CP": -7.7,
+      "cum_PL": 0,
+      "cum_CP_perc": -11.73243943,
+      "cum_PL_perc": 0,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "14-09-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 59.62,
+      "Profit_Loss": 37.42661304,
+      "prevQuoteDate": "13-09-2023",
+      "prevClosePrice": 57.93,
+      "prevProfit_Loss": 37.42661304,
+      "deltaCP": 1.69,
+      "deltaPL": 0,
+      "cum_CP": -6.01,
+      "cum_PL": 0,
+      "cum_CP_perc": -9.157397532,
+      "cum_PL_perc": 0,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "15-09-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 59.82,
+      "Profit_Loss": 37.42661304,
+      "prevQuoteDate": "14-09-2023",
+      "prevClosePrice": 59.62,
+      "prevProfit_Loss": 37.42661304,
+      "deltaCP": 0.2,
+      "deltaPL": 0,
+      "cum_CP": -5.81,
+      "cum_PL": 0,
+      "cum_CP_perc": -8.852658845,
+      "cum_PL_perc": 0,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "18-09-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 58.16,
+      "Profit_Loss": 37.42661304,
+      "prevQuoteDate": "15-09-2023",
+      "prevClosePrice": 59.82,
+      "prevProfit_Loss": 37.42661304,
+      "deltaCP": -1.66,
+      "deltaPL": 0,
+      "cum_CP": -7.47,
+      "cum_PL": 0,
+      "cum_CP_perc": -11.38198994,
+      "cum_PL_perc": 0,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "19-09-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 59.66,
+      "Profit_Loss": 37.42661304,
+      "prevQuoteDate": "18-09-2023",
+      "prevClosePrice": 58.16,
+      "prevProfit_Loss": 37.42661304,
+      "deltaCP": 1.5,
+      "deltaPL": 0,
+      "cum_CP": -5.97,
+      "cum_PL": 0,
+      "cum_CP_perc": -9.096449794,
+      "cum_PL_perc": 0,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "20-09-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 60.12,
+      "Profit_Loss": 37.42661304,
+      "prevQuoteDate": "19-09-2023",
+      "prevClosePrice": 59.66,
+      "prevProfit_Loss": 37.42661304,
+      "deltaCP": 0.46,
+      "deltaPL": 0,
+      "cum_CP": -5.51,
+      "cum_PL": 0,
+      "cum_CP_perc": -8.395550815,
+      "cum_PL_perc": 0,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "21-09-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 58.24,
+      "Profit_Loss": 37.42661304,
+      "prevQuoteDate": "20-09-2023",
+      "prevClosePrice": 60.12,
+      "prevProfit_Loss": 37.42661304,
+      "deltaCP": -1.88,
+      "deltaPL": 0,
+      "cum_CP": -7.39,
+      "cum_PL": 0,
+      "cum_CP_perc": -11.26009447,
+      "cum_PL_perc": 0,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "22-09-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 57.6,
+      "Profit_Loss": 37.42661304,
+      "prevQuoteDate": "21-09-2023",
+      "prevClosePrice": 58.24,
+      "prevProfit_Loss": 37.42661304,
+      "deltaCP": -0.64,
+      "deltaPL": 0,
+      "cum_CP": -8.03,
+      "cum_PL": 0,
+      "cum_CP_perc": -12.23525827,
+      "cum_PL_perc": 0,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "25-09-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 56.92,
+      "Profit_Loss": 37.42661304,
+      "prevQuoteDate": "22-09-2023",
+      "prevClosePrice": 57.6,
+      "prevProfit_Loss": 37.42661304,
+      "deltaCP": -0.68,
+      "deltaPL": 0,
+      "cum_CP": -8.71,
+      "cum_PL": 0,
+      "cum_CP_perc": -13.2713698,
+      "cum_PL_perc": 0,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "26-09-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 54.95,
+      "Profit_Loss": 37.42661304,
+      "prevQuoteDate": "25-09-2023",
+      "prevClosePrice": 56.92,
+      "prevProfit_Loss": 37.42661304,
+      "deltaCP": -1.97,
+      "deltaPL": 0,
+      "cum_CP": -10.68,
+      "cum_PL": 0,
+      "cum_CP_perc": -16.27304586,
+      "cum_PL_perc": 0,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "27-09-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 54.82,
+      "Profit_Loss": 37.42661304,
+      "prevQuoteDate": "26-09-2023",
+      "prevClosePrice": 54.95,
+      "prevProfit_Loss": 37.42661304,
+      "deltaCP": -0.13,
+      "deltaPL": 0,
+      "cum_CP": -10.81,
+      "cum_PL": 0,
+      "cum_CP_perc": -16.47112601,
+      "cum_PL_perc": 0,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "28-09-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 55.07,
+      "Profit_Loss": 37.42661304,
+      "prevQuoteDate": "27-09-2023",
+      "prevClosePrice": 54.82,
+      "prevProfit_Loss": 37.42661304,
+      "deltaCP": 0.25,
+      "deltaPL": 0,
+      "cum_CP": -10.56,
+      "cum_PL": 0,
+      "cum_CP_perc": -16.09020265,
+      "cum_PL_perc": 0,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "29-09-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 55.93,
+      "Profit_Loss": 37.42661304,
+      "prevQuoteDate": "28-09-2023",
+      "prevClosePrice": 55.07,
+      "prevProfit_Loss": 37.42661304,
+      "deltaCP": 0.86,
+      "deltaPL": 0,
+      "cum_CP": -9.7,
+      "cum_PL": 0,
+      "cum_CP_perc": -14.7798263,
+      "cum_PL_perc": 0,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "02-10-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 53.94,
+      "Profit_Loss": 37.42661304,
+      "prevQuoteDate": "29-09-2023",
+      "prevClosePrice": 55.93,
+      "prevProfit_Loss": 37.42661304,
+      "deltaCP": -1.99,
+      "deltaPL": 0,
+      "cum_CP": -11.69,
+      "cum_PL": 0,
+      "cum_CP_perc": -17.81197623,
+      "cum_PL_perc": 0,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "03-10-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 53.4,
+      "Profit_Loss": 37.42661304,
+      "prevQuoteDate": "02-10-2023",
+      "prevClosePrice": 53.94,
+      "prevProfit_Loss": 37.42661304,
+      "deltaCP": -0.54,
+      "deltaPL": 0,
+      "cum_CP": -12.23,
+      "cum_PL": 0,
+      "cum_CP_perc": -18.63477068,
+      "cum_PL_perc": 0,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "04-10-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 52.38,
+      "Profit_Loss": 37.42661304,
+      "prevQuoteDate": "03-10-2023",
+      "prevClosePrice": 53.4,
+      "prevProfit_Loss": 37.42661304,
+      "deltaCP": -1.02,
+      "deltaPL": 0,
+      "cum_CP": -13.25,
+      "cum_PL": 0,
+      "cum_CP_perc": -20.18893799,
+      "cum_PL_perc": 0,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "05-10-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 52.96,
+      "Profit_Loss": 37.42661304,
+      "prevQuoteDate": "04-10-2023",
+      "prevClosePrice": 52.38,
+      "prevProfit_Loss": 37.42661304,
+      "deltaCP": 0.58,
+      "deltaPL": 0,
+      "cum_CP": -12.67,
+      "cum_PL": 0,
+      "cum_CP_perc": -19.30519579,
+      "cum_PL_perc": 0,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "06-10-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 51.99,
+      "Profit_Loss": 37.42661304,
+      "prevQuoteDate": "05-10-2023",
+      "prevClosePrice": 52.96,
+      "prevProfit_Loss": 37.42661304,
+      "deltaCP": -0.97,
+      "deltaPL": 0,
+      "cum_CP": -13.64,
+      "cum_PL": 0,
+      "cum_CP_perc": -20.78317842,
+      "cum_PL_perc": 0,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "09-10-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 51.36,
+      "Profit_Loss": 37.42661304,
+      "prevQuoteDate": "06-10-2023",
+      "prevClosePrice": 51.99,
+      "prevProfit_Loss": 37.42661304,
+      "deltaCP": -0.63,
+      "deltaPL": 0,
+      "cum_CP": -14.27,
+      "cum_PL": 0,
+      "cum_CP_perc": -21.74310529,
+      "cum_PL_perc": 0,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "10-10-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 52.09,
+      "Profit_Loss": 37.42661304,
+      "prevQuoteDate": "09-10-2023",
+      "prevClosePrice": 51.36,
+      "prevProfit_Loss": 37.42661304,
+      "deltaCP": 0.73,
+      "deltaPL": 0,
+      "cum_CP": -13.54,
+      "cum_PL": 0,
+      "cum_CP_perc": -20.63080908,
+      "cum_PL_perc": 0,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "11-10-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 51.26,
+      "Profit_Loss": 36.59661304,
+      "prevQuoteDate": "10-10-2023",
+      "prevClosePrice": 52.09,
+      "prevProfit_Loss": 37.42661304,
+      "deltaCP": -0.83,
+      "deltaPL": -0.83,
+      "cum_CP": -14.37,
+      "cum_PL": -0.83,
+      "cum_CP_perc": -21.89547463,
+      "cum_PL_perc": -2.217673288,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "12-10-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 49.97,
+      "Profit_Loss": 35.30661304,
+      "prevQuoteDate": "11-10-2023",
+      "prevClosePrice": 51.26,
+      "prevProfit_Loss": 36.59661304,
+      "deltaCP": -1.29,
+      "deltaPL": -1.29,
+      "cum_CP": -15.66,
+      "cum_PL": -2.12,
+      "cum_CP_perc": -23.86103916,
+      "cum_PL_perc": -5.664418519,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "13-10-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 50.75,
+      "Profit_Loss": 36.08661304,
+      "prevQuoteDate": "12-10-2023",
+      "prevClosePrice": 49.97,
+      "prevProfit_Loss": 35.30661304,
+      "deltaCP": 0.78,
+      "deltaPL": 0.78,
+      "cum_CP": -14.88,
+      "cum_PL": -1.34,
+      "cum_CP_perc": -22.67255828,
+      "cum_PL_perc": -3.580340008,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "16-10-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 53.59,
+      "Profit_Loss": 38.92661304,
+      "prevQuoteDate": "13-10-2023",
+      "prevClosePrice": 50.75,
+      "prevProfit_Loss": 36.08661304,
+      "deltaCP": 2.84,
+      "deltaPL": 2.84,
+      "cum_CP": -12.04,
+      "cum_PL": 1.5,
+      "cum_CP_perc": -18.34526893,
+      "cum_PL_perc": 4.007843292,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "17-10-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 54.68,
+      "Profit_Loss": 40.01661304,
+      "prevQuoteDate": "16-10-2023",
+      "prevClosePrice": 53.59,
+      "prevProfit_Loss": 38.92661304,
+      "deltaCP": 1.09,
+      "deltaPL": 1.09,
+      "cum_CP": -10.95,
+      "cum_PL": 2.59,
+      "cum_CP_perc": -16.68444309,
+      "cum_PL_perc": 6.920209418,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "18-10-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 53.24,
+      "Profit_Loss": 38.57661304,
+      "prevQuoteDate": "17-10-2023",
+      "prevClosePrice": 54.68,
+      "prevProfit_Loss": 40.01661304,
+      "deltaCP": -1.44,
+      "deltaPL": -1.44,
+      "cum_CP": -12.39,
+      "cum_PL": 1.15,
+      "cum_CP_perc": -18.87856163,
+      "cum_PL_perc": 3.072679857,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "19-10-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 51.3,
+      "Profit_Loss": 36.63661304,
+      "prevQuoteDate": "18-10-2023",
+      "prevClosePrice": 53.24,
+      "prevProfit_Loss": 38.57661304,
+      "deltaCP": -1.94,
+      "deltaPL": -1.94,
+      "cum_CP": -14.33,
+      "cum_PL": -0.79,
+      "cum_CP_perc": -21.83452689,
+      "cum_PL_perc": -2.110797467,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "20-10-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 51.2,
+      "Profit_Loss": 36.53661304,
+      "prevQuoteDate": "19-10-2023",
+      "prevClosePrice": 51.3,
+      "prevProfit_Loss": 36.63661304,
+      "deltaCP": -0.1,
+      "deltaPL": -0.1,
+      "cum_CP": -14.43,
+      "cum_PL": -0.89,
+      "cum_CP_perc": -21.98689624,
+      "cum_PL_perc": -2.37798702,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "23-10-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 48.45,
+      "Profit_Loss": 33.78661304,
+      "prevQuoteDate": "20-10-2023",
+      "prevClosePrice": 51.2,
+      "prevProfit_Loss": 36.53661304,
+      "deltaCP": -2.75,
+      "deltaPL": -2.75,
+      "cum_CP": -17.18,
+      "cum_PL": -3.64,
+      "cum_CP_perc": -26.17705318,
+      "cum_PL_perc": -9.725699722,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "24-10-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 48.25,
+      "Profit_Loss": 33.58661304,
+      "prevQuoteDate": "23-10-2023",
+      "prevClosePrice": 48.45,
+      "prevProfit_Loss": 33.78661304,
+      "deltaCP": -0.2,
+      "deltaPL": -0.2,
+      "cum_CP": -17.38,
+      "cum_PL": -3.84,
+      "cum_CP_perc": -26.48179186,
+      "cum_PL_perc": -10.26007883,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "25-10-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 49.84,
+      "Profit_Loss": 35.17661304,
+      "prevQuoteDate": "24-10-2023",
+      "prevClosePrice": 48.25,
+      "prevProfit_Loss": 33.58661304,
+      "deltaCP": 1.59,
+      "deltaPL": 1.59,
+      "cum_CP": -15.79,
+      "cum_PL": -2.25,
+      "cum_CP_perc": -24.05911931,
+      "cum_PL_perc": -6.011764938,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "26-10-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 51.03,
+      "Profit_Loss": 35.17661304,
+      "prevQuoteDate": "25-10-2023",
+      "prevClosePrice": 49.84,
+      "prevProfit_Loss": 35.17661304,
+      "deltaCP": 1.19,
+      "deltaPL": 0,
+      "cum_CP": -14.6,
+      "cum_PL": -2.25,
+      "cum_CP_perc": -22.24592412,
+      "cum_PL_perc": -6.011764938,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "27-10-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 49.9,
+      "Profit_Loss": 35.17661304,
+      "prevQuoteDate": "26-10-2023",
+      "prevClosePrice": 51.03,
+      "prevProfit_Loss": 35.17661304,
+      "deltaCP": -1.13,
+      "deltaPL": 0,
+      "cum_CP": -15.73,
+      "cum_PL": -2.25,
+      "cum_CP_perc": -23.9676977,
+      "cum_PL_perc": -6.011764938,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "30-10-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 51.33,
+      "Profit_Loss": 35.17661304,
+      "prevQuoteDate": "27-10-2023",
+      "prevClosePrice": 49.9,
+      "prevProfit_Loss": 35.17661304,
+      "deltaCP": 1.43,
+      "deltaPL": 0,
+      "cum_CP": -14.3,
+      "cum_PL": -2.25,
+      "cum_CP_perc": -21.78881609,
+      "cum_PL_perc": -6.011764938,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "31-10-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 52.03,
+      "Profit_Loss": 35.17661304,
+      "prevQuoteDate": "30-10-2023",
+      "prevClosePrice": 51.33,
+      "prevProfit_Loss": 35.17661304,
+      "deltaCP": 0.7,
+      "deltaPL": 0,
+      "cum_CP": -13.6,
+      "cum_PL": -2.25,
+      "cum_CP_perc": -20.72223069,
+      "cum_PL_perc": -6.011764938,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "01-11-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 51.55,
+      "Profit_Loss": 35.17661304,
+      "prevQuoteDate": "31-10-2023",
+      "prevClosePrice": 52.03,
+      "prevProfit_Loss": 35.17661304,
+      "deltaCP": -0.48,
+      "deltaPL": 0,
+      "cum_CP": -14.08,
+      "cum_PL": -2.25,
+      "cum_CP_perc": -21.45360353,
+      "cum_PL_perc": -6.011764938,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "02-11-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 52.94,
+      "Profit_Loss": 35.17661304,
+      "prevQuoteDate": "01-11-2023",
+      "prevClosePrice": 51.55,
+      "prevProfit_Loss": 35.17661304,
+      "deltaCP": 1.39,
+      "deltaPL": 0,
+      "cum_CP": -12.69,
+      "cum_PL": -2.25,
+      "cum_CP_perc": -19.33566966,
+      "cum_PL_perc": -6.011764938,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "03-11-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 57.14,
+      "Profit_Loss": 35.17661304,
+      "prevQuoteDate": "02-11-2023",
+      "prevClosePrice": 52.94,
+      "prevProfit_Loss": 35.17661304,
+      "deltaCP": 4.2,
+      "deltaPL": 0,
+      "cum_CP": -8.49,
+      "cum_PL": -2.25,
+      "cum_CP_perc": -12.93615725,
+      "cum_PL_perc": -6.011764938,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "06-11-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 56.66,
+      "Profit_Loss": 35.17661304,
+      "prevQuoteDate": "03-11-2023",
+      "prevClosePrice": 57.14,
+      "prevProfit_Loss": 35.17661304,
+      "deltaCP": -0.48,
+      "deltaPL": 0,
+      "cum_CP": -8.97,
+      "cum_PL": -2.25,
+      "cum_CP_perc": -13.66753009,
+      "cum_PL_perc": -6.011764938,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "07-11-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 58.38,
+      "Profit_Loss": 35.17661304,
+      "prevQuoteDate": "06-11-2023",
+      "prevClosePrice": 56.66,
+      "prevProfit_Loss": 35.17661304,
+      "deltaCP": 1.72,
+      "deltaPL": 0,
+      "cum_CP": -7.25,
+      "cum_PL": -2.25,
+      "cum_CP_perc": -11.04677739,
+      "cum_PL_perc": -6.011764938,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "08-11-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 57.64,
+      "Profit_Loss": 35.17661304,
+      "prevQuoteDate": "07-11-2023",
+      "prevClosePrice": 58.38,
+      "prevProfit_Loss": 35.17661304,
+      "deltaCP": -0.74,
+      "deltaPL": 0,
+      "cum_CP": -7.99,
+      "cum_PL": -2.25,
+      "cum_CP_perc": -12.17431053,
+      "cum_PL_perc": -6.011764938,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "09-11-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 56.14,
+      "Profit_Loss": 35.17661304,
+      "prevQuoteDate": "08-11-2023",
+      "prevClosePrice": 57.64,
+      "prevProfit_Loss": 35.17661304,
+      "deltaCP": -1.5,
+      "deltaPL": 0,
+      "cum_CP": -9.49,
+      "cum_PL": -2.25,
+      "cum_CP_perc": -14.45985068,
+      "cum_PL_perc": -6.011764938,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "10-11-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 56.13,
+      "Profit_Loss": 35.17661304,
+      "prevQuoteDate": "09-11-2023",
+      "prevClosePrice": 56.14,
+      "prevProfit_Loss": 35.17661304,
+      "deltaCP": -0.01,
+      "deltaPL": 0,
+      "cum_CP": -9.5,
+      "cum_PL": -2.25,
+      "cum_CP_perc": -14.47508761,
+      "cum_PL_perc": -6.011764938,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "13-11-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 55.94,
+      "Profit_Loss": 35.17661304,
+      "prevQuoteDate": "10-11-2023",
+      "prevClosePrice": 56.13,
+      "prevProfit_Loss": 35.17661304,
+      "deltaCP": -0.19,
+      "deltaPL": 0,
+      "cum_CP": -9.69,
+      "cum_PL": -2.25,
+      "cum_CP_perc": -14.76458936,
+      "cum_PL_perc": -6.011764938,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "14-11-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 58.4,
+      "Profit_Loss": 35.17661304,
+      "prevQuoteDate": "13-11-2023",
+      "prevClosePrice": 55.94,
+      "prevProfit_Loss": 35.17661304,
+      "deltaCP": 2.46,
+      "deltaPL": 0,
+      "cum_CP": -7.23,
+      "cum_PL": -2.25,
+      "cum_CP_perc": -11.01630352,
+      "cum_PL_perc": -6.011764938,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "15-11-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 55.67,
+      "Profit_Loss": 35.17661304,
+      "prevQuoteDate": "14-11-2023",
+      "prevClosePrice": 58.4,
+      "prevProfit_Loss": 35.17661304,
+      "deltaCP": -2.73,
+      "deltaPL": 0,
+      "cum_CP": -9.96,
+      "cum_PL": -2.25,
+      "cum_CP_perc": -15.17598659,
+      "cum_PL_perc": -6.011764938,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "16-11-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 53.42,
+      "Profit_Loss": 35.17661304,
+      "prevQuoteDate": "15-11-2023",
+      "prevClosePrice": 55.67,
+      "prevProfit_Loss": 35.17661304,
+      "deltaCP": -2.25,
+      "deltaPL": 0,
+      "cum_CP": -12.21,
+      "cum_PL": -2.25,
+      "cum_CP_perc": -18.60429682,
+      "cum_PL_perc": -6.011764938,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "17-11-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 50.33,
+      "Profit_Loss": 35.17661304,
+      "prevQuoteDate": "16-11-2023",
+      "prevClosePrice": 53.42,
+      "prevProfit_Loss": 35.17661304,
+      "deltaCP": -3.09,
+      "deltaPL": 0,
+      "cum_CP": -15.3,
+      "cum_PL": -2.25,
+      "cum_CP_perc": -23.31250952,
+      "cum_PL_perc": -6.011764938,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "20-11-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 53.02,
+      "Profit_Loss": 35.17661304,
+      "prevQuoteDate": "17-11-2023",
+      "prevClosePrice": 50.33,
+      "prevProfit_Loss": 35.17661304,
+      "deltaCP": 2.69,
+      "deltaPL": 0,
+      "cum_CP": -12.61,
+      "cum_PL": -2.25,
+      "cum_CP_perc": -19.21377419,
+      "cum_PL_perc": -6.011764938,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "21-11-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 50.99,
+      "Profit_Loss": 35.17661304,
+      "prevQuoteDate": "20-11-2023",
+      "prevClosePrice": 53.02,
+      "prevProfit_Loss": 35.17661304,
+      "deltaCP": -2.03,
+      "deltaPL": 0,
+      "cum_CP": -14.64,
+      "cum_PL": -2.25,
+      "cum_CP_perc": -22.30687186,
+      "cum_PL_perc": -6.011764938,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "22-11-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 52.59,
+      "Profit_Loss": 35.17661304,
+      "prevQuoteDate": "21-11-2023",
+      "prevClosePrice": 50.99,
+      "prevProfit_Loss": 35.17661304,
+      "deltaCP": 1.6,
+      "deltaPL": 0,
+      "cum_CP": -13.04,
+      "cum_PL": -2.25,
+      "cum_CP_perc": -19.86896236,
+      "cum_PL_perc": -6.011764938,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "24-11-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 53.08,
+      "Profit_Loss": 35.17661304,
+      "prevQuoteDate": "22-11-2023",
+      "prevClosePrice": 52.59,
+      "prevProfit_Loss": 35.17661304,
+      "deltaCP": 0.49,
+      "deltaPL": 0,
+      "cum_CP": -12.55,
+      "cum_PL": -2.25,
+      "cum_CP_perc": -19.12235258,
+      "cum_PL_perc": -6.011764938,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "27-11-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 51.01,
+      "Profit_Loss": 35.17661304,
+      "prevQuoteDate": "24-11-2023",
+      "prevClosePrice": 53.08,
+      "prevProfit_Loss": 35.17661304,
+      "deltaCP": -2.07,
+      "deltaPL": 0,
+      "cum_CP": -14.62,
+      "cum_PL": -2.25,
+      "cum_CP_perc": -22.27639799,
+      "cum_PL_perc": -6.011764938,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "28-11-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 51.64,
+      "Profit_Loss": 35.17661304,
+      "prevQuoteDate": "27-11-2023",
+      "prevClosePrice": 51.01,
+      "prevProfit_Loss": 35.17661304,
+      "deltaCP": 0.63,
+      "deltaPL": 0,
+      "cum_CP": -13.99,
+      "cum_PL": -2.25,
+      "cum_CP_perc": -21.31647113,
+      "cum_PL_perc": -6.011764938,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "29-11-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 51.58,
+      "Profit_Loss": 35.17661304,
+      "prevQuoteDate": "28-11-2023",
+      "prevClosePrice": 51.64,
+      "prevProfit_Loss": 35.17661304,
+      "deltaCP": -0.06,
+      "deltaPL": 0,
+      "cum_CP": -14.05,
+      "cum_PL": -2.25,
+      "cum_CP_perc": -21.40789273,
+      "cum_PL_perc": -6.011764938,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "30-11-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 50.79,
+      "Profit_Loss": 35.17661304,
+      "prevQuoteDate": "29-11-2023",
+      "prevClosePrice": 51.58,
+      "prevProfit_Loss": 35.17661304,
+      "deltaCP": -0.79,
+      "deltaPL": 0,
+      "cum_CP": -14.84,
+      "cum_PL": -2.25,
+      "cum_CP_perc": -22.61161054,
+      "cum_PL_perc": -6.011764938,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "01-12-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 54.09,
+      "Profit_Loss": 35.17661304,
+      "prevQuoteDate": "30-11-2023",
+      "prevClosePrice": 50.79,
+      "prevProfit_Loss": 35.17661304,
+      "deltaCP": 3.3,
+      "deltaPL": 0,
+      "cum_CP": -11.54,
+      "cum_PL": -2.25,
+      "cum_CP_perc": -17.58342222,
+      "cum_PL_perc": -6.011764938,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "04-12-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 55.63,
+      "Profit_Loss": 35.17661304,
+      "prevQuoteDate": "01-12-2023",
+      "prevClosePrice": 54.09,
+      "prevProfit_Loss": 35.17661304,
+      "deltaCP": 1.54,
+      "deltaPL": 0,
+      "cum_CP": -10,
+      "cum_PL": -2.25,
+      "cum_CP_perc": -15.23693433,
+      "cum_PL_perc": -6.011764938,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "05-12-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 53.16,
+      "Profit_Loss": 35.17661304,
+      "prevQuoteDate": "04-12-2023",
+      "prevClosePrice": 55.63,
+      "prevProfit_Loss": 35.17661304,
+      "deltaCP": -2.47,
+      "deltaPL": 0,
+      "cum_CP": -12.47,
+      "cum_PL": -2.25,
+      "cum_CP_perc": -19.00045711,
+      "cum_PL_perc": -6.011764938,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "06-12-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 55.16,
+      "Profit_Loss": 35.17661304,
+      "prevQuoteDate": "05-12-2023",
+      "prevClosePrice": 53.16,
+      "prevProfit_Loss": 35.17661304,
+      "deltaCP": 2,
+      "deltaPL": 0,
+      "cum_CP": -10.47,
+      "cum_PL": -2.25,
+      "cum_CP_perc": -15.95307024,
+      "cum_PL_perc": -6.011764938,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "07-12-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 56.25,
+      "Profit_Loss": 35.17661304,
+      "prevQuoteDate": "06-12-2023",
+      "prevClosePrice": 55.16,
+      "prevProfit_Loss": 35.17661304,
+      "deltaCP": 1.09,
+      "deltaPL": 0,
+      "cum_CP": -9.38,
+      "cum_PL": -2.25,
+      "cum_CP_perc": -14.2922444,
+      "cum_PL_perc": -6.011764938,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "08-12-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 56.27,
+      "Profit_Loss": 35.17661304,
+      "prevQuoteDate": "07-12-2023",
+      "prevClosePrice": 56.25,
+      "prevProfit_Loss": 35.17661304,
+      "deltaCP": 0.02,
+      "deltaPL": 0,
+      "cum_CP": -9.36,
+      "cum_PL": -2.25,
+      "cum_CP_perc": -14.26177053,
+      "cum_PL_perc": -6.011764938,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "11-12-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 57.08,
+      "Profit_Loss": 35.17661304,
+      "prevQuoteDate": "08-12-2023",
+      "prevClosePrice": 56.27,
+      "prevProfit_Loss": 35.17661304,
+      "deltaCP": 0.81,
+      "deltaPL": 0,
+      "cum_CP": -8.55,
+      "cum_PL": -2.25,
+      "cum_CP_perc": -13.02757885,
+      "cum_PL_perc": -6.011764938,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "12-12-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 56.25,
+      "Profit_Loss": 35.17661304,
+      "prevQuoteDate": "11-12-2023",
+      "prevClosePrice": 57.08,
+      "prevProfit_Loss": 35.17661304,
+      "deltaCP": -0.83,
+      "deltaPL": 0,
+      "cum_CP": -9.38,
+      "cum_PL": -2.25,
+      "cum_CP_perc": -14.2922444,
+      "cum_PL_perc": -6.011764938,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "13-12-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 60.83,
+      "Profit_Loss": 35.17661304,
+      "prevQuoteDate": "12-12-2023",
+      "prevClosePrice": 56.25,
+      "prevProfit_Loss": 35.17661304,
+      "deltaCP": 4.58,
+      "deltaPL": 0,
+      "cum_CP": -4.8,
+      "cum_PL": -2.25,
+      "cum_CP_perc": -7.313728478,
+      "cum_PL_perc": -6.011764938,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "14-12-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 63.97,
+      "Profit_Loss": 38.31661304,
+      "prevQuoteDate": "13-12-2023",
+      "prevClosePrice": 60.83,
+      "prevProfit_Loss": 35.17661304,
+      "deltaCP": 3.14,
+      "deltaPL": 3.14,
+      "cum_CP": -1.66,
+      "cum_PL": 0.89,
+      "cum_CP_perc": -2.529331099,
+      "cum_PL_perc": 2.37798702,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "15-12-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 62.72,
+      "Profit_Loss": 37.06661304,
+      "prevQuoteDate": "14-12-2023",
+      "prevClosePrice": 63.97,
+      "prevProfit_Loss": 38.31661304,
+      "deltaCP": -1.25,
+      "deltaPL": -1.25,
+      "cum_CP": -2.91,
+      "cum_PL": -0.36,
+      "cum_CP_perc": -4.43394789,
+      "cum_PL_perc": -0.96188239,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "18-12-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 60.66,
+      "Profit_Loss": 35.00661304,
+      "prevQuoteDate": "15-12-2023",
+      "prevClosePrice": 62.72,
+      "prevProfit_Loss": 37.06661304,
+      "deltaCP": -2.06,
+      "deltaPL": -2.06,
+      "cum_CP": -4.97,
+      "cum_PL": -2.42,
+      "cum_CP_perc": -7.572756361,
+      "cum_PL_perc": -6.465987178,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "19-12-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 60.86,
+      "Profit_Loss": 35.20661304,
+      "prevQuoteDate": "18-12-2023",
+      "prevClosePrice": 60.66,
+      "prevProfit_Loss": 35.00661304,
+      "deltaCP": 0.2,
+      "deltaPL": 0.2,
+      "cum_CP": -4.77,
+      "cum_PL": -2.22,
+      "cum_CP_perc": -7.268017675,
+      "cum_PL_perc": -5.931608072,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "20-12-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 59.45,
+      "Profit_Loss": 33.79661304,
+      "prevQuoteDate": "19-12-2023",
+      "prevClosePrice": 60.86,
+      "prevProfit_Loss": 35.20661304,
+      "deltaCP": -1.41,
+      "deltaPL": -1.41,
+      "cum_CP": -6.18,
+      "cum_PL": -3.63,
+      "cum_CP_perc": -9.416425415,
+      "cum_PL_perc": -9.698980767,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "21-12-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 60.69,
+      "Profit_Loss": 35.03661304,
+      "prevQuoteDate": "20-12-2023",
+      "prevClosePrice": 59.45,
+      "prevProfit_Loss": 33.79661304,
+      "deltaCP": 1.24,
+      "deltaPL": 1.24,
+      "cum_CP": -4.94,
+      "cum_PL": -2.39,
+      "cum_CP_perc": -7.527045558,
+      "cum_PL_perc": -6.385830312,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "22-12-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 61.25,
+      "Profit_Loss": 35.59661304,
+      "prevQuoteDate": "21-12-2023",
+      "prevClosePrice": 60.69,
+      "prevProfit_Loss": 35.03661304,
+      "deltaCP": 0.56,
+      "deltaPL": 0.56,
+      "cum_CP": -4.38,
+      "cum_PL": -1.83,
+      "cum_CP_perc": -6.673777236,
+      "cum_PL_perc": -4.889568816,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "26-12-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 60.92,
+      "Profit_Loss": 35.26661304,
+      "prevQuoteDate": "22-12-2023",
+      "prevClosePrice": 61.25,
+      "prevProfit_Loss": 35.59661304,
+      "deltaCP": -0.33,
+      "deltaPL": -0.33,
+      "cum_CP": -4.71,
+      "cum_PL": -2.16,
+      "cum_CP_perc": -7.176596069,
+      "cum_PL_perc": -5.771294341,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "27-12-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 61.56,
+      "Profit_Loss": 35.90661304,
+      "prevQuoteDate": "26-12-2023",
+      "prevClosePrice": 60.92,
+      "prevProfit_Loss": 35.26661304,
+      "deltaCP": 0.64,
+      "deltaPL": 0.64,
+      "cum_CP": -4.07,
+      "cum_PL": -1.52,
+      "cum_CP_perc": -6.201432272,
+      "cum_PL_perc": -4.061281203,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "28-12-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 61.49,
+      "Profit_Loss": 35.83661304,
+      "prevQuoteDate": "27-12-2023",
+      "prevClosePrice": 61.56,
+      "prevProfit_Loss": 35.90661304,
+      "deltaCP": -0.07,
+      "deltaPL": -0.07,
+      "cum_CP": -4.14,
+      "cum_PL": -1.59,
+      "cum_CP_perc": -6.308090812,
+      "cum_PL_perc": -4.24831389,
+      "final_value_cp": "",
+      "final_value_pl": ""
+    },
+    {
+      "Quotedate": "29-12-2023",
+      "StockSymbol": "AAP",
+      "ClosePrice": 61.03,
+      "Profit_Loss": 35.83661304,
+      "prevQuoteDate": "28-12-2023",
+      "prevClosePrice": 61.49,
+      "prevProfit_Loss": 35.83661304,
+      "deltaCP": -0.46,
+      "deltaPL": 0,
+      "cum_CP": -4.6,
+      "cum_PL": -1.59,
+      "cum_CP_perc": -7.008989791,
+      "cum_PL_perc": -4.24831389,
+      "final_value_cp": -7.008989791,
+      "final_value_pl": -4.24831389
+    }
+  ]
+      return data;
+  }              
+  var dateAxisRenderer=am5xy.AxisRendererX.new(root, {minGridDistance: 60});
+    dateAxisRenderer.labels.template.setAll({
+    fill:am5.color(0x777e87),
+    fontSize:12
+  });
+  dateAxisRenderer.grid.template.setAll({
+    stroke:am5.color(0x808191),
+      strokeWidth:3
+  })  
+  var dateAxis=chart.xAxes.push(am5xy.GaplessDateAxis.new(root,{
+    baseInterval:{timeUnit:"day",count:1},
+    renderer:dateAxisRenderer
+    }));
+  var OscillatorRenderer =am5xy.AxisRendererY.new(root,{opposite:true,minGridDistance:50});
+    OscillatorRenderer.labels.template.setAll({
+    fill:am5.color(0x777e87),
+    fontSize:12,
+      forceHidden:true
+  });
+  
+  OscillatorRenderer.grid.template.setAll({
+    stroke:am5.color(0x808191),
+      strokeWidth:3
+  }) 
+     
+  OscillatorRenderer.ticks.template.setAll({
+    stroke:am5.color(0x777e87),
+    visible:false,  
+  });
+  var yAxisOscillator = chart.yAxes.push(am5xy.ValueAxis.new(root,{
+    numberFormat: "'$'#",
+      renderer:OscillatorRenderer
+  }));                   
+  var seriesPL=chart.series.push(am5xy.SmoothedXLineSeries.new(root,{
+    xAxis:dateAxis,
+    yAxis:yAxisOscillator,
+    valueYField:"cum_PL_perc",
+    valueXField:"Quotedate",
+      categoryYField:"final_value_pl",
+  }));
+  seriesPL.set("stroke",am5.color(0x19A7CE));
+  seriesPL.strokes.template.setAll({
+    visible:true,
+    strokeOpacity:1,
+    strokeWidth:4
+  });	
+  var seriesCP = chart.series.push(am5xy.SmoothedXLineSeries.new(root,{
+    xAxis:dateAxis,
+    yAxis:yAxisOscillator,
+    valueYField:"cum_CP_perc",
+    valueXField:"Quotedate",
+      categoryYField:"final_value_cp"
+  }));
+  seriesCP.set("stroke",am5.color(0xce0014));
+  seriesCP.strokes.template.setAll({
+    visible : true,
+    strokeOpacity : 1,
+    strokeWidth : 2
+  });	
+  var processor=am5.DataProcessor.new(root,{
+      dateFields:["Quotedate"],
+      dateFormat:"dd-MM-yyyy"
+  });
+  chart.leftAxesContainer.set("layout",root.verticalLayout);
+  var data=generateDatas(0); 
+  processor.processMany(data);
+  seriesPL.data.setAll(data);
+  seriesCP.data.setAll(data);
+  dateAxis.data.setAll(data); 
+  chart.appear(1000, 100);
+  });
+</script>
+<!--====== PERFORMANCE CHART END ======--> 
 </body>
 </html>
   

@@ -101,37 +101,49 @@ if (localStorage.getItem('darkMode') === "on") {
                   <div class="sidebar__icon">
                     <img src="images/notification.svg" alt="Notification" />
                   </div>
-                  <div class="sidebar__text">Notification</div>
-                  <span class="noti_count">20</span>
+                  <div class="sidebar__text">Notifications</div>
+                  <span class="noti_count">99+</span>
                 </a>
               </div>
-              <div class="side_dropdown arrow_drop">
+              <div class="side_dropdown">
+                <a class="sidebar__item" href="https://discord.gg/DjgmSrdxUY" target="_blank">
+                  <div class="sidebar__icon">
+                    <img src="images/discord.svg" alt="Notification" />
+                  </div>
+                  <div class="sidebar__text">Discord</div>
+                </a>
+              </div>
+              <div class="side_dropdown arrow_drop dropdown_btn">
+                <p></p>
                 <a class="sidebar__item" href="subscription.html">
                   <div class="sidebar__icon">
                     <img src="images/setting.svg" alt="Settings" />
                   </div>
                   <div class="sidebar__text">Settings</div>
                 </a>
-                <span>Subscription</span>
-                <span>Activity</span>
-                <span>Notification Management</span>
+                <span><a href="subscription.html">Subscription</a></span>
+                <span><a href="activity.html">Activity</a></span>
+                <!-- <span><a href="notification.html">Notification Management</a></span> -->
               </div>
               <div class="side_dropdown">
-                <a class="sidebar__item" href="become-a-referer.html">
+                <a class="sidebar__item" href="promoter.html">
                   <div class="sidebar__icon">
                     <img src="images/referer.svg" alt="Referer" />
                   </div>
-                  <div class="sidebar__text">Become a Referer</div>
+                  <div class="sidebar__text">Promoter</div>
                 </a>
               </div>
-              <div class="side_dropdown arrow_drop">
+              <div class="side_dropdown arrow_drop dropdown_btn">
+                <p></p>
                 <a class="sidebar__item" href="contact.html">
                   <div class="sidebar__icon">
                     <img src="images/support.svg" alt="Support" />
                   </div>
-                  <div class="sidebar__text">Support</div>
+                  <div class="sidebar__text">Resources</div>
                 </a>
-                <span class="active">Contact</span>
+                <span><a href="contact.html">Support</a></span>
+                <span><a href="tutorials.html">Tutorials</a></span>
+                <span><a href="https://ovtlyr.com/blog" target="_blank">Blog</a></span>
               </div>
               <div class="side_dropdown theme_switchBtn">
                 <div class="sidebar__item mb-0">
@@ -158,7 +170,7 @@ if (localStorage.getItem('darkMode') === "on") {
         </div>
         <div class="sidebar__profile">
           <div class="sidebar__details">
-            <a class="sidebar__link" href="#">
+            <a class="sidebar__link" href="profile.html">
               <div class="sidebar__icon">
                 <img src="images/user.svg" alt="Profile" />
               </div>
@@ -259,14 +271,15 @@ if (localStorage.getItem('darkMode') === "on") {
                       <div class="favList_tabC">
                         <div class="table_scroll vertical_scroll horizontal_scroll">
                           <table class="table ovtlyr_table favList__table favTable_1 blur_favList1 blur_favList2">
-                            <thead>
+                            <thead class="sticky-top">
                               <tr class="ovtlyr__row_head">
                                 <th>Symbol</th>
                                 <th>Current Signal</th>
                                 <th class="sortTable_col">Last Signal Date<img src="images/sort-arrows.svg" style="cursor: pointer; margin-left: 8px;"></th>
                                 <th>Sector</th>
-                                <th class="align__items">Downside/ Recovery</th>
-                                <th>Last Day Close</th>
+                                <th class="align__items">Overlay</th>
+                                <th class="sortTable_col">Last Day Close</th>
+                                <th>30-Day Avg. Vol.</th>
                               </tr>
                             </thead>
                             <tbody>
@@ -284,6 +297,7 @@ if (localStorage.getItem('darkMode') === "on") {
                                 <td><p><span class="arrows arrow_up">Utilities</span></p></td>
                                 <td class="align__items"><p><span class="greenBox"></span></p></td>
                                 <td><p>$2.04</p></td>
+                                <td><p>4.3M</p></td>
                               </tr>
                               <tr class="ovtyr__row">
                                 <td>
@@ -299,6 +313,7 @@ if (localStorage.getItem('darkMode') === "on") {
                                 <td><p><span class="arrows arrow_up">Utilities</span></p></td>
                                 <td class="align__items"><p><span class="redBox"></span></p></td>
                                 <td><p>$2.04</p></td>
+                                <td><p>4.3M</p></td>
                               </tr>
                               <tr class="ovtyr__row">
                                 <td>
@@ -314,6 +329,7 @@ if (localStorage.getItem('darkMode') === "on") {
                                 <td><p><span class="arrows arrow_up">Utilities</span></p></td>
                                 <td class="align__items"><p><span class="redBox"></span></p></td>
                                 <td><p>$2.04</p></td>
+                                <td><p>4.3M</p></td>
                               </tr>
                               <tr class="ovtyr__row">
                                 <td>
@@ -329,6 +345,7 @@ if (localStorage.getItem('darkMode') === "on") {
                                 <td><p><span class="arrows arrow_up">Technology</span></p></td>
                                 <td class="align__items"><p><span class="orgBox"></span></p></td>
                                 <td><p>$2.04</p></td>
+                                <td><p>4.3M</p></td>
                               </tr>
                               <tr class="ovtyr__row">
                                 <td>
@@ -344,6 +361,7 @@ if (localStorage.getItem('darkMode') === "on") {
                                 <td><p><span class="arrows arrow_down">Technology</span></p></td>
                                 <td class="align__items"><p><span class="greenBox"></span></p></td>
                                 <td><p>$2.04</p></td>
+                                <td><p>4.3M</p></td>
                               </tr>
                             </tbody>
                           </table>
@@ -449,14 +467,15 @@ if (localStorage.getItem('darkMode') === "on") {
                       <div class="favList_tabC">
                         <div class="table_scroll vertical_scroll horizontal_scroll">
                           <table class="table ovtlyr_table favList__table favTable_1 blur_favList1 blur_favList2">
-                            <thead>
+                            <thead class="sticky-top">
                               <tr class="ovtlyr__row_head">
                                 <th>Symbol</th>
                                 <th>Current Signal</th>
                                 <th class="sortTable_col">Last Signal Date<img src="images/sort-arrows.svg" style="cursor: pointer; margin-left: 8px;"></th>
                                 <th>Sector/Index</th>
-                                <th class="align__items">Downside/ Recovery</th>
-                                <th>Last Day Close</th>
+                                <th class="align__items">Overlay</th>
+                                <th class="sortTable_col">Last Day Close</th>
+                                <th>30-Day Avg. Vol.</th>
                               </tr>
                             </thead>
                             <tbody>
@@ -474,6 +493,7 @@ if (localStorage.getItem('darkMode') === "on") {
                                 <td><p><span class="arrows arrow_up">Technology</span></p></td>
                                 <td class="align__items"><p><span class="orgBox"></span></p></td>
                                 <td><p>$2.04</p></td>
+                                <td><p>4.3M</p></td>
                               </tr>
                               <tr class="ovtyr__row">
                                 <td>
@@ -489,6 +509,7 @@ if (localStorage.getItem('darkMode') === "on") {
                                 <td><p><span class="arrows arrow_up">Utilities</span></p></td>
                                 <td class="align__items"><p><span class="greenBox"></span></p></td>
                                 <td><p>$2.04</p></td>
+                                <td><p>4.3M</p></td>
                               </tr>
                             </tbody>
                           </table>
@@ -619,14 +640,24 @@ if (localStorage.getItem('darkMode') === "on") {
                         <div class="favList_tabC">
                           <div class="table_scroll horizontal_scroll">
                             <table class="table ovtlyr_table favList__table bullTable_2  blur_bullList1">
-                              <thead>
+                              <thead class="sticky-top">
                                 <tr class="ovtlyr__row_head">
                                   <th width="16%">Symbol</th>
                                   <th>Current Signal</th>
                                   <th class="sortTable_col">Last Signal Date<img src="images/sort-arrows.svg" style="cursor: pointer; margin-left: 8px;"></th>
-                                  <th>Sector</th>
-                                  <th class="align__items">Downside/ Recovery</th>
-                                  <th>Last Day Close</th>
+                                  <th>Sector <span class="material-symbols-outlined icon_filter">filter_alt</span></th>
+                                  <th class="align__items dropdown drop_box">
+                                    <div class="">
+                                      <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Overlay</button>
+                                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="#"><p><span class="whiteBox"><span class="drop_text">All</span></span></p></a></li>
+                                        <li><a class="dropdown-item" href="#"><p><span class="greenBox"><span class="drop_text">Uptrend</span></span></p></a></li>
+                                        <li><a class="dropdown-item" href="#"><p><span class="redBox"><span class="drop_text">Downtrend</span></span></p></a></li>
+                                      </ul>
+                                    </div>
+                                  </th>
+                                  <th class="sortTable_col">Last Day Close</th>
+                                  <th>30-Day Avg. Vol.</th>
                                 </tr>
                               </thead>
                               <tbody>
@@ -644,6 +675,7 @@ if (localStorage.getItem('darkMode') === "on") {
                                   <td><p><span class="arrows arrow_up">Utilities</span></p></td>
                                   <td class="align__items"><p><span class="greenBox"></span></p></td>
                                   <td><p>$2.04</p></td>
+                                  <td><p>4.3M</p></td>
                                 </tr>
                                 <tr class="ovtyr__row">
                                   <td>
@@ -659,6 +691,7 @@ if (localStorage.getItem('darkMode') === "on") {
                                   <td><p><span class="arrows arrow_up">Utilities</span></p></td>
                                   <td class="align__items"><p><span class="greenBox"></span></p></td>
                                   <td><p>$2.04</p></td>
+                                  <td><p>4.3M</p></td>
                                 </tr>
                                 <tr class="ovtyr__row">
                                   <td>
@@ -674,6 +707,7 @@ if (localStorage.getItem('darkMode') === "on") {
                                   <td><p><span class="arrows arrow_down">Technology</span></p></td>
                                   <td class="align__items"><p><span class="greenBox"></span></p></td>
                                   <td><p>$2.04</p></td>
+                                  <td><p>4.3M</p></td>
                                 </tr>
                                 <tr class="ovtyr__row">
                                   <td>
@@ -689,6 +723,7 @@ if (localStorage.getItem('darkMode') === "on") {
                                   <td><p><span class="arrows arrow_up">Utilities</span></p></td>
                                   <td class="align__items"><p><span class="greenBox"></span></p></td>
                                   <td><p>$2.04</p></td>
+                                  <td><p>4.3M</p></td>
                                 </tr>
                                 <tr class="ovtyr__row">
                                   <td>
@@ -704,6 +739,7 @@ if (localStorage.getItem('darkMode') === "on") {
                                   <td><p><span class="arrows arrow_down">Technology</span></p></td>
                                   <td class="align__items"><p><span class="greenBox"></span></p></td>
                                   <td><p>$2.04</p></td>
+                                  <td><p>4.3M</p></td>
                                 </tr>
                               </tbody>
                             </table>
@@ -803,7 +839,7 @@ if (localStorage.getItem('darkMode') === "on") {
                         <div class="favList_tabC">
                           <div class="table_scroll horizontal_scroll">
                             <table class="table ovtlyr_table favList__table bullTable_2  blur_bullList1">
-                              <thead>
+                              <thead class="sticky-top">
                                 <tr class="ovtlyr__row_head">
                                   <th width="16%">Symbol</th>
                                   <th>Current Signal</th>
@@ -966,14 +1002,23 @@ if (localStorage.getItem('darkMode') === "on") {
                         <div class="favList_tabC">
                           <div class="table_scroll horizontal_scroll">
                             <table class="table ovtlyr_table favList__table bearTable_2 bullTable_2  blur_bullList1">
-                              <thead>
+                              <thead class="sticky-top">
                                 <tr class="ovtlyr__row_head">
                                   <th width="16%">Symbol</th>
                                   <th>Current Signal</th>
                                   <th class="sortTable_col">Last Signal Date<img src="images/sort-arrows.svg" style="cursor: pointer; margin-left: 8px; width: 9px;"></th>
-                                  <th>Sector</th>
-                                  <th class="align__items">Downside/ Recovery</th>
-                                  <th>Last Day Close</th>
+                                  <th>Sector <span class="material-symbols-outlined icon_filter">filter_alt</span></th>
+                                  <th class="align__items dropdown drop_box">
+                                    <div class="">
+                                      <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Overlay</button>
+                                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="#"><p><span class="whiteBox"><span class="drop_text">All</span></span></p></a></li>
+                                        <li><a class="dropdown-item" href="#"><p><span class="greenBox"><span class="drop_text">Uptrend</span></span></p></a></li>
+                                        <li><a class="dropdown-item" href="#"><p><span class="redBox"><span class="drop_text">Downtrend</span></span></p></a></li>
+                                      </ul>
+                                    </div></th>
+                                  <th class="sortTable_col">Last Day Close</th>
+                                  <th>30-Day Avg. Vol.</th>
                                 </tr>
                               </thead>
                               <tbody>
@@ -991,6 +1036,7 @@ if (localStorage.getItem('darkMode') === "on") {
                                   <td><p><span class="arrows arrow_up">Utilities</span></p></td>
                                   <td class="align__items"><p><span class="orgBox"></span></p></td>
                                   <td><p>$2.04</p></td>
+                                  <td><p>4.3M</p></td>
                                 </tr>
                                 <tr class="ovtyr__row">
                                   <td>
@@ -1006,6 +1052,7 @@ if (localStorage.getItem('darkMode') === "on") {
                                   <td><p><span class="arrows arrow_up">Utilities</span></p></td>
                                   <td class="align__items"><p><span class="orgBox"></span></p></td>
                                   <td><p>$2.04</p></td>
+                                  <td><p>4.3M</p></td>
                                 </tr>
                                 <tr class="ovtyr__row">
                                   <td>
@@ -1021,6 +1068,7 @@ if (localStorage.getItem('darkMode') === "on") {
                                   <td><p><span class="arrows arrow_up">Utilities</span></p></td>
                                   <td class="align__items"><p><span class="orgBox"></span></p></td>
                                   <td><p>$2.04</p></td>
+                                  <td><p>4.3M</p></td>
                                 </tr>
                                 <tr class="ovtyr__row">
                                   <td>
@@ -1036,6 +1084,7 @@ if (localStorage.getItem('darkMode') === "on") {
                                   <td><p><span class="arrows arrow_up">Utilities</span></p></td>
                                   <td class="align__items"><p><span class="orgBox"></span></p></td>
                                   <td><p>$2.04</p></td>
+                                  <td><p>4.3M</p></td>
                                 </tr>
                                 <tr class="ovtyr__row">
                                   <td>
@@ -1051,6 +1100,7 @@ if (localStorage.getItem('darkMode') === "on") {
                                   <td><p><span class="arrows arrow_up">Utilities</span></p></td>
                                   <td class="align__items"><p><span class="orgBox"></span></p></td>
                                   <td><p>$2.04</p></td>
+                                  <td><p>4.3M</p></td>
                                 </tr>
                               </tbody>
                             </table>
@@ -1150,7 +1200,7 @@ if (localStorage.getItem('darkMode') === "on") {
                         <div class="favList_tabC">
                           <div class="table_scroll horizontal_scroll">
                             <table class="table ovtlyr_table favList__table bearTable_2 bullTable_2  blur_bullList1">
-                              <thead>
+                              <thead class="sticky-top">
                                 <tr class="ovtlyr__row_head">
                                   <th width="16%">Symbol</th>
                                   <th>Current Signal</th>
@@ -1526,6 +1576,15 @@ if (localStorage.getItem('darkMode') === "on") {
 <script src="js/jquery.min.js"></script>
 <script src="js/magnific-popup-svg4-app.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
+<!--==== SIDEBAR DROPDOWN OPEN START ====-->
+<script>
+  $(document).ready(function(){
+    $('.dropdown_btn p').on('click', function(e){
+      $(this).parent().toggleClass('active');
+    });
+  });
+</script>
+<!--==== SIDEBAR DROPDOWN OPEN END ====-->
 <!--==== ADD TO FAV TOGGLE ====-->
 <script>
   $(document).ready(function(){
