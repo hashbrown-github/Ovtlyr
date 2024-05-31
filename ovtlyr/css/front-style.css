@@ -591,6 +591,9 @@ section {
     padding: 15px 0;
     background-color: transparent;
 }
+.header_inner2:not(.new_head2) {
+    border-bottom: 1px solid #ececec;
+}
 .header_sec {
     width: 100%;
     display: flex;
@@ -608,7 +611,7 @@ section {
     display: flex;
     align-items: center;
 }
-.header_sec2 ul li a {
+.header_sec2 ul li a, .header_sec2 ul li button {
     font-family: 'DMSans-Medium';
     font-size: 18px;
     line-height: 23px;
@@ -626,7 +629,7 @@ section {
     padding: 9px 20px;
     border-radius: 5px;
 }
-.header_sec2 ul li a.trial_btn {
+.header_sec2 ul li a.trial_btn, .header_sec2 ul li button.trial_btn {
     color: #ffffff;
     position: relative;
 }
@@ -890,7 +893,7 @@ section {
     top: 50%;
     left: 5%;
 }
-.signup_links2 h4 {
+.signup_links2 h4, .signup_links2 p {
     background-color: #ffffff;
     display: inline-block;
     margin: 0;
@@ -923,9 +926,9 @@ section {
     color: #242947;
     margin-bottom: 5px;
 }
-.form_field input {
+.form_field input, .form_field select {
     background-color: transparent;
-    padding: 14px 20px;
+    padding: 12px 20px;
     border-radius: 5px;
     border: 1px solid #667080;
     font-family: 'DMSans-Regular';
@@ -934,6 +937,12 @@ section {
     color: #242947;
     width: 100%;
     margin-bottom: 0;
+}
+.form_field select {
+    appearance: none;
+    background: url('../images/drop_arrow.png') no-repeat;
+    background-position: 96% 52%;
+    background-size: 12px;
 }
 .form_field button {
     position: absolute;
@@ -979,7 +988,7 @@ section {
 .authen_sc1.login_sec {
     background-image: linear-gradient( 175deg, #242947 10%, #2563EB 110%);
 }
-.authen_sc1.login_sec .signup_links2 h4 {
+.authen_sc1.login_sec .signup_links2 h4, .authen_sc1.login_sec .signup_links2 p {
     background-color: #f2f7ff;
 }
 .flex_box.div__remember {
@@ -2342,14 +2351,14 @@ section {
     width: 100%;
     text-align: center;
 }
-.pricSec_1 h3 {
+.pricSec_1 h3, .pricSec_1 h1 {
     font-family: 'Inter-ExtraBold';
     font-size: 80px;
     line-height: 90px;
     color: #242947;
     margin-bottom: 20px;
 }
-.pricSec_1 h4 {
+.pricSec_1 h4, .pricSec_1 h2 {
     font-family: 'DMSans-Medium';
     font-size: 30px;
     line-height: 35px;
@@ -2802,20 +2811,107 @@ section {
     width: 25px;
     height: 25px;
 }
+.pricing_new {
+    background-color: rgb(255 255 255 / 10%);
+    width: 100%;
+    padding: 40px 50px;
+    border: 0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    margin-top: 40px;
+}
+.priNew_list {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.priNew_list > h4 {
+    font-family: 'Inter-ExtraBold';
+    font-size: 38px;
+    line-height: 52px;
+    color: #ffffff;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.priNew_list > p {
+    font-family: 'DMSans-Medium';
+    font-size: 20px;
+    line-height: 27px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.priNew_list ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.priNew_list ul li {
+    width: 25%;
+    border-right: 1px solid rgb(156 140 140 / 31%);
+    border-bottom: 1px solid rgb(156 140 140 / 31%);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.priNew_list ul li:nth-child(4), .priNew_list ul li:nth-child(8), .priNew_list ul li:nth-child(12) {
+    border-right: 0;
+}
+.priNew_list ul li:last-child {
+    margin-bottom: 0;
+}
+.priNew_list ul li img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+.priNew_list ul li h5 {
+    font-family: 'DMSans-Bold';
+    font-size: 20px;
+    line-height: 27px;
+    color: #ffffff;
+    margin-bottom: 0;
+}
+.priNew_list ul li p {
+    font-family: 'DMSans-Regular';
+    font-size: 17px;
+    line-height: 23px;
+    color: #ffffff;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+.plans_flex.new_design {
+    max-width: 1100px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.new_design .plans_flex12 {
+    width: 100%;
+}
+.new_design .billed_an span {
+    display: inline;
+    color: #10A861;
+}
 /*======= END PRICING PAGE =======*/
 /*===== START COVERAGE LIST ======*/
 .coverL_sec1 {
     text-align: center;
     padding: 60px 0;
 }
-.coverL_sec11 h3 {
+.coverL_sec11 h3, .coverL_sec11 h1 {
     font-family: 'Inter-ExtraBold';
     font-size: 40px;
     line-height: 52px;
     color: #242947;
     margin-bottom: 15px;
 }
-.coverL_sec11 p {
+.coverL_sec11 p, .coverL_sec11 h2 {
     font-family: 'DMSans-Medium';
     font-size: 22px;
     line-height: 32px;
@@ -2954,7 +3050,7 @@ section {
     justify-content: space-between;
     flex-direction: column;
 }
-.backtest_head h3 {
+.backtest_head h3, .backtest_head h1 {
     font-family: 'Inter-ExtraBold';
     font-size: 40px;
     line-height: 52px;
@@ -2978,7 +3074,7 @@ section {
     padding: 20px;
     text-align: left;
 }
-.policies_sec p {
+.policies_sec p, .policies_sec h2 {
     font-family: 'DMSans-Regular';
     font-size: 16px;
     line-height: 22px;
@@ -2988,10 +3084,10 @@ section {
 .policies_sec p:last-of-type {
     margin-bottom: 0;
 }
-.policies_sec p a {
+.policies_sec p a, .policies_sec h2 a {
     color: #4285f4;
 }
-.policies_sec p b {
+.policies_sec p b, .policies_sec h2 b {
     font-family: 'DMSans-Bold';
 }
 .policies_sec .heading-terms {
@@ -3071,7 +3167,7 @@ section {
     text-align: center;
     margin-bottom: 40px;
 }
-.tForm_sec111 h3 {
+.tForm_sec111 h3, .tForm_sec111 h1 {
     font-family: 'DMSans-Bold';
     font-size: 32px;
     line-height: 40px;
@@ -3282,7 +3378,7 @@ section {
     color: #486284;
     border-bottom: 1px solid #486284;
 }
-.flex_boxes11 .signup_links2 h4 {
+.flex_boxes11 .signup_links2 h4, .flex_boxes11 .signup_links2 p {
     background-color: #edf4fe;
 }
 /*====== END SIGN UP ======*/
@@ -3408,7 +3504,7 @@ section {
     left: 0;
     right: 0;
     top: 10px;
-    border-bottom: 1px solid #D93872;
+    border-bottom: 2px solid #D93872;
 }
 .pricing_card1.pricing_card2 .pri_head {
     background-color: #4285f4;
@@ -3542,7 +3638,7 @@ section {
 .new_head2.header_inner2 {
     padding: 15px 0;
 }
-.new_head2 .header_sec2 ul li a {
+.new_head2 .header_sec2 ul li a, .new_head2 .header_sec2 ul li button {
     color: #ffffff;
     font-family: 'DMSans-Medium';
 }
@@ -3552,7 +3648,7 @@ section {
 .new_head2 .header_sec2 ul li a.signUp_btn {
     border: 1px solid #ffffff;
 }
-.new_head2 .header_sec2 ul li a.trial_btn {
+.new_head2 .header_sec2 ul li a.trial_btn, .new_head2 .header_sec2 ul li button.trial_btn {
     font-family: 'DMSans-Medium';
     padding: 9px 20px;
     background-color: #10A861;
@@ -3570,6 +3666,26 @@ section {
     padding-top: 150px;
     padding-bottom: 70px;
 }
+/* .new_home.outer_banner {
+    width: 100%;
+    background-size: cover;
+    border: 0;
+    margin-top: -79px;
+    padding-top: 150px;
+    padding-bottom: 70px;
+    position: relative;
+    background: unset;
+} */
+/* .new_home.outer_banner img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+} */
 .new_home h1 {
     font-family: 'Inter-ExtraBold';
     font-size: 55px;
@@ -3592,11 +3708,11 @@ section {
     justify-content: center;
     gap: 20px;
     background-color: #ffffff;
-    padding: 30px 40px;
+    padding: 30px;
     border-radius: 5px;
 }
 .signUp_Box input {
-    width: calc(100% - 160px);
+    width: calc(100% - 264px);
     font-family: 'DMSans-Regular';
     font-size: 18px;
     line-height: 24px;
@@ -3606,7 +3722,7 @@ section {
     background: #ffffff;
     border: 1px solid #242947;
 }
-.signUp_Box a {
+.signUp_Box a, .signUp_Box button {
     font-family: 'DMSans-Medium';
     font-size: 18px;
     line-height: 24px;
@@ -3617,14 +3733,36 @@ section {
     background-color: #10A861;
     text-align: center;
 }
-.new_home .inner_banner > p {
-    font-family: 'DMSans-Bold';
-    font-size: 22px;
-    line-height: 29px;
-    color: #ffffff;
-    margin-top: 30px;
+.signUp_Box a, .signUp_Box button {
+    padding: 12px 18px;
+    width: 250px;
+    flex-shrink: 0;
 }
-.newHome_1, .newHome_3, .newHome_4, .new_resources1 {
+.new_home .inner_banner > p {
+    color: #ffffff;
+    margin-top: 40px;
+}
+.new_home .inner_banner > p a {
+    font-family: 'DMSans-Medium';
+    font-size: 16px;
+    line-height: 22px;
+    color: #ffffff;
+    padding: 8px 15px;
+    border: 1px solid #6579af;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 170px;
+    margin: 0 auto;
+}
+.new_home .inner_banner > p img {
+    width: 30px;
+    border-right: 1px solid #6579af;
+    padding-right: 10px;
+    margin-right: 10px;
+}
+.newHome_1, .newHome_3, .newHome_4, .new_resources1, .newHome_7 {
     width: 100%;
     padding: 70px 0;
 }
@@ -3663,7 +3801,7 @@ section {
     width: 100%;
     margin-bottom: 25px;
 }
-.newHome_cont1 li h6 {
+.newHome_cont1 li h6, .newHome_cont1 li h4 {
     font-family: 'Inter-Bold';
     font-size: 18px;
     line-height: 24px;
@@ -3756,8 +3894,9 @@ section {
     background-color: #EAF2FF;
 }
 .newHome_cont3 {
-    width: 100%;
-    height: 726px;
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 565px;
     border: 1px solid #dddddd;
     margin-top: 40px;
     text-align: center;
@@ -3885,6 +4024,34 @@ section {
     width: 100%;
     border-color: #ffffff;
 }
+.newHome_7 {
+    width: 100%;
+    padding: 70px 0;
+    background-color: #2663eb;
+}
+.newHome_7 h3 {
+    color: #ffffff;
+}
+.newHome_71 {
+    width: 100%;
+    margin-top: 40px;
+}
+.newHome_7 ul {
+    width: 100%;
+    column-count: 3;
+    column-gap: 20px;
+}
+.newHome_7 ul li {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid #2b2b2b;
+    border-top: 3px solid #383838;
+    margin-bottom: 20px;
+}
+.newHome_7 ul li img {
+    width: 100%;
+}
 /*=========== NEW HOME PAGE END ===========*/
 /*========== LATEST SIGNUP START ==========*/
 .trialForm_BG {
@@ -3928,26 +4095,34 @@ section {
 .head_breadcrumbs li:first-child span, .head_breadcrumbs .nav-link.active span, .head_breadcrumbs .nav-link.active span:before {
     background-color: #4285F4;
 }
-.head_breadcrumbs p {
+/* .head_breadcrumbs p {
     font-family: 'DMSans-Regular';
     font-size: 18px;
     line-height: 24px;
     color: #ffffff;
     margin-bottom: 0;
+} */
+.head_breadcrumbs p {
+    font-family: 'DMSans-Medium';
+    font-size: 15px;
+    line-height: 20px;
+    color: #ffffff;
+    margin-bottom: 0;
+    max-width: 136px;
 }
 .tForm_sec111.newTrial_Form {
     width: 100%;
     text-align: center;
     margin: 0;
 }
-.tForm_sec111.newTrial_Form h3 {
+.tForm_sec111.newTrial_Form h3, .tForm_sec111.newTrial_Form h1 {
     font-family: 'Inter-ExtraBold';
     font-size: 55px;
     line-height: 72px;
     color: #ffffff;
     margin-bottom: 10px;
 }
-.tForm_sec111.newTrial_Form p {
+.tForm_sec111.newTrial_Form p, .tForm_sec111.newTrial_Form h2 {
     font-family: 'DMSans-Regular';
     font-size: 22px;
     line-height: 30px;
@@ -3958,8 +4133,8 @@ section {
 .flex_boxes {
     width: 100%;
     display: flex;
-    gap: 30px;
-    margin-top: 30px;
+    gap: 40px;
+    margin-top: 40px;
     flex-direction: column;
 }
 .flex_boxes .account_fields {
@@ -4036,7 +4211,7 @@ section {
     background-color: rgb(255 255 255 / 10%);
     border-radius: 10px;
     padding: 40px 50px;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 .flex_boxNot h3 {
     font-family: 'Inter-ExtraBold';
@@ -4075,7 +4250,7 @@ section {
 }
 .plans_flex {
     width: 100%;
-    margin-top: 40px;
+    margin-top: 50px;
     display: flex;
     border-radius: 10px;
     align-items: center;
@@ -4088,15 +4263,14 @@ section {
     align-items: center;
     gap: 20px;
     border: 1px solid #4285F4;
-    border-right: 0;
-    border-radius: 10px 0 0 10px;
+    border-left: 0;
+    border-radius: 0 10px 10px 0;
 }
 .plans_flex1.blueBackg {
     width: 52%;
     background-color: #D0E0FA;
     border-radius: 10px;
-    padding: 40px;
-    padding-top: 45px;
+    padding: 25px;
     position: relative;
     overflow: hidden;
 }
@@ -4132,8 +4306,8 @@ section {
 }
 .plans_flex11 ul li p {
     font-family: 'DMSans-Medium';
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 18px;
+    line-height: 24px;
     color: #ffffff;
     text-align: center;
     margin-bottom: 0;
@@ -4150,9 +4324,9 @@ section {
     width: calc(45% - 10px);
     background-color: rgb(255 255 255 / 10%);
     text-align: center;
-    padding: 19px 10px;
+    padding: 25px 10px;
     border-radius: 10px;
-    min-height: 245px;
+    min-height: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -4161,8 +4335,9 @@ section {
 .blueBackg .plans_flex12 {
     position: relative;
     background-color: #ffffff;
+    min-height: 240px;
 }
-.blueBackg .plans_flex12 h6, .blueBackg .plans_flex12 h4, .blueBackg .plans_flex12 p {
+.blueBackg .plans_flex12 h6, .blueBackg .plans_flex12 h4, .blueBackg .plans_flex12 p, .blueBackg .plans_flex12 h3 {
     color: #171E2E;
 }
 .permonth {
@@ -4172,8 +4347,8 @@ section {
 }
 .plans_flex12 p {
     font-family: 'DMSans-Medium';
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 15px;
+    line-height: 20px;
     color: #ffffff;
     position: relative;
     display: inline-block;
@@ -4215,7 +4390,7 @@ section {
 .bestSeller1 span {
     display: block;
 }
-.plans_flex12 h6 {
+.plans_flex12 h6, .plans_flex12 h3 {
     font-family: 'DMSans-Medium';
     font-size: 18px;
     line-height: 24px;
@@ -4224,11 +4399,11 @@ section {
 }
 .plans_flex12 h4 {
     font-family: 'Inter-ExtraBold';
-    font-size: 55px;
-    line-height: 55px;
+    font-size: 50px;
+    line-height: 50px;
     color: #ffffff;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .plans_flex12 button {
     font-family: 'DMSans-Medium';
@@ -4239,7 +4414,7 @@ section {
     border-radius: 5px;
     background-color: #4285F4;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 .billed_an span {
     font-family: 'DMSans-Bold';
@@ -4289,6 +4464,153 @@ section {
     rx: 3px;
     fill: rgb(0 0 0 / 0%);
     stroke: none;
+}
+/* .coupon_popup .modal-dialog {
+    max-width: 470px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+}
+.coupon_popup .modal-content {
+    border-radius: 10px;
+    border: 0;
+}
+.coupon_popup .modal-body {
+    padding: 30px 25px;
+    padding-top: 35px;
+}
+.coupon_popup .close_btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: #323232;
+    background: unset;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+}
+.modal_body {
+    width: 100%;
+}
+.modal_body h5 {
+    font-family: 'DMSans-Bold';
+    font-size: 22px;
+    line-height: 32px;
+    color: #242947;
+    margin-bottom: 15px;
+}
+.modal_btns {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    margin-top: 25px;
+}
+.modal_btns a {
+    border: 1px solid #D0E3FF;
+    border-radius: 4px;
+    padding: 8px 25px;
+    background-color: unset;
+    font-family: 'DMSans-Regular';
+    font-size: 16px;
+    line-height: 22px;
+    color: #242947;
+    text-align: center;
+    display: inline-block;
+}
+.modal_btns a.filled_btn {
+    color: #ffffff;
+    border-color: #4285F4;
+    background-color: #4285F4;
+}
+.coupon_sec {
+    width: 100%;
+}
+.coupon_div1 {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #D0E3FF;
+    border-radius: 4px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.coupon_div1 input {
+    width: calc(100% - 60px);
+    font-family: 'DMSans-Medium';
+    font-size: 16px;
+    line-height: 24px;
+    color: #2A353D;
+    border: 0;
+    padding: 0;
+}
+.coupon_div1 input::placeholder {
+    font-family: 'DMSans-Regular';
+    color: #bcbcbc;
+}
+.coupon_div1 button {
+    font-family: 'DMSans-Bold';
+    font-size: 16px;
+    line-height: 22px;
+    color: #4285F4;
+    width: 50px;
+    flex-shrink: 0;
+}
+.appl_div > span {
+    font-weight: 300;
+    color: #10A861;
+    font-size: 30px;
+    width: 22px;
+    height: 22px;
+    background-color: rgb(173 216 147 / 25%);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.appl_div {
+    width: calc(100% - 74px);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.appl_div2 h6 {
+    font-family: 'DMSans-Bold';
+    font-size: 14px;
+    line-height: 18px;
+    color: #2A353D;
+    margin-bottom: 4px;
+}
+.appl_div2 p {
+    font-family: 'DMSans-Regular';
+    font-size: 13px;
+    line-height: 15px;
+    color: #777E87;
+    margin-bottom: 0;
+}
+.coupon_div1.coupon_div2 {
+    padding: 8px 15px;
+}
+.coupon_div1.coupon_div2 button {
+    width: 64px;
+    color: #D93872;
+}
+.error {
+    font-family: 'DMSans-Regular';
+    font-size: 14px;
+    line-height: 18px;
+    color: #e23f3f;
+    margin-top: 5px;
+    margin-bottom: 0;
+} */
+.flex_boxes12 .account_fields h2 {
+    font-family: 'DMSans-Bold';
+    font-size: 22px;
+    line-height: 30px;
+    color: #2A353D;
+    margin-top: 10px;
+    margin-bottom: 15px;
 }
 /*========== LATEST SIGNUP END ============*/
 /*===== LATEST FEATURES PAGE START ========*/
@@ -4509,7 +4831,7 @@ section {
     line-height: 86px;
     margin-bottom: 15px;
 }
-.new_features.new_resources .new_resors01 p {
+.new_features.new_resources .new_resors01 p, .new_features.new_resources .new_resors01 h2 {
     font-family: 'DMSans-Bold';
     font-size: 30px;
     line-height: 40px;
@@ -4562,7 +4884,7 @@ section {
 .resoulist1, .resoulist2 {
     width: calc(50% - 40px);
 }
-.new_features.new_resources .resoulist1 h2 {
+.new_features.new_resources .resoulist1 h2, .new_features.new_resources .resoulist1 h3 {
     font-family: 'Inter-ExtraBold';
     font-size: 44px;
     line-height: 53px;
@@ -4591,7 +4913,7 @@ section {
 .new_resources2 .newHome_cont1 li {
     background-color: rgb(255 255 255 / 9%);
 }
-.new_resources2 .newHome_cont1 li h6 {
+.new_resources2 .newHome_cont1 li h6, .new_resources2 .newHome_cont1 li h4 {
     color: #ffffff;
 }
 /*========== RESOURCES PAGE END ==========*/
@@ -4605,7 +4927,7 @@ section {
     padding-top: 120px;
     padding-bottom: 70px;
 }
-.new_pricing .pricSec_1 h3, .new_pricing .pricSec_1 h4 {
+.new_pricing .pricSec_1 h3, .new_pricing .pricSec_1 h4, .new_pricing .pricSec_1 h1, .new_pricing .pricSec_1 h2 {
     color: #ffffff;
 }
 .pricingTestimonial, .pricingNew_sec2, .pricingNew_sec3 {
@@ -4684,14 +5006,14 @@ section {
     /* min-height: 255px; */
     min-height: 200px;
 }
-.pric_sec210_2 h3 {
+.pric_sec210_2 h4 {
     font-family: 'DMSans-Medium';
     font-size: 25px;
     line-height: 33px;
     color: #ffffff;
     margin-bottom: 10px;
 }
-.pric_sec210_2 h3 span {
+.pric_sec210_2 h4 span {
     font-family: 'DMSans-Regular';
     font-size: 16px;
     line-height: 22px;
@@ -4711,19 +5033,19 @@ section {
     left: 0;
     right: 0;
     top: 10px;
-    border-bottom: 1px solid #D93872;
+    border-bottom: 2px solid #D93872;
 }
 .pric_sec210_2 p span {
     color: #ffffff;
 }
-.pric_sec210_2 h4 {
+.pric_sec210_2 h3 {
     font-family: 'Inter-ExtraBold';
     font-size: 45px;
     line-height: 45px;
     color: #ffffff;
     margin-bottom: 8px;
 }
-.pric_sec210_2.pric_sec211_2 h4 {
+.pric_sec210_2.pric_sec211_2 h3 {
     font-size: 28px;
     line-height: 37px;
     margin-bottom: 0;
@@ -4774,7 +5096,7 @@ section {
 .pric_sec217_2 ul li:nth-child(odd) {
     background-color: rgb(66 133 244 / 10%);
 }
-.pric_sec2100_2 ul li h6 {
+.pric_sec2100_2 ul li h6, .pric_sec2100_2 ul li h5 {
     font-family: 'DMSans-Bold';
     font-size: 18px;
     line-height: 24px;
@@ -4890,7 +5212,7 @@ section {
     padding: 70px 0;
     background-color: #EAF2FF;
 }
-.new_about11 h2 {
+.new_about11 h2, .new_about11 h3 {
     font-family: 'Inter-ExtraBold';
     font-size: 55px;
     line-height: 72px;
@@ -5409,7 +5731,7 @@ section {
     margin-top: 20px;
     margin-bottom: 20px;
 }
-.empty_stock h3 {
+.empty_stock h3, .empty_stock h2 {
     font-family: 'Inter-Bold';
     font-size: 28px;
     line-height: 37px;
@@ -5424,6 +5746,185 @@ section {
     text-align: center;
     margin-bottom: 0;
 }
+/*========== START TOASTS CSS ============*/
+.alertMessage {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 77%);
+    padding: 20px 40px;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.alertMessage p {
+    font-family: 'DMSans-Bold';
+    font-size: 20px;
+    line-height: 32px;
+    color: #ffffff;
+    background-color: #10A861;
+    border-radius: 2px;
+    text-align: center;
+    margin-bottom: 0;
+    padding: 40px 65px;
+    max-width: 600px;
+}
+.alertMessage.show {
+    visibility: visible;
+    -webkit-animation: fadein .5s,fadeout .5s 5.6s;
+    animation: fadein .5s,fadeout .5s 5.6s;
+}
+@-webkit-keyframes fadein {
+from {
+    top: -30px;
+    opacity: 0;
+}
+to {
+    top: 0;
+    opacity: 1;
+}
+}
+@keyframes fadein {
+from {
+    top: -30px;
+    opacity: 0;
+}
+to {
+    top: 0;
+    opacity: 1;
+}
+}
+@-webkit-keyframes fadeout {
+from {
+    top: 30px;
+    opacity: 1;
+}
+to {
+    top: 0;
+    opacity: 0;
+}
+}
+@keyframes fadeout {
+from {
+    top: 30px;
+    opacity: 1;
+}
+to {
+    top: 0;
+    opacity: 0;
+}
+}
+/*============ END TOASTS CSS =============*/
+/*========= WEBINAR SIGNUP START ==========*/
+.webinar_bg {
+    background-image: linear-gradient(322deg, #ffffff 20%, #F1F6FF 54%, #d6e4fb 100%);
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    display: table;
+    padding: 40px;
+}
+.webinar_inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+.webinar_head {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+.webinar_head img {
+    width: 46px;
+    padding-right: 15px;
+    border-right: 1px solid #d0def0;
+}
+.webinar_head h3 {
+    font-family: 'DMSans-Medium';
+    font-size: 32px;
+    line-height: 42px;
+    color: #242947;
+    margin-bottom: 0;
+    position: relative;
+    top: 2px;
+}
+.webinar_box0 {
+    max-width: 790px;
+    margin: 0 auto;
+}
+.webinar_box {
+    width: 100%;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px #00000012;
+    padding: 50px;
+}
+.webinar_box .account_fields {
+    margin-top: 0;
+}
+.webinar_content {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.webinar_content p {
+    font-family: 'DMSans-Regular';
+    font-size: 18px;
+    line-height: 24px;
+    color: #486284;
+    margin-bottom: 0;
+}
+.webinar_content h3 {
+    font-family: 'DMSans-Bold';
+    font-family: 'Inter-ExtraBold';
+    font-size: 42px;
+    line-height: 52px;
+    color: #242947;
+    margin-bottom: 0;
+}
+/* .webinar_content h4 {
+    font-family: 'Inter-ExtraBold';
+    font-size: 28px;
+    line-height: 37px;
+    color: #242947;
+    margin-bottom: 0;
+} */
+.custom-progress-bar {
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+.custom-progress-bar .progress {
+    width: 100%;
+    height: 6px;
+    box-shadow: inset 0px 0px 4px 0px rgba(0, 0, 0, 0.16);
+    background: rgb(228, 230, 232);
+    border-radius: 4px;
+}
+.custom-progress-bar .progress-bar {
+    background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-size: 12px 12px;
+    animation: progress-bar-stripes 1s linear infinite;
+    transition: width 0.6s ease, height 0.6s ease, font-size 0.6s ease;
+    background-color: #4285f4;
+    margin: 0;
+}
+.blue_btn {
+    font-family: 'DMSans-Bold';
+    font-size: 20px;
+    line-height: 28px;
+    color: #4285f4;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+/*========== WEBINAR SIGNUP END ===========*/
 /*========== START MEDIA QUERY ============*/
 @media only screen and (max-width: 1680px) {
 .indexSec_31, .indexSec_43, .featSec_61 {
@@ -5623,7 +6124,7 @@ section {
 .indexSec_31 {
     min-height: 500px;
 }
-.inner_banner h2, .pricSec_1 h3 {
+.inner_banner h2, .pricSec_1 h3, .pricSec_1 h1 {
     font-size: 78px;
     line-height: 88px;
 }
@@ -5642,9 +6143,6 @@ section {
 }
 .pricing_sec312 {
     width: calc(100% - 440px);
-}
-.newHome_cont3 {
-    height: 626px;
 }
 .steps_head {
     margin-bottom: 40px;
@@ -5679,7 +6177,7 @@ section {
     font-size: 20px;
     line-height: 27px;
 }
-.new_features1 h3, .new_about11 h2 {
+.new_features1 h3, .new_about11 h2, .new_about11 h3 {
     font-size: 52px;
     line-height: 65px;
 }
@@ -5691,7 +6189,7 @@ section {
     font-size: 22px;
     line-height: 30px;
 }
-.new_features.new_resources .resoulist1 h2 {
+.new_features.new_resources .resoulist1 h2, .new_features.new_resources .resoulist1 h3 {
     font-size: 39px;
     line-height: 52px;
 }
@@ -5722,9 +6220,20 @@ section {
 .empty_stock {
     padding: 0;
 }
-.empty_stock h3 {
+.empty_stock h3, .empty_stock h2 {
     font-size: 26px;
     line-height: 35px;
+}
+.csSec_1 h2 {
+    font-size: 46px;
+    line-height: 46px;
+}
+.csSec_1 h3 {
+    font-size: 23px;
+    line-height: 31px;
+}
+.casestudySec_2 .csSec_1 h2 {
+    line-height: 64px;
 }
 }
 @media only screen and (max-width: 1280px) {
@@ -5734,14 +6243,14 @@ section {
 .coverL_sec1 {
     padding: 40px 0;
 }
-.tForm_sec111.newTrial_Form h3 {
+.tForm_sec111.newTrial_Form h3, .tForm_sec111.newTrial_Form h1 {
     font-size: 52px;
     line-height: 68px;
 }
 .pageHeading {
     top: 10px;
 }
-.flex_boxNot h3 {
+.flex_boxNot h3, .priNew_list > h4 {
     font-size: 36px;
     line-height: 50px;
 }
@@ -5752,7 +6261,7 @@ section {
 .blogList_pagination {
     margin-top: 50px;
 }
-.empty_stock h3 {
+.empty_stock h3, .empty_stock h2 {
     font-size: 24px;
     line-height: 32px;
 }
@@ -5763,9 +6272,16 @@ section {
 .empty_stock img {
     width: 220px;
 }
+.tForm_sec111.newTrial_Form p, .tForm_sec111.newTrial_Form h2 {
+    font-size: 20px;
+    line-height: 28px;
+}
 }
 @media only screen and (max-width: 1199px) {
-.header_sec2 ul li a {
+.newHome_7 ul {
+    column-count: 2;
+}
+.header_sec2 ul li a, .header_sec2 ul li button {
     font-size: 16px;
     margin-left: 20px;
 }
@@ -5790,7 +6306,7 @@ section {
     line-height: 80px;
     margin-bottom: 20px;
 }
-.pricSec_1 h3 {
+.pricSec_1 h3, .pricSec_1 h1 {
     font-size: 70px;
     line-height: 80px;
     margin-bottom: 15px;
@@ -5800,7 +6316,7 @@ section {
     line-height: 32px;
     margin-bottom: 25px;
 }
-.pricSec_1 h4 {
+.pricSec_1 h4, .pricSec_1 h2 {
     font-size: 26px;
     line-height: 32px;
     margin-bottom: 15px;
@@ -6018,20 +6534,20 @@ section {
 .coverL_sec131 {
     margin-bottom: 30px;
 }
-.coverL_sec11 h3 {
+.coverL_sec11 h3, .coverL_sec11 h1 {
     font-size: 38px;
     line-height: 50px;
     margin-bottom: 12px;
 }
-.backtest_head h3 {
+.backtest_head h3, .backtest_head h1 {
     font-size: 38px;
     line-height: 50px;
 }
-.coverL_sec11 p {
+.coverL_sec11 p, .coverL_sec11 h2 {
     font-size: 21px;
     line-height: 30px;
 }
-.new_head2 .header_sec2 ul li a.trial_btn {
+.new_head2 .header_sec2 ul li a.trial_btn, .new_head2 .header_sec2 ul li button.trial_btn {
     margin-left: 15px;
 }
 .new_home h1 {
@@ -6048,15 +6564,13 @@ section {
     padding: 25px 30px;
 }
 .new_home .inner_banner > p {
-    font-size: 20px;
-    line-height: 28px;
     margin-top: 20px;
 }
 .new_home.outer_banner {
     padding-top: 140px;
     padding-bottom: 60px;
 }
-.newHome_1, .newHome_2, .newHome_3, .newHome_4, .newHome_5.indexSec_2, .newHome_6, .new_features1, .new_features1.new_features2, .new_about1, .discord_sec, .roardmap_sec {
+.newHome_1, .newHome_2, .newHome_3, .newHome_4, .newHome_5.indexSec_2, .newHome_6, .new_features1, .newHome_7, .new_features1.new_features2, .new_about1, .discord_sec, .roardmap_sec {
     padding: 60px 0;
 }
 .pricingNew_sec1 {
@@ -6080,7 +6594,7 @@ section {
 .newHome_cont1 li img {
     margin-bottom: 20px;
 }
-.newHome_cont1 li h6 {
+.newHome_cont1 li h6, .newHome_cont1 li h4 {
     font-size: 16px;
     line-height: 22px;
 }
@@ -6128,7 +6642,7 @@ section {
 .newHome_cont3 {
     height: 525px;
 }
-.tForm_sec111.newTrial_Form h3 {
+.tForm_sec111.newTrial_Form h3, .tForm_sec111.newTrial_Form h1 {
     font-size: 50px;
     line-height: 66px;
 }
@@ -6146,12 +6660,18 @@ section {
 .bestSeller {
     font-size: 17px;
 }
-.flex_boxNot h3 {
+.flex_boxNot h3, .priNew_list > h4 {
     font-size: 34px;
     line-height: 48px;
 }
 .plans_flex11, .plans_flex12 {
     width: calc(50% - 10px);
+}
+.new_design .plans_flex12 {
+    min-height: 200px;
+}
+.new_design .blueBackg .plans_flex12 {
+    min-height: 240px;
 }
 .blueBackg .plans_flex11 ul li:first-child p {
     font-size: 17px;
@@ -6161,19 +6681,6 @@ section {
 }
 .plans_flex11 ul li {
     padding: 10px;
-}
-.plans_flex {
-    flex-direction: column-reverse;
-}
-.plans_flex1.blueBackg {
-    width: 100%;
-}
-.plans_flex1 {
-    width: 90%;
-    padding: 25px;
-    border: 1px solid #4285F4;
-    border-top: 0;
-    border-radius: 0 0 10px 10px;
 }
 .new_features h1, .new_features.new_resources .new_resors01 h1 {
     font-size: 50px;
@@ -6191,7 +6698,7 @@ section {
     font-size: 26px;
     line-height: 34px;
 }
-.new_features1 h3, .new_about11 h2 {
+.new_features1 h3, .new_about11 h2, .new_about11 h3 {
     font-size: 46px;
     line-height: 58px;
 }
@@ -6246,7 +6753,7 @@ section {
 .resoulist1 {
     width: calc(50% - 10px);
 }
-.new_features.new_resources .resoulist1 h2 {
+.new_features.new_resources .resoulist1 h2, .new_features.new_resources .resoulist1 h3 {
     font-size: 28px;
     line-height: 37px;
     margin-bottom: 15px;
@@ -6332,6 +6839,23 @@ section {
 .blogList_pagination {
     margin-top: 40px;
 }
+.priNew_list > p {
+    margin-bottom: 30px;
+}
+.priNew_list ul li {
+    width: 33.33%;
+    padding: 25px 20px;
+}
+.priNew_list ul li:nth-child(4), .priNew_list ul li:nth-child(8) {
+    border-right: 1px solid rgb(156 140 140 / 31%);
+}
+.priNew_list ul li:nth-child(3), .priNew_list ul li:nth-child(6), .priNew_list ul li:nth-child(9) {
+    border-right: 0;
+}
+.priNew_list ul li img {
+    width: 40px;
+    height: 40px;
+}
 }
 @media only screen and (max-width: 1100px) {
 .authen_sc1, .authen_sc2 {
@@ -6399,7 +6923,7 @@ section {
     padding-top: 100px;
     padding-bottom: 40px;
 }
-.backtest_head h3 {
+.backtest_head h3, .backtest_head h1 {
     font-size: 36px;
     line-height: 46px;
 }
@@ -6442,7 +6966,7 @@ body.open {
 .header_sec2 ul li {
     width: 100%;
 }
-.header_sec2 ul li a {
+.header_sec2 ul li a, .header_sec2 ul li button {
     width: 100%;
     font-size: 18px;
     margin-left: 0;
@@ -6574,7 +7098,7 @@ body.open {
     padding-top: 90px;
     padding-bottom: 30px;
 }
-.inner_banner h2, .pricSec_1 h3 {
+.inner_banner h2, .pricSec_1 h3, .pricSec_1 h1 {
     font-size: 52px;
     line-height: 60px;
 }
@@ -6588,7 +7112,7 @@ body.open {
     line-height: 30px;
     margin-bottom: 20px;
 }
-.pricSec_1 h4 {
+.pricSec_1 h4, .pricSec_1 h2 {
     font-size: 24px;
 }
 .pricSec_1 p {
@@ -6984,11 +7508,11 @@ body.open {
 .coverL_sec1 {
     padding: 30px 0;
 }
-.coverL_sec11 h3 {
+.coverL_sec11 h3, .coverL_sec11 h1 {
     font-size: 34px;
     line-height: 46px;
 }
-.coverL_sec11 p {
+.coverL_sec11 p, .coverL_sec11 h2 {
     font-size: 18px;
     line-height: 26px;
 }
@@ -6996,7 +7520,7 @@ body.open {
     margin-top: 20px;
     padding: 15px;
 }
-.backtest_head h3 {
+.backtest_head h3, .backtest_head h1 {
     font-size: 34px;
     line-height: 44px;
 }
@@ -7020,20 +7544,23 @@ body.open {
 .signUp_Box {
     max-width: 640px;
 }
-.new_head2 .header_sec2 ul li a {
+.new_head2 .header_sec2 ul li a, .new_head2 .header_sec2 ul li button {
     color: #000000;
+}
+.new_head2 .header_sec2 ul li button {
+    text-align: left;
 }
 .new_head2 .header_sec2 ul li a.signUp_btn {
     border: 1px solid #242947;
     padding: 10px 20px;
 }
-.new_head2 .header_sec2 ul li a.trial_btn {
+.new_head2 .header_sec2 ul li a.trial_btn, .new_head2 .header_sec2 ul li button.trial_btn {
     margin-left: 0;
     color: #ffffff;
     padding: 10px 20px;
     margin-bottom: 0;
 }
-.newHome_1, .newHome_2, .newHome_3, .newHome_4, .newHome_5.indexSec_2, .newHome_6, .new_features1, .new_features1.new_features2, .new_about1, .discord_sec, .roardmap_sec {
+.newHome_1, .newHome_2, .newHome_3, .newHome_4, .newHome_5.indexSec_2, .newHome_6, .new_features1, .newHome_7, .new_features1.new_features2, .new_about1, .discord_sec, .roardmap_sec {
     padding: 50px 0;
 }
 .pricingNew_sec1 {
@@ -7046,7 +7573,7 @@ body.open {
     width: calc(25% - 7.5px);
     padding: 20px;
 }
-.newHome_cont1 li h6 {
+.newHome_cont1 li h6, .newHome_cont1 li h4 {
     font-size: 15px;
     line-height: 20px;
 }
@@ -7114,7 +7641,7 @@ body.open {
 .trialForm_BG header img {
     width: 120px;
 }
-.tForm_sec111.newTrial_Form h3 {
+.tForm_sec111.newTrial_Form h3, .tForm_sec111.newTrial_Form h1 {
     font-size: 48px;
     line-height: 62px;
 }
@@ -7124,7 +7651,7 @@ body.open {
 .flex_boxes1 {
     max-width: 100%;
 }
-.flex_boxNot h3 {
+.flex_boxNot h3, .priNew_list > h4 {
     font-size: 32px;
     line-height: 46px;
 }
@@ -7139,15 +7666,11 @@ body.open {
     height: 145px;
 }
 .plans_flex1.blueBackg {
-    padding: 30px;
-    padding-top: 35px;
-}
-.plans_flex1 {
     padding: 20px;
 }
 .pricing_banner.new_pricing {
     padding-top: 110px;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
 }
 .pric_sec210_2 button, .pric_sec2100_2 button {
     font-size: 15px;
@@ -7206,7 +7729,7 @@ body.open {
     font-size: 22px;
     line-height: 30px;
 }
-.new_features1 h3, .new_about11 h2 {
+.new_features1 h3, .new_about11 h2, .new_about11 h3 {
     font-size: 44px;
     line-height: 56px;
 }
@@ -7290,7 +7813,7 @@ body.open {
     padding-bottom: 10px;
     margin-bottom: 0;
 }
-.new_features.new_resources .resoulist1 h2 {
+.new_features.new_resources .resoulist1 h2, .new_features.new_resources .resoulist1 h3 {
     font-size: 36px;
     line-height: 48px;
 }
@@ -7404,6 +7927,15 @@ body.open {
     font-size: 18px;
     line-height: 24px;
 }
+.priNew_list ul li {
+    width: 50%;
+}
+.priNew_list ul li:nth-child(3), .priNew_list ul li:nth-child(9) {
+    border-right: 1px solid rgb(156 140 140 / 31%);
+}
+.priNew_list ul li:nth-child(2), .priNew_list ul li:nth-child(4), .priNew_list ul li:nth-child(8), .priNew_list ul li:nth-child(10) {
+    border-right: 0;
+}
 }
 @media only screen and (max-width: 930px) { 
 .featSec_11 {
@@ -7481,6 +8013,12 @@ body.open {
 }
 }
 @media only screen and (max-width: 767px) {
+.newHome_7 ul {
+    column-count: 1;
+}
+.newHome_7 .block_txt {
+    display: inline;
+}
 .signup_links a p {
     font-size: 15px;
 }
@@ -7603,12 +8141,12 @@ body.open {
     padding-top: 80px;
     padding-bottom: 30px;
 }
-.pricSec_1 h3 {
+.pricSec_1 h3, .pricSec_1 h1 {
     font-size: 48px;
     line-height: 58px;
     margin-bottom: 10px;
 }
-.pricSec_1 h4 {
+.pricSec_1 h4, .pricSec_1 h2 {
     font-size: 23px;
     margin-bottom: 10px;
 }
@@ -7725,6 +8263,18 @@ body.open {
 .pric_sec210.pric_sec214 h4 {
     margin-bottom: 0;
 }
+.priNew_list ul li {
+    width: 100%;
+    align-items: flex-start;
+    text-align: left;
+    border-right: 0;
+    padding: 0;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+}
+.priNew_list ul li:nth-child(3), .priNew_list ul li:nth-child(9) {
+    border-right: 0;
+}
 /*==== PRICING SLIDER =====*/
 .faq_question h2 {
     font-size: 30px;
@@ -7784,7 +8334,7 @@ body.open {
     font-size: 29px;
     line-height: 20px;
 }
-.coverL_sec11 h3 {
+.coverL_sec11 h3, .coverL_sec11 h1 {
     font-size: 32px;
     line-height: 44px;
     margin-bottom: 10px;
@@ -7828,7 +8378,7 @@ body.open {
     font-size: 18px;
     line-height: 24px;
 }
-.newHome_1, .newHome_2, .newHome_3, .newHome_4, .newHome_5.indexSec_2, .newHome_6, .new_features1, .new_features1.new_features2, .new_about1, .discord_sec, .roardmap_sec {
+.newHome_1, .newHome_2, .newHome_3, .newHome_4, .newHome_5.indexSec_2, .newHome_6, .newHome_7, .new_features1, .new_features1.new_features2, .new_about1, .discord_sec, .roardmap_sec {
     padding: 40px 0;
 }
 .new_features {
@@ -7890,11 +8440,7 @@ body.open {
     width: 90px;
     right: 40px;
 }
-.head_breadcrumbs p {
-    font-size: 16px;
-    line-height: 22px;
-}
-.tForm_sec111.newTrial_Form h3 {
+.tForm_sec111.newTrial_Form h3, .tForm_sec111.newTrial_Form h1 {
     font-size: 38px;
     line-height: 50px;
 }
@@ -7912,7 +8458,7 @@ body.open {
     font-size: 17px;
     line-height: 23px;
 }
-.flex_boxNot h3 {
+.flex_boxNot h3, .priNew_list > h4 {
     font-size: 30px;
     line-height: 44px;
 }
@@ -7973,14 +8519,8 @@ body.open {
     left: 50%;
     z-index: 11;
 }
-.plans_flex1 {
-    flex-direction: column;
-    width: 85%;
-}
-.plans_flex1.blueBackg {
-    flex-direction: column-reverse;
-    padding: 25px;
-    padding-top: 30px;
+.priNew_list {
+    margin-top: 40px;
 }
 .plans_flex11, .plans_flex12 {
     width: 100%;
@@ -8014,7 +8554,7 @@ body.open {
     line-height: 48px;
     margin-bottom: 12px;
 }
-.new_about11 h2 {
+.new_about11 h2, .new_about11 h3 {
     font-size: 36px;
     line-height: 48px;
 }
@@ -8069,7 +8609,7 @@ body.open {
     line-height: 51px;
     margin-bottom: 12px;
 }
-.new_features.new_resources .new_resors01 p {
+.new_features.new_resources .new_resors01 p, .new_features.new_resources .new_resors01 h2 {
     font-size: 22px;
     line-height: 30px;
     margin-bottom: 12px;
@@ -8088,7 +8628,7 @@ body.open {
 .resou_list {
     margin-top: 30px;
 }
-.new_features.new_resources .resoulist1 h2 {
+.new_features.new_resources .resoulist1 h2, .new_features.new_resources .resoulist1 h3 {
     font-size: 28px;
     line-height: 37px;
 }
@@ -8218,6 +8758,26 @@ body.open {
 .next_previousBlog {
     margin-top: 30px;
 }
+.plans_flex {
+    flex-direction: column;
+}
+.plans_flex1.blueBackg {
+    width: 100%;
+}
+.plans_flex1 {
+    width: 85%;
+    padding: 20px;
+    border: 1px solid #4285F4;
+    border-top: 0;
+    border-radius: 0 0 10px 10px;
+}
+.plans_flex.new_design {
+    margin-top: 40px;
+}
+.tForm_sec111.newTrial_Form p, .tForm_sec111.newTrial_Form h2 {
+    font-size: 18px;
+    line-height: 24px;
+}
 }
 @media only screen and (max-width: 720px) { 
 .b-nav {
@@ -8242,7 +8802,7 @@ body.open {
     width: 100%;
     background: rgb(255 255 255 / 98%);
 }
-.header_sec2 ul li a.signUp_btn, .header_sec2 ul li .trial_btn {
+.header_sec2 ul li a.signUp_btn, .header_sec2 ul li button.trial_btn {
     text-align: center;
 }
 .mobile_menu > .b-nav > a img {
@@ -8259,7 +8819,7 @@ body.open {
     max-width: 380px;
     margin: 0 auto;
 }
-.inner_banner h2, .pricSec_1 h3 {
+.inner_banner h2, .pricSec_1 h3, .pricSec_1 h1 {
     font-size: 42px;
     line-height: 55px;
     margin-bottom: 10px;
@@ -8269,7 +8829,7 @@ body.open {
     line-height: 28px;
     margin-bottom: 15px;
 }
-.pricSec_1 h4 {
+.pricSec_1 h4, .pricSec_1 h2 {
     font-size: 22px;
     line-height: 32px;
 }
@@ -8520,7 +9080,7 @@ body.open {
     font-size: 12px;
     top: 0;
 }
-.backtest_head h3 {
+.backtest_head h3, .backtest_head h1 {
     font-size: 32px;
     line-height: 40px;
 }
@@ -8556,10 +9116,10 @@ body.open {
     width: calc(100% - 155px);
     padding: 10px 20px
 }
-.signUp_Box a {
+.signUp_Box a, .signUp_Box button {
     padding: 11px 30px;
 }
-.newHome_1, .newHome_2, .newHome_3, .newHome_4, .newHome_5.indexSec_2, .newHome_6, .new_features1, .new_about1, .discord_sec, .roardmap_sec {
+.newHome_1, .newHome_2, .newHome_3, .newHome_4, .newHome_5.indexSec_2, .newHome_6, .newHome_7, .new_features1, .new_about1, .discord_sec, .roardmap_sec {
     padding: 30px 0;
 }
 .pricingNew_sec1 {
@@ -8614,6 +9174,15 @@ body.open {
 }
 .pricing_banner.new_pricing {
     margin-top: -72px;
+    padding-top: 90px;
+    padding-bottom: 30px;
+}
+.priNew_list, .plans_flex.new_design {
+    margin-top: 30px;
+}
+.flex_boxes {
+    margin-top: 30px;
+    gap: 30px;
 }
 .new_features0 {
     height: 300px;
@@ -8693,7 +9262,7 @@ body.open {
 .inner_banner h4 {
     font-size: 24px;
 }
-.inner_banner h2, .pricSec_1 h3 {
+.inner_banner h2, .pricSec_1 h3, .pricSec_1 h1 {
     font-size: 38px;
     line-height: 48px;
 }
@@ -8734,7 +9303,7 @@ body.open {
 .pricing_banner {
     height: 300px;
 }
-.pricSec_1 h4 {
+.pricSec_1 h4, .pricSec_1 h2 {
     font-size: 21px;
     line-height: 30px;
 }
@@ -8761,15 +9330,15 @@ body.open {
 .coverL_sec1 {
     padding: 30px 0;
 }
-.coverL_sec11 h3 {
+.coverL_sec11 h3, .coverL_sec11 h1 {
     font-size: 28px;
     line-height: 37px;
 }
-.coverL_sec11 p {
+.coverL_sec11 p, .coverL_sec11 h2 {
     font-size: 17px;
     line-height: 25px;
 }
-.backtest_head h3 {
+.backtest_head h3, .backtest_head h1 {
     font-size: 30px;
     line-height: 38px;
 }
@@ -8791,7 +9360,7 @@ body.open {
 .signUp_Box input {
     width: calc(100% - 135px);
 }
-.signUp_Box a {
+.signUp_Box a, .signUp_Box button {
     padding: 11px 20px;
     width: 120px;
 }
@@ -8834,15 +9403,6 @@ body.open {
 .flex_boxes1, .flex_boxes2, .flex_boxNot {
     padding: 20px;
 }
-.plans_flex1 {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 15px;
-    padding: 20px;
-}
-.plans_flex1.blueBackg {
-    flex-direction: column-reverse;
-}
 .plans_flex11 ul li p {
     font-size: 15px;
 }
@@ -8850,6 +9410,7 @@ body.open {
     width: 100%;
 }
 .trialForm_BG {
+    padding-top: 30px;
     padding-bottom: 30px;
 }
 .newPlan .pricingNew2 .nav-tabs .nav-link {
@@ -8861,16 +9422,24 @@ body.open {
     line-height: 37px;
     margin-bottom: 20px;
 }
+.priNew_list > h4 {
+    font-size: 28px;
+    line-height: 37px;
+}
 .plans_flex12 {
     min-height: 235px;
 }
-.plans_flex1.blueBackg {
-    padding: 20px;
-    padding-top: 30px;
+.new_design .blueBackg .plans_flex12 {
+    min-height: 220px;
+}
+.new_design .plans_flex12 {
+    min-height: 180px;
 }
 .plans_flex12 h4 {
     font-size: 45px;
     line-height: 45px;
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
 .pricing_banner.new_pricing {
     padding-top: 90px;
@@ -8887,7 +9456,7 @@ body.open {
     padding-top: 80px;
     padding-bottom: 30px;
 }
-.new_features1 h3, .new_about11 h2 {
+.new_features1 h3, .new_about11 h2, .new_about11 h3 {
     font-size: 32px;
     line-height: 43px;
 }
@@ -8928,7 +9497,7 @@ body.open {
     font-size: 34px;
     line-height: 48px;
 }
-.new_features.new_resources .new_resors01 p {
+.new_features.new_resources .new_resors01 p, .new_features.new_resources .new_resors01 h2 {
     font-size: 20px;
     line-height: 28px;
     margin-bottom: 10px;
@@ -8936,7 +9505,7 @@ body.open {
 .new_resources .new_resors01 p:last-of-type {
     margin-bottom: 0;
 }
-.new_features.new_resources .resoulist1 h2 {
+.new_features.new_resources .resoulist1 h2, .new_features.new_resources .resoulist1 h3 {
     font-size: 26px;
     line-height: 35px;
 }
@@ -9010,7 +9579,7 @@ body.open {
     font-size: 17px;
     line-height: 23px;
 }
-.empty_stock h3 {
+.empty_stock h3, .empty_stock h2 {
     font-size: 22px;
     line-height: 30px;
 }
@@ -9024,6 +9593,18 @@ body.open {
 }
 .header_2 ul {
     gap: 10px 25px;
+}
+.plans_flex1, .plans_flex1.blueBackg {
+    padding: 15px;
+}
+.priNew_list > p {
+    font-size: 19px;
+    line-height: 25px;
+    margin-bottom: 25px;
+}
+.priNew_list ul li {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 }
 @media only screen and (max-width: 475px) { 
@@ -9043,7 +9624,7 @@ body.open {
     width: 80px;
     right: calc(100% + 59%);
 }
-.pric_sec2100_2 ul li h6 {
+.pric_sec2100_2 ul li h6, .pric_sec2100_2 ul li h5 {
     font-size: 17px;
     line-height: 23px;
 }
@@ -9066,7 +9647,7 @@ body.open {
 .new_features0 {
     height: 235px;
 }
-.new_features1 h3, .new_about11 h2 {
+.new_features1 h3, .new_about11 h2, .new_about11 h3 {
     font-size: 28px;
     line-height: 37px;
 }
@@ -9096,11 +9677,11 @@ body.open {
     font-size: 30px;
     line-height: 42px;
 }
-.new_features.new_resources .new_resors01 p {
+.new_features.new_resources .new_resors01 p, .new_features.new_resources .new_resors01 h2 {
     font-size: 18px;
     line-height: 24px;
 }
-.new_features.new_resources .resoulist1 h2 {
+.new_features.new_resources .resoulist1 h2, .new_features.new_resources .resoulist1 h3 {
     font-size: 24px;
     line-height: 32px;
 }
@@ -9157,6 +9738,9 @@ body.open {
 .landing_head > div {
     gap: 20px;
 }
+.priNew_list ul li img {
+    margin-bottom: 15px;
+}
 }
 @media only screen and (max-width: 430px) { 
 .sponered_slider {
@@ -9181,11 +9765,11 @@ body.open {
 .indexSec_13 {
     padding: 20px 0;
 }
-.inner_banner h2, .pricSec_1 h3 {
+.inner_banner h2, .pricSec_1 h3, .pricSec_1 h1 {
     font-size: 36px;
     line-height: 46px;
 }
-.inner_banner h3, .pricSec_1 h4 {
+.inner_banner h3, .pricSec_1 h4, .pricSec_1 h2 {
     font-size: 18px;
     line-height: 24px;
 }
@@ -9209,7 +9793,7 @@ body.open {
 .pric_sec2100 ul li {
     padding: 10px 15px;
 }
-.policies_sec p a {
+.policies_sec p a, .policies_sec h2 a {
     word-break: break-all;
 }
 .pricing_sec311 {
@@ -9302,7 +9886,7 @@ body.open {
     flex-direction: column;
     padding: 20px;
 }
-.signUp_Box input, .signUp_Box a {
+.signUp_Box input, .signUp_Box a, .signUp_Box button {
     width: 100%;
 }
 .newHome_cont1, .newHome_cont2 {
@@ -9353,15 +9937,8 @@ body.open {
 .head_breadcrumbs li:not(:first-child) span:before {
     width: 68px;
 }
-.flex_boxes1, .flex_boxes2, .flex_boxNot, .plans_flex1 {
+.flex_boxes1, .flex_boxes2, .flex_boxNot {
     padding: 20px 15px;
-}
-.plans_flex1.blueBackg {
-    padding: 15px;
-    padding-top: 30px;
-}
-.plans_flex1 {
-    width: calc(100% - 30px);
 }
 .pric_sec2100_2 ul li {
     height: 140px;
@@ -9421,6 +9998,12 @@ body.open {
 .header_2 ul {
     gap: 10px 15px;
 }
+.plans_flex12 button {
+    margin-top: 12px;
+}
+.form_field input, .form_field select {
+    padding: 10px 20px;
+}
 }
 @media only screen and (max-width: 390px) { 
 .new_home h1 {
@@ -9445,11 +10028,11 @@ body.open {
 .head_breadcrumbs li:not(:first-child) span:before {
     right: calc(100% + 47%);
 }
-.tForm_sec111.newTrial_Form h3 {
+.tForm_sec111.newTrial_Form h3, .tForm_sec111.newTrial_Form h1 {
     font-size: 32px;
     line-height: 44px;
 }
-.tForm_sec111.newTrial_Form p {
+.tForm_sec111.newTrial_Form p, .tForm_sec111.newTrial_Form h2 {
     font-size: 16px;
     line-height: 22px;
 }
@@ -9485,7 +10068,7 @@ body.open {
 .b-nav {
     padding: 20px;
 }
-.inner_banner h2, .pricSec_1 h3 {
+.inner_banner h2, .pricSec_1 h3, .pricSec_1 h1 {
     font-size: 34px;
     line-height: 44px;
 }
@@ -9519,11 +10102,11 @@ body.open {
     font-size: 19px;
     line-height: 27px;
 }
-.coverL_sec11 h3 {
+.coverL_sec11 h3, .coverL_sec11 h1 {
     font-size: 26px;
     line-height: 35px;
 }
-.coverL_sec11 p {
+.coverL_sec11 p, .coverL_sec11 h2 {
     font-size: 16px;
     line-height: 24px;
 }
@@ -9539,7 +10122,7 @@ body.open {
     line-height: 24px;
     margin-bottom: 10px;
 }
-.backtest_head h3 {
+.backtest_head h3, .backtest_head h1 {
     font-size: 28px;
     line-height: 37px;
 }
@@ -9555,7 +10138,7 @@ body.open {
     width: 90px;
     margin-bottom: 0;
 }
-.newHome_cont1 li h6 {
+.newHome_cont1 li h6, .newHome_cont1 li h4 {
     font-size: 16px;
     line-height: 22px;
 }
@@ -9601,9 +10184,6 @@ body.open {
     font-size: 35px;
     line-height: 35px;
 }
-.plans_flex1.blueBackg {
-    padding-top: 25px;
-}
 .new_features h1 {
     font-size: 30px;
     line-height: 40px;
@@ -9623,7 +10203,7 @@ body.open {
     font-size: 22px;
     line-height: 30px;
 }
-.empty_stock h3 {
+.empty_stock h3, .empty_stock h2 {
     font-size: 20px;
     line-height: 28px;
 }
@@ -9639,7 +10219,7 @@ body.open {
 .pric_sec2100 ul li {
     height: 70px;
 }
-.coverL_sec11 h3 {
+.coverL_sec11 h3, .coverL_sec11 h1 {
     font-size: 24px;
     line-height: 32px;
 }
