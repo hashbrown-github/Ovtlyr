@@ -7,7 +7,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
 <meta name="format-detection" content="telephone=no">
-<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.svg">
+<link rel="icon" type="image/ico" sizes="32x32" href="images/favicon-32x32.ico">
 <link rel="preconnect" href="https://fonts.gstatic.com" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -16,7 +16,7 @@
 </head>
 <body>
   <header class="header_outer">
-    <div class="header_inner1 new_head">
+    <div class="header_inner1 new_head" style="display: none;">
       <div class="container container_mobile">
         <div class="top_header">
           <p><a target="_blank" href="http://ovtlyrtraining.com/">Sign Up For Our Free Upcoming Webclass for Traders</a></p>
@@ -38,9 +38,12 @@
               <li><a href="features.html">Features</a></li>
               <li><a href="pricing.html">Pricing</a></li>
               <li><a href="community.html">Community</a></li>
-              <li><a href="log-in.html">My Account</a></li>
-              <!-- <li><button type="button">Logout</button></li> -->
-              <li><a href="sign-up.html" class="signUp_btn">Sign Up</a></li>
+              <!-- Without Login -->
+              <!-- <li><a href="sign-up.html">Get Started</a></li>
+              <li><a href="log-in.html" class="signUp_btn">My Account</a></li> -->
+              <!-- With Login -->
+              <li><a href="javascript:void(0);">Logout</a></li>
+              <li><a href="dashboard.html" class="signUp_btn">My Account</a></li>
             </ul>
             <div class="mobile_menu">
               <div class="b-nav">
@@ -50,12 +53,15 @@
                 </div>
                 <ul>
                   <li class="button_mobile"><button type="button" class="yellow_btn rounded_radius">Testimonials</button></li>
-                  <li class="button_mobile"><a href="sign-up.html" class="signUp_btn">Sign Up</a></li>
                   <li><a href="features.html">Features</a></li>
                   <li><a href="pricing.html">Pricing</a></li>
                   <li><a href="community.html">Community</a></li>
-                  <li><a href="log-in.html">My Account</a></li>
-                  <!-- <li><button type="button">Logout</button></li> -->
+                  <!-- Without Login -->
+                  <!-- <li><a href="sign-up.html">Get Started</a></li>
+                  <li><a href="log-in.html" class="signUp_btn">My Account</a></li> -->
+                  <!-- With Login -->
+                  <li><a href="javascript:void(0);">Logout</a></li>
+                  <li class="button_mobile"><a href="dashboard.html" class="signUp_btn">My Account</a></li>
                 </ul>
               </div>
               <!-- Burger-Icon -->
@@ -165,11 +171,10 @@
       </div>
     </section>
     <footer class="footer_outer">
-      <div class="container container_mobile">
+      <div class="container">
         <div class="footer_outer1">
           <div class="footer_outer11">
             <a href="home.html"><img src="images/Ovtlyr-Logo.svg" alt="OVTLYR Logo" /></a>
-            <!-- <p>Outliers Win</p> -->
             <ul>
               <li><a href="https://www.facebook.com/Ovtlyr/" target="_blank"><img src="images/facebook.svg" alt="Facebook" /></a></li>
               <li><a href="https://twitter.com/ovtlyr" target="_blank"><img src="images/twitter.svg" alt="Twitter" /></a></li>
@@ -188,6 +193,8 @@
                 <li><a href="pricing.html">Pricing</a></li>
                 <li><a href="affiliates.html">Affiliates</a></li>
                 <li><a href="blogs.html">Blog</a></li>
+                <li><a href="roadmap.html">Roadmap</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
               </ul>
             </div>
             <div>
@@ -201,7 +208,7 @@
           </div>
         </div>
         <div class="footer_outer2">
-          <p>©2023 Company Name. All Rights Reserved</p>
+          <p>©2025 OVTLYR. All Rights Reserved</p>
           <ul>
             <li><a href="privacy-policy.html">Privacy Policy</a></li>
             <li><a href="terms-of-use.html">Terms of Use</a></li>
@@ -213,33 +220,33 @@
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/jquery.min.js"></script>
   
-<script>
-function reveal() {
-  var reveals = document.querySelectorAll(".reveal");
-
-  for (var i = 0; i < reveals.length; i++) {
-    var windowHeight = window.innerHeight;
-    var elementTop = reveals[i].getBoundingClientRect().top;
-    var elementVisible = 50;
-
-    if (elementTop < windowHeight - elementVisible) {
-      reveals[i].classList.add("active");
-    } 
-    /* else {
-      reveals[i].classList.remove("active");
-    } */
-  }
-}
-window.addEventListener("scroll", reveal);
-</script>
-<script>
-  $(document).ready(function () {
-    $('.new_resors01').addClass('active');
-    setTimeout(function(){
-      $('.new_resors1').addClass('active');
-    },200);
-  });
-</script>
+  <script>
+    function reveal() {
+      var reveals = document.querySelectorAll(".reveal");
+    
+      for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        var elementVisible = 50;
+    
+        if (elementTop < windowHeight - elementVisible) {
+          reveals[i].classList.add("active");
+        } 
+        /* else {
+          reveals[i].classList.remove("active");
+        } */
+      }
+    }
+    window.addEventListener("scroll", reveal);
+  </script>
+  <script>
+    $(document).ready(function () {
+      $('.new_resors01').addClass('active');
+      setTimeout(function(){
+        $('.new_resors1').addClass('active');
+      },200);
+    });
+  </script>
   <!--======= MOBILE MENU START =======-->
   <script>
     (function() {

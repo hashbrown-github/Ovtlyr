@@ -36,39 +36,39 @@ if (localStorage.getItem('darkMode') === "on") {
   });
 }
 </script>
-<div class="page toggle new_sidebar final_dashbd1">
-  <div class="sidebar active final_dashbd11">
-    <!-- <div class="sidebar__top">
+<div class="page toggle new_sidebar">
+  <div class="sidebar active">
+    <div class="sidebar__top">
       <button class="sidebar__close"><span class="material-symbols-outlined">close</span></button>
       <a class="sidebar__logo" href="stock-detail.html">
         <img class="sidebar__pic sidebar__pic_black" src="images/black-logo.svg" alt="OVTLYR Logo" />
         <img class="sidebar__pic sidebar__pic_white" src="images/white-logo.svg" alt="OVTLYR Logo" />
       </a>
       <button class="sidebar__burger"></button>
-    </div> -->
+    </div>
     <div class="sidebar__wrapper ovtlyr_sidebar">
       <div class="sidebar__inner">
-        <!-- <a class="sidebar__logo" href="stock-detail.html">
+        <a class="sidebar__logo" href="stock-detail.html">
           <img class="sidebar__pic sidebar__pic_black" src="images/black-logo-small.svg" alt="OVTLYR Logo" />
           <img class="sidebar__pic sidebar__pic_white" src="images/white-logo-small.svg" alt="OVTLYR Logo" />
-        </a> -->
+        </a>
         <div class="sidebar__list">
           <div class="sidebar__group">
             <div class="sidebar__menu">
               <div class="side_dropdown">
-                <a class="sidebar__item" href="dashboard-latest.html" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Dashboard">
+                <a class="sidebar__item" href="dashboard.html" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Dashboard">
                   <div class="sidebar__icon">
                     <img src="images/dashboard.svg" alt="Dashboard" />
                   </div>
-                  <!-- <div class="sidebar__text">Dashboard</div> -->
+                  <div class="sidebar__text">Dashboard</div>
                 </a>
               </div>
               <div class="side_dropdown">
-                <a class="sidebar__item" href="market-breadth-latest.html" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Market Breadth">
+                <a class="sidebar__item" href="market-breadth.html" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Market Breadth">
                   <div class="sidebar__icon">
                     <img src="images/market-breadth.svg" alt="Market" />
                   </div>
-                  <!-- <div class="sidebar__text">Market Breadth</div> -->
+                  <div class="sidebar__text">Market Breadth</div>
                 </a>
               </div>
               <div class="side_dropdown">
@@ -76,7 +76,7 @@ if (localStorage.getItem('darkMode') === "on") {
                   <div class="sidebar__icon">
                     <img src="images/stock-etf.svg" alt="Stocks" />
                   </div>
-                  <!-- <div class="sidebar__text">Screener</div> -->
+                  <div class="sidebar__text">Screener</div>
                 </a>
               </div>
               <div class="side_dropdown">
@@ -84,7 +84,7 @@ if (localStorage.getItem('darkMode') === "on") {
                   <div class="sidebar__icon">
                     <img src="images/watchlist.svg" alt="Star" />
                   </div>
-                  <!-- <div class="sidebar__text">Watchlist</div> -->
+                  <div class="sidebar__text">Watchlist</div>
                 </a>
               </div>
               <div class="side_dropdown">
@@ -92,77 +92,7 @@ if (localStorage.getItem('darkMode') === "on") {
                   <div class="sidebar__icon">
                     <img src="images/news.svg" alt="News" />
                   </div>
-                  <!-- <div class="sidebar__text">News and Analyst Ratings</div> -->
-                </a>
-              </div>
-              <div class="side_dropdown">
-                <a class="sidebar__item" href="notification.html" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Notification & List Management">
-                  <div class="sidebar__icon">
-                    <img src="images/notification.svg" alt="Notification" />
-                  </div>
-                  <span class="noti_count2">10</span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="sidebar__inner final_dashbd111">
-        <div class="sidebar__list">
-          <div class="sidebar__group">
-            <div class="sidebar__menu">
-              <div class="side_dropdown">
-                <div class="profileDrop dropup-right dropup" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Settings">
-                  <a class="sidebar__item p-0" href="#" id="settingsButton" data-bs-toggle="dropdown" aria-expanded="false">
-                    <div class="sidebar__icon">
-                      <img src="images/setting.svg" alt="setting" />
-                    </div>
-                  </a>
-                  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="settingsButton" >
-                    <li><a class="dropdown-item" href="subscription-all.html"><p class="mb-0">Subscription Management</p></a></li>
-                    <li><a class="dropdown-item" href="notification.html"><p class="mb-0">Notification Management</p></a></li>
-                    <li><a class="dropdown-item" href="affiliate-info.html"><p class="mb-0">Referral Dashboard</p></a></li>
-                    <li><a class="dropdown-item" href="tutorials.html"><p class="mb-0">Tutorials</p></a></li>
-                    <li><a class="dropdown-item" href="contact.html"><p class="mb-0">Contact Us</p></a></li>
-                    <li>
-                      <a class="dropdown-item" href="javascript:void(0);">
-                        <p class="switchThemeBtn mb-0">
-                          <span>Theme</span>
-                          <label class="switch switch_theme js-switch-theme mt-0">
-                            <input class="switch__input" type="checkbox">
-                            <span class="switch__in">
-                              <span class="switch__box"></span>
-                              <span class="switch__icon">
-                                <span class="material-symbols-outlined icon-sun">dark_mode</span>
-                                <span class="material-symbols-outlined icon-moon">light_mode</span>
-                              </span>
-                            </span>
-                          </label>
-                        </p>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="side_dropdown">
-                <a class="sidebar__item" href="https://discord.gg/DjgmSrdxUY" target="_blank" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Discord">
-                  <div class="sidebar__icon">
-                    <img src="images/discord.svg" alt="Discord" />
-                  </div>
-                </a>
-              </div>
-              <div class="side_dropdown">
-                <a class="sidebar__item" href="javascript:void(0);" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Logout">
-                  <div class="sidebar__icon">
-                    <img src="images/logout.svg" alt="Logout" />
-                  </div>
-                </a>
-              </div>
-              <div class="side_dropdown">
-                <a class="sidebar__item" href="profile.html" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Profile">
-                  <div class="sidebar__icon profile_icon">
-                    <img src="images/profile.svg" alt="Profile" />
-                  </div>
+                  <div class="sidebar__text">News and Analyst Ratings</div>
                 </a>
               </div>
             </div>
@@ -171,10 +101,10 @@ if (localStorage.getItem('darkMode') === "on") {
       </div>
     </div>
   </div>
-  <div class="page__wrapper final_dashbd12">
+  <div class="page__wrapper">
     <div class="page__center new_content">
-      <div class="dashboard_cont final_dashbd2 p-0">
-        <!-- <div class="new_header">
+      <div class="dashboard_cont">
+        <div class="new_header">
           <div class="newleft_21">
             <div class="me-1">
               <a href="https://discord.gg/DjgmSrdxUY" target="_blank"><img src="images/discord.svg" class="icon_img" alt="Discord" /></a>
@@ -209,7 +139,7 @@ if (localStorage.getItem('darkMode') === "on") {
                 </ul>
             </div>
           </div>
-        </div> -->
+        </div>
         <div class="contactUs_sec1 tutorial_sec">
           <h1>Tutorials</h1>
           <div class="tutorial_list">
@@ -218,22 +148,6 @@ if (localStorage.getItem('darkMode') === "on") {
                 <a href="https://www.youtube.com/embed/tQbVP4rTTFo?si=uw_H5sdOMGfxmd7v" target="_blank">Watch Video<img src="images/video-icon.svg" alt="Video Icon" /></a>
                 <p>Index & Sectors</p>
               </li>
-              <li>
-                <a href="https://www.youtube.com/embed/1GERp3yapk4?si=7P14DhBeZzMT9X1L" target="_blank">Watch Video<img src="images/video-icon.svg" alt="Video Icon" /></a>
-                <p>Market Breadth</p>
-              </li>
-              <li>
-                <a href="https://www.youtube.com/embed/GGoYN7YtcVc?si=q7A9dPJR2VJ_Yvdf" target="_blank">Watch Video<img src="images/video-icon.svg" alt="Video Icon" /></a>
-                <p>Dashboard</p>
-              </li>
-              <li>
-                <a href="https://www.youtube.com/embed/C5iIh5bDf_M?si=9IQ_QFpflhH9zFs4" target="_blank">Watch Video<img src="images/video-icon.svg" alt="Video Icon" /></a>
-                <p>News and Analyst Ratings</p>
-              </li>
-              <!-- <li>
-                <a href="https://www.youtube.com/embed/PNbnhjR5wH0?si=JfGZWG_RTuOjHRfs" target="_blank">Watch Video<img src="images/video-icon.svg" alt="Video Icon" /></a>
-                <p>Volatility and Performance Metrics</p>
-              </li> -->
               <li>
                 <a href="https://www.youtube.com/embed/eaZOFhrPzo4?si=jFnlc_emPEsJnBrQ" target="_blank">Watch Video<img src="images/video-icon.svg" alt="Video Icon" /></a>
                 <p>Buy & Sell Signals</p>
@@ -262,14 +176,6 @@ if (localStorage.getItem('darkMode') === "on") {
                 <a href="https://www.youtube.com/embed/SLNa_Wl6bUY?si=s6k31U1WuYQ6PMPI" target="_blank">Watch Video<img src="images/video-icon.svg" alt="Video Icon" /></a>
                 <p>Constituent Map</p>
               </li>
-              <!-- <li>
-                <a href="https://www.youtube.com/embed/t98MwHR0Tr8?si=Twul1JIkgP3YHSA3" target="_blank">Watch Video<img src="images/video-icon.svg" alt="Video Icon" /></a>
-                <p>Financials Sentiment Map</p>
-              </li>
-              <li>
-                <a href="https://www.youtube.com/embed/Ah_EsFisda0?si=ryQWiIMotJ71vTet" target="_blank">Watch Video<img src="images/video-icon.svg" alt="Video Icon" /></a>
-                <p>Constituent Heatmap Timeline</p>
-              </li> -->
               <li>
                 <a href="https://www.youtube.com/embed/js3Ns1CvUF4?si=9ndDEzLwe231FFsJ" target="_blank">Watch Video<img src="images/video-icon.svg" alt="Video Icon" /></a>
                 <p>Screener</p>

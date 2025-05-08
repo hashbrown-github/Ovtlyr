@@ -7,7 +7,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
 <meta name="format-detection" content="telephone=no" />
-<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.svg" />
+<link rel="icon" type="image/ico" sizes="32x32" href="images/favicon-32x32.ico" />
 <link rel="preconnect" href="https://fonts.gstatic.com" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -37,39 +37,25 @@
       });
     }
   </script>
-<div class="page toggle new_sidebar">
-  <div class="sidebar active">
-    <div class="sidebar__top">
-      <button class="sidebar__close"><span class="material-symbols-outlined">close</span></button>
-      <a class="sidebar__logo" href="stock-detail.html">
-        <img class="sidebar__pic sidebar__pic_black" src="images/black-logo.svg" alt="OVTLYR Logo" />
-        <img class="sidebar__pic sidebar__pic_white" src="images/white-logo.svg" alt="OVTLYR Logo" />
-      </a>
-      <button class="sidebar__burger"></button>
-    </div>
+<div class="page toggle new_sidebar final_dashbd1">
+  <div class="sidebar active final_dashbd11">
     <div class="sidebar__wrapper ovtlyr_sidebar">
       <div class="sidebar__inner">
-        <a class="sidebar__logo" href="stock-detail.html">
-          <img class="sidebar__pic sidebar__pic_black" src="images/black-logo-small.svg" alt="OVTLYR Logo" />
-          <img class="sidebar__pic sidebar__pic_white" src="images/white-logo-small.svg" alt="OVTLYR Logo" />
-        </a>
         <div class="sidebar__list">
           <div class="sidebar__group">
             <div class="sidebar__menu">
               <div class="side_dropdown">
-                <a class="sidebar__item" href="dashboard.html" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Dashboard">
+                <a class="sidebar__item" href="dashboard-latest.html" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Dashboard">
                   <div class="sidebar__icon">
                     <img src="images/dashboard.svg" alt="Dashboard" />
                   </div>
-                  <div class="sidebar__text">Dashboard</div>
                 </a>
               </div>
               <div class="side_dropdown">
-                <a class="sidebar__item" href="market-breadth.html" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Market Breadth">
+                <a class="sidebar__item" href="market-breadth-latest.html" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Market Breadth">
                   <div class="sidebar__icon">
                     <img src="images/market-breadth.svg" alt="Market" />
                   </div>
-                  <div class="sidebar__text">Market Breadth</div>
                 </a>
               </div>
               <div class="side_dropdown">
@@ -77,7 +63,6 @@
                   <div class="sidebar__icon">
                     <img src="images/stock-etf.svg" alt="Stocks" />
                   </div>
-                  <div class="sidebar__text">Screener</div>
                 </a>
               </div>
               <div class="side_dropdown">
@@ -85,15 +70,83 @@
                   <div class="sidebar__icon">
                     <img src="images/watchlist.svg" alt="Star" />
                   </div>
-                  <div class="sidebar__text">Watchlist</div>
                 </a>
               </div>
               <div class="side_dropdown">
-                <a class="sidebar__item" href="news-and-analyst.html" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" title="News & Analyst">
+                <a class="sidebar__item" href="news-and-analyst.html" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" title="News and Analyst Ratings">
                   <div class="sidebar__icon">
                     <img src="images/news.svg" alt="News" />
                   </div>
-                  <div class="sidebar__text">News & Analyst</div>
+                </a>
+              </div>
+              <div class="side_dropdown">
+                <a class="sidebar__item" href="notification.html" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Notification & List Management">
+                  <div class="sidebar__icon">
+                    <img src="images/notification.svg" alt="Notification" />
+                  </div>
+                  <span class="noti_count2">10</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar__inner final_dashbd111">
+        <div class="sidebar__list">
+          <div class="sidebar__group">
+            <div class="sidebar__menu">
+              <div class="side_dropdown">
+                <div class="profileDrop dropup-right dropup" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Settings">
+                  <a class="sidebar__item p-0" href="#" id="settingsButton" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div class="sidebar__icon">
+                      <img src="images/setting.svg" alt="setting" />
+                    </div>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="settingsButton" >
+                    <li><a class="dropdown-item" href="subscription-all.html"><p class="mb-0">Subscription Management</p></a></li>
+                    <li><a class="dropdown-item" href="notification.html"><p class="mb-0">Notification Management</p></a></li>
+                    <li><a class="dropdown-item" href="affiliate-info.html"><p class="mb-0">Referral Dashboard</p></a></li>
+                    <li><a class="dropdown-item" href="tutorials.html"><p class="mb-0">Tutorials</p></a></li>
+                    <li><a class="dropdown-item" href="contact.html"><p class="mb-0">Contact Us</p></a></li>
+                    <li>
+                      <a class="dropdown-item" href="javascript:void(0);">
+                        <p class="switchThemeBtn mb-0">
+                          <span>Theme</span>
+                          <label class="switch switch_theme js-switch-theme mt-0">
+                            <input class="switch__input" type="checkbox">
+                            <span class="switch__in">
+                              <span class="switch__box"></span>
+                              <span class="switch__icon">
+                                <span class="material-symbols-outlined icon-sun">dark_mode</span>
+                                <span class="material-symbols-outlined icon-moon">light_mode</span>
+                              </span>
+                            </span>
+                          </label>
+                        </p>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="side_dropdown">
+                <a class="sidebar__item" href="https://discord.gg/DjgmSrdxUY" target="_blank" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Discord">
+                  <div class="sidebar__icon">
+                    <img src="images/discord.svg" alt="Discord" />
+                  </div>
+                </a>
+              </div>
+              <div class="side_dropdown">
+                <a class="sidebar__item" href="javascript:void(0);" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Logout">
+                  <div class="sidebar__icon">
+                    <img src="images/logout.svg" alt="Logout" />
+                  </div>
+                </a>
+              </div>
+              <div class="side_dropdown">
+                <a class="sidebar__item" href="profile.html" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Profile">
+                  <div class="sidebar__icon profile_icon">
+                    <img src="images/profile.svg" alt="Profile" />
+                  </div>
                 </a>
               </div>
             </div>
@@ -102,46 +155,10 @@
       </div>
     </div>
   </div>
-  <div class="page__wrapper">
+  <div class="page__wrapper final_dashbd12">
     <div class="page__center new_content">
-      <div class="dashboard_cont">
-        <div class="new_header">
-          <div class="newleft_21">
-            <div class="me-1">
-              <a href="https://discord.gg/DjgmSrdxUY" target="_blank"><img src="images/discord.svg" class="icon_img" alt="Discord" /></a>
-            </div>
-            <div class="profileDrop">
-              <button class="" type="button" id="profileMenuButton" data-bs-toggle="dropdown" aria-expanded="false"><img src="images/profile.svg" class="icon_img" alt="Profile" /></button>
-                <ul class="dropdown-menu" aria-labelledby="profileMenuButton">
-                  <li><a class="dropdown-item" href="profile.html"><p class="mb-0">Profile</p></a></li>
-                  <li><a class="dropdown-item" href="subscription.html"><p class="mb-0">Subscription Management</p></a></li>
-                  <li><a class="dropdown-item" href="notification.html"><p class="mb-0">Notification Management</p></a></li>
-                  <li><a class="dropdown-item" href="affiliate-info.html"><p class="mb-0">Referral Dashboard</p></a></li>
-                  <li><a class="dropdown-item" href="tutorials.html"><p class="mb-0">Tutorials</p></a></li>
-                  <li><a class="dropdown-item" href="contact.html"><p class="mb-0">Contact Us</p></a></li>
-                  <li>
-                    <a class="dropdown-item" href="javascript:void(0);">
-                      <p class="switchThemeBtn mb-0">
-                        <span>Theme</span>
-                        <label class="switch switch_theme js-switch-theme">
-                          <input class="switch__input" type="checkbox">
-                          <span class="switch__in">
-                            <span class="switch__box"></span>
-                            <span class="switch__icon">
-                              <span class="material-symbols-outlined icon-sun">dark_mode</span>
-                              <span class="material-symbols-outlined icon-moon">light_mode</span>
-                            </span>
-                          </span>
-                        </label>
-                      </p>
-                    </a>
-                  </li>
-                  <li><a class="dropdown-item" href="log-in.html"><p class="mb-0">Logout</p></a></li>
-                </ul>
-            </div>
-          </div>
-        </div>
-        <div class="stockEtf_tabs">
+      <div class="dashboard_cont final_dashbd2 p-0">
+        <div class="stockEtf_tabs video_header">
           <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item" role="stocklist">
               <button class="nav-link active" id="stocks-tab" data-bs-toggle="tab" data-bs-target="#stockstab" type="button" role="tab" aria-controls="stockstab" aria-selected="true">Stocks</button>
@@ -150,6 +167,7 @@
               <button class="nav-link" id="etfs-tab" data-bs-toggle="tab" data-bs-target="#etfstab" type="button" role="tab" aria-controls="etfstab" aria-selected="false">ETFs</button>
             </li>
           </ul>
+          <button type="button" class="video_icon2 position-static m-0" data-bs-toggle="modal" data-bs-target="#favList"><img class="mb-0" src="images/video-icon.svg" alt="Video"></button>
         </div>
         <div class="stockTab_grid1">
           <div class="stockTab_grid11">
@@ -168,7 +186,6 @@
                             <span class="material-icons">save_as </span><span> Save </span>
                           </a>
                           <a href="#" class="border_btn show_filters_stock"><span class="material-icons">playlist_add_check </span><span>Screeners</span></a>
-                          
                         </span>
                       </div>
                       <div class="table_box filter_box">
@@ -194,7 +211,9 @@
                           <div class="label_align">
                             <label>Industry</label>
                             <div class="drop_menu">
-                              <div class="form-select FilterFocus"><span class="dropdown"><a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Industry</a></span></div>
+                              <div class="form-select FilterFocus">
+                                <span class="dropdown"><a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Industry</a></span>
+                              </div>
                               <ul class="menu_drop vertical_scroll">
                                 <li class="list-item"><a href="#" class="drop_list">Industry1</a><span class="material-symbols-outlined tick-icon">check</span></li>
                                 <li class="list-item"><a href="#" class="drop_list">Industry2</a><span class="material-symbols-outlined tick-icon">check</span></li>
@@ -214,13 +233,13 @@
                             <label>Capital Efficiency </label>
                             <div class="drop_menu">
                               <div class="form-select FilterFocus">
-                              <span class="dropdown">
-                              <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">All</a></span></div>
-                              <select class="menu_drop" data-mdb-select-init multiple>
-                                <option class="list-item">Above 2</option>
-                                <option class="list-item">Between 1-2</option>
-                                <option class="list-item">Less Than 1</option>
-                             </select>
+                                <span class="dropdown"><a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">All</a></span>
+                              </div>
+                              <ul class="menu_drop vertical_scroll">
+                                <li class="list-item"><a href="#" class="drop_list">Above 2</a><span class="material-symbols-outlined tick-icon">check</span></li>
+                                <li class="list-item"><a href="#" class="drop_list">Between 1-2</a><span class="material-symbols-outlined tick-icon">check</span></li>
+                                <li class="list-item"><a href="#" class="drop_list">Less Than 1</a><span class="material-symbols-outlined tick-icon">check</span></li>
+                              </ul>
                             </div>
                           </div>
                           <div class="label_align">
@@ -241,7 +260,7 @@
                             </select>
                           </div>
                           <div class="label_align label_align3">
-                            <label>Price Correction</label>
+                            <label>Price Change</label>
                             <div class="filters__line2">
                               <select class="form-select FilterFocus" aria-label="Default select example">
                                 <option selected>No Selection</option>
@@ -255,40 +274,11 @@
                                 <option value="8">1 Year</option>
                               </select>
                               <select class="form-select FilterFocus" aria-label="Default select example">
-                                <option value="1">5% or more</option>
-                                <option value="2">10% or more</option>
-                                <option value="3">20% or more</option>
+                                <option value="1">0 - 5%</option>
+                                <option value="2">5% or more</option>
+                                <option value="3">10% or more</option>
+                                <option value="4">20% or more</option>
                               </select>
-                            </div>
-                          </div>
-                          <div class="range_slider">
-                            <label>Oscillator</label>
-                            <div class="filters__line">
-                              <label class="radio mb-0">
-                                <input class="radio__input" type="radio" name="oscillator" checked="">
-                                <span class="radio__in"><span class="radio__tick"></span><span class="radio__text pt-0">All</span></span>
-                              </label>
-                              <label class="radio mb-0">
-                                <input class="radio__input" type="radio" name="oscillator_stock" checked>
-                                <span class="radio__in"><span class="radio__tick"></span><span class="radio__text pt-0">Moving Up</span></span>
-                              </label>
-                              <label class="radio mb-0">
-                                <input class="radio__input" type="radio" name="oscillator_stock">
-                                <span class="radio__in"><span class="radio__tick"></span><span class="radio__text pt-0">Moving Down</span></span>
-                              </label>
-                            </div>
-                          </div>
-                          <div class="range_slider">
-                            <div class="market_box">
-                              <label for="customRange2" class="form-label">Market Cap</label>
-                              <div>
-                                <span>$</span><input type="reset" id="priceRange_start" />  -
-                                <input type="reset" id="priceRange_end" /><span></span>
-                              </div>
-                            </div>
-                            <div class="range_slider_box">
-                              <div id="priceRange"></div>
-                              <p class="range_value"><span class="start_value">$1Billion</span><span class="last_value">$10Trillion</span></p>
                             </div>
                           </div>
                           <div class="range_slider">
@@ -302,19 +292,81 @@
                           </div>
                           <div class="range_slider">
                             <div class="market_box">
-                              <label for="customRange6" class="form-label">Heatmap Value Range</label>
-                              <span>(R<input type="reset" id="start_valueHM"> -
-                              R<input type="reset" id="end_valueHM" />)</span>
-                              <span>(G<input type="reset" id="start_valueHPG">
-                             - G<input type="reset" id="end_valueHPG" />)</span>
+                              <label for="customRange2" class="form-label">Market Cap</label>
+                              <span>$<input type="reset" id="priceRange_start" />  -
+                                <input type="reset" id="priceRange_end" /></span>
+                            </div>
+                            <div class="range_slider_box">
+                              <div id="priceRange"></div>
+                              <p class="range_value"><span class="start_value">$1Billion</span><span class="last_value">$10Trillion</span></p>
+                            </div>
+                          </div>
+                          <!-- <div class="range_slider">
+                            <div class="market_box">
+                              <label for="customRange6" class="form-label">Fear & Greed Heatmap Value Range</label>
                             </div>
                             <div class="range_slider_box heat_value">
                               <div id="heatmap_valuerangeRed"> </div>
-                              <p class="range_value"><span class="start_value">R0</span><span class="last_value">R50</span></p>
-                              <div id="heatmap_valuerangeGreen"></div>
-                              <p class="range_value"><span class="start_value">G0</span><span class="last_value">G50</span></p>
+                              <p class="range_value"><span class="start_value">0</span><span class="last_value">100</span></p>
+                            </div>
+                          </div> -->
+                          <div class="range_slider">
+                            <div class="market_box">
+                              <label for="customRange6" class="form-label">Fear & Greed Heatmap Value Range</label>
+                              <span>(<input type="reset" id="start_valueHM"> -
+                              <input type="reset" id="end_valueHM" />)</span>
+                            </div>
+                            <div class="range_slider_box heat_value">
+                              <div id="heatmap_valuerangeRed"></div>
+                              <p class="range_value"><span class="start_value">0</span><span class="last_value">100</span></p>
                             </div>
                           </div>
+                          <div class="range_slider">
+                            <label>Fear & Greed Heatmap</label>
+                            <div class="switch_borders">
+                              <div class="switch_boxes">
+                                <label for="customRange4" class="form-label"> Moving Up</label>
+                                <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch">
+                                </div>
+                              </div>
+                              <div class="switch_boxes">
+                                <label for="customRange5" class="form-label">Moving Down</label>
+                                <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch">
+                                </div>
+                              </div>
+                              <div class="switch_boxes">
+                                <label for="customRange3" class="form-label">No Change</label>
+                                <div class="form-check form-switch">
+                                  <input class="form-check-input" type="checkbox" role="switch">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- <div class="range_slider">
+                            <label>Oscillator</label>
+                            <div class="switch_borders">
+                              <div class="switch_boxes">
+                                <label for="customRange4" class="form-label"> Moving Up</label>
+                                <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch">
+                                </div>
+                              </div>
+                              <div class="switch_boxes">
+                                <label for="customRange5" class="form-label">Moving Down</label>
+                                <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch">
+                                </div>
+                              </div>
+                              <div class="switch_boxes">
+                                <label for="customRange3" class="form-label">No Change</label>
+                                <div class="form-check form-switch">
+                                  <input class="form-check-input" type="checkbox" role="switch">
+                                </div>
+                              </div>
+                            </div>
+                          </div> -->
                           <div class="range_slider">
                             <label for="customRange3" class="form-label">Overlay Indiactor</label>
                             <div class="switch_borders">
@@ -352,72 +404,70 @@
                       <table class="table stocks__table0 ovtlyr_table horizontal_scroll">
                         <thead class="sticky-top">
                           <tr class="ovtlyr__row_head">
-                            <th style="width:5%;">Symbol<button type="button" class="addTo_fav"><i class="fa-solid fa-star" data-bs-toggle="modal" data-bs-target="#export_favList"></i></button></th>
-                            <th style="width:10%;">Last Close Price</th>
-                            <th style="width:7%;" class="dropdown drop_box">
+                            <th style="width:10%;">Symbol<button type="button" class="addTo_fav ms-2" data-bs-toggle="modal" data-bs-target="#export_favList"><i class="fa-solid fa-star"></i></button></th>
+                            <th style="width:8%;" class="dropdown drop_box">
                               <div class="sort_dropdown">
-                                <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Current Signal</button>
+                                <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Last Close Price</button>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                  <li><a class="dropdown-item" href="#"><p class="mb-0">All</p></a></li>
-                                  <li><a class="dropdown-item" href="#"><p class="mb-0">Buy</p></a></li>
-                                  <li><a class="dropdown-item" href="#"><p class="mb-0">Sell</p></a></li>
-                                </ul>
-                              </div>
-                            </th>
-                            <th style="width:11%;" class="dropdown drop_box">
-                              <div class="sort_dropdown">
-                                <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Signal Start Date</button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                  <li><a class="dropdown-item" href="#"><p class="mb-0">Ascending</p></a></li>
-                                  <li><a class="dropdown-item" href="#"><p class="mb-0">Descending</p></a></li>
-                                </ul>
-                              </div>
-                            </th>
-                            <th style="width:12%;" class="dropdown drop_box">
-                              <div class="sort_dropdown">
-                                <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">OVTLYR Signal Return</button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                  <li><a class="dropdown-item" href="#"><p class="mb-0">All</p></a></li>
-                                  <li><a class="dropdown-item" href="#"><p class="mb-0">Ascending</p></a></li>
-                                  <li><a class="dropdown-item" href="#"><p class="mb-0">Descending</p></a></li>
                                   <li><a class="dropdown-item" href="#"><p class="mb-0">High to Low</p></a></li>
                                   <li><a class="dropdown-item" href="#"><p class="mb-0">Low to High</p></a></li>
                                 </ul>
                               </div>
                             </th>
-                            <th style="width:11%;">Capital Efficiency</th>
-                            <th style="width:10%;">Sector/Industry</th>
-                            <th style="width:6%;" class="dropdown drop_box">
-                              <div class="sort_dropdown favList_tabC">
-                                <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Overlay(Start Date)</button>
+                            <th style="width:11%;" class="dropdown drop_box">
+                              <div class="sort_dropdown">
+                                <button class="dropdown-toggle current_sig" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Current Signal <span class="block_txt">(Signal Start Date)</span></button>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                  <li><a class="dropdown-item" href="#"><span class="whiteBox"><span class="drop_text">All</span></span></a></li>
-                                  <li><a class="dropdown-item" href="#"><span class="greenBox"><span class="drop_text">Uptrend</span></span></a></li>
-                                  <li><a class="dropdown-item" href="#"><span class="redBox"><span class="drop_text">Downtrend</span></span></a></li>
-                                  <li><a class="dropdown-item" href="#"><span class="greyBox"><span class="drop_text">Neutral</span></span></a></li>
-                                  <li><a class="dropdown-item" href="#"><p class="mb-0">Ascending</p></a></li>
-                                  <li><a class="dropdown-item" href="#"><p class="mb-0">Descending</p></a></li>
+                                  <li><a class="dropdown-item" href="#"><p class="mb-0">Latest to Oldest</p></a></li>
+                                  <li><a class="dropdown-item" href="#"><p class="mb-0">Oldest to Latest</p></a></li>
                                 </ul>
                               </div>
                             </th>
-                            <th style="width:8%;">30-Day Avg. Vol.</th>
-                            <th style="width:5%;">Heatmap</th>
                             <th style="width:8%;" class="dropdown drop_box">
                               <div class="sort_dropdown">
-                                <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Oscillator Direction</button>
+                                <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">OVTLYR Signal Return</button>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                  <li><a class="dropdown-item" href="#"><p class="mb-0">All</p></a></li>
-                                  <li><a class="dropdown-item" href="#"><p class="mb-0">Moving Up</p></a></li>
-                                  <li><a class="dropdown-item" href="#"><p class="mb-0">Moving Down</p></a></li>
+                                  <li><a class="dropdown-item" href="#"><p class="mb-0">High to Low</p></a></li>
+                                  <li><a class="dropdown-item" href="#"><p class="mb-0">Low to High</p></a></li>
                                 </ul>
                               </div>
                             </th>
-                            <th style="width:12%;" class="dropdown drop_box">
-                              <div class="sort_dropdown favList_tabC">
-                                <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Price Correction</button>
+                            <th style="width:8%;" class="dropdown drop_box">
+                              <div class="sort_dropdown">
+                                <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Capital Efficiency</button>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                  <li><a class="dropdown-item" href="#" onclick="sortList('asc')"><p class="mb-0">Low to High</p></a></li>
-                                  <li><a class="dropdown-item" href="#" onclick="sortList('desc')"><p class="mb-0">High to Low</p></a></li>
+                                  <li><a class="dropdown-item" href="#"><p class="mb-0">High to Low</p></a></li>
+                                  <li><a class="dropdown-item" href="#"><p class="mb-0">Low to High</p></a></li>
+                                </ul>
+                              </div>
+                            </th>
+                            <th style="width:12%;">Sector/Industry</th>
+                            <th style="width:9%;" class="dropdown drop_box">
+                              <div class="sort_dropdown favList_tabC">
+                                <button class="dropdown-toggle current_sig" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Overlay <span class="block_txt">(Start Date)</span></button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                  <li><a class="dropdown-item" href="#"><p class="mb-0">Latest to Oldest</p></a></li>
+                                  <li><a class="dropdown-item" href="#"><p class="mb-0">Oldest to Latest</p></a></li>
+                                </ul>
+                              </div>
+                            </th>
+                            <th style="width:8%;" class="dropdown drop_box">
+                              <div class="sort_dropdown">
+                                <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">30-Day Avg. Vol.</button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                  <li><a class="dropdown-item" href="#"><p class="mb-0">High to Low</p></a></li>
+                                  <li><a class="dropdown-item" href="#"><p class="mb-0">Low to High</p></a></li>
+                                </ul>
+                              </div>
+                            </th>
+                            <th style="width:10%;">Fear & Greed Heatmap & Direction</th>
+                            <th style="width:8%;">Oscillator & Direction</th>
+                            <th style="width:8%;" class="dropdown drop_box">
+                              <div class="sort_dropdown favList_tabC">
+                                <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Price Change</button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                  <li><a class="dropdown-item" href="#"><p class="mb-0">High to Low</p></a></li>
+                                  <li><a class="dropdown-item" href="#"><p class="mb-0">Low to High</p></a></li>
                                 </ul>
                               </div>
                             </th>
@@ -425,324 +475,464 @@
                         </thead>
                         <tbody>
                           <tr class="ovtlyr__row">
-                            <td><div class="fav_symbol"><a href="#"><div class="favSymbol_box"><span class="port_symbol"><span class="noti_box"><span class="noti_count">99</span></span>AWR</span></div></a>
-                            <button type="button" class="addTo_fav"><i class="fa-solid fa-star"></i></button>
-                            </div><a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="American States Water Company"><p class="company_name mt-1">AWR</p></a></td>   
-                            <td><a href="#" ><p class="">$-200</p></a></td> 
-                            <td><a href="#"><p class="buy_stock">Buy</p></a></td> 
-                            <td><a href="#"><p class="">July-23-2024</p></a></td>
-                            <td><a href="#"><p class="">Positive (45)</p></a></td> 
-                            <td><a href="#"><p class="">7.00x</p></a></td> 
-                            <td><a href="#"><p class="">Discretionary/Industry</p></a></td> 
-                            <td><a href="#"><p><span class="greenBox"></span><span class="date_start">(July-23-2024)</span></p></a></td> 
-                            <td><a href="#"><p><span class="">4.3M</span></p></a></td>  
-                            <td><a href="#"><p><span class="">R30</span></p></a></td> 
-                            <td><a href="#"><p><span class="">Moving Up</span></p></a></td>
-                            <td><a href="#"><p><span class="green_txt">+50%</span></p></a></td>                   
+                            <td>
+                              <div class="fav_symbol">
+                                <a href="#"><div class="favSymbol_box"><span class="port_symbol"><span class="noti_box"><span class="noti_count">99</span></span>CPRI</span></div></a>
+                                <button type="button" class="addTo_fav" data-bs-toggle="modal" data-bs-target="#addToList"><i class="fa-solid fa-star"></i></button>
+                                <button type="button" data-bs-toggle="modal" data-bs-target="#notiSett_modal"><i class="fa-solid fa-bell bell_icon"></i></button>
+                              </div>
+                              <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Capri Holding Ltd"><p class="company_name mt-1">Capri Holding Ltd</p></a>
+                            </td>
+                            <td><p>$-200</p></td> 
+                            <td>
+                              <p class="buy_stock">Buy</p>
+                              <p class="mt-2">July-23-2024</p>
+                            </td>
+                            <td><p>Positive (45)</p></td> 
+                            <td><p>7.00x</p></td> 
+                            <td><p>Discretionary/Textiles, Apparel & Luxury Goods</p></td> 
+                            <td><p><span class="greenBox"></span><span class="date_start">(July-23-2024)</span></p></td> 
+                            <td><p>4.3M</p></td>  
+                            <td><p>R30 <span class="green_txt">(Moving Up)</span></p></td> 
+                            <td><p>4.5 <span class="green_txt">(Moving Up)</span></p></td>
+                            <td><p class="green_txt">+50%</p></td>                   
                           </tr>
                           <tr class="ovtlyr__row" >
-                            <td><div class="fav_symbol"><a href="#"><div class="favSymbol_box"><span class="port_symbol"><span class="noti_box"><span class="noti_count">99</span></span>AWR</span></div></a>
-                            <button type="button" class="addTo_fav"><i class="fa-solid fa-star"></i></button>
-                            </div><a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="American States Water Company"><p class="company_name mt-1">AWR</p></a></td>   
-                            <td><a href="#" ><p class="">$150</p></a></td> 
-                            <td><a href="#"><p class="sell_stock">Sell</p></a></td> 
-                            <td><a href="#"><p class="">July-23-2024</p></a></td>
-                            <td><a href="#"><p class="">Negative (30)</p></a></td> 
-                            <td><a href="#"><p class="">7.00x</p></a></td> 
-                            <td><a href="#"><p class="">Discretionary/Industry</p></a></td> 
-                            <td><a href="#"><p><span class="redBox"></span><span class="date_start">(July-23-2024)</span></p></a></td> 
-                            <td><a href="#"><p><span class="">4.3M</span></p></a></td>  
-                            <td><a href="#"><p><span class="">R30</span></p></a></td> 
-                            <td><a href="#"><p><span class="">Moving Up</span></p></a></td>
-                            <td><a href="#"><p><span class="red_txt">-30%</span></p></a></td>                   
+                            <td>
+                              <div class="fav_symbol">
+                                <a href="#"><div class="favSymbol_box"><span class="port_symbol"><span class="noti_box"><span class="noti_count">99</span></span>MDU</span></div></a>
+                                <button type="button" class="addTo_fav" data-bs-toggle="modal" data-bs-target="#addToList"><i class="fa-solid fa-star"></i></button>
+                                <button type="button" data-bs-toggle="modal" data-bs-target="#notiSett_modal"><i class="fa-regular fa-bell bell_icon"></i></button>
+                              </div>
+                              <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="MDU Resources Group Inc"><p class="company_name mt-1">MDU Resources Group Inc</p></a>
+                            </td>   
+                            <td><p>$150</p></td> 
+                            <td>
+                              <p class="sell_stock">Sell</p>
+                              <p class="mt-2">July-23-2024</p>
+                            </td>
+                            <td><p>Negative (30)</p></td> 
+                            <td><p>7.00x</p></td> 
+                            <td><p>Discretionary/Industry</p></td> 
+                            <td><p><span class="redBox"></span><span class="date_start">(July-23-2024)</span></p></td> 
+                            <td><p>4.3M</p></td>  
+                            <td><p>R30 <span class="red_txt">(Moving Down)</span></p></td> 
+                            <td><p>4.5 <span class="red_txt">(Moving Down)</span></p></td>
+                            <td><p class="red_txt">-30%</p></td>                   
                           </tr>
                           <tr class="ovtlyr__row">
-                            <td><div class="fav_symbol"><a href="#"><div class="favSymbol_box"><span class="port_symbol"><span class="noti_box"><span class="noti_count">99</span></span>AWR</span></div></a>
-                            <button type="button" class="addTo_fav"><i class="fa-solid fa-star"></i></button></div>
-                            <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="American States Water Company"><p class="company_name mt-1">AWR</p></a></td>    
-                            <td><a href="#"><p class="">$-300</p></a></td> 
-                            <td><a href="#"><p class="buy_stock">Buy</p></a></td> 
-                            <td><a href="#"><p class="">July-23-2024 </p></a></td>   
-                            <td><a href="#"><p class="">High to Low</p></a></td>  
-                            <td><a href="#"><p class="">7.00x</p></a></td> 
-                            <td><a href="#"><p class="">Issuer</p></a></td>  
-                            <td><a href="#"><p class="">Greater than 1%</p></a></td>    
-                            <td><a href="#"><p class="">3.4M</p></a></td> 
-                            <td><a href="#"><p class="">R40</p></a></td>  
-                            <td><a href="#"><p class="">Moving Up</p></a></td>  
-                            <td><a href="#"><p class="green_txt">+50%</p></a> </td>  
+                            <td>
+                              <div class="fav_symbol">
+                                <a href="#"><div class="favSymbol_box"><span class="port_symbol"><span class="noti_box"><span class="noti_count">99</span></span>GME</span></div></a>
+                                <button type="button" class="addTo_fav" data-bs-toggle="modal" data-bs-target="#addToList"><i class="fa-solid fa-star"></i></button>
+                                <button type="button" data-bs-toggle="modal" data-bs-target="#notiSett_modal"><i class="fa-regular fa-bell bell_icon"></i></button>
+                              </div>
+                              <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Gamestop Corporation - Class A"><p class="company_name mt-1">Gamestop Corporation - Class A</p></a>
+                            </td>    
+                            <td><p>$-300</p></td> 
+                            <td>
+                              <p class="buy_stock">Buy</p>
+                              <p class="mt-2">July-23-2024</p>
+                            </td>
+                            <td><p>High to Low</p></td>  
+                            <td><p>7.00x</p></td> 
+                            <td><p>Discretionary/Textiles, Apparel & Luxury Goods</p></td>  
+                            <td><p>Greater than 1%</p></td>    
+                            <td><p>3.4M</p></td> 
+                            <td><p>R40 <span class="green_txt">(Moving Up)</span></p></td>  
+                            <td><p>4.5 <span class="green_txt">(Moving Up)</span></p></td>  
+                            <td><p class="green_txt">+50%</p></td>  
                           </tr>
                           <tr class="ovtlyr__row">
-                            <td><div class="fav_symbol"><a href="#"><div class="favSymbol_box"><span class="port_symbol"><span class="noti_box"><span class="noti_count">99</span></span>AWR</span></div></a>
-                            <button type="button" class="addTo_fav"><i class="fa-solid fa-star"></i></button></div>
-                            <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="American States Water Company"><p class="company_name mt-1">AWR</p></a></td>    
-                            <td><a href="#"><p class="">$300</p></a></td> 
-                            <td><a href="#"><p class="buy_stock">Buy</p></a></td> 
-                            <td><a href="#"><p class="">July-23-2024 </p></a></td>   
-                            <td><a href="#"><p class="">High to Low</p></a></td>  
-                            <td><a href="#"><p class="">7.00x</p></a></td> 
-                            <td><a href="#"><p class="">Issuer</p></a></td>  
-                            <td><a href="#"><p class="">Greater than 1%</p></a></td>    
-                            <td><a href="#"><p class="">3.4M</p></a></td> 
-                            <td><a href="#"><p class="">R40</p></a></td>  
-                            <td><a href="#"><p class="">Moving Up</p></a></td>  
-                            <td><a href="#"><p class="green_txt">+50%</p></a> </td>  
+                            <td>
+                              <div class="fav_symbol">
+                                <a href="#"><div class="favSymbol_box"><span class="port_symbol"><span class="noti_box"><span class="noti_count">99</span></span>AWR</span></div></a>
+                                <button type="button" class="addTo_fav" data-bs-toggle="modal" data-bs-target="#addToList"><i class="fa-solid fa-star"></i></button>
+                                <button type="button" data-bs-toggle="modal" data-bs-target="#notiSett_modal"><i class="fa-regular fa-bell bell_icon"></i></button>
+                              </div>
+                              <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="American States Water Company"><p class="company_name mt-1">AWR</p></a>
+                            </td>    
+                            <td><p>$300</p></td> 
+                            <td>
+                              <p class="buy_stock">Buy</p>
+                              <p class="mt-2">July-23-2024</p>
+                            </td>
+                            <td><p>High to Low</p></td>  
+                            <td><p>7.00x</p></td> 
+                            <td><p>Discretionary/Specialty Retail</p></td>  
+                            <td><p>Greater than 1%</p></td>    
+                            <td><p>3.4M</p></td> 
+                            <td><p>R40 <span>(No Change)</span></p></td>  
+                            <td><p>4.5 <span>(No Change)</span></p></td>  
+                            <td><p class="green_txt">+50%</p></td>  
                           </tr>
                           <tr class="ovtlyr__row">
-                            <td><div class="fav_symbol"><a href="#"><div class="favSymbol_box"><span class="port_symbol"><span class="noti_box"><span class="noti_count">99</span></span>AWR</span></div></a>
-                            <button type="button" class="addTo_fav"><i class="fa-solid fa-star"></i></button></div>
-                            <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="American States Water Company"><p class="company_name mt-1">AWR</p></a></td>    
-                            <td><a href="#"><p class="">$-450</p></a></td> 
-                            <td><a href="#"><p class="buy_stock">Buy</p></a></td> 
-                            <td><a href="#"><p class="">July-23-2024 </p></a></td>   
-                            <td><a href="#"><p class="">High to Low</p></a></td>  
-                            <td><a href="#"><p class="">7.00x</p></a></td> 
-                            <td><a href="#"><p class="">Issuer</p></a></td>  
-                            <td><a href="#"><p class="">Greater than 1%</p></a></td>    
-                            <td><a href="#"><p class="">3.4M</p></a></td> 
-                            <td><a href="#"><p class="">R40</p></a></td>  
-                            <td><a href="#"><p class="">Moving Up</p></a></td>  
-                            <td><a href="#"><p class="green_txt">+50%</p></a> </td>  
+                            <td>
+                              <div class="fav_symbol">
+                                <a href="#"><div class="favSymbol_box"><span class="port_symbol"><span class="noti_box"><span class="noti_count">99</span></span>AWR</span></div></a>
+                                <button type="button" class="addTo_fav" data-bs-toggle="modal" data-bs-target="#addToList"><i class="fa-solid fa-star"></i></button>
+                                <button type="button" data-bs-toggle="modal" data-bs-target="#notiSett_modal"><i class="fa-regular fa-bell bell_icon"></i></button>
+                              </div>
+                              <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="American States Water Company"><p class="company_name mt-1">AWR</p></a>
+                            </td>    
+                            <td><p>$-450</p></td> 
+                            <td>
+                              <p class="buy_stock">Buy</p>
+                              <p class="mt-2">July-23-2024</p>
+                            </td>
+                            <td><p>High to Low</p></td>  
+                            <td><p>7.00x</p></td> 
+                            <td><p>Discretionary/Specialty Retail</p></td>  
+                            <td><p>Greater than 1%</p></td>    
+                            <td><p>3.4M</p></td> 
+                            <td><p>R40 <span class="green_txt">(Moving Up)</span></p></td>  
+                            <td><p>4.5 <span class="red_txt">(Moving Down)</span></p></td>  
+                            <td><p class="green_txt">+50%</p></td>  
                           </tr>
                           <tr class="ovtlyr__row">
-                            <td><div class="fav_symbol"><a href="#"><div class="favSymbol_box"><span class="port_symbol"><span class="noti_box"><span class="noti_count">99</span></span>AWR</span></div></a>
-                            <button type="button" class="addTo_fav"><i class="fa-solid fa-star"></i></button>
-                            </div><a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="American States Water Company"><p class="company_name mt-1">AWR</p></a></td>   
-                            <td><a href="#" ><p class="">$-200</p></a></td> 
-                            <td><a href="#"><p class="buy_stock">Buy</p></a></td> 
-                            <td><a href="#"><p class="">July-23-2024</p></a></td>
-                            <td><a href="#"><p class="">Positive (45)</p></a></td> 
-                            <td><a href="#"><p class="">7.00x</p></a></td> 
-                            <td><a href="#"><p class="">Discretionary/Industry</p></a></td> 
-                            <td><a href="#"><p><span class="greenBox"></span><span class="date_start">(July-23-2024)</span></p></a></td> 
-                            <td><a href="#"><p><span class="">4.3M</span></p></a></td>  
-                            <td><a href="#"><p><span class="">R30</span></p></a></td> 
-                            <td><a href="#"><p><span class="">Moving Up</span></p></a></td>
-                            <td><a href="#"><p><span class="green_txt">+50%</span></p></a></td>                   
+                            <td>
+                              <div class="fav_symbol">
+                                <a href="#"><div class="favSymbol_box"><span class="port_symbol"><span class="noti_box"><span class="noti_count">99</span></span>AWR</span></div></a>
+                                <button type="button" class="addTo_fav" data-bs-toggle="modal" data-bs-target="#addToList"><i class="fa-solid fa-star"></i></button>
+                                <button type="button" data-bs-toggle="modal" data-bs-target="#notiSett_modal"><i class="fa-regular fa-bell bell_icon"></i></button>
+                              </div>
+                              <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="American States Water Company"><p class="company_name mt-1">AWR</p></a>
+                            </td>   
+                            <td><p>$-200</p></td> 
+                            <td>
+                              <p class="buy_stock">Buy</p>
+                              <p class="mt-2">July-23-2024</p>
+                            </td>
+                            <td><p>Positive (45)</p></td> 
+                            <td><p>7.00x</p></td> 
+                            <td><p>Utilities/Multi-Utilities</p></td> 
+                            <td><p><span class="greenBox"></span><span class="date_start">(July-23-2024)</span></p></td> 
+                            <td><p>4.3M</p></td>  
+                            <td><p>R30 <span>(No Change)</span></p></td> 
+                            <td><p>4.5 <span class="green_txt">(Moving Up)</span></p></td>
+                            <td><p class="green_txt">+50%</p></td>                   
                           </tr>
                           <tr class="ovtlyr__row" >
-                            <td><div class="fav_symbol"><a href="#"><div class="favSymbol_box"><span class="port_symbol"><span class="noti_box"><span class="noti_count">99</span></span>AWR</span></div></a>
-                            <button type="button" class="addTo_fav"><i class="fa-solid fa-star"></i></button>
-                            </div><a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="American States Water Company"><p class="company_name mt-1">AWR</p></a></td>   
-                            <td><a href="#" ><p class="">$150</p></a></td> 
-                            <td><a href="#"><p class="sell_stock">Sell</p></a></td> 
-                            <td><a href="#"><p class="">July-23-2024</p></a></td>
-                            <td><a href="#"><p class="">Negative (30)</p></a></td> 
-                            <td><a href="#"><p class="">7.00x</p></a></td> 
-                            <td><a href="#"><p class="">Discretionary/Industry</p></a></td> 
-                            <td><a href="#"><p><span class="redBox"></span><span class="date_start">(July-23-2024)</span></p></a></td> 
-                            <td><a href="#"><p><span class="">4.3M</span></p></a></td>  
-                            <td><a href="#"><p><span class="">R30</span></p></a></td> 
-                            <td><a href="#"><p><span class="">Moving Up</span></p></a></td>
-                            <td><a href="#"><p><span class="red_txt">-30%</span></p></a></td>                   
+                            <td>
+                              <div class="fav_symbol">
+                                <a href="#"><div class="favSymbol_box"><span class="port_symbol"><span class="noti_box"><span class="noti_count">99</span></span>AWR</span></div></a>
+                                <button type="button" class="addTo_fav" data-bs-toggle="modal" data-bs-target="#addToList"><i class="fa-solid fa-star"></i></button>
+                                <button type="button" data-bs-toggle="modal" data-bs-target="#notiSett_modal"><i class="fa-regular fa-bell bell_icon"></i></button>
+                              </div>
+                              <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="American States Water Company"><p class="company_name mt-1">AWR</p></a>
+                            </td>   
+                            <td><p>$150</p></td> 
+                            <td>
+                              <p class="sell_stock">Sell</p>
+                              <p class="mt-2">July-23-2024</p>
+                            </td>
+                            <td><p>Negative (30)</p></td> 
+                            <td><p>7.00x</p></td> 
+                            <td><p>Discretionary/Industry</p></td> 
+                            <td><p><span class="redBox"></span><span class="date_start">(July-23-2024)</span></p></td> 
+                            <td><p>4.3M</p></td>  
+                            <td><p>R30 <span class="red_txt">(Moving Down)</span></p></td> 
+                            <td><p>4.5 <span>(No Change)</span></p></td>
+                            <td><p class="red_txt">-30%</p></td>                   
                           </tr>
                           <tr class="ovtlyr__row">
-                            <td><div class="fav_symbol"><a href="#"><div class="favSymbol_box"><span class="port_symbol"><span class="noti_box"><span class="noti_count">99</span></span>AWR</span></div></a>
-                            <button type="button" class="addTo_fav"><i class="fa-solid fa-star"></i></button></div>
-                            <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="American States Water Company"><p class="company_name mt-1">AWR</p></a></td>    
-                            <td><a href="#"><p class="">$-300</p></a></td> 
-                            <td><a href="#"><p class="buy_stock">Buy</p></a></td> 
-                            <td><a href="#"><p class="">July-23-2024 </p></a></td>   
-                            <td><a href="#"><p class="">High to Low</p></a></td>  
-                            <td><a href="#"><p class="">7.00x</p></a></td> 
-                            <td><a href="#"><p class="">Issuer</p></a></td>  
-                            <td><a href="#"><p class="">Greater than 1%</p></a></td>    
-                            <td><a href="#"><p class="">3.4M</p></a></td> 
-                            <td><a href="#"><p class="">R40</p></a></td>  
-                            <td><a href="#"><p class="">Moving Up</p></a></td>  
-                            <td><a href="#"><p class="green_txt">+50%</p></a> </td>  
+                            <td>
+                              <div class="fav_symbol">
+                                <a href="#"><div class="favSymbol_box"><span class="port_symbol"><span class="noti_box"><span class="noti_count">99</span></span>AWR</span></div></a>
+                                <button type="button" class="addTo_fav" data-bs-toggle="modal" data-bs-target="#addToList"><i class="fa-solid fa-star"></i></button>
+                                <button type="button" data-bs-toggle="modal" data-bs-target="#notiSett_modal"><i class="fa-regular fa-bell bell_icon"></i></button>
+                              </div>
+                              <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="American States Water Company"><p class="company_name mt-1">AWR</p></a>
+                            </td>    
+                            <td><p>$-300</p></td> 
+                            <td>
+                              <p class="buy_stock">Buy</p>
+                              <p class="mt-2">July-23-2024</p>
+                            </td>
+                            <td><p>High to Low</p></td>  
+                            <td><p>7.00x</p></td> 
+                            <td><p>Issuer</p></td>  
+                            <td><p>Greater than 1%</p></td>    
+                            <td><p>3.4M</p></td> 
+                            <td><p>R40 <span class="green_txt">(Moving Up)</span></p></td>  
+                            <td><p>4.5 <span class="green_txt">(Moving Up)</span></p></td>  
+                            <td><p class="green_txt">+50%</p></td>  
                           </tr>
                           <tr class="ovtlyr__row">
-                            <td><div class="fav_symbol"><a href="#"><div class="favSymbol_box"><span class="port_symbol"><span class="noti_box"><span class="noti_count">99</span></span>AWR</span></div></a>
-                            <button type="button" class="addTo_fav"><i class="fa-solid fa-star"></i></button></div>
-                            <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="American States Water Company"><p class="company_name mt-1">AWR</p></a></td>    
-                            <td><a href="#"><p class="">$250</p></a></td> 
-                            <td><a href="#"><p class="buy_stock">Buy</p></a></td> 
-                            <td><a href="#"><p class="">July-23-2024 </p></a></td>   
-                            <td><a href="#"><p class="">High to Low</p></a></td>  
-                            <td><a href="#"><p class="">7.00x</p></a></td> 
-                            <td><a href="#"><p class="">Issuer</p></a></td>  
-                            <td><a href="#"><p class="">Greater than 1%</p></a></td>    
-                            <td><a href="#"><p class="">3.4M</p></a></td> 
-                            <td><a href="#"><p class="">R40</p></a></td>  
-                            <td><a href="#"><p class="">Moving Up</p></a></td>  
-                            <td><a href="#"><p class="green_txt">+50%</p></a> </td>  
+                            <td>
+                              <div class="fav_symbol">
+                                <a href="#"><div class="favSymbol_box"><span class="port_symbol"><span class="noti_box"><span class="noti_count">99</span></span>AWR</span></div></a>
+                                <button type="button" class="addTo_fav" data-bs-toggle="modal" data-bs-target="#addToList"><i class="fa-solid fa-star"></i></button>
+                                <button type="button" data-bs-toggle="modal" data-bs-target="#notiSett_modal"><i class="fa-regular fa-bell bell_icon"></i></button>
+                              </div>
+                              <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="American States Water Company"><p class="company_name mt-1">AWR</p></a>
+                            </td>    
+                            <td><p>$250</p></td> 
+                            <td>
+                              <p class="buy_stock">Buy</p>
+                              <p class="mt-2">July-23-2024</p>
+                            </td>
+                            <td><p>High to Low</p></td>  
+                            <td><p>7.00x</p></td> 
+                            <td><p>Issuer</p></td>  
+                            <td><p>Greater than 1%</p></td>    
+                            <td><p>3.4M</p></td> 
+                            <td><p>R40 <span>(No Change)</span></p></td>  
+                            <td><p>4.5 <span class="green_txt">(Moving Up)</span></p></td>  
+                            <td><p class="green_txt">+50%</p></td>  
                           </tr>
                           <tr class="ovtlyr__row">
-                            <td><div class="fav_symbol"><a href="#"><div class="favSymbol_box"><span class="port_symbol"><span class="noti_box"><span class="noti_count">99</span></span>AWR</span></div></a>
-                            <button type="button" class="addTo_fav"><i class="fa-solid fa-star"></i></button></div>
-                            <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="American States Water Company"><p class="company_name mt-1">AWR</p></a></td>    
-                            <td><a href="#"><p class="">$100</p></a></td> 
-                            <td><a href="#"><p class="buy_stock">Buy</p></a></td> 
-                            <td><a href="#"><p class="">July-23-2024 </p></a></td>   
-                            <td><a href="#"><p class="">High to Low</p></a></td>  
-                            <td><a href="#"><p class="">7.00x</p></a></td> 
-                            <td><a href="#"><p class="">Issuer</p></a></td>  
-                            <td><a href="#"><p class="">Greater than 1%</p></a></td>    
-                            <td><a href="#"><p class="">3.4M</p></a></td> 
-                            <td><a href="#"><p class="">R40</p></a></td>  
-                            <td><a href="#"><p class="">Moving Up</p></a></td>  
-                            <td><a href="#"><p class="green_txt">+50%</p></a> </td>  
+                            <td>
+                              <div class="fav_symbol">
+                                <a href="#"><div class="favSymbol_box"><span class="port_symbol"><span class="noti_box"><span class="noti_count">99</span></span>AWR</span></div></a>
+                                <button type="button" class="addTo_fav" data-bs-toggle="modal" data-bs-target="#addToList"><i class="fa-solid fa-star"></i></button>
+                                <button type="button" data-bs-toggle="modal" data-bs-target="#notiSett_modal"><i class="fa-regular fa-bell bell_icon"></i></button>
+                              </div>
+                              <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="American States Water Company"><p class="company_name mt-1">AWR</p></a>
+                            </td>    
+                            <td><p>$100</p></td> 
+                            <td>
+                              <p class="buy_stock">Buy</p>
+                              <p class="mt-2">July-23-2024</p>
+                            </td>
+                            <td><p>High to Low</p></td>  
+                            <td><p>7.00x</p></td> 
+                            <td><p>Issuer</p></td>  
+                            <td><p>Greater than 1%</p></td>    
+                            <td><p>3.4M</p></td> 
+                            <td><p>R40 <span class="green_txt">(Moving Up)</span></p></td>  
+                            <td><p>4.5 <span class="green_txt">(Moving Up)</span></p></td>  
+                            <td><p class="green_txt">+50%</p></td>  
                           </tr>
                           <tr class="ovtlyr__row">
-                            <td><div class="fav_symbol"><a href="#"><div class="favSymbol_box"><span class="port_symbol"><span class="noti_box"><span class="noti_count">99</span></span>AWR</span></div></a>
-                            <button type="button" class="addTo_fav"><i class="fa-solid fa-star"></i></button></div>
-                            <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="American States Water Company"><p class="company_name mt-1">AWR</p></a></td>    
-                            <td><a href="#"><p class="">$300</p></a></td> 
-                            <td><a href="#"><p class="buy_stock">Buy</p></a></td> 
-                            <td><a href="#"><p class="">July-23-2024 </p></a></td>   
-                            <td><a href="#"><p class="">High to Low</p></a></td>  
-                            <td><a href="#"><p class="">7.00x</p></a></td> 
-                            <td><a href="#"><p class="">Issuer</p></a></td>  
-                            <td><a href="#"><p class="">Greater than 1%</p></a></td>    
-                            <td><a href="#"><p class="">3.4M</p></a></td> 
-                            <td><a href="#"><p class="">R40</p></a></td>  
-                            <td><a href="#"><p class="">Moving Up</p></a></td>  
-                            <td><a href="#"><p class="green_txt">+50%</p></a> </td>  
+                            <td>
+                              <div class="fav_symbol">
+                                <a href="#"><div class="favSymbol_box"><span class="port_symbol"><span class="noti_box"><span class="noti_count">99</span></span>AWR</span></div></a>
+                                <button type="button" class="addTo_fav" data-bs-toggle="modal" data-bs-target="#addToList"><i class="fa-solid fa-star"></i></button>
+                                <button type="button" data-bs-toggle="modal" data-bs-target="#notiSett_modal"><i class="fa-regular fa-bell bell_icon"></i></button>
+                              </div>
+                              <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="American States Water Company"><p class="company_name mt-1">AWR</p></a>
+                            </td>
+                            <td><p>$300</p></td> 
+                            <td>
+                              <p class="buy_stock">Buy</p>
+                              <p class="mt-2">July-23-2024</p>
+                            </td>
+                            <td><p>High to Low</p></td>  
+                            <td><p>7.00x</p></td> 
+                            <td><p>Issuer</p></td>  
+                            <td><p>Greater than 1%</p></td>    
+                            <td><p>3.4M</p></td> 
+                            <td><p>R40 <span>(No Change)</span></p></td>  
+                            <td><p>4.5 <span class="green_txt">(Moving Up)</span></p></td>  
+                            <td><p class="green_txt">+50%</p></td>  
                           </tr>
                           <tr class="ovtlyr__row">
-                            <td><div class="fav_symbol"><a href="#"><div class="favSymbol_box"><span class="port_symbol"><span class="noti_box"><span class="noti_count">99</span></span>AWR</span></div></a>
-                            <button type="button" class="addTo_fav"><i class="fa-solid fa-star"></i></button></div>
-                            <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="American States Water Company"><p class="company_name mt-1">AWR</p></a></td>    
-                            <td><a href="#"><p class="">$200</p></a></td> 
-                            <td><a href="#"><p class="buy_stock">Buy</p></a></td> 
-                            <td><a href="#"><p class="">July-23-2024 </p></a></td>   
-                            <td><a href="#"><p class="">High to Low</p></a></td>  
-                            <td><a href="#"><p class="">7.00x</p></a></td> 
-                            <td><a href="#"><p class="">Issuer</p></a></td>  
-                            <td><a href="#"><p class="">Greater than 1%</p></a></td>    
-                            <td><a href="#"><p class="">3.4M</p></a></td> 
-                            <td><a href="#"><p class="">R40</p></a></td>  
-                            <td><a href="#"><p class="">Moving Up</p></a></td>  
-                            <td><a href="#"><p class="green_txt">+50%</p></a> </td>
+                            <td>
+                              <div class="fav_symbol">
+                                <a href="#"><div class="favSymbol_box"><span class="port_symbol"><span class="noti_box"><span class="noti_count">99</span></span>AWR</span></div></a>
+                                <button type="button" class="addTo_fav" data-bs-toggle="modal" data-bs-target="#addToList"><i class="fa-solid fa-star"></i></button>
+                                <button type="button" data-bs-toggle="modal" data-bs-target="#notiSett_modal"><i class="fa-regular fa-bell bell_icon"></i></button>
+                              </div>
+                              <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="American States Water Company"><p class="company_name mt-1">AWR</p></a>
+                            </td>
+                            <td><p>$200</p></td> 
+                            <td>
+                              <p class="buy_stock">Buy</p>
+                              <p class="mt-2">July-23-2024</p>
+                            </td>
+                            <td><p>High to Low</p></td>  
+                            <td><p>7.00x</p></td> 
+                            <td><p>Issuer</p></td>  
+                            <td><p>Greater than 1%</p></td>    
+                            <td><p>3.4M</p></td> 
+                            <td><p>R40 <span class="green_txt">(Moving Up)</span></p></td>  
+                            <td><p>4.5 <span class="red_txt">(Moving Down)</span></p></td>  
+                            <td><p class="green_txt">+50%</p></td>
                           </tr>
                           <tr class="ovtlyr__row">
-                            <td><div class="fav_symbol"><a href="#"><div class="favSymbol_box"><span class="port_symbol"><span class="noti_box"><span class="noti_count">99</span></span>AWR</span></div></a>
-                            <button type="button" class="addTo_fav"><i class="fa-solid fa-star"></i></button>
-                            </div><a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="American States Water Company"><p class="company_name mt-1">AWR</p></a></td>   
-                            <td><a href="#" ><p class="">$200</p></a></td> 
-                            <td><a href="#"><p class="buy_stock">Buy</p></a></td> 
-                            <td><a href="#"><p class="">July-23-2024</p></a></td>
-                            <td><a href="#"><p class="">Positive (45)</p></a></td> 
-                            <td><a href="#"><p class="">7.00x</p></a></td> 
-                            <td><a href="#"><p class="">Discretionary/Industry</p></a></td> 
-                            <td><a href="#"><p><span class="greenBox"></span><span class="date_start">(July-23-2024)</span></p></a></td> 
-                            <td><a href="#"><p><span class="">4.3M</span></p></a></td>  
-                            <td><a href="#"><p><span class="">R30</span></p></a></td> 
-                            <td><a href="#"><p><span class="">Moving Up</span></p></a></td>
-                            <td><a href="#"><p><span class="green_txt">+50%</span></p></a></td>                   
+                            <td>
+                              <div class="fav_symbol">
+                                <a href="#"><div class="favSymbol_box"><span class="port_symbol"><span class="noti_box"><span class="noti_count">99</span></span>AWR</span></div></a>
+                                <button type="button" class="addTo_fav" data-bs-toggle="modal" data-bs-target="#addToList"><i class="fa-solid fa-star"></i></button>
+                                <button type="button" data-bs-toggle="modal" data-bs-target="#notiSett_modal"><i class="fa-regular fa-bell bell_icon"></i></button>
+                              </div>
+                              <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="American States Water Company"><p class="company_name mt-1">AWR</p></a>
+                            </td>
+                            <td><p>$200</p></td> 
+                            <td>
+                              <p class="buy_stock">Buy</p>
+                              <p class="mt-2">July-23-2024</p>
+                            </td>
+                            <td><p>Positive (45)</p></td> 
+                            <td><p>7.00x</p></td> 
+                            <td><p>Discretionary/Industry</p></td> 
+                            <td><p><span class="greenBox"></span><span class="date_start">(July-23-2024)</span></p></td> 
+                            <td><p>4.3M</p></td>  
+                            <td><p>R30 <span>(No Change)</span></p></td> 
+                            <td><p>4.5 <span class="red_txt">(Moving Down)</span></p></td>
+                            <td><p class="green_txt">+50%</p></td>                   
                           </tr>
                           <tr class="ovtlyr__row" >
-                            <td><div class="fav_symbol"><a href="#"><div class="favSymbol_box"><span class="port_symbol"><span class="noti_box"><span class="noti_count">99</span></span>AWR</span></div></a>
-                            <button type="button" class="addTo_fav"><i class="fa-solid fa-star"></i></button>
-                            </div><a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="American States Water Company"><p class="company_name mt-1">AWR</p></a></td>   
-                            <td><a href="#" ><p class="">$100</p></a></td> 
-                            <td><a href="#"><p class="sell_stock">Sell</p></a></td> 
-                            <td><a href="#"><p class="">July-23-2024</p></a></td>
-                            <td><a href="#"><p class="">Negative (30)</p></a></td> 
-                            <td><a href="#"><p class="">7.00x</p></a></td> 
-                            <td><a href="#"><p class="">Discretionary/Industry</p></a></td> 
-                            <td><a href="#"><p><span class="redBox"></span><span class="date_start">(July-23-2024)</span></p></a></td> 
-                            <td><a href="#"><p><span class="">4.3M</span></p></a></td>  
-                            <td><a href="#"><p><span class="">R30</span></p></a></td> 
-                            <td><a href="#"><p><span class="">Moving Up</span></p></a></td>
-                            <td><a href="#"><p><span class="red_txt">-30%</span></p></a></td>                   
+                            <td>
+                              <div class="fav_symbol">
+                                <a href="#"><div class="favSymbol_box"><span class="port_symbol"><span class="noti_box"><span class="noti_count">99</span></span>AWR</span></div></a>
+                                <button type="button" class="addTo_fav" data-bs-toggle="modal" data-bs-target="#addToList"><i class="fa-solid fa-star"></i></button>
+                                <button type="button" data-bs-toggle="modal" data-bs-target="#notiSett_modal"><i class="fa-regular fa-bell bell_icon"></i></button>
+                              </div>
+                              <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="American States Water Company"><p class="company_name mt-1">AWR</p></a>
+                            </td>
+                            <td><p>$100</p></td> 
+                            <td>
+                              <p class="sell_stock">Sell</p>
+                              <p class="mt-2">July-23-2024</p>
+                            </td>
+                            <td><p>Negative (30)</p></td> 
+                            <td><p>7.00x</p></td> 
+                            <td><p>Discretionary/Industry</p></td> 
+                            <td><p><span class="redBox"></span><span class="date_start">(July-23-2024)</span></p></td> 
+                            <td><p>4.3M</p></td>  
+                            <td><p>R30 <span class="red_txt">(Moving Down)</span></p></td> 
+                            <td><p>4.5 <span class="green_txt">(Moving Up)</span></p></td>
+                            <td><p class="red_txt">-30%</p></td>                   
                           </tr>
                           <tr class="ovtlyr__row">
-                            <td><div class="fav_symbol"><a href="#"><div class="favSymbol_box"><span class="port_symbol"><span class="noti_box"><span class="noti_count">99</span></span>AWR</span></div></a>
-                            <button type="button" class="addTo_fav"><i class="fa-solid fa-star"></i></button></div>
-                            <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="American States Water Company"><p class="company_name mt-1">AWR</p></a></td>    
-                            <td><a href="#"><p class="">$200</p></a></td> 
-                            <td><a href="#"><p class="buy_stock">Buy</p></a></td> 
-                            <td><a href="#"><p class="">July-23-2024 </p></a></td>   
-                            <td><a href="#"><p class="">High to Low</p></a></td>  
-                            <td><a href="#"><p class="">7.00x</p></a></td> 
-                            <td><a href="#"><p class="">Issuer</p></a></td>  
-                            <td><a href="#"><p class="">Greater than 1%</p></a></td>    
-                            <td><a href="#"><p class="">3.4M</p></a></td> 
-                            <td><a href="#"><p class="">R40</p></a></td>  
-                            <td><a href="#"><p class="">Moving Up</p></a></td>  
-                            <td><a href="#"><p class="green_txt">+50%</p></a> </td>  
+                            <td>
+                              <div class="fav_symbol">
+                                <a href="#"><div class="favSymbol_box"><span class="port_symbol"><span class="noti_box"><span class="noti_count">99</span></span>AWR</span></div></a>
+                                <button type="button" class="addTo_fav" data-bs-toggle="modal" data-bs-target="#addToList"><i class="fa-solid fa-star"></i></button>
+                                <button type="button" data-bs-toggle="modal" data-bs-target="#notiSett_modal"><i class="fa-regular fa-bell bell_icon"></i></button>
+                              </div>
+                              <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="American States Water Company"><p class="company_name mt-1">AWR</p></a>
+                            </td>
+                            <td><p>$200</p></td> 
+                            <td>
+                              <p class="buy_stock">Buy</p>
+                              <p class="mt-2">July-23-2024</p>
+                            </td>
+                            <td><p>High to Low</p></td>  
+                            <td><p>7.00x</p></td> 
+                            <td><p>Issuer</p></td>  
+                            <td><p>Greater than 1%</p></td>    
+                            <td><p>3.4M</p></td> 
+                            <td><p>R40 <span class="green_txt">(Moving Up)</span></p></td>  
+                            <td><p>4.5 <span>(No Change)</span></p></td>  
+                            <td><p class="green_txt">+50%</p></td>  
                           </tr>
                           <tr class="ovtlyr__row">
-                            <td><div class="fav_symbol"><a href="#"><div class="favSymbol_box"><span class="port_symbol"><span class="noti_box"><span class="noti_count">99</span></span>AWR</span></div></a>
-                            <button type="button" class="addTo_fav"><i class="fa-solid fa-star"></i></button></div>
-                            <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="American States Water Company"><p class="company_name mt-1">AWR</p></a></td>    
-                            <td><a href="#"><p class="">$200</p></a></td> 
-                            <td><a href="#"><p class="buy_stock">Buy</p></a></td> 
-                            <td><a href="#"><p class="">July-23-2024 </p></a></td>   
-                            <td><a href="#"><p class="">High to Low</p></a></td>  
-                            <td><a href="#"><p class="">7.00x</p></a></td> 
-                            <td><a href="#"><p class="">Issuer</p></a></td>  
-                            <td><a href="#"><p class="">Greater than 1%</p></a></td>    
-                            <td><a href="#"><p class="">3.4M</p></a></td> 
-                            <td><a href="#"><p class="">R40</p></a></td>  
-                            <td><a href="#"><p class="">Moving Up</p></a></td>  
-                            <td><a href="#"><p class="green_txt">+50%</p></a> </td>  
+                            <td>
+                              <div class="fav_symbol">
+                                <a href="#"><div class="favSymbol_box"><span class="port_symbol"><span class="noti_box"><span class="noti_count">99</span></span>AWR</span></div></a>
+                                <button type="button" class="addTo_fav" data-bs-toggle="modal" data-bs-target="#addToList"><i class="fa-solid fa-star"></i></button>
+                                <button type="button" data-bs-toggle="modal" data-bs-target="#notiSett_modal"><i class="fa-regular fa-bell bell_icon"></i></button>
+                              </div>
+                              <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="American States Water Company"><p class="company_name mt-1">AWR</p></a>
+                            </td>
+                            <td><p>$200</p></td> 
+                            <td>
+                              <p class="buy_stock">Buy</p>
+                              <p class="mt-2">July-23-2024</p>
+                            </td>
+                            <td><p>High to Low</p></td>  
+                            <td><p>7.00x</p></td> 
+                            <td><p>Issuer</p></td>  
+                            <td><p>Greater than 1%</p></td>    
+                            <td><p>3.4M</p></td> 
+                            <td><p>R40 <span>(No Change)</span></p></td>  
+                            <td><p>4.5 <span class="red_txt">(Moving Down)</span></p></td>  
+                            <td><p class="green_txt">+50%</p></td>  
                           </tr>
                           <tr class="ovtlyr__row">
-                            <td><div class="fav_symbol"><a href="#"><div class="favSymbol_box"><span class="port_symbol"><span class="noti_box"><span class="noti_count">99</span></span>AWR</span></div></a>
-                            <button type="button" class="addTo_fav"><i class="fa-solid fa-star"></i></button></div>
-                            <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="American States Water Company"><p class="company_name mt-1">AWR</p></a></td>    
-                            <td><a href="#"><p class="">$200</p></a></td> 
-                            <td><a href="#"><p class="buy_stock">Buy</p></a></td> 
-                            <td><a href="#"><p class="">July-23-2024 </p></a></td>   
-                            <td><a href="#"><p class="">High to Low</p></a></td>  
-                            <td><a href="#"><p class="">7.00x</p></a></td> 
-                            <td><a href="#"><p class="">Issuer</p></a></td>  
-                            <td><a href="#"><p class="">Greater than 1%</p></a></td>    
-                            <td><a href="#"><p class="">3.4M</p></a></td> 
-                            <td><a href="#"><p class="">R40</p></a></td>  
-                            <td><a href="#"><p class="">Moving Up</p></a></td>  
-                            <td><a href="#"><p class="green_txt">+50%</p></a> </td>  
+                            <td>
+                              <div class="fav_symbol">
+                                <a href="#"><div class="favSymbol_box"><span class="port_symbol"><span class="noti_box"><span class="noti_count">99</span></span>AWR</span></div></a>
+                                <button type="button" class="addTo_fav" data-bs-toggle="modal" data-bs-target="#addToList"><i class="fa-solid fa-star"></i></button>
+                                <button type="button" data-bs-toggle="modal" data-bs-target="#notiSett_modal"><i class="fa-regular fa-bell bell_icon"></i></button>
+                              </div>
+                              <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="American States Water Company"><p class="company_name mt-1">AWR</p></a>
+                            </td>
+                            <td><p>$200</p></td> 
+                            <td>
+                              <p class="buy_stock">Buy</p>
+                              <p class="mt-2">July-23-2024</p>
+                            </td>
+                            <td><p>High to Low</p></td>  
+                            <td><p>7.00x</p></td> 
+                            <td><p>Issuer</p></td>  
+                            <td><p>Greater than 1%</p></td>    
+                            <td><p>3.4M</p></td> 
+                            <td><p>R40 <span class="green_txt">(Moving Up)</span></p></td>  
+                            <td><p>4.5 <span class="green_txt">(Moving Up)</span></p></td>  
+                            <td><p class="green_txt">+50%</p></td>  
                           </tr>
                           <tr class="ovtlyr__row">
-                            <td><div class="fav_symbol"><a href="#"><div class="favSymbol_box"><span class="port_symbol"><span class="noti_box"><span class="noti_count">99</span></span>AWR</span></div></a>
-                            <button type="button" class="addTo_fav"><i class="fa-solid fa-star"></i></button></div>
-                            <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="American States Water Company"><p class="company_name mt-1">AWR</p></a></td>    
-                            <td><a href="#"><p class="">$200</p></a></td> 
-                            <td><a href="#"><p class="buy_stock">Buy</p></a></td> 
-                            <td><a href="#"><p class="">July-23-2024 </p></a></td>   
-                            <td><a href="#"><p class="">High to Low</p></a></td>  
-                            <td><a href="#"><p class="">7.00x</p></a></td> 
-                            <td><a href="#"><p class="">Issuer</p></a></td>  
-                            <td><a href="#"><p class="">Greater than 1%</p></a></td>    
-                            <td><a href="#"><p class="">3.4M</p></a></td> 
-                            <td><a href="#"><p class="">R40</p></a></td>  
-                            <td><a href="#"><p class="">Moving Up</p></a></td>  
-                            <td><a href="#"><p class="green_txt">+50%</p></a> </td>  
+                            <td>
+                              <div class="fav_symbol">
+                                <a href="#"><div class="favSymbol_box"><span class="port_symbol"><span class="noti_box"><span class="noti_count">99</span></span>AWR</span></div></a>
+                                <button type="button" class="addTo_fav" data-bs-toggle="modal" data-bs-target="#addToList"><i class="fa-solid fa-star"></i></button>
+                                <button type="button" data-bs-toggle="modal" data-bs-target="#notiSett_modal"><i class="fa-regular fa-bell bell_icon"></i></button>
+                              </div>
+                              <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="American States Water Company"><p class="company_name mt-1">AWR</p></a>
+                            </td>
+                            <td><p>$200</p></td> 
+                            <td>
+                              <p class="buy_stock">Buy</p>
+                              <p class="mt-2">July-23-2024</p>
+                            </td>
+                            <td><p>High to Low</p></td>  
+                            <td><p>7.00x</p></td> 
+                            <td><p>Issuer</p></td>  
+                            <td><p>Greater than 1%</p></td>    
+                            <td><p>3.4M</p></td> 
+                            <td><p>R40 <span class="green_txt">(Moving Up)</span></p></td>  
+                            <td><p>4.5 <span class="green_txt">(Moving Up)</span></p></td>  
+                            <td><p class="green_txt">+50%</p></td>  
                           </tr>
                           <tr class="ovtlyr__row">
-                            <td><div class="fav_symbol"><a href="#"><div class="favSymbol_box"><span class="port_symbol"><span class="noti_box"><span class="noti_count">99</span></span>AWR</span></div></a>
-                            <button type="button" class="addTo_fav"><i class="fa-solid fa-star"></i></button></div>
-                            <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="American States Water Company"><p class="company_name mt-1">AWR</p></a></td>    
-                            <td><a href="#"><p class="">$200</p></a></td> 
-                            <td><a href="#"><p class="buy_stock">Buy</p></a></td> 
-                            <td><a href="#"><p class="">July-23-2024 </p></a></td>   
-                            <td><a href="#"><p class="">High to Low</p></a></td>  
-                            <td><a href="#"><p class="">7.00x</p></a></td> 
-                            <td><a href="#"><p class="">Issuer</p></a></td>  
-                            <td><a href="#"><p class="">Greater than 1%</p></a></td>    
-                            <td><a href="#"><p class="">3.4M</p></a></td> 
-                            <td><a href="#"><p class="">R40</p></a></td>  
-                            <td><a href="#"><p class="">Moving Up</p></a></td>  
-                            <td><a href="#"><p class="green_txt">+50%</p></a> </td>  
+                            <td>
+                              <div class="fav_symbol">
+                                <a href="#"><div class="favSymbol_box"><span class="port_symbol"><span class="noti_box"><span class="noti_count">99</span></span>AWR</span></div></a>
+                                <button type="button" class="addTo_fav" data-bs-toggle="modal" data-bs-target="#addToList"><i class="fa-solid fa-star"></i></button>
+                                <button type="button" data-bs-toggle="modal" data-bs-target="#notiSett_modal"><i class="fa-regular fa-bell bell_icon"></i></button>
+                              </div>
+                              <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="American States Water Company"><p class="company_name mt-1">AWR</p></a>
+                            </td>
+                            <td><p>$200</p></td> 
+                            <td>
+                              <p class="buy_stock">Buy</p>
+                              <p class="mt-2">July-23-2024</p>
+                            </td>
+                            <td><p>High to Low</p></td>  
+                            <td><p>7.00x</p></td> 
+                            <td><p>Issuer</p></td>  
+                            <td><p>Greater than 1%</p></td>
+                            <td><p>3.4M</p></td> 
+                            <td><p>R40 <span class="green_txt">(Moving Up)</span></p></td>
+                            <td><p>4.5 <span class="green_txt">(Moving Up)</span></p></td>  
+                            <td><p class="green_txt">+50%</p></td>  
                           </tr>
                           <tr class="ovtlyr__row">
-                            <td><div class="fav_symbol"><a href="#"><div class="favSymbol_box"><span class="port_symbol"><span class="noti_box"><span class="noti_count">99</span></span>AWR</span></div></a>
-                            <button type="button" class="addTo_fav"><i class="fa-solid fa-star"></i></button></div>
-                            <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="American States Water Company"><p class="company_name mt-1">AWR</p></a></td>    
-                            <td><a href="#"><p class="">$200</p></a></td> 
-                            <td><a href="#"><p class="buy_stock">Buy</p></a></td> 
-                            <td><a href="#"><p class="">July-23-2024 </p></a></td>   
-                            <td><a href="#"><p class="">High to Low</p></a></td>  
-                            <td><a href="#"><p class="">7.00x</p></a></td> 
-                            <td><a href="#"><p class="">Issuer</p></a></td>  
-                            <td><a href="#"><p class="">Greater than 1%</p></a></td>    
-                            <td><a href="#"><p class="">3.4M</p></a></td> 
-                            <td><a href="#"><p class="">R40</p></a></td>  
-                            <td><a href="#"><p class="">Moving Up</p></a></td>  
-                            <td><a href="#"><p class="green_txt">+50%</p></a> </td>  
+                            <td>
+                              <div class="fav_symbol">
+                                <a href="#"><div class="favSymbol_box"><span class="port_symbol"><span class="noti_box"><span class="noti_count">99</span></span>AWR</span></div></a>
+                                <button type="button" class="addTo_fav" data-bs-toggle="modal" data-bs-target="#addToList"><i class="fa-solid fa-star"></i></button>
+                                <button type="button" data-bs-toggle="modal" data-bs-target="#notiSett_modal"><i class="fa-regular fa-bell bell_icon"></i></button>
+                              </div>
+                              <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="American States Water Company"><p class="company_name mt-1">AWR</p></a>
+                            </td>
+                            <td><p>$200</p></td> 
+                            <td>
+                              <p class="buy_stock">Buy</p>
+                              <p class="mt-2">July-23-2024</p>
+                            </td>
+                            <td><p>High to Low</p></td>  
+                            <td><p>7.00x</p></td> 
+                            <td><p>Issuer</p></td>  
+                            <td><p>Greater than 1%</p></td>    
+                            <td><p>3.4M</p></td> 
+                            <td><p>R40 <span class="green_txt">(Moving Up)</span></p></td>  
+                            <td><p>4.5 <span class="green_txt">(Moving Up)</span></p></td>  
+                            <td><p class="green_txt">+50%</p></td>  
                           </tr>
                         </tbody>
                       </table>
@@ -752,7 +942,7 @@
                 <div class="tab-pane fade" id="etfstab" role="tabpanel" aria-labelledby="etfs-tab">
                   <button type="button" class="d-lg-none stockFilBtn_etf" id="stockFilBox_etf"><span class="material-symbols-outlined">menu</span></button>
                   <div class="stockNew_filter">
-                   <div class="stockFilBox_etf">
+                    <div class="stockFilBox_etf">
                       <div class="stock_button">
                         <span class="applied_screeners"><label>Applied Screener:</label><h6> Stock list 1</h6></span>
                         <span class="applyed_btn">
@@ -856,27 +1046,11 @@
                                 <option value="8">1 Year</option>
                               </select>
                               <select class="form-select" aria-label="Default select example">
-                                <option value="1">5% or more</option>
-                                <option value="2">10% or more</option>
-                                <option value="3">20% or more</option>
+                                <option value="1">0 - 5%</option>
+                                <option value="2">5% or more</option>
+                                <option value="3">10% or more</option>
+                                <option value="4">20% or more</option>
                               </select>
-                            </div>
-                          </div>
-                          <div class="range_slider">
-                            <label>Oscillator</label>
-                            <div class="filters__line">
-                              <label class="radio mb-0">
-                                <input class="radio__input" type="radio" name="oscillator" checked="">
-                                <span class="radio__in"><span class="radio__tick"></span><span class="radio__text pt-0">All</span></span>
-                              </label>
-                              <label class="radio mb-0">
-                                <input class="radio__input" type="radio" name="oscillator" checked="">
-                                <span class="radio__in"><span class="radio__tick"></span><span class="radio__text pt-0">Moving Up</span></span>
-                              </label>
-                              <label class="radio mb-0">
-                                <input class="radio__input" type="radio" name="oscillator">
-                                <span class="radio__in"><span class="radio__tick"></span><span class="radio__text pt-0">Moving Down</span></span>
-                              </label>
                             </div>
                           </div>
                           <div class="range_slider one_">
@@ -888,23 +1062,72 @@
                               </div>
                             </div>
                           </div>
-                          <div class="range_slider one_">
+                          <!-- <div class="range_slider one_">
                             <div class="market_box">
-                           <label for="customRange6" class="form-label">Heatmap Value Range</label>
-                              <span>(R<input type="reset" id="priceRange3_start_etf"> -
-                              R<input type="reset" id="priceRange3_end_etf" />) </span>
-                              <span>(G<input type="reset" id="heatmap_startetf">
-                            - G<input type="reset" id="heatmap_endetf" />)</span>
+                              <label for="customRange6" class="form-label">Fear & Greed Heatmap Value Range</label>
                             </div>
                             <div class="range_slider_box">
                               <div id="heatmap_valuerangeRed_etf"> </div>
-                              <p class="range_value"><span class="start_value">R0</span><span class="last_value">R50</span></p>
+                              <p class="range_value"><span class="start_value">0</span><span class="last_value">100</span></p>
+                            </div>
+                          </div> -->
+                          <div class="range_slider one_">
+                            <div class="market_box">
+                            <label for="customRange6" class="form-label">Fear & Greed Heatmap Value Range</label>
+                              <span>(<input type="reset" id="priceRange3_start_etf"> -
+                              <input type="reset" id="priceRange3_end_etf" />) </span>
                             </div>
                             <div class="range_slider_box">
-                              <div id="heatmap_valuerangeGreen_etf"></div>
-                              <p class="range_value"><span class="start_value">G0</span><span class="last_value">G50</span></p>
+                              <div id="heatmap_valuerangeRed_etf"> </div>
+                              <p class="range_value"><span class="start_value">0</span><span class="last_value">100</span></p>
                             </div>
                           </div>
+                          <div class="range_slider">
+                            <label>Fear & Greed Heatmap</label>
+                            <div class="switch_borders">
+                              <div class="switch_boxes">
+                                <label for="customRange4" class="form-label"> Moving Up</label>
+                                <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch">
+                                </div>
+                              </div>
+                              <div class="switch_boxes">
+                                <label for="customRange5" class="form-label">Moving Down</label>
+                                <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch">
+                                </div>
+                              </div>
+                              <div class="switch_boxes">
+                                <label for="customRange3" class="form-label">No Change</label>
+                                <div class="form-check form-switch">
+                                  <input class="form-check-input" type="checkbox" role="switch">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- <div class="range_slider">
+                            <label>Oscillator</label>
+                            <div class="switch_borders">
+                              <div class="switch_boxes">
+                                <label for="customRange4" class="form-label"> Moving Up</label>
+                                <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch">
+                                </div>
+                              </div>
+                              <div class="switch_boxes">
+                                <label for="customRange5" class="form-label">Moving Down</label>
+                                <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch">
+                                </div>
+                              </div>
+                              <div class="switch_boxes">
+                                <label for="customRange3" class="form-label">No Change</label>
+                                <div class="form-check form-switch">
+                                  <input class="form-check-input" type="checkbox" role="switch">
+                                </div>
+                              </div>
+                            </div>
+                          </div> -->
                           <div class="range_slider">
                             <label for="customRange3" class="form-label">Overlay Indiactor</label>
                             <div class="switch_borders">
@@ -938,74 +1161,132 @@
                         <table class="table stocks__table0 ovtlyr_table">
                           <thead class="sticky-top">
                             <tr class="ovtlyr__row_head">
-                              <th style="width:5%;">Symbol<button type="button" class="addTo_fav"><i class="fa-star fa-solid"  data-bs-toggle="modal" data-bs-target="#export_favList"></i></button></th>
-                              <th style="width:10%;">Last Close Price</th>
-                              <th style="width:7%;" class="dropdown drop_box">
+                              <th style="width:10%;">Symbol<button type="button" class="addTo_fav ms-2" data-bs-toggle="modal" data-bs-target="#export_favList"><i class="fa-star fa-regular"></i></button></th>
+                              <th style="width:8%;" class="dropdown drop_box">
                                 <div class="sort_dropdown">
-                                  <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Current Signal</button>
+                                  <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Last Close Price</button>
                                   <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                    <li><a class="dropdown-item" href="#"><p class="mb-0">All</p></a></li>
-                                    <li><a class="dropdown-item" href="#"><p class="mb-0">Buy</p></a></li>
-                                    <li><a class="dropdown-item" href="#"><p class="mb-0">Sell</p></a></li>
-                                  </ul>
-                                </div>
-                              </th>
-                              <th style="width:11%;" class="dropdown drop_box">
-                                <div class="sort_dropdown favList_tabC">
-                                  <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Signal Start Date</button>
-                                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                    <li><a class="dropdown-item" href="#"><p class="mb-0">Ascending</p></a></li>
-                                    <li><a class="dropdown-item" href="#"><p class="mb-0">Descending</p></a></li>
-                                  </ul>
-                                </div>
-                              </th>
-                              <th style="width:10%;" class="dropdown drop_box">
-                                <div class="sort_dropdown">
-                                  <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">OVTLYR Signal Return</button>
-                                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                    <li><a class="dropdown-item" href="#"><p class="mb-0">All</p></a></li>
-                                    <li><a class="dropdown-item" href="#"><p class="mb-0">Ascending</p></a></li>
-                                    <li><a class="dropdown-item" href="#"><p class="mb-0">Descending</p></a></li>
                                     <li><a class="dropdown-item" href="#"><p class="mb-0">High to Low</p></a></li>
                                     <li><a class="dropdown-item" href="#"><p class="mb-0">Low to High</p></a></li>
                                   </ul>
                                 </div>
                               </th>
-                              <th style="width:10%;">Capital Efficiency</th>
-                              <th style="width:5%;">Issuer</th>
-                              <th style="width:10%;">Expense Ratio</th>
-                              <th style="width:12%;">30-Day Avg. Volume</th>
-                              <th style="width:5%;">Heatmap</th>
-                              <th style="width:8%;" class="dropdown drop_box">
+                              <th style="width:9%;" class="dropdown drop_box">
                                 <div class="sort_dropdown">
-                                  <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Oscillator Direction</button>
+                                  <button class="dropdown-toggle current_sig" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Current Signal <span class="block_txt">(Signal Start Date)</span></button>
                                   <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                    <li><a class="dropdown-item" href="#"><p class="mb-0">All</p></a></li>
-                                    <li><a class="dropdown-item" href="#"><p class="mb-0">Moving Up</p></a></li>
-                                    <li><a class="dropdown-item" href="#"><p class="mb-0">Moving Down</p></a></li>
+                                    <li><a class="dropdown-item" href="#"><p class="mb-0">Latest to Oldest</p></a></li>
+                                    <li><a class="dropdown-item" href="#"><p class="mb-0">Oldest to Latest</p></a></li>
                                   </ul>
                                 </div>
                               </th>
-                              <th style="width:12%;">Price Correction</th>
+                              <th style="width:8%;" class="dropdown drop_box">
+                                <div class="sort_dropdown">
+                                  <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">OVTLYR Signal Return</button>
+                                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#"><p class="mb-0">High to Low</p></a></li>
+                                    <li><a class="dropdown-item" href="#"><p class="mb-0">Low to High</p></a></li>
+                                  </ul>
+                                </div>
+                              </th>
+                              <th style="width:8%;" class="dropdown drop_box">
+                                <div class="sort_dropdown">
+                                  <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Capital Efficiency</button>
+                                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#"><p class="mb-0">High to Low</p></a></li>
+                                    <li><a class="dropdown-item" href="#"><p class="mb-0">Low to High</p></a></li>
+                                  </ul>
+                                </div>
+                              </th>
+                              <th style="width:8%;">Issuer</th>
+                              <th style="width:8%;" class="dropdown drop_box">
+                                <div class="sort_dropdown">
+                                  <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Expense Ratio</button>
+                                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#"><p class="mb-0">High to Low</p></a></li>
+                                    <li><a class="dropdown-item" href="#"><p class="mb-0">Low to High</p></a></li>
+                                  </ul>
+                                </div>
+                              </th>
+                              <th style="width:8%;" class="dropdown drop_box">
+                                <div class="sort_dropdown favList_tabC">
+                                  <button class="dropdown-toggle current_sig" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Overlay <span class="block_txt">(Start Date)</span></button>
+                                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#"><p class="mb-0">Latest to Oldest</p></a></li>
+                                    <li><a class="dropdown-item" href="#"><p class="mb-0">Oldest to Latest</p></a></li>
+                                  </ul>
+                                </div>
+                              </th>
+                              <th style="width:8%;" class="dropdown drop_box">
+                                <div class="sort_dropdown">
+                                  <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">30-Day Avg. Vol.</button>
+                                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#"><p class="mb-0">High to Low</p></a></li>
+                                    <li><a class="dropdown-item" href="#"><p class="mb-0">Low to High</p></a></li>
+                                  </ul>
+                                </div>
+                              </th>
+                              <th style="width:9%;">Fear & Greed Heatmap & Direction</th>
+                              <th style="width:9%;">Oscillator & Direction</th>
+                              <th style="width:7%;" class="dropdown drop_box">
+                                <div class="sort_dropdown favList_tabC">
+                                  <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Price Change</button>
+                                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#"><p class="mb-0">High to Low</p></a></li>
+                                    <li><a class="dropdown-item" href="#"><p class="mb-0">Low to High</p></a></li>
+                                  </ul>
+                                </div>
+                              </th>
                             </tr>
                           </thead>
                           <tbody>
                             <tr class="ovtlyr__row">
-                              <td><div class="fav_symbol"><a href="#"><div class="favSymbol_box"><span class="port_symbol"><span class="noti_box"><span class="noti_count">99</span></span>AWR</span></div></a>
-                                <button type="button" class="addTo_fav"><i class="fa-solid fa-star"></i></button></div>
-                                <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="American States Water Company"><p class="company_name mt-1">AWR</p></a>
+                              <td>
+                                <div class="fav_symbol">
+                                  <a href="#"><div class="favSymbol_box"><span class="port_symbol"><span class="noti_box"><span class="noti_count">99</span></span>FLOT</span></div></a>
+                                  <button type="button" class="addTo_fav" data-bs-toggle="modal" data-bs-target="#addToList"><i class="fa-regular fa-star"></i></button>
+                                  <button type="button" data-bs-toggle="modal" data-bs-target="#notiSett_modal"><i class="fa-regular fa-bell bell_icon"></i></button>
+                                </div>
+                                <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="ISHARES FLOATING RATE BOND ETF"><p class="company_name mt-1">ISHARES FLOATING RATE BOND ETF</p></a>
                               </td>    
-                              <td><a href="#"><p class="">$200</p></a></td> 
-                              <td><a href="#"><p class="buy_stock">Buy</p></a></td> 
-                              <td><a href="#"><p class="">July-23-2024 </p></a></td>   
-                              <td><a href="#"><p class="">High to Low</p></a></td>  
-                              <td><a href="#"><p class="">7.00x</p></a></td> 
-                              <td><a href="#"><p class="">Issuer</p></a></td>  
-                              <td><a href="#"><p class="">Greater than 1%</p></a></td>    
-                              <td><a href="#"><p class="">3.4M</p></a></td> 
-                              <td><a href="#"><p class="">R40</p></a></td>  
-                              <td><a href="#"><p class="">Moving Up</p></a></td>  
-                              <td><a href="#"><p class="green_txt">+50%</p></a></td>
+                              <td><p>$200</p></td> 
+                              <td>
+                                <p class="buy_stock">Buy</p>
+                                <p class="mt-2">July-23-2024</p>
+                              </td>
+                              <td><p>High to Low</p></td>  
+                              <td><p>7.00x</p></td> 
+                              <td><p>BlackRock Inc</p></td>  
+                              <td><p>0.15</p></td>
+                              <td><p><span class="greenBox"></span><span class="date_start">(July-23-2024)</span></p></td> 
+                              <td><p>3.4M</p></td> 
+                              <td><p>R40 <span class="green_txt">(Moving Up)</span></p></td>  
+                              <td><p>4.5 <span class="green_txt">(Moving Up)</span></p></td>  
+                              <td><p class="green_txt">+50%</p></td>
+                            </tr>
+                            <tr class="ovtlyr__row">
+                              <td>
+                                <div class="fav_symbol">
+                                  <a href="#"><div class="favSymbol_box"><span class="port_symbol"><span class="noti_box"><span class="noti_count">99</span></span>FLRN</span></div></a>
+                                  <button type="button" class="addTo_fav" data-bs-toggle="modal" data-bs-target="#addToList"><i class="fa-solid fa-star"></i></button>
+                                  <button type="button" data-bs-toggle="modal" data-bs-target="#notiSett_modal"><i class="fa-regular fa-bell bell_icon"></i></button>
+                                </div>
+                                <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="SPDR Bloomberg Investment Grade Floating Rate ETF"><p class="company_name mt-1">SPDR Bloomberg Investment Grade Floating Rate ETF</p></a>
+                              </td>    
+                              <td><p>$200</p></td> 
+                              <td>
+                                <p class="buy_stock">Buy</p>
+                                <p class="mt-2">July-23-2024</p>
+                              </td>
+                              <td><p>High to Low</p></td>  
+                              <td><p>7.00x</p></td> 
+                              <td><p>ProShare Advisors LLC</p></td>  
+                              <td><p>0.60</p></td>
+                              <td><p><span class="redBox"></span><span class="date_start">(July-23-2024)</span></p></td> 
+                              <td><p>3.4M</p></td> 
+                              <td><p>R40 <span class="green_txt">(Moving Up)</span></p></td>  
+                              <td><p>4.5 <span class="green_txt">(Moving Up)</span></p></td>  
+                              <td><p class="green_txt">+50%</p></td>
                             </tr>
                           </tbody>
                         </table>
@@ -1109,6 +1390,164 @@
             </div>
           </div>
         </div>
+        <!--========== NOTIFICATION POPUP BEGIN ==========-->
+        <div class="modal upgrade_popup notiSett_modal fade" id="notiSett_modal" tabindex="-1" aria-labelledby="notiSett_modalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+                <button type="button" class="close_btn" data-bs-dismiss="modal" aria-label="Close"><span class="material-icons">close</span></button>
+                <div class="modal_body">
+                  <div class="lat_noti">
+                    <div class="notiHead">
+                      <h3>Notify me about APPL/Custom List 1</h3>
+                    </div>
+                    <div class="lat_noti1">
+                      <div class="lat_noti11">
+                        <div class="lat_noti111">
+                          <div>
+                            <div class="innerFlex">
+                              <span>Notify when Fear & Greed Heatmap is Moving Up, and is at or above</span>
+                            </div>
+                            <div class="innerFlex">
+                              <div class="notifi_slider">
+                                <div class="range_slider_box">
+                                  <div id="heatmap_value_up"></div>
+                                  <p class="range_value"><span class="start_value">0</span><span class="last_value">100</span></p>
+                                </div>
+                                <div class="movingArrow">
+                                  <p class="movingDown">Moving Down<span class="material-symbols-outlined">trending_flat</span></p>
+                                  <p class="movingUp">Moving Up<span class="material-symbols-outlined">trending_flat</span></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <span class="switch1 switch-sm">
+                          <label class="m-0">
+                            <input type="checkbox" name="select">
+                            <span></span> 
+                          </label>
+                        </span>
+                      </div>
+                      <div class="lat_noti11">
+                        <div class="lat_noti111">
+                          <div>
+                            <div class="innerFlex">
+                              <span>Notify when Fear & Greed Heatmap is Moving Down, and is at or below</span>
+                            </div>
+                            <div class="innerFlex">
+                              <div class="notifi_slider">
+                                <div class="range_slider_box">
+                                  <div id="heatmap_value_down"></div>
+                                  <p class="range_value"><span class="start_value">0</span><span class="last_value">100</span></p>
+                                </div>
+                                <div class="movingArrow">
+                                  <p class="movingDown">Moving Down<span class="material-symbols-outlined">trending_flat</span></p>
+                                  <p class="movingUp">Moving Up<span class="material-symbols-outlined">trending_flat</span></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <span class="switch1 switch-sm">
+                          <label class="m-0">
+                            <input type="checkbox" name="select">
+                            <span></span> 
+                          </label>
+                        </span>
+                      </div>
+                      <div class="lat_noti11">
+                        <div class="lat_noti111">
+                          <div>
+                            <div class="innerFlex">
+                              <span>Notify when Fear & Greed Heatmap is 
+                                <select class="form-select" id="selectMotion2">
+                                  <option value="movingUp2" selected>Moving Up</option>
+                                  <option value="movingDown2">Moving Down</option>
+                                  <option>Both Moving Up or Moving Down</option>
+                                </select> and Heatmap is in between
+                              </span>
+                            </div>
+                            <div class="innerFlex">
+                              <div class="notifi_slider">
+                                <div class="range_slider_box">
+                                  <div id="heatmap_value_up_down"></div>
+                                  <p class="range_value"><span class="start_value">0</span><span class="last_value">100</span></p>
+                                </div>
+                                <div class="movingArrow">
+                                  <p class="movingDown">Moving Down<span class="material-symbols-outlined">trending_flat</span></p>
+                                  <p class="movingUp">Moving Up<span class="material-symbols-outlined">trending_flat</span></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <span class="switch1 switch-sm">
+                          <label class="m-0">
+                            <input type="checkbox" name="select">
+                            <span></span> 
+                          </label>
+                        </span>
+                      </div>
+                      <div class="lat_noti11">
+                        <div class="lat_noti111">
+                          <span>When Fear & Greed Heatmap is No Change</span>
+                        </div>
+                        <span class="switch1 switch-sm">
+                          <label class="m-0">
+                            <input type="checkbox" checked name="select">
+                            <span></span> 
+                          </label>
+                        </span>
+                      </div>
+                      <div class="lat_noti11">
+                        <div class="lat_noti111">
+                          <span>When Uptrend or Downtrend started for a stock</span>
+                        </div>
+                        <span class="switch1 switch-sm">
+                          <label class="m-0">
+                            <input type="checkbox" name="select">
+                            <span></span> 
+                          </label>
+                        </span>
+                      </div>
+                      <div class="lat_noti11">
+                        <div class="lat_noti111">
+                          <span>When a new Buy or Sell signal comes</span>
+                        </div>
+                        <span class="switch1 switch-sm">
+                          <label class="m-0">
+                            <input type="checkbox" name="select">
+                            <span></span> 
+                          </label>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="applyBtn">
+                      <button type="button" class="border_btn border_btnCancel" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
+                      <button type="button" class="border_btn" data-bs-dismiss="modal" aria-label="Close">Save</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--=========== NOTIFICATION POPUP END ===========-->
+        <!--====== TUTORIAL VIDEO POPUP BEGIN ======-->
+        <div class="modal upgrade_popup watchVideo fade" id="favList" tabindex="-1" aria-labelledby="favList_modalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+                <button type="button" class="close_btn" data-bs-dismiss="modal" aria-label="Close"><span class="material-icons">close</span></button>
+                <div class="modal_body">
+                  <iframe src="https://www.youtube.com/embed/js3Ns1CvUF4?si=9ndDEzLwe231FFsJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--====== TUTORIAL VIDEO POPUP END ========-->
       </div>
     </div>
   </div>
@@ -1136,7 +1575,7 @@
 <!--========= SAVE SELECTION POPUP END =========-->
 
 <!--======== Index Tracked POPUP BEGIN ========-->
-<div class="modal coupon_popup fade" id="index_tracked" tabindex="-1" aria-labelledby="coupon_modalLabel" aria-hidden="true">
+<div class="modal coupon_popup fade" id="index_tracked" tabindex="-1" aria-labelledby="index_trackedLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-body">
@@ -1178,15 +1617,15 @@
 </div>
 <!--========= SAVE SELECTION POPUP END =========-->
 <!--======== EXPORT TO FILTER POPUP BEGIN ========-->
-<div class="modal coupon_popup fade" id="export_favList" tabindex="-1" aria-labelledby="coupon_modalLabel" aria-hidden="true">
+<div class="modal coupon_popup fade" id="export_favList" tabindex="-1" aria-labelledby="export_favListLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-body">
         <button type="button" class="close_btn" data-bs-dismiss="modal" aria-label="Close"><span
             class="material-icons">close</span></button>
         <div class="modal_body">
-          <div class="">
-            <p> Do you really want to export these 10 Stocks/Etfs to your favourite list. </p>
+          <div>
+            <p> Do you really want to export these 10 Stocks/Etfs to your favorite list. </p>
           </div>
         </div>
         <div class="modal_btns">
@@ -1198,6 +1637,99 @@
   </div>
 </div>
 <!--========= EXPORT TO FILTER POPUP END =========-->
+<!--========= ADD TO FAVOURITE LIST BEGIN ========-->
+<div class="modal coupon_popup fade" id="addToList" tabindex="-1" aria-labelledby="addToListLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="close_btn" data-bs-dismiss="modal" aria-label="Close"><span class="material-icons">close</span></button>
+        <div class="modal_body">
+          <h5>Add to List</h5>
+          <div class="savPopup">
+            <div class="savPopup_field">
+              <ul class="addToList box_scroll">
+                <li>
+                  <div class="flex_box div__remember">
+                    <div class="d-flex align-items-center justify-content-start">
+                      <label class="checkbox">
+                        <input class="checkbox__input m-0" type="checkbox">
+                        <span class="checkbox__in">
+                          <span class="checkbox__tick"></span>
+                        </span>
+                      </label>
+                      <span class="check_txt text-start ms-2">Favorite List</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="flex_box div__remember">
+                    <div class="d-flex align-items-center justify-content-start">
+                      <label class="checkbox">
+                        <input class="checkbox__input m-0" type="checkbox">
+                        <span class="checkbox__in">
+                          <span class="checkbox__tick"></span>
+                        </span>
+                      </label>
+                      <span class="check_txt text-start ms-2">Custom List 1</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="flex_box div__remember">
+                    <div class="d-flex align-items-center justify-content-start">
+                      <label class="checkbox">
+                        <input class="checkbox__input m-0" type="checkbox">
+                        <span class="checkbox__in">
+                          <span class="checkbox__tick"></span>
+                        </span>
+                      </label>
+                      <span class="check_txt text-start ms-2">Custom List 2</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="flex_box div__remember">
+                    <div class="d-flex align-items-center justify-content-start">
+                      <label class="checkbox">
+                        <input class="checkbox__input m-0" type="checkbox">
+                        <span class="checkbox__in">
+                          <span class="checkbox__tick"></span>
+                        </span>
+                      </label>
+                      <span class="check_txt text-start ms-2">Custom List 3</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="flex_box div__remember">
+                    <div class="d-flex align-items-center justify-content-start">
+                      <label class="checkbox">
+                        <input class="checkbox__input m-0" type="checkbox">
+                        <span class="checkbox__in">
+                          <span class="checkbox__tick"></span>
+                        </span>
+                      </label>
+                      <span class="check_txt text-start ms-2">Custom List 4</span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="savPopup_field" id="inputList" style="display: none;">
+              <input type="text" name="name" placeholder="Create new list" />
+            </div>
+            <button type="button" class="createList" id="CreateList"><span class="material-symbols-outlined">add</span>Create New List</button>
+          </div>
+        </div>
+        <div class="modal_btns justify-content-end">
+          <button type="button" class="border_btn" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
+          <button type="button" class="filled_btn" data-bs-dismiss="modal" aria-label="Close">Okay</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--========= ADD TO FAVOURITE LIST END ========-->
 <!-- scripts-->
 <script src="js/jquery.min.js"></script>
 <script src="js/magnific-popup-svg4-app.js"></script>
@@ -1224,7 +1756,7 @@
       $(this).children().toggleClass('fa-regular fa-solid');
     });
   });
-  </script>
+</script>
 <!--==== MARKET CAP RANGE SLIDER ====-->
 <!--============ SIDEBAR SEARCH DROPDOWN ============-->
 <script>
@@ -1347,7 +1879,8 @@
 
 <!-- Heatmap value range Stocks -->
 <script>
-  var heatmap_valuerangeRed = document.getElementById('heatmap_valuerangeRed');
+
+var heatmap_valuerangeRed = document.getElementById('heatmap_valuerangeRed');
   var start_redValue = document.getElementById('start_valueHM');
   var end_redValue = document.getElementById('end_valueHM');
   var result_redValue = [start_redValue, end_redValue]
@@ -1355,7 +1888,7 @@
     start: [10, 30], // Initial value
     range: {
       'min': 0,
-      'max': 50
+      'max': 100
     },
     tooltips: false,
     connect: true,
@@ -1371,30 +1904,7 @@
   heatmap_valuerangeRed.noUiSlider.on('update', function (values, handle) {
     result_redValue[handle].value = values[handle];
   })
-  var heatmap_valuerangeGreen = document.getElementById('heatmap_valuerangeGreen');
-  var start_greenValue = document.getElementById('start_valueHPG');
-  var end_greenValue = document.getElementById('end_valueHPG');
-  var result_greenValue = [start_greenValue, end_greenValue]
-  noUiSlider.create(heatmap_valuerangeGreen, {
-    start: [1, 40],
-    range: {
-      'min': 0,
-      'max': 50
-    },
-    connect: true,
-    tooltips: false,
-    format: {
-      to: function (value) {
-        return Math.round(value);Z
-      },
-      from: function (value) {
-        return Number(value);
-      }
-    }
-  });
-  heatmap_valuerangeGreen.noUiSlider.on('update', function (values, handle) {
-    result_greenValue[handle].value = values[handle];
-  })
+
   var heatmap_valuerangeRed = document.getElementById('heatmap_valuerangeRed_etf');
   var inputStart = document.getElementById('priceRange3_start_etf');
   var inputEnd = document.getElementById('priceRange3_end_etf');
@@ -1403,7 +1913,7 @@
     start: [10, 30],
     range: {
       'min': [0],
-      'max': [50]
+      'max': [100]
     },
     tooltips: [false, false],
     connect: true,
@@ -1418,31 +1928,6 @@
   });
   heatmap_valuerangeRed.noUiSlider.on('update', function (values, handle) {
     input_result[handle].value = values[handle];
-  })
-
-  var heatmap_valuerangeGreen_etf = document.getElementById('heatmap_valuerangeGreen_etf');
-  var inputValue_start = document.getElementById('heatmap_startetf');
-  var inputValue_end = document.getElementById('heatmap_endetf');
-  var result_etf = [inputValue_start, inputValue_end]
-  noUiSlider.create(heatmap_valuerangeGreen_etf, {
-    start: [10, 30],
-    range: {
-      'min': 0,
-      'max': 50
-    },
-    tooltips: false,
-    connect: true,
-    format: {
-      to: function (value) {
-        return + Math.round(value);
-      },
-      from: function (value) {
-        return Number(value);
-      }
-    }
-  });
-  heatmap_valuerangeGreen_etf.noUiSlider.on('update', function (values, handle) {
-    result_etf[handle].value = values[handle];
   })
 </script>
 
@@ -1543,6 +2028,77 @@
     if (!container.is(e.target) && container.has(e.target).length === 0) {
       container.hide();
   }});
+</script>
+<script>
+  $(document).ready(function () {
+    var createBtn = $('#CreateList').html();
+    $('#CreateList').click(function () {
+      if ($(this).html() == createBtn){
+        $(this).html('<span class="material-symbols-outlined">close</span>Cancel');
+        $('#inputList').show();
+      } 
+      else {
+        $(this).html('<span class="material-symbols-outlined">add</span>Create New List');
+        $('#inputList').hide();
+      }
+    });
+  });
+</script>
+
+<!--===== SLIDER SCRIPT START =====-->
+<script>
+  var heatmap_value_up = document.getElementById('heatmap_value_up');
+  noUiSlider.create(heatmap_value_up, {
+    start: [10],  // Initial slider value
+    range: {
+      'min': [0],
+      'max': [100]
+    },
+    step: 1,
+    tooltips: {
+      to: function(value) {
+        return Math.round(value); // Ensures whole number display
+      }
+    }
+  });
+
+  var heatmap_value_down = document.getElementById('heatmap_value_down');
+  noUiSlider.create(heatmap_value_down, {
+    start: [10],
+    range: {
+      'min': [0],
+      'max': [100]
+    },
+    step: 1,
+    tooltips: {
+      to: function(value) {
+        return Math.round(value); // Ensures whole number display
+      }
+    }
+  });
+
+  var heatmap_value_up_down = document.getElementById('heatmap_value_up_down');
+  noUiSlider.create(heatmap_value_up_down, {
+    start: [10, 30], // Initial value
+    range: {
+      'min': 0,
+      'max': 100
+    },
+    tooltips: {
+      to: function(value) {
+        return Math.round(value); // Ensures whole number display
+      }
+    },
+    connect: true,
+    format: {
+      to: function (value) {
+        return Math.round(value);
+      },
+      from: function (value) {
+        return Number(value);
+      }
+    }
+  });
 </script>
 </body>
 </html>

@@ -7,7 +7,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
 <meta name="format-detection" content="telephone=no">
-<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.svg">
+<link rel="icon" type="image/ico" sizes="32x32" href="images/favicon-32x32.ico">
 <link rel="preconnect" href="https://fonts.gstatic.com" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -16,19 +16,19 @@
 </head>
 <body>
   <header class="header_outer">
-    <div class="header_inner1 new_head">
-      <div class="container">
+    <div class="header_inner1 new_head" style="display: none;">
+      <div class="container container_mobile">
         <div class="top_header">
           <p><a target="_blank" href="http://ovtlyrtraining.com/">Sign Up For Our Free Upcoming Webclass for Traders</a></p>
         </div>
       </div>
     </div>
     <div class="header_inner2 new_head2">
-      <div class="container">
+      <div class="container container_mobile">
         <div class="header_sec">
           <div class="header_sec1">
             <a href="home.html">
-              <img class="white_logo" src="images/Ovtlyr-logo.svg" alt="OVTLYR Logo" />
+              <img class="white_logo" src="images/Ovtlyr-Logo.svg" alt="OVTLYR Logo" />
               <img class="black_logo" src="images/black-logo.svg" alt="OVTLYR Logo" />
             </a>
           </div>
@@ -38,8 +38,12 @@
               <li><a href="features.html">Features</a></li>
               <li><a href="pricing.html">Pricing</a></li>
               <li><a href="community.html">Community</a></li>
-              <li><a href="log-in.html">My Account</a></li>
-              <li><a href="sign-up.html" class="signUp_btn">Sign Up</a></li>
+              <!-- Without Login -->
+              <!-- <li><a href="sign-up.html">Get Started</a></li>
+              <li><a href="log-in.html" class="signUp_btn">My Account</a></li> -->
+              <!-- With Login -->
+              <li><a href="javascript:void(0);">Logout</a></li>
+              <li><a href="dashboard.html" class="signUp_btn">My Account</a></li>
             </ul>
             <div class="mobile_menu">
               <div class="b-nav">
@@ -48,15 +52,19 @@
                   <button type="button" class="b-menu2"><span class="material-symbols-outlined">close</span></button>
                 </div>
                 <ul>
-                  <li><a href="testimonials.html" class="testimonal_btn rounded-3">Testimonals</a></li>
+                  <li class="button_mobile"><button type="button" class="yellow_btn rounded_radius">Testimonials</button></li>
                   <li><a href="features.html">Features</a></li>
                   <li><a href="pricing.html">Pricing</a></li>
                   <li><a href="community.html">Community</a></li>
-                  <li><a href="log-in.html">My Account</a></li>
-                  <li><a href="sign-up.html" class="signUp_btn">Sign Up</a></li>
-                  <li><button type="button" class="trial_btn">Start Winning</button></li>
+                  <!-- Without Login -->
+                  <!-- <li><a href="sign-up.html">Get Started</a></li>
+                  <li><a href="log-in.html" class="signUp_btn">My Account</a></li> -->
+                  <!-- With Login -->
+                  <li><a href="javascript:void(0);">Logout</a></li>
+                  <li class="button_mobile"><a href="dashboard.html" class="signUp_btn">My Account</a></li>
                 </ul>
               </div>
+              <!-- Burger-Icon -->
               <div class="b-container">
                 <div class="b-menu">
                   <div class="b-bun b-bun--top"></div>
@@ -117,7 +125,7 @@
           <div class="side_2 reveal">
             <div class="side_22">
               <!-- <img src="images/stock-scanner.png" alt="Stock Scanner" /> -->
-              <iframe src="https://www.youtube.com/embed/siIuOmrvP8E?si=eun3uJOXKDq6RFjM" title="YouTube video player" frameborder="0" 
+              <iframe src="https://www.youtube.com/embed/js3Ns1CvUF4?si=h-RsEUvzV3ipk5x9" title="YouTube video player" frameborder="0" 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
             </div>
             <div class="side_21">
@@ -135,7 +143,7 @@
               <!-- <video width="100%" controlslist="noplaybackrate nodownload" controls disablepictureinpicture poster="images/bear-bull.jpg">
                 <source src="images/bear-bull.mp4" type="video/mp4">
               </video> -->
-              <iframe src="https://www.youtube.com/embed/lmP-u7Aai2Q?si=vSaU3MdzDHMggK86" title="YouTube video player" frameborder="0" 
+              <iframe src="https://www.youtube.com/embed/4SBTl-HrbZM?si=MRdV4H1QAVCOM9SJ" title="YouTube video player" frameborder="0" 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
             </div>
           </div>
@@ -154,7 +162,7 @@
           </ul>        
         </div>
         <div class="featureList_box">
-          <div class="side_2 reveal">
+          <div class="side_2 reveal" style="display: none;">
             <div class="side_21">
               <h4>Price Trajectory Oscillator: Clearly Identify Stock Trajectory Direction & Reversals.</h4>
               <p>The Price Trajectory Oscillator is an innovative indicator that provides traders with a clear view of stock trajectory direction and 
@@ -175,7 +183,7 @@
               <!-- <video width="100%" controlslist="noplaybackrate nodownload" controls disablepictureinpicture poster="images/heatmap-chart-2.jpg">
                 <source src="images/heatmap-chart.mp4" type="video/mp4">
               </video> -->
-              <iframe src="https://www.youtube.com/embed/Pm_L_pQEwGU?si=G0CCgZ8iOjG68LMr" title="YouTube video player" frameborder="0" 
+              <iframe src="https://www.youtube.com/embed/8vfEp6EWuwM?si=MhD_W39CTlzz9mdk" title="YouTube video player" frameborder="0" 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
             </div>
             <div class="side_21">
@@ -183,6 +191,7 @@
               <p>Our Behavioral heatmap charts provides visibility into changing Investor Sentiment for over 1600 stocks & ETFs. Areas of Fear (red) & Greed (green) are highlighted 
                 to show you when investors have OVERREACTED to current financial & economic conditions. These Charts offer a unique edge that no other tool provides, enabling profits 
                 when others react emotionally.</p>
+              <p>It predicts where stock or ETF price trajectory is headed for the near-to-intermediate future, ensuring traders can make informed decisions and capitalize on market shifts.</p>
               <p class="bold_txt mb-0">“Be greedy when others are fearful and be fearful when others are greedy”</p>
             </div>
           </div>
@@ -213,7 +222,7 @@
               <!-- <video width="100%" controlslist="noplaybackrate nodownload" controls disablepictureinpicture poster="images/down-cycle-2.jpg">
                 <source src="images/downcycle-recovery.mp4" type="video/mp4">
               </video> -->
-              <iframe src="https://www.youtube.com/embed/OsnYdWaIcQI?si=WMxo_YWmqVr70DGm" title="YouTube video player" frameborder="0" 
+              <iframe src="https://www.youtube.com/embed/KFjQk5L8piY?si=8d5Aku6JAdorrGFO" title="YouTube video player" frameborder="0" 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
             </div>
           </div>
@@ -251,7 +260,7 @@
               <!-- <video width="100%" controlslist="noplaybackrate nodownload" controls disablepictureinpicture poster="images/histogram.jpg">
                 <source src="images/histogram-video.mp4" type="video/mp4">
               </video> -->
-              <iframe src="https://www.youtube.com/embed/hdVnkxU32Y4?si=lYMQYbtZxwXQCial" title="YouTube video player" frameborder="0" 
+              <iframe src="https://www.youtube.com/embed/eiPjYQhx9ik?si=DeMj0e4-DU9lPjkJ" title="YouTube video player" frameborder="0" 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
             </div>
             <div class="side_21">
@@ -301,15 +310,17 @@
               <!-- <video width="100%" controlslist="noplaybackrate nodownload" controls disablepictureinpicture poster="images/favlist-thumbnail.jpg">
                 <source src="images/favlist-video.mp4" type="video/mp4">
               </video> -->
-              <iframe src="https://www.youtube.com/embed/lmP-u7Aai2Q?si=vSaU3MdzDHMggK86" title="YouTube video player" frameborder="0" 
+              <iframe src="https://www.youtube.com/embed/4SBTl-HrbZM?si=MRdV4H1QAVCOM9SJ" title="YouTube video player" frameborder="0" 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
             </div>
           </div>
           <div class="side_2 reveal">
             <div class="side_22">
-              <video width="100%" controlslist="noplaybackrate nodownload" controls disablepictureinpicture poster="images/notifications.jpg">
+              <!-- <video width="100%" controlslist="noplaybackrate nodownload" controls disablepictureinpicture poster="images/notifications.jpg">
                 <source src="images/notifications-setup.mp4" type="video/mp4">
-              </video>
+              </video> -->
+              <iframe src="https://www.youtube.com/embed/GETOfM39uuo?si=QPo9ZnkTeO6koVgf" title="YouTube video player" frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
             </div>
             <div class="side_21">
               <h4>Notifications: Receive Timely Alerts on Your Favorite Stocks.​</h4>
@@ -337,10 +348,10 @@
             <img src="images/web-view.png" alt="Web View" />
           </div>
           <div class="newHome_62">
-            <h3>Risk Free Trial! 21-Days to Try Our System</h3>
+            <h3>Risk Free Trial! 14-Days to Try Our System</h3>
             <div class="signUp_Box">
               <input type="text" placeholder="Your email address here">
-              <button type="button">Start 21-Day Free Trial<!-- <i class="fa-solid fa-pulse fa-spinner ms-2"></i> --></button>
+              <button type="button">Start 14-Day Free Trial<!-- <i class="fa-solid fa-pulse fa-spinner ms-2"></i> --></button>
             </div>
           </div>
         </div>
@@ -350,8 +361,7 @@
       <div class="container">
         <div class="footer_outer1">
           <div class="footer_outer11">
-            <a href="home.html"><img src="images/home-footer-logo.svg" alt="OVTLYR Logo" /></a>
-            <p>Outliers Win</p>
+            <a href="home.html"><img src="images/Ovtlyr-Logo.svg" alt="OVTLYR Logo" /></a>
             <ul>
               <li><a href="https://www.facebook.com/Ovtlyr/" target="_blank"><img src="images/facebook.svg" alt="Facebook" /></a></li>
               <li><a href="https://twitter.com/ovtlyr" target="_blank"><img src="images/twitter.svg" alt="Twitter" /></a></li>
@@ -370,6 +380,8 @@
                 <li><a href="pricing.html">Pricing</a></li>
                 <li><a href="affiliates.html">Affiliates</a></li>
                 <li><a href="blogs.html">Blog</a></li>
+                <li><a href="roadmap.html">Roadmap</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
               </ul>
             </div>
             <div>
@@ -383,7 +395,7 @@
           </div>
         </div>
         <div class="footer_outer2">
-          <p>©2023 Company Name. All Rights Reserved</p>
+          <p>©2025 OVTLYR. All Rights Reserved</p>
           <ul>
             <li><a href="privacy-policy.html">Privacy Policy</a></li>
             <li><a href="terms-of-use.html">Terms of Use</a></li>
@@ -395,31 +407,30 @@
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/jquery.min.js"></script>
   
-<script>
-function reveal() {
-  var reveals = document.querySelectorAll(".reveal");
-
-  for (var i = 0; i < reveals.length; i++) {
-    var windowHeight = window.innerHeight;
-    var elementTop = reveals[i].getBoundingClientRect().top;
-    var elementVisible = 50;
-
-    if (elementTop < windowHeight - elementVisible) {
-      reveals[i].classList.add("active");
-      
-    } 
-    /* else {
-      reveals[i].classList.remove("active");
-    } */
-  }
-}
-window.addEventListener("scroll", reveal);
+  <script>
+    function reveal() {
+      var reveals = document.querySelectorAll(".reveal");
+  
+      for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        var elementVisible = 50;
+  
+        if (elementTop < windowHeight - elementVisible) {
+          reveals[i].classList.add("active");
+        }
+        /* else {
+          reveals[i].classList.remove("active");
+        } */
+      }
+    }
+    window.addEventListener("scroll", reveal);
   </script>
- <script>
-  $(document).ready(function () {
-    $('.inner_banner2').addClass('active');
-  });
-</script>
+  <script>
+    $(document).ready(function () {
+      $('.inner_banner2').addClass('active');
+    });
+  </script>
   <!--======= MOBILE MENU START =======-->
   <script>
     (function() {

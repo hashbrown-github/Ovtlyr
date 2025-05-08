@@ -36,39 +36,25 @@ if (localStorage.getItem('darkMode') === "on") {
   });
 }
 </script>
-<div class="page toggle new_sidebar">
-  <div class="sidebar active">
-    <div class="sidebar__top">
-      <button class="sidebar__close"><span class="material-symbols-outlined">close</span></button>
-      <a class="sidebar__logo" href="stock-detail.html">
-        <img class="sidebar__pic sidebar__pic_black" src="images/black-logo.svg" alt="OVTLYR Logo" />
-        <img class="sidebar__pic sidebar__pic_white" src="images/white-logo.svg" alt="OVTLYR Logo" />
-      </a>
-      <button class="sidebar__burger"></button>
-    </div>
+<div class="page toggle new_sidebar final_dashbd1">
+  <div class="sidebar active final_dashbd11">
     <div class="sidebar__wrapper ovtlyr_sidebar">
       <div class="sidebar__inner">
-        <a class="sidebar__logo" href="stock-detail.html">
-          <img class="sidebar__pic sidebar__pic_black" src="images/black-logo-small.svg" alt="OVTLYR Logo" />
-          <img class="sidebar__pic sidebar__pic_white" src="images/white-logo-small.svg" alt="OVTLYR Logo" />
-        </a>
         <div class="sidebar__list">
           <div class="sidebar__group">
             <div class="sidebar__menu">
               <div class="side_dropdown">
-                <a class="sidebar__item" href="dashboard.html" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Dashboard">
+                <a class="sidebar__item" href="dashboard-latest.html" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Dashboard">
                   <div class="sidebar__icon">
                     <img src="images/dashboard.svg" alt="Dashboard" />
                   </div>
-                  <div class="sidebar__text">Dashboard</div>
                 </a>
               </div>
               <div class="side_dropdown">
-                <a class="sidebar__item" href="market-breadth.html" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Market Breadth">
+                <a class="sidebar__item" href="market-breadth-latest.html" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Market Breadth">
                   <div class="sidebar__icon">
                     <img src="images/market-breadth.svg" alt="Market" />
                   </div>
-                  <div class="sidebar__text">Market Breadth</div>
                 </a>
               </div>
               <div class="side_dropdown">
@@ -76,7 +62,6 @@ if (localStorage.getItem('darkMode') === "on") {
                   <div class="sidebar__icon">
                     <img src="images/stock-etf.svg" alt="Stocks" />
                   </div>
-                  <div class="sidebar__text">Screener</div>
                 </a>
               </div>
               <div class="side_dropdown">
@@ -84,7 +69,6 @@ if (localStorage.getItem('darkMode') === "on") {
                   <div class="sidebar__icon">
                     <img src="images/watchlist.svg" alt="Star" />
                   </div>
-                  <div class="sidebar__text">Watchlist</div>
                 </a>
               </div>
               <div class="side_dropdown">
@@ -92,7 +76,76 @@ if (localStorage.getItem('darkMode') === "on") {
                   <div class="sidebar__icon">
                     <img src="images/news.svg" alt="News" />
                   </div>
-                  <div class="sidebar__text">News and Analyst Ratings</div>
+                </a>
+              </div>
+              <div class="side_dropdown">
+                <a class="sidebar__item" href="notification.html" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Notification & List Management">
+                  <div class="sidebar__icon">
+                    <img src="images/notification.svg" alt="Notification" />
+                  </div>
+                  <span class="noti_count2">10</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar__inner final_dashbd111">
+        <div class="sidebar__list">
+          <div class="sidebar__group">
+            <div class="sidebar__menu">
+              <div class="side_dropdown">
+                <div class="profileDrop dropup-right dropup" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Settings">
+                  <a class="sidebar__item p-0" href="#" id="settingsButton" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div class="sidebar__icon">
+                      <img src="images/setting.svg" alt="setting" />
+                    </div>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="settingsButton" >
+                    <li><a class="dropdown-item" href="subscription-all.html"><p class="mb-0">Subscription Management</p></a></li>
+                    <li><a class="dropdown-item" href="notification.html"><p class="mb-0">Notification Management</p></a></li>
+                    <li><a class="dropdown-item" href="affiliate-info.html"><p class="mb-0">Referral Dashboard</p></a></li>
+                    <li><a class="dropdown-item" href="tutorials.html"><p class="mb-0">Tutorials</p></a></li>
+                    <li><a class="dropdown-item" href="contact.html"><p class="mb-0">Contact Us</p></a></li>
+                    <li>
+                      <a class="dropdown-item" href="javascript:void(0);">
+                        <p class="switchThemeBtn mb-0">
+                          <span>Theme</span>
+                          <label class="switch switch_theme js-switch-theme mt-0">
+                            <input class="switch__input" type="checkbox">
+                            <span class="switch__in">
+                              <span class="switch__box"></span>
+                              <span class="switch__icon">
+                                <span class="material-symbols-outlined icon-sun">dark_mode</span>
+                                <span class="material-symbols-outlined icon-moon">light_mode</span>
+                              </span>
+                            </span>
+                          </label>
+                        </p>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="side_dropdown">
+                <a class="sidebar__item" href="https://discord.gg/DjgmSrdxUY" target="_blank" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Discord">
+                  <div class="sidebar__icon">
+                    <img src="images/discord.svg" alt="Discord" />
+                  </div>
+                </a>
+              </div>
+              <div class="side_dropdown">
+                <a class="sidebar__item" href="javascript:void(0);" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Logout">
+                  <div class="sidebar__icon">
+                    <img src="images/logout.svg" alt="Logout" />
+                  </div>
+                </a>
+              </div>
+              <div class="side_dropdown">
+                <a class="sidebar__item" href="profile.html" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Profile">
+                  <div class="sidebar__icon profile_icon">
+                    <img src="images/profile.svg" alt="Profile" />
+                  </div>
                 </a>
               </div>
             </div>
@@ -101,45 +154,9 @@ if (localStorage.getItem('darkMode') === "on") {
       </div>
     </div>
   </div>
-  <div class="page__wrapper">
+  <div class="page__wrapper final_dashbd12">
     <div class="page__center new_content">
-      <div class="dashboard_cont">
-        <div class="new_header">
-          <div class="newleft_21">
-            <div class="me-1">
-              <a href="https://discord.gg/DjgmSrdxUY" target="_blank"><img src="images/discord.svg" class="icon_img" alt="Discord" /></a>
-            </div>
-            <div class="profileDrop">
-              <button class="" type="button" id="profileMenuButton" data-bs-toggle="dropdown" aria-expanded="false"><img src="images/profile.svg" class="icon_img" alt="Profile" /></button>
-                <ul class="dropdown-menu" aria-labelledby="profileMenuButton">
-                  <li><a class="dropdown-item" href="profile.html"><p class="mb-0">Profile</p></a></li>
-                  <li><a class="dropdown-item active" href="subscription.html"><p class="mb-0">Subscription Management<span class="pinkDot"></span></p></a></li>
-                  <li><a class="dropdown-item" href="notification.html"><p class="mb-0">Notification Management</p></a></li>
-                  <li><a class="dropdown-item" href="affiliate-info.html"><p class="mb-0">Referral Dashboard</p></a></li>
-                  <li><a class="dropdown-item" href="tutorials.html"><p class="mb-0">Tutorials</p></a></li>
-                  <li><a class="dropdown-item" href="contact.html"><p class="mb-0">Contact Us</p></a></li>
-                  <li>
-                    <a class="dropdown-item" href="javascript:void(0);">
-                      <p class="switchThemeBtn mb-0">
-                        <span>Theme</span>
-                        <label class="switch switch_theme js-switch-theme">
-                          <input class="switch__input" type="checkbox">
-                          <span class="switch__in">
-                            <span class="switch__box"></span>
-                            <span class="switch__icon">
-                              <span class="material-symbols-outlined icon-sun">dark_mode</span>
-                              <span class="material-symbols-outlined icon-moon">light_mode</span>
-                            </span>
-                          </span>
-                        </label>
-                      </p>
-                    </a>
-                  </li>
-                  <li><a class="dropdown-item" href="log-in.html"><p class="mb-0">Logout</p></a></li>
-                </ul>
-            </div>
-          </div>
-        </div>
+      <div class="dashboard_cont final_dashbd2 p-0">
         <div class="settings_head">
           <div class="settings_head1">
             <div class="page_head">
@@ -147,7 +164,7 @@ if (localStorage.getItem('darkMode') === "on") {
                 <div>
                   <div>
                     <button type="button"><span class="material-symbols-outlined">chevron_left</span></button>
-                    <h5>Settings</h5>
+                    <h5>Subscription Management</h5>
                   </div>
                 </div>
               </div>
@@ -176,9 +193,96 @@ if (localStorage.getItem('darkMode') === "on") {
           <div class="tab-content" id="myTabContent">
             <div class="tab-pane fade show active" id="subscriptiontab" role="tabpanel" aria-labelledby="subscription-tab">
               <div class="subscription_box">
+                <div class="subscription_b1 upgradePlan">
+                  <h6>Upgrade to Annual</h6>
+                  <p class="planBottom">Paying $69/month <span class="red_color">($828/year)</span> adds up fast --But for a limited time you can <span class="green_color">Save 64%</span> and get a 
+                    full year of OVTLYR for just <span class="green_color">$299/year</span>. That's <span class="green_color">$529/year</span> in savings you can keep for trading, investing, or whatever you want. Why overpay when you don't have to?</p>
+                  <div class="planComparison">
+                    <div class="planCom planCom1">
+                      <ul>
+                        <li><h4>Monthly</h4></li>
+                        <li>
+                          <div class="actualPric">
+                            <!-- <s>$49</s> -->
+                            <span class="smallPri"><small class="price_symbol">$</small>69</span>
+                            <span class="permonth">/month + Tax</span>
+                          </div>
+                          <!-- <span class="permonth2">+ Taxes</span> -->
+                          <p class="billed_an">$828/year + Tax</p>
+                          <!-- <p class="billed_an"><span class="offer_p">50% Off for First Month</span></p> -->
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="planCom planCom1">
+                      <ul>
+                        <li><h4>Annual</h4></li>
+                        <li>
+                          <div class="actualPric">
+                            <!-- <s>$49</s> -->
+                            <span class="smallPri"><small class="price_symbol">$</small>24.92</span>
+                            <span class="permonth">/month (Billed Annually) + Tax</span>
+                          </div>
+                          <!-- <span class="permonth2">+ Tax</span> -->
+                          <p class="billed_an">Only <!-- <s>$588</s> --> <b> $299</b>/year + Tax</p>
+                          <p class="billed_an mt-1">Save <!-- <s>$588</s> --> <b> $529</b>/year</p>
+                          <!-- <p class="billed_an"><span class="offer_p">49% Off Forever</span></p> -->
+                          <div class="footerBtn">
+                            <button type="button" class="switch_btn">Switch to Annual Today</button>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="arrowBetween">
+                      <img src="images/switch-arrow.svg" alt="">
+                    </div>
+                  </div>
+                </div>
                 <div class="subscription_b1">
-                  <h6>Plan <button type="button" class="video_icon" data-bs-toggle="modal" data-bs-target="#subscription"><img src="images/video-icon.svg" alt="Video"></button></h6>
+                  <h6>Current Plan <button type="button" class="video_icon" data-bs-toggle="modal" data-bs-target="#subscription"><img src="images/video-icon.svg" alt="Video"></button></h6>
                   <div class="plan_boxes">
+                    <div class="plan_boxes1 blue_box">
+                      <!-- <div class="check_icon">
+                        <span class="material-symbols-outlined">done</span>
+                      </div> -->
+                      <div class="serial1">
+                        <div class="serial11">
+                          <h4>No Active Plan</h4>
+                        </div>
+                      </div>
+                      <div class="serial2">
+                        
+                      </div>
+                      <div class="serial3">
+                        <div class="serial31">
+                          <a href="pricing.html" class="white_btn">Join Today</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="plan_boxes mt-4">
+                    <div class="plan_boxes1 blue_box">
+                      <div class="check_icon">
+                        <span class="material-symbols-outlined">done</span>
+                      </div>
+                      <div class="serial1">
+                        <div class="serial11">
+                          <h4>14-Day Free Trial</h4>
+                          <p>Trial ending on <b>Mar 15, 2025</b></p>
+                        </div>
+                      </div>
+                      <div class="serial2">
+                        <div class="serial11">
+                          <p>You have 7 days remaining. Your monthly subscription will start on <b>Mar 15, 2025</b>.</p>
+                        </div>
+                      </div>
+                      <div class="serial3">
+                        <div class="serial31">
+                          <a href="#" class="white_btn" data-bs-toggle="modal" data-bs-target="#annualPlan_modal">Switch to Annual</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="plan_boxes mt-4">
                     <div class="plan_boxes1 blue_box">
                       <div class="check_icon">
                         <span class="material-symbols-outlined">done</span>
@@ -186,35 +290,20 @@ if (localStorage.getItem('darkMode') === "on") {
                       <div class="serial0">
                         <div class="serial1">
                           <div class="serial11">
-                            <h4>Elite<span>(Active)</span></h4>
+                            <h4>Ovtlyr Monthly<span>(Active)</span></h4>
                           </div>
-                          <div class="serial12">
-                            <ul class="nav nav-tabs" role="tablist">
-                              <li class="nav-item">
-                                <a class="nav-link annual_link" data-bs-toggle="tab" href="#" disabled>
-                                  <span>Annually</span>
-                                </a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link active" data-bs-toggle="tab" href="#" disabled>
-                                  <span>Monthly</span>
-                                </a> 
-                              </li>
-                            </ul>
-                          </div>
+                        </div>
+                        <div class="serial2">
+                          <h3 class="hide_txt" style="display: block;">$69<span> /month + Tax</span></h3>
+                          <h3 class="show_txt" style="display: none;"><del>$15</del> $10<span>/month</span> <span class="small">(10% coupon applied)</span></h3>
                         </div>
                         <div class="serial11">
-                          <p>Your annually research subscription will be auto - cancelled on <b>Jun 29, 2023</b></p>
+                          <p>Next Billing Date: <b>Jun 29, 2023</b></p>
                         </div>
-                      </div>
-                      <div class="serial2">
-                        <h3 class="show_txt" style="display: block;"><del>$15</del> $10<span>/month</span> <span class="small">(10% coupon applied)</span></h3>
-                        <h3 class="hide_txt" style="display: none;">$10<span>/month</span></h3>
-                        <p class="hide_txt" style="display: none;">$120, Billed Annually</p>
                       </div>
                       <div class="serial3">
                         <div class="serial31">
-                          <a href="#" class="white_btn">Change Plan</a>
+                          <a href="#" class="white_btn" data-bs-toggle="modal" data-bs-target="#changePlan_modal">Switch to Annual</a>
                           <a href="#" class="white_btn" data-bs-toggle="modal" data-bs-target="#cancelPlan_modal">Cancel Plan</a>
                         </div>
                         <!-- <div class="serial32">
@@ -230,25 +319,22 @@ if (localStorage.getItem('darkMode') === "on") {
                       </div>
                       <div class="serial1">
                         <div class="serial11">
-                          <h4>Benefits:</h4>
+                          <h4>OVTLYR Difference:</h4>
                           <ul>
                             <li>
-                              <p>No. of stocks + ETFs covered</p>
+                              <p>Unique behavioral data that is only available on OVTLYR platform</p>
                             </li>
                             <li>
-                              <p>HeatTrail – Gives you the buy and sell opportunities</p>
+                              <p>Constant addition of traditional indicators and data for both traders & investors.</p>
                             </li>
                             <li>
-                              <p>Daily Risk On & Off Meter – Tells you where the market is headed</p>
+                              <p>Fastest growing private Discord Server with thousands of traders & investors</p>
                             </li>
                             <li>
-                              <p>Fear & Greed Score – A worthy tool for every investor</p>
+                              <p>Constant platform upgrades with first class member support</p>
                             </li>
                             <li>
-                              <p>Daily Sector Opportunity Map</p>
-                            </li>
-                            <li>
-                              <p>Daily Allocation Charts for each stock and ETF</p>
+                              <p>Daily live trading rooms, training sessions and strategy guides for all members</p>
                             </li>
                           </ul>
                         </div>
@@ -256,86 +342,90 @@ if (localStorage.getItem('darkMode') === "on") {
                     </div>
                   </div>
                   <p class="bot_txt mb-0">As a special plan user, you are not eligible to upgrade/downgrade your subscription. If any query, kindly get in touch with at support@ovtlyr.com.</p>
-                  <div class="plan_boxes mt-4" style="display: none;">
+                  <div class="plan_boxes mt-4">
                     <div class="plan_boxes1 blue_box">
                       <div class="check_icon">
                         <span class="material-symbols-outlined">done</span>
                       </div>
-                      <div class="serial1">
-                        <div class="serial11">
-                          <h4>Trial Plan</h4>
-                          <p>Expiration date <b>23/03/23</b></p>
+                      <div class="serial0">
+                        <div class="serial1">
+                          <div class="serial11">
+                            <h4>Ovtlyr Annual Pass<span>(Active)</span></h4>
+                          </div>
                         </div>
-                      </div>
-                      <div class="serial2">
-                        <p>You have 8 days</p>
+                        <div class="serial2">
+                          <h3 class="hide_txt" style="display: block;">$299<span> /year + Tax</span></h3>
+                          <h3 class="show_txt" style="display: none;"><del>$15</del> $10<span>/month</span> <span class="small">(10% coupon applied)</span></h3>
+                        </div>
+                        <div class="serial11">
+                          <p>Next Billing Date: <b>Jun 29, 2026</b></p>
+                        </div>
                       </div>
                       <div class="serial3">
                         <div class="serial31">
-                          <a href="#" class="white_btn">Join Today</a>
+                          <a href="#" class="white_btn">Swith to Monthly</a>
+                          <a href="#" class="white_btn" data-bs-toggle="modal" data-bs-target="#cancelPlan_modal">Cancel Plan</a>
                         </div>
                         <!-- <div class="serial32">
                           <p>Expiration date <b>23/03/23</b></p>
                         </div> -->
                       </div>
                     </div>
-                  </div>
-                  <div class="plan_boxes mt-4" style="display: none;">
-                    <div class="plan_boxes1 blue_box">
+                    <div class="plan_boxes1 purple_box">
+                      <div class="borderDesign">
+                        <span></span>
+                        <span class="borderCircle"></span>
+                        <span class="borderCircle"></span>
+                      </div>
                       <div class="serial1">
                         <div class="serial11">
-                          <h4>Trial Plan</h4>
+                          <h4>OVTLYR Difference:</h4>
+                          <ul>
+                            <li>
+                              <p>Unique behavioral data that is only available on OVTLYR platform</p>
+                            </li>
+                            <li>
+                              <p>Constant addition of traditional indicators and data for both traders & investors.</p>
+                            </li>
+                            <li>
+                              <p>Fastest growing private Discord Server with thousands of traders & investors</p>
+                            </li>
+                            <li>
+                              <p>Constant platform upgrades with first class member support</p>
+                            </li>
+                            <li>
+                              <p>Daily live trading rooms, training sessions and strategy guides for all members</p>
+                            </li>
+                          </ul>
                         </div>
                       </div>
-                      <div class="serial2">
-                        <input type="text" placeholder="Enter Coupon Code" />
+                    </div>
+                  </div>
+                  <p class="bot_txt mb-0">As a special plan user, you are not eligible to upgrade/downgrade your subscription. If any query, kindly get in touch with at support@ovtlyr.com.</p>
+                </div>
+                <div class="subscription_b1">
+                  <h6>Scheduled Plan</h6>
+                  <div class="plan_boxes">
+                    <div class="plan_boxes1 blue_box">
+                      <div class="serial0">
+                        <div class="serial1">
+                          <div class="serial11">
+                            <h4>Ovtlyr Monthly</h4>
+                          </div>
+                        </div>
+                        <div class="serial2">
+                          <h3 class="hide_txt" style="display: block;">$69<span> /month + Tax</span></h3>
+                          <h3 class="show_txt" style="display: none;"><del>$15</del> $10<span>/month</span> <span class="small">(10% coupon applied)</span></h3>
+                        </div>
+                        <div class="serial11">
+                          <p>Subscription Start Date: <b>Aug 12, 2025</b></p>
+                        </div>
                       </div>
                       <div class="serial3">
                         <div class="serial31">
-                          <a href="#" class="white_btn">Apply</a>
+                          <a href="#" class="white_btn">Cancel Plan</a>
                         </div>
                       </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="subscription_b1 upgradePlan">
-                  <h6>Upgrade to Annual</h6>
-                  <p class="planBottom">Paying <span class="red_color">$69</span> every month adds up fast—but for a limited time, you can <span class="green_color">Save 64%</span> and get a full year of OVTLYR for Just <span class="green_color">$299</span>. That’s $529 in savings you can keep for trading, investing, or whatever you want. Why overpay when you don’t have to?</p>
-                  <div class="planComparison">
-                    <div class="planCom planCom1">
-                      <ul>
-                        <li><h4>Monthly</h4></li>
-                        <li>
-                          <div class="actualPric">
-                            <!-- <s>$49</s> -->
-                            <span class="smallPri"><small class="price_symbol">$</small>69</span>
-                            <span class="permonth">/month</span>
-                          </div>
-                          <span class="permonth2">+ Taxes</span>
-                          <!-- <p class="billed_an"><span class="offer_p">50% Off for First Month</span></p> -->
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="planCom planCom1">
-                      <ul>
-                        <li><h4>Annual</h4></li>
-                        <li>
-                          <div class="actualPric">
-                            <!-- <s>$49</s> -->
-                            <span class="smallPri"><small class="price_symbol">$</small>24.92</span>
-                            <span class="permonth">/month (Billed Annually)</span>
-                          </div>
-                          <span class="permonth2">+ Taxes</span>
-                          <p class="billed_an">Save <!-- <s>$588</s> --> <b> $289</b>/year</p>
-                          <!-- <p class="billed_an"><span class="offer_p">49% Off Forever</span></p> -->
-                          <div class="footerBtn">
-                            <button type="button" class="switch_btn">Switch to Annual</button>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="arrowBetween">
-                      <img src="images/switch-arrow.svg" alt="">
                     </div>
                   </div>
                 </div>
@@ -489,6 +579,44 @@ if (localStorage.getItem('darkMode') === "on") {
                 </div>
               </div>
               <!--======== SUBSCRIPTION VIDEO POPUP END =========-->
+              <!--======== CHANGE PLAN POPUP BEGIN ========-->
+              <div class="modal upgrade_popup fade" id="changePlan_modal" tabindex="-1" aria-labelledby="changePlan_modalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <button type="button" class="close_btn" data-bs-dismiss="modal" aria-label="Close"><span class="material-icons">close</span></button>
+                      <div class="modal_body">
+                        <h5>Switch to Annual</h5>
+                        <p>Your current subscription will stay active until the end of your billing period of current plan. The new plan will start right after that and is now scheduled. Would you like to proceed?</p>
+                      </div>
+                      <div class="modal_btns">
+                        <a href="#" class="border_btn" data-bs-dismiss="modal" aria-label="Close">Cancel</a>
+                        <a href="#" class="filled_btn" data-bs-dismiss="modal" aria-label="Close">Yes</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--======== CHANGE PLAN POPUP END =========-->
+              <!--======== ANNUAL PLAN POPUP BEGIN ========-->
+              <div class="modal upgrade_popup fade" id="annualPlan_modal" tabindex="-1" aria-labelledby="annualPlan_modalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <button type="button" class="close_btn" data-bs-dismiss="modal" aria-label="Close"><span class="material-icons">close</span></button>
+                      <div class="modal_body">
+                        <h5>Switch to Annual</h5>
+                        <p>You will be charged $299/year + tax (a total of $323.67) today. Would you like to proceed?</p>
+                      </div>
+                      <div class="modal_btns">
+                        <a href="#" class="border_btn" data-bs-dismiss="modal" aria-label="Close">Cancel</a>
+                        <a href="#" class="filled_btn" data-bs-dismiss="modal" aria-label="Close">Yes</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--======== ANNUAL PLAN POPUP END =========-->
               <!--======== CANCEL PLAN POPUP 1 BEGIN ========-->
               <div class="modal upgrade_popup fade" id="cancelPlan_modal" tabindex="-1" aria-labelledby="cancelPlan_modalLabel" aria-hidden="true">
                 <div class="modal-dialog">
@@ -718,28 +846,6 @@ if (localStorage.getItem('darkMode') === "on") {
 <!--===== STOP MODAL PLAYING END =====-->
 <script>
 document.createElement('show-desk' , 'show-mob');
-</script>
-<script>
-$(document).ready(function(){
-  if($('a.nav-link.annual_link').hasClass('active')){
-    $('.show_txt').hide();
-    $('.hide_txt').show();
-  }
-  else{
-    $('.show_txt').show();
-    $('.hide_txt').hide();
-  }
-  if($('.serial12 a.nav-link').click(function(){
-    if($('a.nav-link.annual_link').hasClass('active')) {
-      $('.show_txt').hide();
-      $('.hide_txt').show();
-    }
-    else{
-      $('.show_txt').show();
-      $('.hide_txt').hide();
-    }
-  }));
-});
 </script>
 </body>
 </html>
