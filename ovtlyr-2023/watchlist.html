@@ -116,7 +116,8 @@ if (localStorage.getItem('darkMode') === "on") {
                   <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="settingsButton" >
                     <li><a class="dropdown-item" href="subscription-all.html"><p class="mb-0">Subscription Management</p></a></li>
                     <li><a class="dropdown-item" href="notification.html"><p class="mb-0">Notification Management</p></a></li>
-                    <li><a class="dropdown-item" href="affiliate-info.html"><p class="mb-0">Referral Dashboard</p></a></li>
+                    <li><a class="dropdown-item" href="promoter.html"><p class="mb-0">Referral Dashboard</p></a></li>
+                    <li><a class="dropdown-item" href="documentation.html"><p class="mb-0">Documentation</p></a></li>
                     <li><a class="dropdown-item" href="tutorials.html"><p class="mb-0">Tutorials</p></a></li>
                     <li><a class="dropdown-item" href="contact.html"><p class="mb-0">Contact Us</p></a></li>
                     <li>
@@ -227,7 +228,7 @@ if (localStorage.getItem('darkMode') === "on") {
           </div>
         </div>
         <div class="watchlist_dash">
-          <div class="watchlist_tabs">
+          <div class="watchlist_tabs gridSec_1">
             <ul class="nav nav-tabs" id="myTab" role="tablist">
               <li class="nav-item favList_tab justify-content-between" role="watchlist">
                 <div class="favlist_noti">
@@ -250,15 +251,51 @@ if (localStorage.getItem('darkMode') === "on") {
                   <i class="fa-regular fa-bell bell_icon"></i>
                 </button>
               </li>
-              <li class="nav-item bullList_tab" role="watchlist">
+              <!--==== BULL LIST HEAD ====-->
+              <li class="nav-item bullList_tab" role="watchlist" style="display: none;">
                 <button class="nav-link" id="bullslist-tab" data-bs-toggle="tab" data-bs-target="#bullslisttab" type="button" role="tab" aria-controls="bullslisttab" aria-selected="false" tabindex="-1">
                   <div><img src="images/bull-box.svg" alt="Bull">Bull List </div><span>(10 New, 550 Total)</span>
                 </button>
+                <div class="drop_box">
+                  <div class="sort_dropdown">
+                    <button class="dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                      <li><a class="dropdown-item active" href="#"><p class="mb-0">Bull List</p></a></li>
+                      <li><a class="dropdown-item" href="#"><p class="mb-0">Bear List</p></a></li>
+                      <li><a class="dropdown-item" href="#"><p class="mb-0">High News Coverage List</p></a></li>
+                    </ul>
+                  </div>
+                </div>
               </li>
-              <li class="nav-item bearList_tab" role="watchlist">
+              <!--==== BEAR LIST HEAD ====-->
+              <li class="nav-item bearList_tab" role="watchlist" style="display: none;">
                 <button class="nav-link" id="bearslist-tab" data-bs-toggle="tab" data-bs-target="#bearslisttab" type="button" role="tab" aria-controls="bearslisttab" aria-selected="false" tabindex="-1">
                   <div><img src="images/bear-box.svg" alt="Bear">Bear List </div><span>(10 New, 550 Total)</span>
                 </button>
+                <div class="drop_box">
+                  <div class="sort_dropdown">
+                    <button class="dropdown-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+                      <li><a class="dropdown-item" href="#"><p class="mb-0">Bull List</p></a></li>
+                      <li><a class="dropdown-item active" href="#"><p class="mb-0">Bear List</p></a></li>
+                      <li><a class="dropdown-item" href="#"><p class="mb-0">High News Coverage List</p></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <!--==== NEWS LIST HEAD ====-->
+              <li class="nav-item sentiment_tab" role="watchlist">
+                <button class="nav-link" id="sentiment-tab" data-bs-toggle="tab" data-bs-target="#sentimenttab" type="button" role="tab" aria-controls="sentimenttab" aria-selected="true">High News Coverage List</button>
+                <div class="drop_box">
+                  <div class="sort_dropdown">
+                    <button class="dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                      <li><a class="dropdown-item active" href="#"><p class="mb-0">Bull List</p></a></li>
+                      <li><a class="dropdown-item" href="#"><p class="mb-0">Bear List</p></a></li>
+                      <li><a class="dropdown-item" href="#"><p class="mb-0">High News Coverage List</p></a></li>
+                    </ul>
+                  </div>
+                </div>
               </li>
             </ul>
             <div class="watchlist_listing">
@@ -303,7 +340,51 @@ if (localStorage.getItem('darkMode') === "on") {
                                   </div>
                                 </th>
                                 <th>Sector</th>
-                                <th class="align__items">Overlay</th>
+                                <th class="dropdown drop_box">
+                                  <div class="sort_dropdown">
+                                    <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Overlay</button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                      <li><a class="dropdown-item" href="#"><p><span class="whiteBox"><span class="drop_text">All</span></span></p></a></li>
+                                      <li><a class="dropdown-item" href="#"><p><span class="greenBox"><span class="drop_text">Uptrend</span></span></p></a></li>
+                                      <li><a class="dropdown-item" href="#"><p><span class="redBox"><span class="drop_text">Downtrend</span></span></p></a></li>
+                                      <li><a class="dropdown-item" href="#"><p><span class="blueBox"><span class="drop_text">Neutral</span></span></p></a></li>
+                                    </ul>
+                                  </div>
+                                </th>
+                                <th class="dropdown drop_box">
+                                  <div class="sort_dropdown">
+                                    <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Overlay Start Date</button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                      <li><a class="dropdown-item" href="#"><p class="mb-0">Latest to Oldest</p></a></li>
+                                      <li><a class="dropdown-item" href="#"><p class="mb-0">Oldest to Latest</p></a></li>
+                                    </ul>
+                                  </div>
+                                </th>
+                                <th>
+                                  <div class="newsCol">
+                                    <span>News Coverage</span>
+                                    <div class="tooltip_hover4">
+                                      <span class="material-symbols-outlined">info</span>
+                                      <div class="tooltip_box tooltip_box4">
+                                        <div class="newsCol1">
+                                          <p><b>UNA</b> - Unusual News Activity</p>
+                                          <p><b>TMT</b> - Top Mentions Today</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="dropdown drop_box">
+                                      <div class="sort_dropdown">
+                                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                          <li><a class="dropdown-item" href="#"><p>UNA Only</p></a></li>
+                                          <li><a class="dropdown-item" href="#"><p>TMT Only</p></a></li>
+                                          <li><a class="dropdown-item" href="#"><p>All</p></a></li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </th>
+                                <th>OC Status</th>
                                 <th class="dropdown drop_box">
                                   <div class="sort_dropdown">
                                     <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Last Day Close</button>
@@ -343,6 +424,11 @@ if (localStorage.getItem('darkMode') === "on") {
                                 <td><p>01-02-2022</p></td>
                                 <td><p><span class="arrows arrow_up">Utilities</span></p></td>
                                 <td class="align__items"><p><span class="greenBox"></span></p></td>
+                                <td class="align__items"><p><span class="date_start">Aug 04,2025</span></p></td>
+                                <td class="align__items">
+                                  <p class="newsTD"><span class="greyBg">UNA</span><span class="greenBg">TMT</span></p>
+                                </td>
+                                <td><p class="greenBg">OC</p></td>
                                 <td><p>$2.04</p></td>
                                 <td><p>4.3M</p></td>
                               </tr>
@@ -362,6 +448,11 @@ if (localStorage.getItem('darkMode') === "on") {
                                 <td><p>01-02-2022</p></td>
                                 <td><p><span class="arrows arrow_up">Utilities</span></p></td>
                                 <td class="align__items"><p><span class="redBox"></span></p></td>
+                                <td class="align__items"><p><span class="date_start">Aug 04,2025</span></p></td>
+                                <td class="align__items">
+                                  <p class="newsTD"><span class="greyBg">UNA</span><span class="greenBg">TMT</span></p>
+                                </td>
+                                <td><p class="pinkBg">OC</p></td>
                                 <td><p>$2.04</p></td>
                                 <td><p>4.3M</p></td>
                               </tr>
@@ -381,6 +472,11 @@ if (localStorage.getItem('darkMode') === "on") {
                                 <td><p>01-02-2022</p></td>
                                 <td><p><span class="arrows arrow_up">Utilities</span></p></td>
                                 <td class="align__items"><p><span class="redBox"></span></p></td>
+                                <td class="align__items"><p><span class="date_start">Aug 04,2025</span></p></td>
+                                <td class="align__items">
+                                  <p class="newsTD"><span class="greyBg">UNA</span><span class="greyBg">TMT</span></p>
+                                </td>
+                                <td><p class="greenBg">OC</p></td>
                                 <td><p>$2.04</p></td>
                                 <td><p>4.3M</p></td>
                               </tr>
@@ -399,7 +495,12 @@ if (localStorage.getItem('darkMode') === "on") {
                                 <td><p class="sell_stock">Sell</p></td>
                                 <td><p>01-02-2022</p></td>
                                 <td><p><span class="arrows arrow_up">Technology</span></p></td>
-                                <td class="align__items"><p><span class="orgBox"></span></p></td>
+                                <td class="align__items"><p><span class="blueBox"></p></td>
+                                <td class="align__items"><p><span class="date_start">Aug 04,2025</span></p></td>
+                                <td class="align__items">
+                                  <p class="newsTD"><span class="greyBg">UNA</span><span class="greyBg">TMT</span></p>
+                                </td>
+                                <td><p class="pinkBg">OC</p></td>
                                 <td><p>$2.04</p></td>
                                 <td><p>4.3M</p></td>
                               </tr>
@@ -419,6 +520,11 @@ if (localStorage.getItem('darkMode') === "on") {
                                 <td><p>01-02-2022</p></td>
                                 <td><p><span class="arrows arrow_down">Technology</span></p></td>
                                 <td class="align__items"><p><span class="greenBox"></span></p></td>
+                                <td class="align__items"><p><span class="date_start">Aug 04,2025</span></p></td>
+                                <td class="align__items">
+                                  <p class="newsTD"><span class="greenBg">UNA</span><span class="greenBg">TMT</span></p>
+                                </td>
+                                <td><p class="greenBg">OC</p></td>
                                 <td><p>$2.04</p></td>
                                 <td><p>4.3M</p></td>
                               </tr>
@@ -437,7 +543,7 @@ if (localStorage.getItem('darkMode') === "on") {
                               </span>
                             </p>
                             <p>
-                              <span>Status</span>
+                              <span>Current Signal</span>
                               <span class="buy_stock">Buy</span>
                             </p>
                             <p>
@@ -450,11 +556,37 @@ if (localStorage.getItem('darkMode') === "on") {
                             </p>
                             <p>
                               <span>Overlay</span>
-                              <span class="greenBox"></span>
+                              <span><span class="greenBox"></span> Uptrend</span>
+                            </p>
+                            <p>
+                              <span>Overlay Start Date</span>
+                              <span>01-02-2023</span>
+                            </p>
+                            <p>
+                              <span>News Coverage
+                                <span class="tooltip_hover2 mobileTooltip">
+                                  <span class="material-symbols-outlined">info</span>
+                                  <span class="tooltip_box tooltip_box2">
+                                    <span class="newsCol1">
+                                      <span><b>UNA</b> - Unusual News Activity</span>
+                                      <span><b>TMT</b> - Top Mentions Today</span>
+                                    </span>
+                                  </span>
+                                </span>
+                              </span>
+                              <span class="newsTD"><span class="greenBg">UNA</span><span class="greyBg">TMT</span></span>
+                            </p>
+                            <p>
+                              <span>OC Status</span>
+                              <span class="greenBg">OC</span>
                             </p>
                             <p>
                               <span>Last Day Close</span>
                               <span>$2.04</span>
+                            </p>
+                            <p>
+                              <span>30-Day Avg. Vol.</span>
+                              <span>4.3M</span>
                             </p>
                           </a>
                         </div>
@@ -468,7 +600,7 @@ if (localStorage.getItem('darkMode') === "on") {
                               </span>
                             </p>
                             <p>
-                              <span>Status</span>
+                              <span>Current Signal</span>
                               <span class="sell_stock">Sell</span>
                             </p>
                             <p>
@@ -477,15 +609,41 @@ if (localStorage.getItem('darkMode') === "on") {
                             </p>
                             <p>
                               <span>Sector</span>
-                              <span><span class="arrows arrow_down">Utilities</span></span>
+                              <span><span class="arrows arrow_up">Utilities</span></span>
                             </p>
                             <p>
                               <span>Overlay</span>
-                              <span class="greenBox"></span>
+                              <span><span class="redBox"></span> Downtrend</span>
+                            </p>
+                            <p>
+                              <span>Overlay Start Date</span>
+                              <span>01-02-2023</span>
+                            </p>
+                            <p>
+                              <span>News Coverage
+                                <span class="tooltip_hover2 mobileTooltip">
+                                  <span class="material-symbols-outlined">info</span>
+                                  <span class="tooltip_box tooltip_box2">
+                                    <span class="newsCol1">
+                                      <span><b>UNA</b> - Unusual News Activity</span>
+                                      <span><b>TMT</b> - Top Mentions Today</span>
+                                    </span>
+                                  </span>
+                                </span>
+                              </span>
+                              <span class="newsTD"><span class="greenBg">UNA</span><span class="greyBg">TMT</span></span>
+                            </p>
+                            <p>
+                              <span>OC Status</span>
+                              <span class="pinkBg">OC</span>
                             </p>
                             <p>
                               <span>Last Day Close</span>
                               <span>$2.04</span>
+                            </p>
+                            <p>
+                              <span>30-Day Avg. Vol.</span>
+                              <span>4.3M</span>
                             </p>
                           </a>
                         </div>
@@ -499,7 +657,7 @@ if (localStorage.getItem('darkMode') === "on") {
                               </span>
                             </p>
                             <p>
-                              <span>Status</span>
+                              <span>Current Signal</span>
                               <span class="buy_stock">Buy</span>
                             </p>
                             <p>
@@ -512,11 +670,37 @@ if (localStorage.getItem('darkMode') === "on") {
                             </p>
                             <p>
                               <span>Overlay</span>
-                              <span class="greenBox"></span>
+                              <span><span class="blueBox"></span> Neutral</span>
+                            </p>
+                            <p>
+                              <span>Overlay Start Date</span>
+                              <span>01-02-2023</span>
+                            </p>
+                            <p>
+                              <span>News Coverage
+                                <span class="tooltip_hover2 mobileTooltip">
+                                  <span class="material-symbols-outlined">info</span>
+                                  <span class="tooltip_box tooltip_box2">
+                                    <span class="newsCol1">
+                                      <span><b>UNA</b> - Unusual News Activity</span>
+                                      <span><b>TMT</b> - Top Mentions Today</span>
+                                    </span>
+                                  </span>
+                                </span>
+                              </span>
+                              <span class="newsTD"><span class="greenBg">UNA</span><span class="greyBg">TMT</span></span>
+                            </p>
+                            <p>
+                              <span>OC Status</span>
+                              <span class="pinkBg">OC</span>
                             </p>
                             <p>
                               <span>Last Day Close</span>
                               <span>$2.04</span>
+                            </p>
+                            <p>
+                              <span>30-Day Avg. Vol.</span>
+                              <span>4.3M</span>
                             </p>
                           </a>
                         </div>
@@ -540,8 +724,53 @@ if (localStorage.getItem('darkMode') === "on") {
                                     </ul>
                                   </div>
                                 </th>
-                                <th>Sector <a href="javascript:void(0);"><span class="icon_filter material-icons">filter_alt</span></a></th>
-                                <th class="align__items">Overlay</th>
+                                <th>Sector/Index</th>
+                                <th class="dropdown drop_box">
+                                  <div class="sort_dropdown">
+                                    <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Overlay</button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                      <li><a class="dropdown-item" href="#"><p><span class="whiteBox"><span class="drop_text">All</span></span></p></a></li>
+                                      <li><a class="dropdown-item" href="#"><p><span class="greenBox"><span class="drop_text">Uptrend</span></span></p></a></li>
+                                      <li><a class="dropdown-item" href="#"><p><span class="redBox"><span class="drop_text">Downtrend</span></span></p></a></li>
+                                      <li><a class="dropdown-item" href="#"><p><span class="blueBox"><span class="drop_text">Neutral</span></span></p></a></li>
+                                    </ul>
+                                  </div>
+                                </th>
+                                <th class="dropdown drop_box">
+                                  <div class="sort_dropdown">
+                                    <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Overlay Start Date</button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                      <li><a class="dropdown-item" href="#"><p class="mb-0">Latest to Oldest</p></a></li>
+                                      <li><a class="dropdown-item" href="#"><p class="mb-0">Oldest to Latest</p></a></li>
+                                    </ul>
+                                  </div>
+                                </th>
+                                <th>
+                                  <div class="newsCol">
+                                    <span>News Coverage</span>
+                                    <div class="tooltip_hover4">
+                                      <span class="material-symbols-outlined">info</span>
+                                      <div class="tooltip_box tooltip_box4">
+                                        <div class="newsCol1">
+                                          <p><b>UNA</b> - Unusual News Activity</p>
+                                          <p><b>TMT</b> - Top Mentions Today</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="dropdown drop_box">
+                                      <div class="sort_dropdown">
+                                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                          <li><a class="dropdown-item" href="#"><p>UNA Only</p></a></li>
+                                          <li><a class="dropdown-item" href="#"><p>TMT Only</p></a></li>
+                                          <li><a class="dropdown-item" href="#"><p>All</p></a></li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </th>
+                                <th>OC Status</th>
+                                <th>OC Score</th>
                                 <th class="dropdown drop_box">
                                   <div class="sort_dropdown">
                                     <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Last Day Close</button>
@@ -580,7 +809,13 @@ if (localStorage.getItem('darkMode') === "on") {
                                 <td><p class="sell_stock">Sell</p></td>
                                 <td><p>01-02-2022</p></td>
                                 <td><p><span class="arrows arrow_up">Technology</span></p></td>
-                                <td class="align__items"><p><span class="orgBox"></span></p></td>
+                                <td class="align__items"><p><span class="blueBox"></span></p></td>
+                                <td class="align__items"><p><span class="date_start">Aug 04,2025</span></p></td>
+                                <td class="align__items">
+                                  <p class="newsTD"><span class="greyBg">UNA</span><span class="greenBg">TMT</span></p>
+                                </td>
+                                <td><p class="pinkBg">OC</p></td>
+                                <td><p>+2</p></td>
                                 <td><p>$2.04</p></td>
                                 <td><p>4.3M</p></td>
                               </tr>
@@ -600,6 +835,12 @@ if (localStorage.getItem('darkMode') === "on") {
                                 <td><p>01-02-2022</p></td>
                                 <td><p><span class="arrows arrow_up">Utilities</span></p></td>
                                 <td class="align__items"><p><span class="greenBox"></span></p></td>
+                                <td class="align__items"><p><span class="date_start">Aug 04,2025</span></p></td>
+                                <td class="align__items">
+                                  <p class="newsTD"><span class="greenBg">UNA</span><span class="greenBg">TMT</span></p>
+                                </td>
+                                <td><p class="greenBg">OC</p></td>
+                                <td><p>+1</p></td>
                                 <td><p>$2.04</p></td>
                                 <td><p>4.3M</p></td>
                               </tr>
@@ -618,7 +859,7 @@ if (localStorage.getItem('darkMode') === "on") {
                               </span>
                             </p>
                             <p>
-                              <span>Status</span>
+                              <span>Current Signal</span>
                               <span class="buy_stock">Buy</span>
                             </p>
                             <p>
@@ -626,16 +867,46 @@ if (localStorage.getItem('darkMode') === "on") {
                               <span>01-02-2023</span>
                             </p>
                             <p>
-                              <span>Sector/Index</span>
-                              <span><span class="arrows arrow_down">Utilities</span></span>
+                              <span>Sector</span>
+                              <span><span class="arrows arrow_up">Utilities</span></span>
                             </p>
                             <p>
                               <span>Overlay</span>
-                              <span class="greenBox"></span>
+                              <span><span class="greenBox"></span> Uptrend</span>
+                            </p>
+                            <p>
+                              <span>Overlay Start Date</span>
+                              <span>01-02-2023</span>
+                            </p>
+                            <p>
+                              <span>News Coverage
+                                <span class="tooltip_hover4 mobileTooltip">
+                                  <span class="material-symbols-outlined">info</span>
+                                  <span class="tooltip_box tooltip_box4">
+                                    <span class="newsCol1">
+                                      <span><b>UNA</b> - Unusual News Activity</span>
+                                      <span><b>TMT</b> - Top Mentions Today</span>
+                                    </span>
+                                  </span>
+                                </span>
+                              </span>
+                              <span class="newsTD"><span class="greenBg">UNA</span><span class="greyBg">TMT</span></span>
+                            </p>
+                            <p>
+                              <span>OC Status</span>
+                              <span class="greenBg">OC</span>
+                            </p>
+                            <p>
+                              <span>OC Score</span>
+                              <span>+1</span>
                             </p>
                             <p>
                               <span>Last Day Close</span>
                               <span>$2.04</span>
+                            </p>
+                            <p>
+                              <span>30-Day Avg. Vol.</span>
+                              <span>4.3M</span>
                             </p>
                           </a>
                         </div>
@@ -649,7 +920,7 @@ if (localStorage.getItem('darkMode') === "on") {
                               </span>
                             </p>
                             <p>
-                              <span>Status</span>
+                              <span>Current Signal</span>
                               <span class="sell_stock">Sell</span>
                             </p>
                             <p>
@@ -657,16 +928,46 @@ if (localStorage.getItem('darkMode') === "on") {
                               <span>01-02-2023</span>
                             </p>
                             <p>
-                              <span>Sector/Index</span>
+                              <span>Sector</span>
                               <span><span class="arrows arrow_up">Utilities</span></span>
                             </p>
                             <p>
                               <span>Overlay</span>
-                              <span class="greenBox"></span>
+                              <span><span class="redBox"></span> Downtrend</span>
+                            </p>
+                            <p>
+                              <span>Overlay Start Date</span>
+                              <span>01-02-2023</span>
+                            </p>
+                            <p>
+                              <span>News Coverage
+                                <span class="tooltip_hover4 mobileTooltip">
+                                  <span class="material-symbols-outlined">info</span>
+                                  <span class="tooltip_box tooltip_box4">
+                                    <span class="newsCol1">
+                                      <span><b>UNA</b> - Unusual News Activity</span>
+                                      <span><b>TMT</b> - Top Mentions Today</span>
+                                    </span>
+                                  </span>
+                                </span>
+                              </span>
+                              <span class="newsTD"><span class="greenBg">UNA</span><span class="greyBg">TMT</span></span>
+                            </p>
+                            <p>
+                              <span>OC Status</span>
+                              <span class="pinkBg">OC</span>
+                            </p>
+                            <p>
+                              <span>OC Score</span>
+                              <span>+2</span>
                             </p>
                             <p>
                               <span>Last Day Close</span>
                               <span>$2.04</span>
+                            </p>
+                            <p>
+                              <span>30-Day Avg. Vol.</span>
+                              <span>4.3M</span>
                             </p>
                           </a>
                         </div>
@@ -680,7 +981,7 @@ if (localStorage.getItem('darkMode') === "on") {
                               </span>
                             </p>
                             <p>
-                              <span>Status</span>
+                              <span>Current Signal</span>
                               <span class="buy_stock">Buy</span>
                             </p>
                             <p>
@@ -688,16 +989,46 @@ if (localStorage.getItem('darkMode') === "on") {
                               <span>01-02-2023</span>
                             </p>
                             <p>
-                              <span>Sector/Index</span>
+                              <span>Sector</span>
                               <span><span class="arrows arrow_up">Utilities</span></span>
                             </p>
                             <p>
                               <span>Overlay</span>
-                              <span class="redBox"></span>
+                              <span><span class="blueBox"></span> Neutral</span>
+                            </p>
+                            <p>
+                              <span>Overlay Start Date</span>
+                              <span>01-02-2023</span>
+                            </p>
+                            <p>
+                              <span>News Coverage
+                                <span class="tooltip_hover4 mobileTooltip">
+                                  <span class="material-symbols-outlined">info</span>
+                                  <span class="tooltip_box tooltip_box4">
+                                    <span class="newsCol1">
+                                      <span><b>UNA</b> - Unusual News Activity</span>
+                                      <span><b>TMT</b> - Top Mentions Today</span>
+                                    </span>
+                                  </span>
+                                </span>
+                              </span>
+                              <span class="newsTD"><span class="greenBg">UNA</span><span class="greyBg">TMT</span></span>
+                            </p>
+                            <p>
+                              <span>OC Status</span>
+                              <span class="pinkBg">OC</span>
+                            </p>
+                            <p>
+                              <span>OC Score</span>
+                              <span>+1</span>
                             </p>
                             <p>
                               <span>Last Day Close</span>
                               <span>$2.04</span>
+                            </p>
+                            <p>
+                              <span>30-Day Avg. Vol.</span>
+                              <span>4.3M</span>
                             </p>
                           </a>
                         </div>
@@ -705,7 +1036,8 @@ if (localStorage.getItem('darkMode') === "on") {
                     </div>
                   </div>
                 </div>
-                <div class="tab-pane fade" id="bullslisttab" role="tabpanel" aria-labelledby="bullslist-tab">
+                <!--==== BULL LIST BODY ====-->
+                <div class="tab-pane fade" id="bullslisttab" role="tabpanel" aria-labelledby="bullslist-tab" style="display: none;">
                   <div class="bullList_tabC">
                     <div class="table_head">
                       <div class="fav_rankTabs">
@@ -733,7 +1065,7 @@ if (localStorage.getItem('darkMode') === "on") {
                             <table class="table ovtlyr_table favList__table bullTable_2">
                               <thead class="sticky-top">
                                 <tr class="ovtlyr__row_head">
-                                  <th width="16%">Symbol</th>
+                                  <th>Symbol</th>
                                   <th>Current Signal</th>
                                   <th class="dropdown drop_box">
                                     <div class="sort_dropdown">
@@ -745,17 +1077,52 @@ if (localStorage.getItem('darkMode') === "on") {
                                       </ul>
                                     </div>
                                   </th>
-                                  <th>Sector <a href="#" class="show_filters"><span class="icon_filter material-icons">filter_alt</span></a></th>
-                                  <th class="align__items dropdown drop_box">
-                                    <div class="">
+                                  <th>Sector <a href="javascript:void(0);" class="show_filters"><span class="material-symbols-outlined icon_filter">filter_alt</span></a></th>
+                                  <th class="dropdown drop_box">
+                                    <div class="sort_dropdown">
                                       <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Overlay</button>
                                       <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                                         <li><a class="dropdown-item" href="#"><p><span class="whiteBox"><span class="drop_text">All</span></span></p></a></li>
                                         <li><a class="dropdown-item" href="#"><p><span class="greenBox"><span class="drop_text">Uptrend</span></span></p></a></li>
                                         <li><a class="dropdown-item" href="#"><p><span class="redBox"><span class="drop_text">Downtrend</span></span></p></a></li>
+                                        <li><a class="dropdown-item" href="#"><p><span class="blueBox"><span class="drop_text">Neutral</span></span></p></a></li>
                                       </ul>
                                     </div>
                                   </th>
+                                  <th class="dropdown drop_box">
+                                    <div class="sort_dropdown">
+                                      <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Overlay Start Date</button>
+                                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="#"><p class="mb-0">Latest to Oldest</p></a></li>
+                                        <li><a class="dropdown-item" href="#"><p class="mb-0">Oldest to Latest</p></a></li>
+                                      </ul>
+                                    </div>
+                                  </th>
+                                  <th>
+                                    <div class="newsCol">
+                                      <span>News Coverage</span>
+                                      <div class="tooltip_hover4">
+                                        <span class="material-symbols-outlined">info</span>
+                                        <div class="tooltip_box tooltip_box4">
+                                          <div class="newsCol1">
+                                            <p><b>UNA</b> - Unusual News Activity</p>
+                                            <p><b>TMT</b> - Top Mentions Today</p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="dropdown drop_box">
+                                        <div class="sort_dropdown">
+                                          <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                                          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                            <li><a class="dropdown-item" href="#"><p>UNA Only</p></a></li>
+                                            <li><a class="dropdown-item" href="#"><p>TMT Only</p></a></li>
+                                            <li><a class="dropdown-item" href="#"><p>All</p></a></li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </th>
+                                  <th>OC Status</th>
                                   <th class="dropdown drop_box">
                                     <div class="sort_dropdown">
                                       <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Last Day Close</button>
@@ -795,6 +1162,11 @@ if (localStorage.getItem('darkMode') === "on") {
                                   <td><p>01-02-2022</p></td>
                                   <td><p><span class="arrows arrow_up">Utilities</span></p></td>
                                   <td class="align__items"><p><span class="greenBox"></span></p></td>
+                                  <td class="align__items"><p><span class="date_start">Aug 04,2025</span></p></td>
+                                  <td class="align__items">
+                                    <p class="newsTD"><span class="greyBg">UNA</span><span class="greenBg">TMT</span></p>
+                                  </td>
+                                  <td><p class="greenBg">OC</p></td>
                                   <td><p>$2.04</p></td>
                                   <td><p>4.3M</p></td>
                                 </tr>
@@ -814,6 +1186,11 @@ if (localStorage.getItem('darkMode') === "on") {
                                   <td><p>01-02-2022</p></td>
                                   <td><p><span class="arrows arrow_up">Utilities</span></p></td>
                                   <td class="align__items"><p><span class="greenBox"></span></p></td>
+                                  <td class="align__items"><p><span class="date_start">Aug 04,2025</span></p></td>
+                                  <td class="align__items">
+                                    <p class="newsTD"><span class="greyBg">UNA</span><span class="greyBg">TMT</span></p>
+                                  </td>
+                                  <td><p class="greenBg">OC</p></td>
                                   <td><p>$2.04</p></td>
                                   <td><p>4.3M</p></td>
                                 </tr>
@@ -833,6 +1210,11 @@ if (localStorage.getItem('darkMode') === "on") {
                                   <td><p>01-02-2022</p></td>
                                   <td><p><span class="arrows arrow_down">Technology</span></p></td>
                                   <td class="align__items"><p><span class="greenBox"></span></p></td>
+                                  <td class="align__items"><p><span class="date_start">Aug 04,2025</span></p></td>
+                                  <td class="align__items">
+                                    <p class="newsTD"><span class="greenBg">UNA</span><span class="greenBg">TMT</span></p>
+                                  </td>
+                                  <td><p class="pinkBg">OC</p></td>
                                   <td><p>$2.04</p></td>
                                   <td><p>4.3M</p></td>
                                 </tr>
@@ -852,6 +1234,11 @@ if (localStorage.getItem('darkMode') === "on") {
                                   <td><p>01-02-2022</p></td>
                                   <td><p><span class="arrows arrow_up">Utilities</span></p></td>
                                   <td class="align__items"><p><span class="greenBox"></span></p></td>
+                                  <td class="align__items"><p><span class="date_start">Aug 04,2025</span></p></td>
+                                  <td class="align__items">
+                                    <p class="newsTD"><span class="greenBg">UNA</span><span class="greenBg">TMT</span></p>
+                                  </td>
+                                  <td><p class="greenBg">OC</p></td>
                                   <td><p>$2.04</p></td>
                                   <td><p>4.3M</p></td>
                                 </tr>
@@ -871,6 +1258,11 @@ if (localStorage.getItem('darkMode') === "on") {
                                   <td><p>01-02-2022</p></td>
                                   <td><p><span class="arrows arrow_down">Technology</span></p></td>
                                   <td class="align__items"><p><span class="greenBox"></span></p></td>
+                                  <td class="align__items"><p><span class="date_start">Aug 04,2025</span></p></td>
+                                  <td class="align__items">
+                                    <p class="newsTD"><span class="greyBg">UNA</span><span class="greenBg">TMT</span></p>
+                                  </td>
+                                  <td><p class="greenBg">OC</p></td>
                                   <td><p>$2.04</p></td>
                                   <td><p>4.3M</p></td>
                                 </tr>
@@ -888,7 +1280,7 @@ if (localStorage.getItem('darkMode') === "on") {
                               </span>
                             </p>
                             <p>
-                              <span>Status</span>
+                              <span>Current Signal</span>
                               <span class="buy_stock">Buy</span>
                             </p>
                             <p>
@@ -901,11 +1293,37 @@ if (localStorage.getItem('darkMode') === "on") {
                             </p>
                             <p>
                               <span>Overlay</span>
-                              <span class="orgBox"></span>
+                              <span><span class="greenBox"></span> Uptrend</span>
+                            </p>
+                            <p>
+                              <span>Overlay Start Date</span>
+                              <span>01-02-2023</span>
+                            </p>
+                            <p>
+                              <span>News Coverage
+                                <span class="tooltip_hover4 mobileTooltip">
+                                  <span class="material-symbols-outlined">info</span>
+                                  <span class="tooltip_box tooltip_box4">
+                                    <span class="newsCol1">
+                                      <span><b>UNA</b> - Unusual News Activity</span>
+                                      <span><b>TMT</b> - Top Mentions Today</span>
+                                    </span>
+                                  </span>
+                                </span>
+                              </span>
+                              <span class="newsTD"><span class="greyBg">UNA</span><span class="greenBg">TMT</span></span>
+                            </p>
+                            <p>
+                              <span>OC Status</span>
+                              <span class="greenBg">OC</span>
                             </p>
                             <p>
                               <span>Last Day Close</span>
                               <span>$2.04</span>
+                            </p>
+                            <p>
+                              <span>30-Day Avg. Vol.</span>
+                              <span>4.3M</span>
                             </p>
                           </div>
                           <div class="favList_item active">
@@ -917,7 +1335,7 @@ if (localStorage.getItem('darkMode') === "on") {
                               </span>
                             </p>
                             <p>
-                              <span>Status</span>
+                              <span>Current Signal</span>
                               <span class="buy_stock">Buy</span>
                             </p>
                             <p>
@@ -930,11 +1348,37 @@ if (localStorage.getItem('darkMode') === "on") {
                             </p>
                             <p>
                               <span>Overlay</span>
-                              <span class="redBox"></span>
+                              <span><span class="redBox"></span> Downtrend</span>
+                            </p>
+                            <p>
+                              <span>Overlay Start Date</span>
+                              <span>01-02-2023</span>
+                            </p>
+                            <p>
+                              <span>News Coverage
+                                <span class="tooltip_hover4 mobileTooltip">
+                                  <span class="material-symbols-outlined">info</span>
+                                  <span class="tooltip_box tooltip_box4">
+                                    <span class="newsCol1">
+                                      <span><b>UNA</b> - Unusual News Activity</span>
+                                      <span><b>TMT</b> - Top Mentions Today</span>
+                                    </span>
+                                  </span>
+                                </span>
+                              </span>
+                              <span class="newsTD"><span class="greyBg">UNA</span><span class="greenBg">TMT</span></span>
+                            </p>
+                            <p>
+                              <span>OC Status</span>
+                              <span class="pinkBg">OC</span>
                             </p>
                             <p>
                               <span>Last Day Close</span>
                               <span>$2.04</span>
+                            </p>
+                            <p>
+                              <span>30-Day Avg. Vol.</span>
+                              <span>4.3M</span>
                             </p>
                           </div>
                           <div class="favList_item">
@@ -946,7 +1390,7 @@ if (localStorage.getItem('darkMode') === "on") {
                               </span>
                             </p>
                             <p>
-                              <span>Status</span>
+                              <span>Current Signal</span>
                               <span class="buy_stock">Buy</span>
                             </p>
                             <p>
@@ -959,11 +1403,37 @@ if (localStorage.getItem('darkMode') === "on") {
                             </p>
                             <p>
                               <span>Overlay</span>
-                              <span class="orgBox"></span>
+                              <span><span class="greenBox"></span> Uptrend</span>
+                            </p>
+                            <p>
+                              <span>Overlay Start Date</span>
+                              <span>01-02-2023</span>
+                            </p>
+                            <p>
+                              <span>News Coverage
+                                <span class="tooltip_hover4 mobileTooltip">
+                                  <span class="material-symbols-outlined">info</span>
+                                  <span class="tooltip_box tooltip_box4">
+                                    <span class="newsCol1">
+                                      <span><b>UNA</b> - Unusual News Activity</span>
+                                      <span><b>TMT</b> - Top Mentions Today</span>
+                                    </span>
+                                  </span>
+                                </span>
+                              </span>
+                              <span class="newsTD"><span class="greyBg">UNA</span><span class="greenBg">TMT</span></span>
+                            </p>
+                            <p>
+                              <span>OC Status</span>
+                              <span class="orgBg">OC</span>
                             </p>
                             <p>
                               <span>Last Day Close</span>
                               <span>$2.04</span>
+                            </p>
+                            <p>
+                              <span>30-Day Avg. Vol.</span>
+                              <span>4.3M</span>
                             </p>
                           </div>
                         </div>
@@ -974,7 +1444,7 @@ if (localStorage.getItem('darkMode') === "on") {
                             <table class="table ovtlyr_table favList__table bullTable_2">
                               <thead class="sticky-top">
                                 <tr class="ovtlyr__row_head">
-                                  <th width="16%">Symbol</th>
+                                  <th>Symbol</th>
                                   <th>Current Signal</th>
                                   <th class="dropdown drop_box">
                                     <div class="sort_dropdown">
@@ -984,6 +1454,50 @@ if (localStorage.getItem('darkMode') === "on") {
                                         <li><a class="dropdown-item" href="#"><p class="mb-0">Ascending</p></a></li>
                                         <li><a class="dropdown-item" href="#"><p class="mb-0">Descending</p></a></li>
                                       </ul>
+                                    </div>
+                                  </th>
+                                  <th class="dropdown drop_box">
+                                    <div class="sort_dropdown">
+                                      <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Overlay</button>
+                                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="#"><p><span class="whiteBox"><span class="drop_text">All</span></span></p></a></li>
+                                        <li><a class="dropdown-item" href="#"><p><span class="greenBox"><span class="drop_text">Uptrend</span></span></p></a></li>
+                                        <li><a class="dropdown-item" href="#"><p><span class="redBox"><span class="drop_text">Downtrend</span></span></p></a></li>
+                                        <li><a class="dropdown-item" href="#"><p><span class="blueBox"><span class="drop_text">Neutral</span></span></p></a></li>
+                                      </ul>
+                                    </div>
+                                  </th>
+                                  <th class="dropdown drop_box">
+                                    <div class="sort_dropdown">
+                                      <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Overlay Start Date</button>
+                                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="#"><p class="mb-0">Latest to Oldest</p></a></li>
+                                        <li><a class="dropdown-item" href="#"><p class="mb-0">Oldest to Latest</p></a></li>
+                                      </ul>
+                                    </div>
+                                  </th>
+                                  <th>
+                                    <div class="newsCol">
+                                      <span>News Coverage</span>
+                                      <div class="tooltip_hover4">
+                                        <span class="material-symbols-outlined">info</span>
+                                        <div class="tooltip_box tooltip_box4">
+                                          <div class="newsCol1">
+                                            <p><b>UNA</b> - Unusual News Activity</p>
+                                            <p><b>TMT</b> - Top Mentions Today</p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="dropdown drop_box">
+                                        <div class="sort_dropdown">
+                                          <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                                          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                            <li><a class="dropdown-item" href="#"><p>UNA Only</p></a></li>
+                                            <li><a class="dropdown-item" href="#"><p>TMT Only</p></a></li>
+                                            <li><a class="dropdown-item" href="#"><p>All</p></a></li>
+                                          </ul>
+                                        </div>
+                                      </div>
                                     </div>
                                   </th>
                                   <th>Expense Ratio</th>
@@ -1006,6 +1520,11 @@ if (localStorage.getItem('darkMode') === "on") {
                                   </td>
                                   <td><p class="buy_stock">Buy</p></td>
                                   <td><p>01-02-2022</p></td>
+                                  <td><p><span class="greenBox"></span></p></td>
+                                  <td><p><span class="date_start">Aug 06,2025</span></p></td>
+                                  <td class="align__items">
+                                    <p class="newsTD"><span class="greyBg">UNA</span><span class="greenBg">TMT</span></p>
+                                  </td>
                                   <td><p>0.85%</p></td>
                                   <td>
                                     <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Alerian MLP Infrastructure Index">
@@ -1028,6 +1547,11 @@ if (localStorage.getItem('darkMode') === "on") {
                                   </td>
                                   <td><p class="buy_stock">Buy</p></td>
                                   <td><p>01-02-2022</p></td>
+                                  <td><p><span class="redBox"></span></p></td>
+                                  <td><p><span class="date_start">Aug 06,2025</span></p></td>
+                                  <td class="align__items">
+                                    <p class="newsTD"><span class="greyBg">UNA</span><span class="greyBg">TMT</span></p>
+                                  </td>
                                   <td><p>0.85%</p></td>
                                   <td>
                                     <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Alerian MLP Infrastructure Index">
@@ -1050,6 +1574,11 @@ if (localStorage.getItem('darkMode') === "on") {
                                   </td>
                                   <td><p class="buy_stock">Buy</p></td>
                                   <td><p>01-02-2022</p></td>
+                                  <td><p><span class="blueBox"></span></p></td>
+                                  <td><p><span class="date_start">Aug 06,2025</span></p></td>
+                                  <td class="align__items">
+                                    <p class="newsTD"><span class="greenBg">UNA</span><span class="greenBg">TMT</span></p>
+                                  </td>
                                   <td><p>0.85%</p></td>
                                   <td>
                                     <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Alerian MLP Infrastructure Index">
@@ -1072,12 +1601,34 @@ if (localStorage.getItem('darkMode') === "on") {
                               </span>
                             </p>
                             <p>
-                              <span>Status</span>
+                              <span>Current Signal</span>
                               <span class="buy_stock">Buy</span>
                             </p>
                             <p>
                               <span>Last Signal Date</span>
                               <span>01-02-2023</span>
+                            </p>
+                            <p>
+                              <span>Overlay</span>
+                              <span><span class="greenBox"></span> Uptrend</span>
+                            </p>
+                            <p>
+                              <span>Overlay Start Date</span>
+                              <span>01-02-2023</span>
+                            </p>
+                            <p>
+                              <span>News Coverage
+                                <span class="tooltip_hover4 mobileTooltip">
+                                  <span class="material-symbols-outlined">info</span>
+                                  <span class="tooltip_box tooltip_box4">
+                                    <span class="newsCol1">
+                                      <span><b>UNA</b> - Unusual News Activity</span>
+                                      <span><b>TMT</b> - Top Mentions Today</span>
+                                    </span>
+                                  </span>
+                                </span>
+                              </span>
+                              <span class="newsTD"><span class="greyBg">UNA</span><span class="greenBg">TMT</span></span>
                             </p>
                             <p>
                               <span>Expense Ratio</span>
@@ -1093,7 +1644,7 @@ if (localStorage.getItem('darkMode') === "on") {
                             </p>
                           </div>
                           <div class="favList_item">
-                            <p>
+                             <p>
                               <span>Symbol</span>
                               <span class="favSymbol_box">
                                 <span class="port_symbol"><span class="noti_box"><span class="noti_count">2</span></span>AAPL</span>
@@ -1101,12 +1652,85 @@ if (localStorage.getItem('darkMode') === "on") {
                               </span>
                             </p>
                             <p>
-                              <span>Status</span>
+                              <span>Current Signal</span>
                               <span class="buy_stock">Buy</span>
                             </p>
                             <p>
                               <span>Last Signal Date</span>
                               <span>01-02-2023</span>
+                            </p>
+                            <p>
+                              <span>Overlay</span>
+                              <span><span class="redBox"></span> Downtrend</span>
+                            </p>
+                            <p>
+                              <span>Overlay Start Date</span>
+                              <span>01-02-2023</span>
+                            </p>
+                            <p>
+                              <span>News Coverage
+                                <span class="tooltip_hover4 mobileTooltip">
+                                  <span class="material-symbols-outlined">info</span>
+                                  <span class="tooltip_box tooltip_box4">
+                                    <span class="newsCol1">
+                                      <span><b>UNA</b> - Unusual News Activity</span>
+                                      <span><b>TMT</b> - Top Mentions Today</span>
+                                    </span>
+                                  </span>
+                                </span>
+                              </span>
+                              <span class="newsTD"><span class="greyBg">UNA</span><span class="greenBg">TMT</span></span>
+                            </p>
+                            <p>
+                              <span>Expense Ratio</span>
+                              <span>0.85%</span>
+                            </p>
+                            <p>
+                              <span>Index Tracked</span>
+                              <span class="company_name">Alerian MLP Infrastructure Index</span>
+                            </p>
+                            <p>
+                              <span>Last Day Close</span>
+                              <span>$2.04</span>
+                            </p>
+                          </div>
+                          <div class="favList_item">
+                             <p>
+                              <span>Symbol</span>
+                              <span class="favSymbol_box">
+                                <span class="port_symbol"><span class="noti_box"><span class="noti_count">2</span></span>AAPL</span>
+                                <button type="button" class="addTo_fav"><i class="fa-regular fa-star"></i></button>
+                              </span>
+                            </p>
+                            <p>
+                              <span>Current Signal</span>
+                              <span class="buy_stock">Buy</span>
+                            </p>
+                            <p>
+                              <span>Last Signal Date</span>
+                              <span>01-02-2023</span>
+                            </p>
+                            <p>
+                              <span>Overlay</span>
+                              <span><span class="greenBox"></span> Uptrend</span>
+                            </p>
+                            <p>
+                              <span>Overlay Start Date</span>
+                              <span>01-02-2023</span>
+                            </p>
+                            <p>
+                              <span>News Coverage
+                                <span class="tooltip_hover4 mobileTooltip">
+                                  <span class="material-symbols-outlined">info</span>
+                                  <span class="tooltip_box tooltip_box4">
+                                    <span class="newsCol1">
+                                      <span><b>UNA</b> - Unusual News Activity</span>
+                                      <span><b>TMT</b> - Top Mentions Today</span>
+                                    </span>
+                                  </span>
+                                </span>
+                              </span>
+                              <span class="newsTD"><span class="greyBg">UNA</span><span class="greenBg">TMT</span></span>
                             </p>
                             <p>
                               <span>Expense Ratio</span>
@@ -1126,7 +1750,8 @@ if (localStorage.getItem('darkMode') === "on") {
                     </div>
                   </div>
                 </div>
-                <div class="tab-pane fade" id="bearslisttab" role="tabpanel" aria-labelledby="bearslist-tab">
+                <!--==== BEAR LIST BODY ====-->
+                <div class="tab-pane fade" id="bearslisttab" role="tabpanel" aria-labelledby="bearslist-tab" style="display: none;">
                   <div class="bearList_tabC">
                     <div class="table_head">
                       <div class="fav_rankTabs">
@@ -1154,7 +1779,7 @@ if (localStorage.getItem('darkMode') === "on") {
                             <table class="table ovtlyr_table favList__table bearTable_2 bullTable_2">
                               <thead class="sticky-top">
                                 <tr class="ovtlyr__row_head">
-                                  <th width="16%">Symbol</th>
+                                  <th>Symbol</th>
                                   <th>Current Signal</th>
                                   <th class="dropdown drop_box">
                                     <div class="sort_dropdown">
@@ -1166,17 +1791,52 @@ if (localStorage.getItem('darkMode') === "on") {
                                       </ul>
                                     </div>
                                   </th>
-                                  <th>Sector <a href="#" class="show_filters"><span class="icon_filter material-icons">filter_alt</span></a></th>
-                                  <th class="align__items dropdown drop_box">
-                                    <div class="">
+                                  <th>Sector <a href="javascript:void(0);" class="show_filters"><span class="material-symbols-outlined icon_filter">filter_alt</span></a></th>
+                                  <th class="dropdown drop_box">
+                                    <div class="sort_dropdown">
                                       <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Overlay</button>
                                       <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                                         <li><a class="dropdown-item" href="#"><p><span class="whiteBox"><span class="drop_text">All</span></span></p></a></li>
                                         <li><a class="dropdown-item" href="#"><p><span class="greenBox"><span class="drop_text">Uptrend</span></span></p></a></li>
                                         <li><a class="dropdown-item" href="#"><p><span class="redBox"><span class="drop_text">Downtrend</span></span></p></a></li>
+                                        <li><a class="dropdown-item" href="#"><p><span class="blueBox"><span class="drop_text">Neutral</span></span></p></a></li>
                                       </ul>
                                     </div>
                                   </th>
+                                  <th class="dropdown drop_box">
+                                    <div class="sort_dropdown">
+                                      <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Overlay Start Date</button>
+                                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="#"><p class="mb-0">Latest to Oldest</p></a></li>
+                                        <li><a class="dropdown-item" href="#"><p class="mb-0">Oldest to Latest</p></a></li>
+                                      </ul>
+                                    </div>
+                                  </th>
+                                  <th>
+                                    <div class="newsCol">
+                                      <span>News Coverage</span>
+                                      <div class="tooltip_hover4">
+                                        <span class="material-symbols-outlined">info</span>
+                                        <div class="tooltip_box tooltip_box4">
+                                          <div class="newsCol1">
+                                            <p><b>UNA</b> - Unusual News Activity</p>
+                                            <p><b>TMT</b> - Top Mentions Today</p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="dropdown drop_box">
+                                        <div class="sort_dropdown">
+                                          <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                                          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                            <li><a class="dropdown-item" href="#"><p>UNA Only</p></a></li>
+                                            <li><a class="dropdown-item" href="#"><p>TMT Only</p></a></li>
+                                            <li><a class="dropdown-item" href="#"><p>All</p></a></li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </th>
+                                  <th>OC Status</th>
                                   <th class="dropdown drop_box">
                                     <div class="sort_dropdown">
                                       <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Last Day Close</button>
@@ -1215,7 +1875,12 @@ if (localStorage.getItem('darkMode') === "on") {
                                   <td><p class="sell_stock">Sell</p></td>
                                   <td><p>01-02-2022</p></td>
                                   <td><p><span class="arrows arrow_up">Utilities</span></p></td>
-                                  <td class="align__items"><p><span class="orgBox"></span></p></td>
+                                  <td class="align__items"><p><span class="greenBox"></span></p></td>
+                                  <td class="align__items"><p><span class="date_start">Aug 04,2025</span></p></td>
+                                  <td class="align__items">
+                                    <p class="newsTD"><span class="greyBg">UNA</span><span class="greenBg">TMT</span></p>
+                                  </td>                  
+                                  <td><p class="greenBg">OC</p></td>
                                   <td><p>$2.04</p></td>
                                   <td><p>4.3M</p></td>
                                 </tr>
@@ -1234,7 +1899,12 @@ if (localStorage.getItem('darkMode') === "on") {
                                   <td><p class="sell_stock">Sell</p></td>
                                   <td><p>01-02-2022</p></td>
                                   <td><p><span class="arrows arrow_up">Utilities</span></p></td>
-                                  <td class="align__items"><p><span class="orgBox"></span></p></td>
+                                  <td class="align__items"><p><span class="greenBox"></span></p></td>
+                                  <td class="align__items"><p><span class="date_start">Aug 04,2025</span></p></td>
+                                  <td class="align__items">
+                                    <p class="newsTD"><span class="greyBg">UNA</span><span class="greyBg">TMT</span></p>
+                                  </td>
+                                  <td><p class="greenBg">OC</p></td>
                                   <td><p>$2.04</p></td>
                                   <td><p>4.3M</p></td>
                                 </tr>
@@ -1253,7 +1923,12 @@ if (localStorage.getItem('darkMode') === "on") {
                                   <td><p class="sell_stock">Sell</p></td>
                                   <td><p>01-02-2022</p></td>
                                   <td><p><span class="arrows arrow_up">Utilities</span></p></td>
-                                  <td class="align__items"><p><span class="orgBox"></span></p></td>
+                                  <td class="align__items"><p><span class="greenBox"></span></p></td>
+                                  <td class="align__items"><p><span class="date_start">Aug 04,2025</span></p></td>
+                                  <td class="align__items">
+                                    <p class="newsTD"><span class="greenBg">UNA</span><span class="greenBg">TMT</span></p>
+                                  </td>
+                                  <td><p class="pinkBg">OC</p></td>
                                   <td><p>$2.04</p></td>
                                   <td><p>4.3M</p></td>
                                 </tr>
@@ -1272,7 +1947,12 @@ if (localStorage.getItem('darkMode') === "on") {
                                   <td><p class="sell_stock">Sell</p></td>
                                   <td><p>01-02-2022</p></td>
                                   <td><p><span class="arrows arrow_up">Utilities</span></p></td>
-                                  <td class="align__items"><p><span class="orgBox"></span></p></td>
+                                  <td class="align__items"><p><span class="greenBox"></span></p></td>
+                                  <td class="align__items"><p><span class="date_start">Aug 04,2025</span></p></td>
+                                  <td class="align__items">
+                                    <p class="newsTD"><span class="greenBg">UNA</span><span class="greenBg">TMT</span></p>
+                                  </td>
+                                  <td><p class="greenBg">OC</p></td>
                                   <td><p>$2.04</p></td>
                                   <td><p>4.3M</p></td>
                                 </tr>
@@ -1291,7 +1971,12 @@ if (localStorage.getItem('darkMode') === "on") {
                                   <td><p class="sell_stock">Sell</p></td>
                                   <td><p>01-02-2022</p></td>
                                   <td><p><span class="arrows arrow_up">Utilities</span></p></td>
-                                  <td class="align__items"><p><span class="orgBox"></span></p></td>
+                                  <td class="align__items"><p><span class="redBox"></span></p></td>
+                                  <td class="align__items"><p><span class="date_start">Aug 04,2025</span></p></td>
+                                  <td class="align__items">
+                                    <p class="newsTD"><span class="greyBg">UNA</span><span class="greyBg">TMT</span></p>
+                                  </td>
+                                  <td><p class="greenBg">OC</p></td>
                                   <td><p>$2.04</p></td>
                                   <td><p>4.3M</p></td>
                                 </tr>
@@ -1309,7 +1994,7 @@ if (localStorage.getItem('darkMode') === "on") {
                               </span>
                             </p>
                             <p>
-                              <span>Status</span>
+                              <span>Current Signal</span>
                               <span class="sell_stock">Sell</span>
                             </p>
                             <p>
@@ -1317,16 +2002,42 @@ if (localStorage.getItem('darkMode') === "on") {
                               <span>01-02-2023</span>
                             </p>
                             <p>
-                              <span>Sector </span>
+                              <span>Sector</span>
                               <span><span class="arrows arrow_up">Utilities</span></span>
                             </p>
                             <p>
                               <span>Overlay</span>
-                              <span class="redBox"></span>
+                              <span><span class="greenBox"></span> Uptrend</span>
+                            </p>
+                            <p>
+                              <span>Overlay Start Date</span>
+                              <span>01-02-2023</span>
+                            </p>
+                            <p>
+                              <span>News Coverage
+                                <span class="tooltip_hover4 mobileTooltip">
+                                  <span class="material-symbols-outlined">info</span>
+                                  <span class="tooltip_box tooltip_box4">
+                                    <span class="newsCol1">
+                                      <span><b>UNA</b> - Unusual News Activity</span>
+                                      <span><b>TMT</b> - Top Mentions Today</span>
+                                    </span>
+                                  </span>
+                                </span>
+                              </span>
+                              <span class="newsTD"><span class="greyBg">UNA</span><span class="greenBg">TMT</span></span>
+                            </p>
+                            <p>
+                              <span>OC Status</span>
+                              <span class="greenBg">OC</span>
                             </p>
                             <p>
                               <span>Last Day Close</span>
                               <span>$2.04</span>
+                            </p>
+                            <p>
+                              <span>30-Day Avg. Vol.</span>
+                              <span>4.3M</span>
                             </p>
                           </div>
                           <div class="favList_item active">
@@ -1338,7 +2049,7 @@ if (localStorage.getItem('darkMode') === "on") {
                               </span>
                             </p>
                             <p>
-                              <span>Status</span>
+                              <span>Current Signal</span>
                               <span class="sell_stock">Sell</span>
                             </p>
                             <p>
@@ -1351,11 +2062,37 @@ if (localStorage.getItem('darkMode') === "on") {
                             </p>
                             <p>
                               <span>Overlay</span>
-                              <span class="greenBox"></span>
+                              <span><span class="redBox"></span> Downtrend</span>
+                            </p>
+                            <p>
+                              <span>Overlay Start Date</span>
+                              <span>01-02-2023</span>
+                            </p>
+                            <p>
+                              <span>News Coverage
+                                <span class="tooltip_hover4 mobileTooltip">
+                                  <span class="material-symbols-outlined">info</span>
+                                  <span class="tooltip_box tooltip_box4">
+                                    <span class="newsCol1">
+                                      <span><b>UNA</b> - Unusual News Activity</span>
+                                      <span><b>TMT</b> - Top Mentions Today</span>
+                                    </span>
+                                  </span>
+                                </span>
+                              </span>
+                              <span class="newsTD"><span class="greyBg">UNA</span><span class="greenBg">TMT</span></span>
+                            </p>
+                            <p>
+                              <span>OC Status</span>
+                              <span class="pinkBg">OC</span>
                             </p>
                             <p>
                               <span>Last Day Close</span>
                               <span>$2.04</span>
+                            </p>
+                            <p>
+                              <span>30-Day Avg. Vol.</span>
+                              <span>4.3M</span>
                             </p>
                           </div>
                           <div class="favList_item">
@@ -1367,7 +2104,7 @@ if (localStorage.getItem('darkMode') === "on") {
                               </span>
                             </p>
                             <p>
-                              <span>Status</span>
+                              <span>Current Signal</span>
                               <span class="sell_stock">Sell</span>
                             </p>
                             <p>
@@ -1380,11 +2117,37 @@ if (localStorage.getItem('darkMode') === "on") {
                             </p>
                             <p>
                               <span>Overlay</span>
-                              <span class="orgBox"></span>
+                              <span><span class="greenBox"></span> Uptrend</span>
+                            </p>
+                            <p>
+                              <span>Overlay Start Date</span>
+                              <span>01-02-2023</span>
+                            </p>
+                            <p>
+                              <span>News Coverage
+                                <span class="tooltip_hover4 mobileTooltip">
+                                  <span class="material-symbols-outlined">info</span>
+                                  <span class="tooltip_box tooltip_box4">
+                                    <span class="newsCol1">
+                                      <span><b>UNA</b> - Unusual News Activity</span>
+                                      <span><b>TMT</b> - Top Mentions Today</span>
+                                    </span>
+                                  </span>
+                                </span>
+                              </span>
+                              <span class="newsTD"><span class="greyBg">UNA</span><span class="greenBg">TMT</span></span>
+                            </p>
+                            <p>
+                              <span>OC Status</span>
+                              <span class="greenBg">OC</span>
                             </p>
                             <p>
                               <span>Last Day Close</span>
                               <span>$2.04</span>
+                            </p>
+                            <p>
+                              <span>30-Day Avg. Vol.</span>
+                              <span>4.3M</span>
                             </p>
                           </div>
                         </div>
@@ -1395,7 +2158,7 @@ if (localStorage.getItem('darkMode') === "on") {
                             <table class="table ovtlyr_table favList__table bearTable_2 bullTable_2">
                               <thead class="sticky-top">
                                 <tr class="ovtlyr__row_head">
-                                  <th width="16%">Symbol</th>
+                                  <th>Symbol</th>
                                   <th>Current Signal</th>
                                   <th class="dropdown drop_box">
                                     <div class="sort_dropdown">
@@ -1405,6 +2168,50 @@ if (localStorage.getItem('darkMode') === "on") {
                                         <li><a class="dropdown-item" href="#"><p class="mb-0">Ascending</p></a></li>
                                         <li><a class="dropdown-item" href="#"><p class="mb-0">Descending</p></a></li>
                                       </ul>
+                                    </div>
+                                  </th>
+                                  <th class="dropdown drop_box">
+                                    <div class="sort_dropdown">
+                                      <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Overlay</button>
+                                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="#"><p><span class="whiteBox"><span class="drop_text">All</span></span></p></a></li>
+                                        <li><a class="dropdown-item" href="#"><p><span class="greenBox"><span class="drop_text">Uptrend</span></span></p></a></li>
+                                        <li><a class="dropdown-item" href="#"><p><span class="redBox"><span class="drop_text">Downtrend</span></span></p></a></li>
+                                        <li><a class="dropdown-item" href="#"><p><span class="blueBox"><span class="drop_text">Neutral</span></span></p></a></li>
+                                      </ul>
+                                    </div>
+                                  </th>
+                                  <th class="dropdown drop_box">
+                                    <div class="sort_dropdown">
+                                      <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Overlay Start Date</button>
+                                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="#"><p class="mb-0">Latest to Oldest</p></a></li>
+                                        <li><a class="dropdown-item" href="#"><p class="mb-0">Oldest to Latest</p></a></li>
+                                      </ul>
+                                    </div>
+                                  </th>
+                                  <th>
+                                    <div class="newsCol">
+                                      <span>News Coverage</span>
+                                      <div class="tooltip_hover4">
+                                        <span class="material-symbols-outlined">info</span>
+                                        <div class="tooltip_box tooltip_box4">
+                                          <div class="newsCol1">
+                                            <p><b>UNA</b> - Unusual News Activity</p>
+                                            <p><b>TMT</b> - Top Mentions Today</p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="dropdown drop_box">
+                                        <div class="sort_dropdown">
+                                          <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                                          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                            <li><a class="dropdown-item" href="#"><p>UNA Only</p></a></li>
+                                            <li><a class="dropdown-item" href="#"><p>TMT Only</p></a></li>
+                                            <li><a class="dropdown-item" href="#"><p>All</p></a></li>
+                                          </ul>
+                                        </div>
+                                      </div>
                                     </div>
                                   </th>
                                   <th>Expense Ratio</th>
@@ -1427,6 +2234,11 @@ if (localStorage.getItem('darkMode') === "on") {
                                   </td>
                                   <td><p class="sell_stock">Sell</p></td>
                                   <td><p>01-02-2022</p></td>
+                                  <td><p><span class="greenBox"></span></p></td>
+                                  <td><p><span class="date_start">Aug 06,2025</span></p></td>
+                                  <td class="align__items">
+                                    <p class="newsTD"><span class="greyBg">UNA</span><span class="greyBg">TMT</span></p>
+                                  </td>
                                   <td><p>0.85%</p></td>
                                   <td>
                                     <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Alerian MLP Infrastructure Index">
@@ -1449,6 +2261,11 @@ if (localStorage.getItem('darkMode') === "on") {
                                   </td>
                                   <td><p class="sell_stock">Sell</p></td>
                                   <td><p>01-02-2022</p></td>
+                                  <td><p><span class="redBox"></span></p></td>
+                                  <td><p><span class="date_start">Aug 06,2025</span></p></td>
+                                  <td class="align__items">
+                                    <p class="newsTD"><span class="greyBg">UNA</span><span class="greenBg">TMT</span></p>
+                                  </td>
                                   <td><p>0.85%</p></td>
                                   <td>
                                     <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Alerian MLP Infrastructure Index">
@@ -1471,12 +2288,34 @@ if (localStorage.getItem('darkMode') === "on") {
                               </span>
                             </p>
                             <p>
-                              <span>Status</span>
+                              <span>Current Signal</span>
                               <span class="sell_stock">Sell</span>
                             </p>
                             <p>
                               <span>Last Signal Date</span>
                               <span>01-02-2023</span>
+                            </p>
+                            <p>
+                              <span>Overlay</span>
+                              <span><span class="greenBox"></span> Uptrend</span>
+                            </p>
+                            <p>
+                              <span>Overlay Start Date</span>
+                              <span>01-02-2023</span>
+                            </p>
+                            <p>
+                              <span>News Coverage
+                                <span class="tooltip_hover4 mobileTooltip">
+                                  <span class="material-symbols-outlined">info</span>
+                                  <span class="tooltip_box tooltip_box4">
+                                    <span class="newsCol1">
+                                      <span><b>UNA</b> - Unusual News Activity</span>
+                                      <span><b>TMT</b> - Top Mentions Today</span>
+                                    </span>
+                                  </span>
+                                </span>
+                              </span>
+                              <span class="newsTD"><span class="greyBg">UNA</span><span class="greenBg">TMT</span></span>
                             </p>
                             <p>
                               <span>Expense Ratio</span>
@@ -1500,12 +2339,807 @@ if (localStorage.getItem('darkMode') === "on") {
                               </span>
                             </p>
                             <p>
-                              <span>Status</span>
+                              <span>Current Signal</span>
                               <span class="sell_stock">Sell</span>
                             </p>
                             <p>
                               <span>Last Signal Date</span>
                               <span>01-02-2023</span>
+                            </p>
+                            <p>
+                              <span>Overlay</span>
+                              <span><span class="redBox"></span> Downtrend</span>
+                            </p>
+                            <p>
+                              <span>Overlay Start Date</span>
+                              <span>01-02-2023</span>
+                            </p>
+                            <p>
+                              <span>News Coverage
+                                <span class="tooltip_hover4 mobileTooltip">
+                                  <span class="material-symbols-outlined">info</span>
+                                  <span class="tooltip_box tooltip_box4">
+                                    <span class="newsCol1">
+                                      <span><b>UNA</b> - Unusual News Activity</span>
+                                      <span><b>TMT</b> - Top Mentions Today</span>
+                                    </span>
+                                  </span>
+                                </span>
+                              </span>
+                              <span class="newsTD"><span class="greyBg">UNA</span><span class="greenBg">TMT</span></span>
+                            </p>
+                            <p>
+                              <span>Expense Ratio</span>
+                              <span>0.85%</span>
+                            </p>
+                            <p>
+                              <span>Index Tracked</span>
+                              <span class="company_name">Alerian MLP Infrastructure Index</span>
+                            </p>
+                            <p>
+                              <span>Last Day Close</span>
+                              <span>$2.04</span>
+                            </p>
+                          </div>
+                          <div class="favList_item">
+                            <p>
+                              <span>Symbol</span>
+                              <span class="favSymbol_box">
+                                <span class="port_symbol"><span class="noti_box"><span class="noti_count">2</span></span>AAPL</span>
+                                <button type="button" class="addTo_fav"><i class="fa-regular fa-star"></i></button>
+                              </span>
+                            </p>
+                            <p>
+                              <span>Current Signal</span>
+                              <span class="sell_stock">Sell</span>
+                            </p>
+                            <p>
+                              <span>Last Signal Date</span>
+                              <span>01-02-2023</span>
+                            </p>
+                            <p>
+                              <span>Overlay</span>
+                              <span><span class="blueBox"></span> Neutral</span>
+                            </p>
+                            <p>
+                              <span>Overlay Start Date</span>
+                              <span>01-02-2023</span>
+                            </p>
+                            <p>
+                              <span>News Coverage
+                                <span class="tooltip_hover4 mobileTooltip">
+                                  <span class="material-symbols-outlined">info</span>
+                                  <span class="tooltip_box tooltip_box4">
+                                    <span class="newsCol1">
+                                      <span><b>UNA</b> - Unusual News Activity</span>
+                                      <span><b>TMT</b> - Top Mentions Today</span>
+                                    </span>
+                                  </span>
+                                </span>
+                              </span>
+                              <span class="newsTD"><span class="greyBg">UNA</span><span class="greenBg">TMT</span></span>
+                            </p>
+                            <p>
+                              <span>Expense Ratio</span>
+                              <span>0.85%</span>
+                            </p>
+                            <p>
+                              <span>Index Tracked</span>
+                              <span class="company_name">Alerian MLP Infrastructure Index</span>
+                            </p>
+                            <p>
+                              <span>Last Day Close</span>
+                              <span>$2.04</span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--==== NEWS LIST BODY ====-->
+                <div class="tab-pane fade" id="sentimenttab" role="tabpanel" aria-labelledby="sentiment-tab">
+                  <div class="sentiList_tabC">
+                    <div class="table_head">
+                      <div class="fav_rankTabs">
+                        <ul class="nav nav-tabs" id="myTab2" role="tablist">
+                          <li class="nav-item" role="favranklist2">
+                            <button class="nav-link active" id="stocks-tab3" data-bs-toggle="tab" data-bs-target="#stockstab3" type="button" role="tab" aria-controls="stockstab3" aria-selected="true">
+                              Stocks
+                            </button>
+                          </li>
+                          <li class="nav-item" role="favranklist2">
+                            <button class="nav-link" id="etfs-tab3" data-bs-toggle="tab" data-bs-target="#etfstab3" type="button" role="tab" aria-controls="#etfstab3" aria-selected="false" tabindex="-1">
+                              ETFs
+                            </button>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="filterDropd_box">
+                        <a href="javascript:void(0);" class="expand_btn" id="expand_btn4"><span></span></a>
+                      </div>
+                    </div>
+                    <div class="tab-content" id="myTab2Content">
+                      <div class="tab-pane fade show active" id="stockstab3" role="tabpanel" aria-labelledby="stocks-tab3">
+                        <div class="favList_tabC">
+                          <div class="table_scroll vertical_scroll horizontal_scroll">
+                            <table class="table ovtlyr_table favList__table sentiTable_2">
+                              <thead class="sticky-top">
+                                <tr class="ovtlyr__row_head">
+                                  <th>Symbol</th>
+                                  <th class="dropdown drop_box">
+                                    <div class="sort_dropdown">
+                                      <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Current Sentiment</button>
+                                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="#"><p><span class="whiteBox"><span class="drop_text">All</span></span></p></a></li>
+                                        <li><a class="dropdown-item" href="#"><p><span class="greenBox"><span class="drop_text">+ve</span></span></p></a></li>
+                                        <li><a class="dropdown-item" href="#"><p><span class="redBox"><span class="drop_text">-ve</span></span></p></a></li>
+                                        <li><a class="dropdown-item" href="#"><p><span class="blueBox"><span class="drop_text">Neutral</span></span></p></a></li>
+                                      </ul>
+                                    </div>
+                                  </th>
+                                  <th>Last Sentiment Date</th>
+                                  <th>Sector <a href="javascript:void(0);" class="show_filters"><span class="material-symbols-outlined icon_filter">filter_alt</span></a></th>
+                                  <th class="dropdown drop_box">
+                                    <div class="sort_dropdown">
+                                      <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Overlay (Start Date)</button>
+                                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="#"><p><span class="whiteBox"><span class="drop_text">All</span></span></p></a></li>
+                                        <li><a class="dropdown-item" href="#"><p><span class="greenBox"><span class="drop_text">Uptrend</span></span></p></a></li>
+                                        <li><a class="dropdown-item" href="#"><p><span class="redBox"><span class="drop_text">Downtrend</span></span></p></a></li>
+                                        <li><a class="dropdown-item" href="#"><p><span class="blueBox"><span class="drop_text">Neutral</span></span></p></a></li>
+                                      </ul>
+                                    </div>
+                                  </th>
+                                  <th>
+                                    <div class="newsCol">
+                                      <span>News Coverage</span>
+                                      <div class="tooltip_hover4">
+                                        <span class="material-symbols-outlined">info</span>
+                                        <div class="tooltip_box tooltip_box4">
+                                          <div class="newsCol1">
+                                            <p><b>UNA</b> - Unusual News Activity</p>
+                                            <p><b>TMT</b> - Top Mentions Today</p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="dropdown drop_box">
+                                        <div class="sort_dropdown">
+                                          <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                                          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                            <li><a class="dropdown-item" href="#"><p>UNA Only</p></a></li>
+                                            <li><a class="dropdown-item" href="#"><p>TMT Only</p></a></li>
+                                            <li><a class="dropdown-item" href="#"><p>All</p></a></li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </th>
+                                  <th>OC Status</th>
+                                  <th class="dropdown drop_box">
+                                    <div class="sort_dropdown">
+                                      <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Last Day Close</button>
+                                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="#"><p class="mb-0">All</p></a></li>
+                                        <li><a class="dropdown-item" href="#"><p class="mb-0">Ascending</p></a></li>
+                                        <li><a class="dropdown-item" href="#"><p class="mb-0">Descending</p></a></li>
+                                      </ul>
+                                    </div>
+                                  </th>
+                                  <th class="dropdown drop_box">
+                                    <div class="sort_dropdown">
+                                      <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">30-Day Avg. Vol.</button>
+                                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="#"><p class="mb-0">All</p></a></li>
+                                        <li><a class="dropdown-item" href="#"><p class="mb-0">Ascending</p></a></li>
+                                        <li><a class="dropdown-item" href="#"><p class="mb-0">Descending</p></a></li>
+                                      </ul>
+                                    </div>
+                                  </th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr class="ovtyr__row">
+                                  <td>
+                                    <div class="fav_symbol justify-content-center">
+                                      <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="American Multinational Technology Company">
+                                        <div class="favSymbol_box"><span class="port_symbol"><span class="noti_box"><span class="noti_count">2</span></span>AAPL</span></div>
+                                      </a>
+                                      <button type="button" class="addTo_fav"><i class="fa-solid fa-star"></i></button>
+                                      <button type="button" data-bs-toggle="modal" data-bs-target="#notiSett_modal">
+                                        <i class="fa-regular fa-bell bell_icon"></i>
+                                      </button> 
+                                    </div>
+                                  </td>
+                                  <td><p><span class="greenBox"></span> Positive</p></td>
+                                  <td><p>01-02-2022</p></td>
+                                  <td><p><span class="arrows arrow_up">Utilities</span></p></td>
+                                  <td class="align__items">
+                                    <p><span class="greenBox"></span></p>
+                                    <p class="mt-1">(Aug 04,2025)</p>
+                                  </td>
+                                  <td class="align__items">
+                                    <p class="newsTD"><span class="greyBg">UNA</span><span class="greenBg">TMT</span></p>
+                                  </td>
+                                  <td><p class="greenBg">OC</p></td>
+                                  <td><p>$2.04</p></td>
+                                  <td><p>4.3M</p></td>
+                                </tr>
+                                <tr class="ovtyr__row">
+                                  <td>
+                                    <div class="fav_symbol justify-content-center">
+                                      <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="American Multinational Technology Company">
+                                        <div class="favSymbol_box"><span class="port_symbol"><span class="noti_box"><span class="noti_count">2</span></span>AAPL</span></div>
+                                      </a>
+                                      <button type="button" class="addTo_fav"><i class="fa-solid fa-star"></i></button>
+                                      <button type="button" data-bs-toggle="modal" data-bs-target="#notiSett_modal">
+                                        <i class="fa-regular fa-bell bell_icon"></i>
+                                      </button> 
+                                    </div>
+                                  </td>
+                                  <td><p><span class="redBox"></span> Negative</p></td>
+                                  <td><p>01-02-2022</p></td>
+                                  <td><p><span class="arrows arrow_up">Utilities</span></p></td>
+                                  <td class="align__items">
+                                    <p><span class="greenBox"></span></p>
+                                    <p class="mt-1">(Aug 04,2025)</p>
+                                  </td>
+                                  <td class="align__items">
+                                    <p class="newsTD"><span class="greyBg">UNA</span><span class="greyBg">TMT</span></p>
+                                  </td>
+                                  <td><p class="greenBg">OC</p></td>
+                                  <td><p>$2.04</p></td>
+                                  <td><p>4.3M</p></td>
+                                </tr>
+                                <tr class="ovtyr__row">
+                                  <td>
+                                    <div class="fav_symbol justify-content-center">
+                                      <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="American Multinational Technology Company">
+                                        <div class="favSymbol_box"><span class="port_symbol">AAPL</span></div>
+                                      </a>
+                                      <button type="button" class="addTo_fav"><i class="fa-regular fa-star"></i></button>
+                                      <button type="button" data-bs-toggle="modal" data-bs-target="#notiSett_modal">
+                                        <i class="fa-regular fa-bell bell_icon"></i>
+                                      </button> 
+                                    </div>
+                                  </td>
+                                  <td><p><span class="blueBox"></span> Neutral</p></td>
+                                  <td><p>01-02-2022</p></td>
+                                  <td><p><span class="arrows arrow_down">Technology</span></p></td>
+                                  <td class="align__items">
+                                    <p><span class="blueBox"></span></p>
+                                    <p class="mt-1">(Aug 04,2025)</p>
+                                  </td>
+                                  <td class="align__items">
+                                    <p class="newsTD"><span class="greyBg">UNA</span><span class="greenBg">TMT</span></p>
+                                  </td>
+                                  <td><p class="pinkBg">OC</p></td>
+                                  <td><p>$2.04</p></td>
+                                  <td><p>4.3M</p></td>
+                                </tr>
+                                <tr class="ovtyr__row">
+                                  <td>
+                                    <div class="fav_symbol justify-content-center">
+                                      <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="American Multinational Technology Company">
+                                        <div class="favSymbol_box"><span class="port_symbol">AAPL</span></div>
+                                      </a>
+                                      <button type="button" class="addTo_fav"><i class="fa-regular fa-star"></i></button>
+                                      <button type="button" data-bs-toggle="modal" data-bs-target="#notiSett_modal">
+                                        <i class="fa-regular fa-bell bell_icon"></i>
+                                      </button> 
+                                    </div>
+                                  </td>
+                                  <td><p><span class="blueBox"></span> Neutral</p></td>
+                                  <td><p>01-02-2022</p></td>
+                                  <td><p><span class="arrows arrow_up">Utilities</span></p></td>
+                                  <td class="align__items">
+                                    <p><span class="redBox"></span></p>
+                                    <p class="mt-1">(Aug 04,2025)</p>
+                                  </td>
+                                  <td class="align__items">
+                                    <p class="newsTD"><span class="greyBg">UNA</span><span class="greenBg">TMT</span></p>
+                                  </td>
+                                  <td><p class="greenBg">OC</p></td>
+                                  <td><p>$2.04</p></td>
+                                  <td><p>4.3M</p></td>
+                                </tr>
+                                <tr class="ovtyr__row">
+                                  <td>
+                                    <div class="fav_symbol justify-content-center">
+                                      <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="American Multinational Technology Company">
+                                        <div class="favSymbol_box"><span class="port_symbol">AAPL</span></div>
+                                      </a>
+                                      <button type="button" class="addTo_fav"><i class="fa-regular fa-star"></i></button>
+                                      <button type="button" data-bs-toggle="modal" data-bs-target="#notiSett_modal">
+                                        <i class="fa-solid fa-bell bell_icon"></i>
+                                      </button> 
+                                    </div>
+                                  </td>
+                                  <td><p><span class="redBox"></span> Negative</p></td>
+                                  <td><p>01-02-2022</p></td>
+                                  <td><p><span class="arrows arrow_down">Technology</span></p></td>
+                                  <td class="align__items">
+                                    <p><span class="greenBox"></span></p>
+                                    <p class="mt-1">(Aug 04,2025)</p>
+                                  </td>
+                                  <td class="align__items">
+                                    <p class="newsTD"><span class="greenBg">UNA</span><span class="greenBg">TMT</span></p>
+                                  </td>
+                                  <td><p class="greenBg">OC</p></td>
+                                  <td><p>$2.04</p></td>
+                                  <td><p>4.3M</p></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                        <div class="favList_grid">
+                          <div class="favList_item">
+                            <p>
+                              <span>Symbol</span>
+                              <span class="favSymbol_box">
+                                <span class="port_symbol"><span class="noti_box"><span class="noti_count">2</span></span>AAPL</span>
+                                <button type="button" class="addTo_fav"><i class="fa-regular fa-star"></i></button>
+                              </span>
+                            </p>
+                            <p>
+                              <span>Current Sentiment</span>
+                              <span><span class="greenBox"></span> Positive</span>
+                            </p>
+                            <p>
+                              <span>Last Sentiment Date</span>
+                              <span>01-02-2023</span>
+                            </p>
+                            <p>
+                              <span>Sector</span>
+                              <span><span class="arrows arrow_up">Utilities</span></span>
+                            </p>
+                            <p>
+                              <span>Overlay</span>
+                              <span><span class="greenBox"></span> Uptrend</span>
+                            </p>
+                            <p>
+                              <span>Overlay Start Date</span>
+                              <span>01-02-2023</span>
+                            </p>
+                            <p>
+                              <span>News Coverage
+                                <span class="tooltip_hover4 mobileTooltip">
+                                  <span class="material-symbols-outlined">info</span>
+                                  <span class="tooltip_box tooltip_box4">
+                                    <span class="newsCol1">
+                                      <span><b>UNA</b> - Unusual News Activity</span>
+                                      <span><b>TMT</b> - Top Mentions Today</span>
+                                    </span>
+                                  </span>
+                                </span>
+                              </span>
+                              <span class="newsTD"><span class="greenBg">UNA</span><span class="greenBg">TMT</span></span>
+                            </p>
+                            <p>
+                              <span>OC Status</span>
+                              <span class="greenBg">OC</span>
+                            </p>
+                            <p>
+                              <span>Last Day Close</span>
+                              <span>$2.04</span>
+                            </p>
+                            <p>
+                              <span>30-Day Avg. Vol.</span>
+                              <span>4.3M</span>
+                            </p>
+                          </div>
+                          <div class="favList_item active">
+                            <p>
+                              <span>Symbol</span>
+                              <span class="favSymbol_box">
+                                <span class="port_symbol"><span class="noti_box"><span class="noti_count">2</span></span>AAPL</span>
+                                <button type="button" class="addTo_fav"><i class="fa-regular fa-star"></i></button>
+                              </span>
+                            </p>
+                            <p>
+                              <span>Current Sentiment</span>
+                              <span><span class="redBox"></span> Negative</span>
+                            </p>
+                            <p>
+                              <span>Last Sentiment Date</span>
+                              <span>01-02-2023</span>
+                            </p>
+                            <p>
+                              <span>Sector</span>
+                              <span><span class="arrows arrow_up">Utilities</span></span>
+                            </p>
+                            <p>
+                              <span>Overlay</span>
+                              <span><span class="redBox"></span> Downtrend</span>
+                            </p>
+                            <p>
+                              <span>Overlay Start Date</span>
+                              <span>01-02-2023</span>
+                            </p>
+                            <p>
+                              <span>News Coverage
+                                <span class="tooltip_hover4 mobileTooltip">
+                                  <span class="material-symbols-outlined">info</span>
+                                  <span class="tooltip_box tooltip_box4">
+                                    <span class="newsCol1">
+                                      <span><b>UNA</b> - Unusual News Activity</span>
+                                      <span><b>TMT</b> - Top Mentions Today</span>
+                                    </span>
+                                  </span>
+                                </span>
+                              </span>
+                              <span class="newsTD"><span class="greyBg">UNA</span><span class="greyBg">TMT</span></span>
+                            </p>
+                            <p>
+                              <span>OC Status</span>
+                              <span class="pinkBg">OC</span>
+                            </p>
+                            <p>
+                              <span>Last Day Close</span>
+                              <span>$2.04</span>
+                            </p>
+                            <p>
+                              <span>30-Day Avg. Vol.</span>
+                              <span>4.3M</span>
+                            </p>
+                          </div>
+                          <div class="favList_item">
+                            <p>
+                              <span>Symbol</span>
+                              <span class="favSymbol_box">
+                                <span class="port_symbol"><span class="noti_box"><span class="noti_count">2</span></span>AAPL</span>
+                                <button type="button" class="addTo_fav"><i class="fa-regular fa-star"></i></button>
+                              </span>
+                            </p>
+                            <p>
+                              <span>Current Sentiment</span>
+                              <span><span class="blueBox"></span> Neutral</span>
+                            </p>
+                            <p>
+                              <span>Last Sentiment Date</span>
+                              <span>01-02-2023</span>
+                            </p>
+                            <p>
+                              <span>Sector</span>
+                              <span><span class="arrows arrow_up">Utilities</span></span>
+                            </p>
+                            <p>
+                              <span>Overlay</span>
+                              <span><span class="blueBox"></span> Neutral</span>
+                            </p>
+                            <p>
+                              <span>Overlay Start Date</span>
+                              <span>01-02-2023</span>
+                            </p>
+                            <p>
+                              <span>News Coverage
+                                <span class="tooltip_hover4 mobileTooltip">
+                                  <span class="material-symbols-outlined">info</span>
+                                  <span class="tooltip_box tooltip_box4">
+                                    <span class="newsCol1">
+                                      <span><b>UNA</b> - Unusual News Activity</span>
+                                      <span><b>TMT</b> - Top Mentions Today</span>
+                                    </span>
+                                  </span>
+                                </span>
+                              </span>
+                              <span class="newsTD"><span class="greenBg">UNA</span><span class="greyBg">TMT</span></span>
+                            </p>
+                            <p>
+                              <span>OC Status</span>
+                              <span class="greenBg">OC</span>
+                            </p>
+                            <p>
+                              <span>Last Day Close</span>
+                              <span>$2.04</span>
+                            </p>
+                            <p>
+                              <span>30-Day Avg. Vol.</span>
+                              <span>4.3M</span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="etfstab3" role="tabpanel" aria-labelledby="etfs-tab3">
+                        <div class="favList_tabC">
+                          <div class="table_scroll horizontal_scroll">
+                            <table class="table ovtlyr_table favList__table sentiTable_2">
+                              <thead class="sticky-top">
+                                <tr class="ovtlyr__row_head">
+                                  <th>Symbol</th>
+                                  <th class="dropdown drop_box">
+                                    <div class="sort_dropdown">
+                                      <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Current Sentiment</button>
+                                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="#"><p><span class="whiteBox"><span class="drop_text">All</span></span></p></a></li>
+                                        <li><a class="dropdown-item" href="#"><p><span class="greenBox"><span class="drop_text">+ve</span></span></p></a></li>
+                                        <li><a class="dropdown-item" href="#"><p><span class="redBox"><span class="drop_text">-ve</span></span></p></a></li>
+                                        <li><a class="dropdown-item" href="#"><p><span class="blueBox"><span class="drop_text">Neutral</span></span></p></a></li>
+                                      </ul>
+                                    </div>
+                                  </th>
+                                  <th>Last Sentiment Date</th>
+                                  <th class="dropdown drop_box">
+                                    <div class="sort_dropdown">
+                                      <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Overlay (Start Date)</button>
+                                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="#"><p><span class="whiteBox"><span class="drop_text">All</span></span></p></a></li>
+                                        <li><a class="dropdown-item" href="#"><p><span class="greenBox"><span class="drop_text">Uptrend</span></span></p></a></li>
+                                        <li><a class="dropdown-item" href="#"><p><span class="redBox"><span class="drop_text">Downtrend</span></span></p></a></li>
+                                        <li><a class="dropdown-item" href="#"><p><span class="blueBox"><span class="drop_text">Neutral</span></span></p></a></li>
+                                      </ul>
+                                    </div>
+                                  </th>
+                                  <th>
+                                    <div class="newsCol">
+                                      <span>News Coverage</span>
+                                      <div class="tooltip_hover4">
+                                        <span class="material-symbols-outlined">info</span>
+                                        <div class="tooltip_box tooltip_box4">
+                                          <div class="newsCol1">
+                                            <p><b>UNA</b> - Unusual News Activity</p>
+                                            <p><b>TMT</b> - Top Mentions Today</p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="dropdown drop_box">
+                                        <div class="sort_dropdown">
+                                          <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                                          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                            <li><a class="dropdown-item" href="#"><p>UNA Only</p></a></li>
+                                            <li><a class="dropdown-item" href="#"><p>TMT Only</p></a></li>
+                                            <li><a class="dropdown-item" href="#"><p>All</p></a></li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </th>
+                                  <th>Expense Ratio</th>
+                                  <th>Index Tracked</th>
+                                  <th>Last Day Close</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr class="ovtyr__row">
+                                  <td>
+                                    <div class="fav_symbol justify-content-center">
+                                      <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="American Multinational Technology Company">
+                                        <div class="favSymbol_box"><span class="port_symbol">AAPL</span></div>
+                                      </a>
+                                      <button type="button" class="addTo_fav"><i class="fa-regular fa-star"></i></button>
+                                      <button type="button" data-bs-toggle="modal" data-bs-target="#notiSett_modal">
+                                        <i class="fa-regular fa-bell bell_icon"></i>
+                                      </button> 
+                                    </div>
+                                  </td>
+                                  <td><p><span class="greenBox"></span> Positive</p></td>
+                                  <td><p>01-02-2022</p></td>
+                                  <td class="align__items">
+                                    <p><span class="greenBox"></span></p>
+                                    <p class="mt-1">(Aug 04,2025)</p>
+                                  </td>
+                                  <td class="align__items">
+                                    <p class="newsTD"><span class="greyBg">UNA</span><span class="greyBg">TMT</span></p>
+                                  </td>
+                                  <td><p>0.85%</p></td>
+                                  <td>
+                                    <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Alerian MLP Infrastructure Index">
+                                      <p class="company_name">Alerian MLP Infrastructure Index</p>
+                                    </a>
+                                  </td>
+                                  <td><p>$2.04</p></td>
+                                </tr>
+                                <tr class="ovtyr__row">
+                                  <td>
+                                    <div class="fav_symbol justify-content-center">
+                                      <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="American Multinational Technology Company">
+                                        <div class="favSymbol_box"><span class="port_symbol">AAPL</span></div>
+                                      </a>
+                                      <button type="button" class="addTo_fav"><i class="fa-regular fa-star"></i></button>
+                                      <button type="button" data-bs-toggle="modal" data-bs-target="#notiSett_modal">
+                                        <i class="fa-regular fa-bell bell_icon"></i>
+                                      </button> 
+                                    </div>
+                                  </td>
+                                  <td><p><span class="redBox"></span> Negative</p></td>
+                                  <td><p>01-02-2022</p></td>
+                                  <td class="align__items">
+                                    <p><span class="redBox"></span></p>
+                                    <p class="mt-1">(Aug 04,2025)</p>
+                                  </td>
+                                  <td class="align__items">
+                                    <p class="newsTD"><span class="greenBg">UNA</span><span class="greenBg">TMT</span></p>
+                                  </td>
+                                  <td><p>0.85%</p></td>
+                                  <td>
+                                    <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Alerian MLP Infrastructure Index">
+                                      <p class="company_name">Alerian MLP Infrastructure Index</p>
+                                    </a>
+                                  </td>
+                                  <td><p>$2.04</p></td>
+                                </tr>
+                                <tr class="ovtyr__row">
+                                  <td>
+                                    <div class="fav_symbol justify-content-center">
+                                      <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="American Multinational Technology Company">
+                                        <div class="favSymbol_box"><span class="port_symbol">AAPL</span></div>
+                                      </a>
+                                      <button type="button" class="addTo_fav"><i class="fa-regular fa-star"></i></button>
+                                      <button type="button" data-bs-toggle="modal" data-bs-target="#notiSett_modal">
+                                        <i class="fa-regular fa-bell bell_icon"></i>
+                                      </button> 
+                                    </div>
+                                  </td>
+                                  <td><p><span class="blueBox"></span> Neutral</p></td>
+                                  <td><p>01-02-2022</p></td>
+                                  <td class="align__items">
+                                    <p><span class="blueBox"></span></p>
+                                    <p class="mt-1">(Aug 04,2025)</p>
+                                  </td>
+                                  <td class="align__items">
+                                    <p class="newsTD"><span class="greyBg">UNA</span><span class="greenBg">TMT</span></p>
+                                  </td>
+                                  <td><p>0.85%</p></td>
+                                  <td>
+                                    <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Alerian MLP Infrastructure Index">
+                                      <p class="company_name">Alerian MLP Infrastructure Index</p>
+                                    </a>
+                                  </td>
+                                  <td><p>$2.04</p></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                        <div class="favList_grid">
+                          <div class="favList_item">
+                            <p>
+                              <span>Symbol</span>
+                              <span class="favSymbol_box">
+                                <span class="port_symbol"><span class="noti_box"><span class="noti_count">2</span></span>AAPL</span>
+                                <button type="button" class="addTo_fav"><i class="fa-regular fa-star"></i></button>
+                              </span>
+                            </p>
+                            <p>
+                              <span>Current Sentiment</span>
+                              <span><span class="greenBox"></span> Positive</span>
+                            </p>
+                            <p>
+                              <span>Last Sentiment Date</span>
+                              <span>01-02-2023</span>
+                            </p>
+                            <p>
+                              <span>Overlay</span>
+                              <span><span class="greenBox"></span> Uptrend</span>
+                            </p>
+                            <p>
+                              <span>Overlay Start Date</span>
+                              <span>01-02-2023</span>
+                            </p>
+                            <p>
+                              <span>News Coverage
+                                <span class="tooltip_hover4 mobileTooltip">
+                                  <span class="material-symbols-outlined">info</span>
+                                  <span class="tooltip_box tooltip_box4">
+                                    <span class="newsCol1">
+                                      <span><b>UNA</b> - Unusual News Activity</span>
+                                      <span><b>TMT</b> - Top Mentions Today</span>
+                                    </span>
+                                  </span>
+                                </span>
+                              </span>
+                              <span class="newsTD"><span class="greenBg">UNA</span><span class="greenBg">TMT</span></span>
+                            </p>
+                            <p>
+                              <span>Expense Ratio</span>
+                              <span>0.85%</span>
+                            </p>
+                            <p>
+                              <span>Index Tracked</span>
+                              <span class="company_name">Alerian MLP Infrastructure Index</span>
+                            </p>
+                            <p>
+                              <span>Last Day Close</span>
+                              <span>$2.04</span>
+                            </p>
+                          </div>
+                          <div class="favList_item">
+                            <p>
+                              <span>Symbol</span>
+                              <span class="favSymbol_box">
+                                <span class="port_symbol"><span class="noti_box"><span class="noti_count">2</span></span>AAPL</span>
+                                <button type="button" class="addTo_fav"><i class="fa-regular fa-star"></i></button>
+                              </span>
+                            </p>
+                            <p>
+                              <span>Current Sentiment</span>
+                              <span><span class="redBox"></span> Negative</span>
+                            </p>
+                            <p>
+                              <span>Last Sentiment Date</span>
+                              <span>01-02-2023</span>
+                            </p>
+                            <p>
+                              <span>Sector</span>
+                              <span><span class="arrows arrow_up">Utilities</span></span>
+                            </p>
+                            <p>
+                              <span>Overlay</span>
+                              <span><span class="redBox"></span> Downtrend</span>
+                            </p>
+                            <p>
+                              <span>Overlay Start Date</span>
+                              <span>01-02-2023</span>
+                            </p>
+                            <p>
+                              <span>News Coverage
+                                <span class="tooltip_hover4 mobileTooltip">
+                                  <span class="material-symbols-outlined">info</span>
+                                  <span class="tooltip_box tooltip_box4">
+                                    <span class="newsCol1">
+                                      <span><b>UNA</b> - Unusual News Activity</span>
+                                      <span><b>TMT</b> - Top Mentions Today</span>
+                                    </span>
+                                  </span>
+                                </span>
+                              </span>
+                              <span class="newsTD"><span class="greyBg">UNA</span><span class="greyBg">TMT</span></span>
+                            </p>
+                            <p>
+                              <span>Expense Ratio</span>
+                              <span>0.85%</span>
+                            </p>
+                            <p>
+                              <span>Index Tracked</span>
+                              <span class="company_name">Alerian MLP Infrastructure Index</span>
+                            </p>
+                            <p>
+                              <span>Last Day Close</span>
+                              <span>$2.04</span>
+                            </p>
+                          </div>
+                          <div class="favList_item">
+                            <p>
+                              <span>Symbol</span>
+                              <span class="favSymbol_box">
+                                <span class="port_symbol"><span class="noti_box"><span class="noti_count">2</span></span>AAPL</span>
+                                <button type="button" class="addTo_fav"><i class="fa-regular fa-star"></i></button>
+                              </span>
+                            </p>
+                            <p>
+                              <span>Current Sentiment</span>
+                              <span><span class="blueBox"></span> Neutral</span>
+                            </p>
+                            <p>
+                              <span>Last Sentiment Date</span>
+                              <span>01-02-2023</span>
+                            </p>
+                            <p>
+                              <span>Sector</span>
+                              <span><span class="arrows arrow_up">Utilities</span></span>
+                            </p>
+                            <p>
+                              <span>Overlay</span>
+                              <span><span class="blueBox"></span> Neutral</span>
+                            </p>
+                            <p>
+                              <span>Overlay Start Date</span>
+                              <span>01-02-2023</span>
+                            </p>
+                            <p>
+                              <span>News Coverage
+                                <span class="tooltip_hover4 mobileTooltip">
+                                  <span class="material-symbols-outlined">info</span>
+                                  <span class="tooltip_box tooltip_box4">
+                                    <span class="newsCol1">
+                                      <span><b>UNA</b> - Unusual News Activity</span>
+                                      <span><b>TMT</b> - Top Mentions Today</span>
+                                    </span>
+                                  </span>
+                                </span>
+                              </span>
+                              <span class="newsTD"><span class="greenBg">UNA</span><span class="greyBg">TMT</span></span>
                             </p>
                             <p>
                               <span>Expense Ratio</span>
@@ -2079,6 +3713,17 @@ if (localStorage.getItem('darkMode') === "on") {
         $('.watchlist_listing').addClass('full_listTable full_listTable3');
       }
     });
+
+    $('#expand_btn4').on('click', function(e){
+      if($('.watchlist_tabs').hasClass('full_listHead')){
+        $('.watchlist_tabs').removeClass('full_listHead full_listHead4');
+        $('.watchlist_listing').removeClass('full_listTable full_listTable4');
+      }
+      else {
+        $('.watchlist_tabs').addClass('full_listHead full_listHead4');
+        $('.watchlist_listing').addClass('full_listTable full_listTable4');
+      }
+    });
   });
 </script>
 <!--===== SLIDER SCRIPT START =====-->
@@ -2136,6 +3781,65 @@ if (localStorage.getItem('darkMode') === "on") {
       }
     }
   });
+</script>
+
+<!--==== TOOLTIP SCRIPT 3 ====-->
+<script>
+  $(document).ready(function(){
+    $('.tooltip_hover3 span').click(function(evt){
+      evt.stopPropagation();
+      $(".tooltip_box3").css({
+        "opacity" : "1",
+        "visibility" : "visible",
+      });
+    });
+  });
+  $(document).click(function(e) {
+    var container = $(".tooltip_hover3");
+    if (!container.is(e.target) && container.has(e.target).length === 0) {
+      $(".tooltip_box3").css({
+        "opacity" : "0",
+        "visibility" : "hidden",
+      });
+    }
+  });
+</script>
+<!--==== TOOLTIP SCRIPT 4 ====-->
+<script>
+  $(document).ready(function(){
+    $('.tooltip_hover4 span').click(function(evt){
+      evt.stopPropagation();
+      $(".tooltip_box4").css({
+        "opacity" : "1",
+        "visibility" : "visible",
+      });
+    });
+  });
+  $(document).click(function(e) {
+    var container = $(".tooltip_hover4");
+    if (!container.is(e.target) && container.has(e.target).length === 0) {
+      $(".tooltip_box4").css({
+        "opacity" : "0",
+        "visibility" : "hidden",
+      });
+    }
+  });
+</script>
+<!--==== TOOLTIP SCRIPT 2 ====-->
+<script>
+$(function () {
+  const hideTooltips = () =>
+  $('.tooltip_box2').css({ opacity: 0, visibility: 'hidden' });
+  $('.tooltip_hover2 .material-symbols-outlined').on('click', function (e) {
+    e.stopPropagation();
+    hideTooltips();
+    $(this).closest('.tooltip_hover2').find('.tooltip_box2').css({ 
+      opacity: 1, 
+      visibility: 'visible' 
+    });
+  });
+  $(document).on('click', hideTooltips);
+});
 </script>
 </body>
 </html>
