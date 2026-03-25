@@ -102,9 +102,10 @@ if (localStorage.getItem('darkMode') === "on") {
                     </div>
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="settingsButton" >
-                    <li><a class="dropdown-item" href="subscription-all.html"><p class="mb-0">Subscription Management</p></a></li>
+                    <li><a class="dropdown-item active" href="subscription-all.html"><p class="mb-0">Subscription Management</p></a></li>
                     <li><a class="dropdown-item" href="notification.html"><p class="mb-0">Notification Management</p></a></li>
-                    <li><a class="dropdown-item" href="affiliate-info.html"><p class="mb-0">Referral Dashboard</p></a></li>
+                    <li><a class="dropdown-item" href="promoter.html"><p class="mb-0">Referral Dashboard</p></a></li>
+                    <li><a class="dropdown-item" href="documentation.html"><p class="mb-0">Documentation</p></a></li>
                     <li><a class="dropdown-item" href="tutorials.html"><p class="mb-0">Tutorials</p></a></li>
                     <li><a class="dropdown-item" href="contact.html"><p class="mb-0">Contact Us</p></a></li>
                     <li>
@@ -192,6 +193,10 @@ if (localStorage.getItem('darkMode') === "on") {
         <div class="settings_dash">
           <div class="tab-content" id="myTabContent">
             <div class="tab-pane fade show active" id="subscriptiontab" role="tabpanel" aria-labelledby="subscription-tab">
+              <div class="note_p">
+                <p>Your scheduled Annual Pass payment was not completed. Please retry the payment to continue your subscription.</p>
+                <button type="button"><span class="material-symbols-outlined">replay</span><span>Retry</span></button>
+              </div>
               <div class="subscription_box">
                 <div class="subscription_b1 upgradePlan">
                   <h6>Upgrade to Annual</h6>
@@ -261,9 +266,9 @@ if (localStorage.getItem('darkMode') === "on") {
                   </div>
                   <div class="plan_boxes mt-4">
                     <div class="plan_boxes1 blue_box">
-                      <div class="check_icon">
+                      <!-- <div class="check_icon">
                         <span class="material-symbols-outlined">done</span>
-                      </div>
+                      </div> -->
                       <div class="serial1">
                         <div class="serial11">
                           <h4>14-Day Free Trial</h4>
@@ -284,9 +289,9 @@ if (localStorage.getItem('darkMode') === "on") {
                   </div>
                   <div class="plan_boxes mt-4">
                     <div class="plan_boxes1 blue_box">
-                      <div class="check_icon">
+                      <!-- <div class="check_icon">
                         <span class="material-symbols-outlined">done</span>
-                      </div>
+                      </div> -->
                       <div class="serial0">
                         <div class="serial1">
                           <div class="serial11">
@@ -344,9 +349,9 @@ if (localStorage.getItem('darkMode') === "on") {
                   <p class="bot_txt mb-0">As a special plan user, you are not eligible to upgrade/downgrade your subscription. If any query, kindly get in touch with at support@ovtlyr.com.</p>
                   <div class="plan_boxes mt-4">
                     <div class="plan_boxes1 blue_box">
-                      <div class="check_icon">
+                      <!-- <div class="check_icon">
                         <span class="material-symbols-outlined">done</span>
-                      </div>
+                      </div> -->
                       <div class="serial0">
                         <div class="serial1">
                           <div class="serial11">
@@ -431,10 +436,19 @@ if (localStorage.getItem('darkMode') === "on") {
                 </div>
                 <div class="subscription_b1">
                   <h6>Payment Method</h6>
+                  <p class="paymentNote"><span>Note:</span> You can <span>remove</span> a saved card or <span>set it as your default payment method</span> by clicking the <span>three dots (⋯)</span> icon in the top-right corner of each card.</p>
                   <div class="card_boxes">
                     <div class="card_boxes1 active">
                       <div class="check_icon">
-                        <span class="material-symbols-outlined">done</span>
+                        <div class="dropdown">
+                          <button class="dropdown-toggle" type="button" id="card_edit" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="material-symbols-outlined">more_horiz</span>
+                          </button>
+                          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="card_edit">
+                            <li><a class="dropdown-item" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#editCard_modal">Edit</a></li>
+                            <li><a class="dropdown-item" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#deleteCard_modal">Delete</a></li>
+                          </ul>
+                        </div>
                       </div>
                       <div class="card_nme">Credit card</div>
                       <div class="card_no">
@@ -442,13 +456,21 @@ if (localStorage.getItem('darkMode') === "on") {
                         <span>**** **** **** <span>4575</span></span>
                       </div>
                       <div class="card_dlt">
-                        <button type="button" data-bs-toggle="modal" data-bs-target="#editCard_modal"><span class="material-symbols-outlined">edit</span></button>
-                        <button type="button" data-bs-toggle="modal" data-bs-target="#deleteCard_modal"><span class="material-symbols-outlined">delete</span></button>
+                        <p>Default</p>
                       </div>
                     </div>
                     <div class="card_boxes1">
                       <div class="check_icon">
-                        <span class="material-symbols-outlined">done</span>
+                        <div class="dropdown">
+                          <button class="dropdown-toggle" type="button" id="card_edit" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="material-symbols-outlined">more_horiz</span>
+                          </button>
+                          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="card_edit">
+                            <li><a class="dropdown-item" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#editCard_modal">Edit</a></li>
+                            <li><a class="dropdown-item" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#deleteCard_modal">Delete</a></li>
+                            <li><a class="dropdown-item" href="javascript:void(0);">Set as Defult</a></li>
+                          </ul>
+                        </div>
                       </div>
                       <div class="card_nme">Credit card</div>
                       <div class="card_no">
@@ -456,8 +478,7 @@ if (localStorage.getItem('darkMode') === "on") {
                         <span>**** **** **** <span>0075</span></span>
                       </div>
                       <div class="card_dlt">
-                        <button type="button" data-bs-toggle="modal" data-bs-target="#editCard_modal"><span class="material-symbols-outlined">edit</span></button>
-                        <button type="button"><span class="material-symbols-outlined">delete</span></button>
+                        <p></p>
                       </div>
                     </div>
                     <div class="card_boxes1 cardAdd_box">
@@ -472,34 +493,39 @@ if (localStorage.getItem('darkMode') === "on") {
                       <table class="table billing__table ovtlyr_table">
                         <thead>
                           <tr class="ovtlyr__row_head">
-                            <th style="width: 25%;">Date</th>
-                            <th style="width: 25%;">Details</th>
-                            <th style="width: 25%;">Amount</th>
-                            <th style="width: 25%;">Download</th>
+                            <th style="width: 20%;">Date</th>
+                            <th style="width: 20%;">Details</th>
+                            <th style="width: 20%;">Status</th>
+                            <th style="width: 20%;">Amount</th>
+                            <th style="width: 20%;">Download</th>
                           </tr>
                         </thead>
                         <tbody>
                           <tr class="ovtlyr__row">
                             <td><p>01-02-2023</p></td>
-                            <td><p>Paid Plan</p></td>
+                            <td><p>Scheduled Annual Pass</p></td>
+                            <td><p>Pending</p></td>
+                            <td><p>$20.00</p></td>
+                            <td><p><a href="#">Invoice 25 Feb</a></p></td>
+                          </tr>
+                          <tr class="ovtlyr__row">
+                            <td><p>01-02-2023</p></td>
+                            <td><p>Annual Pass</p></td>
+                            <td><p>Completed</p></td>
+                            <td><p>$20.00</p></td>
+                            <td><p><a href="#">Invoice 25 Feb</a></p></td>
+                          </tr>
+                          <tr class="ovtlyr__row">
+                            <td><p>01-02-2023</p></td>
+                            <td><p>Monthly Plan</p></td>
+                            <td><p>Completed</p></td>
                             <td><p>$20.00</p></td>
                             <td><p><a href="#">Invoice 25 Feb</a></p></td>
                           </tr>
                           <tr class="ovtlyr__row">
                             <td><p>01-02-2023</p></td>
                             <td><p>Trial Plan</p></td>
-                            <td><p>$20.00</p></td>
-                            <td><p><a href="#">Invoice 25 Feb</a></p></td>
-                          </tr>
-                          <tr class="ovtlyr__row">
-                            <td><p>01-02-2023</p></td>
-                            <td><p>Trial Plan</p></td>
-                            <td><p>$20.00</p></td>
-                            <td><p><a href="#">Invoice 25 Feb</a></p></td>
-                          </tr>
-                          <tr class="ovtlyr__row">
-                            <td><p>01-02-2023</p></td>
-                            <td><p>Trial Plan</p></td>
+                            <td><p>Completed</p></td>
                             <td><p>$20.00</p></td>
                             <td><p><a href="#">Invoice 25 Feb</a></p></td>
                           </tr>
@@ -515,7 +541,11 @@ if (localStorage.getItem('darkMode') === "on") {
                       </p>
                       <p>
                         <span>Details</span>
-                        <span>Paid Plan</span>
+                        <span>Scheduled Annual Pass</span>
+                      </p>
+                      <p>
+                        <span>Status</span>
+                        <span>Pending</span>
                       </p>
                       <p>
                         <span>Amount</span>
@@ -533,7 +563,11 @@ if (localStorage.getItem('darkMode') === "on") {
                       </p>
                       <p>
                         <span>Details</span>
-                        <span>Paid Plan</span>
+                        <span>Annual Pass</span>
+                      </p>
+                      <p>
+                        <span>Status</span>
+                        <span>Completed</span>
                       </p>
                       <p>
                         <span>Amount</span>
@@ -551,7 +585,33 @@ if (localStorage.getItem('darkMode') === "on") {
                       </p>
                       <p>
                         <span>Details</span>
-                        <span>Paid Plan</span>
+                        <span>Monthly Plan</span>
+                      </p>
+                      <p>
+                        <span>Status</span>
+                        <span>Completed</span>
+                      </p>
+                      <p>
+                        <span>Amount</span>
+                        <span>$20.00</span>
+                      </p>
+                      <p>
+                        <span>Download</span>
+                        <span><a href="#">Invoice 25 Feb</a></span>
+                      </p>
+                    </div>
+                    <div class="favList_item">
+                      <p>
+                        <span>Date</span>
+                        <span>01-02-2023</span>  
+                      </p>
+                      <p>
+                        <span>Details</span>
+                        <span>Trial Plan</span>
+                      </p>
+                      <p>
+                        <span>Status</span>
+                        <span>Completed</span>
                       </p>
                       <p>
                         <span>Amount</span>
@@ -845,7 +905,7 @@ if (localStorage.getItem('darkMode') === "on") {
 </script>
 <!--===== STOP MODAL PLAYING END =====-->
 <script>
-document.createElement('show-desk' , 'show-mob');
+  document.createElement('show-desk' , 'show-mob');
 </script>
 </body>
 </html>

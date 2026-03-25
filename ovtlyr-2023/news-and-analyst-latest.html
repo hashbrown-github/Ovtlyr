@@ -1118,16 +1118,195 @@ if (localStorage.getItem('darkMode') === "on") {
               <h3 class="mb-0">Top Mentions & Sentiment</h3>
             </div>
             <div class="news_31 news_51">
-              <div class="nav_item gen_news">
-                <a class="nav_link" href="#">General News Sentiment</a>
-                <a class="nav_link active" href="#">All tickers Sentiment</a>
-                <a class="nav_link" href="#">Top Mentions This Week</a>
-                <a class="nav_link" href="#">Top Mentions This Month</a>
-                <a class="nav_link" href="#">Top Mentions Today</a>
+              <div class="nav_item gen_news" id="nav-tab" role="tablist">
+                <button class="nav_link active" id="nav-news-tab" data-bs-toggle="tab" data-bs-target="#nav-news" type="button" role="tab" aria-controls="nav-news" aria-selected="true">General News Sentiment</button>
+                <button class="nav_link" id="nav-tickers-tab" data-bs-toggle="tab" data-bs-target="#nav-tickers" type="button" role="tab" aria-controls="nav-tickers" aria-selected="false">All tickers Sentiment</button>
+                <button class="nav_link" id="nav-week-tab" data-bs-toggle="tab" data-bs-target="#nav-week" type="button" role="tab" aria-controls="nav-week" aria-selected="false">Top Mentions This Week</button>
+                <button class="nav_link" id="nav-month-tab" data-bs-toggle="tab" data-bs-target="#nav-month" type="button" role="tab" aria-controls="nav-month" aria-selected="false">Top Mentions This Month</button>
+                <button class="nav_link" id="nav-week-today" data-bs-toggle="tab" data-bs-target="#nav-today" type="button" role="tab" aria-controls="nav-today" aria-selected="false">Top Mentions Today</button>
               </div>
             </div>
-            <div class="news_52">
-              <div id="sentimentChart2">
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="nav-news" role="tabpanel" aria-labelledby="nav-news-tab">
+                <div class="news_52">
+                  <div id="sentimentChart2"></div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="nav-tickers" role="tabpanel" aria-labelledby="nav-tickers-tab">
+                <div class="news_52">
+                  <div id="sentimentChart4"></div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="nav-week" role="tabpanel" aria-labelledby="nav-week-tab">
+                <div class="news_52 bar_list popupList_scroll">
+                  <ul>
+                    <li class="barStatus red_bar">
+                      <p>GLD | SPDR Gold Shares</p>
+                      <p>56 Positive | 65 Negative | 69 Neutral</p>
+                    </li>
+                    <li class="barStatus red_bar">
+                      <p>IAU | iShares Gold Trust</p>
+                      <p>48 Positive | 63 Negative | 67 Neutral</p>
+                    </li>
+                    <li class="barStatus green_bar">
+                      <p>GOOGL | Alphabet Inc.</p>
+                      <p>97 Positive | 25 Negative | 42 Neutral</p>
+                    </li>
+                    <li class="barStatus green_bar">
+                      <p>AMZN | Amazon.com, Inc.</p>
+                      <p>58 Positive | 44 Negative | 42 Neutral</p>
+                    </li>
+                    <li class="barStatus green_bar">
+                      <p>NVDA | NVIDIA Corporation</p>
+                      <p>68 Positive | 32 Negative | 40 Neutral</p>
+                    </li>
+                    <li class="barStatus red_bar">
+                      <p>GLD | SPDR Gold Shares</p>
+                      <p>56 Positive | 65 Negative | 69 Neutral</p>
+                    </li>
+                    <li class="barStatus red_bar">
+                      <p>IAU | iShares Gold Trust</p>
+                      <p>48 Positive | 63 Negative | 67 Neutral</p>
+                    </li>
+                    <li class="barStatus red_bar">
+                      <p>GLD | SPDR Gold Shares</p>
+                      <p>56 Positive | 65 Negative | 69 Neutral</p>
+                    </li>
+                    <li class="barStatus red_bar">
+                      <p>IAU | iShares Gold Trust</p>
+                      <p>48 Positive | 63 Negative | 67 Neutral</p>
+                    </li>
+                    <li class="barStatus green_bar">
+                      <p>PLTR | Palantir Technologies Inc.</p>
+                      <p>83 Positive | 15 Negative | 36 Neutral</p>
+                    </li>
+                    <li class="barStatus green_bar">
+                      <p>DBP | Invesco DB Precious Metals</p>
+                      <p>40 Positive | 39 Negative | 51 Neutral</p>
+                    </li>
+                    <li class="barStatus green_bar">
+                      <p>GOOGL | Alphabet Inc.</p>
+                      <p>97 Positive | 25 Negative | 42 Neutral</p>
+                    </li>
+                    <li class="barStatus green_bar">
+                      <p>PLTR | Palantir Technologies Inc.</p>
+                      <p>83 Positive | 15 Negative | 36 Neutral</p>
+                    </li>
+                    <li class="barStatus green_bar">
+                      <p>DBP | Invesco DB Precious Metals</p>
+                      <p>40 Positive | 39 Negative | 51 Neutral</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="nav-month" role="tabpanel" aria-labelledby="nav-month-tab">
+                <div class="news_52 bar_list popupList_scroll">
+                  <ul>
+                    <li class="barStatus red_bar">
+                      <p>GLD | SPDR Gold Shares</p>
+                      <p>56 Positive | 65 Negative | 69 Neutral</p>
+                    </li>
+                    <li class="barStatus red_bar">
+                      <p>IAU | iShares Gold Trust</p>
+                      <p>48 Positive | 63 Negative | 67 Neutral</p>
+                    </li>
+                    <li class="barStatus green_bar">
+                      <p>GOOGL | Alphabet Inc.</p>
+                      <p>97 Positive | 25 Negative | 42 Neutral</p>
+                    </li>
+                    <li class="barStatus green_bar">
+                      <p>AMZN | Amazon.com, Inc.</p>
+                      <p>58 Positive | 44 Negative | 42 Neutral</p>
+                    </li>
+                    <li class="barStatus green_bar">
+                      <p>NVDA | NVIDIA Corporation</p>
+                      <p>68 Positive | 32 Negative | 40 Neutral</p>
+                    </li>
+                    <li class="barStatus green_bar">
+                      <p>PLTR | Palantir Technologies Inc.</p>
+                      <p>83 Positive | 15 Negative | 36 Neutral</p>
+                    </li>
+                    <li class="barStatus green_bar">
+                      <p>DBP | Invesco DB Precious Metals</p>
+                      <p>40 Positive | 39 Negative | 51 Neutral</p>
+                    </li>
+                    <li class="barStatus green_bar">
+                      <p>PLTR | Palantir Technologies Inc.</p>
+                      <p>83 Positive | 15 Negative | 36 Neutral</p>
+                    </li>
+                    <li class="barStatus green_bar">
+                      <p>DBP | Invesco DB Precious Metals</p>
+                      <p>40 Positive | 39 Negative | 51 Neutral</p>
+                    </li>
+                    <li class="barStatus green_bar">
+                      <p>GOOGL | Alphabet Inc.</p>
+                      <p>97 Positive | 25 Negative | 42 Neutral</p>
+                    </li>
+                    <li class="barStatus green_bar">
+                      <p>PLTR | Palantir Technologies Inc.</p>
+                      <p>83 Positive | 15 Negative | 36 Neutral</p>
+                    </li>
+                    <li class="barStatus green_bar">
+                      <p>DBP | Invesco DB Precious Metals</p>
+                      <p>40 Positive | 39 Negative | 51 Neutral</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="nav-today" role="tabpanel" aria-labelledby="nav-today-tab">
+                <div class="news_52 bar_list popupList_scroll">
+                  <ul>
+                    <li class="barStatus red_bar">
+                      <p>GLD | SPDR Gold Shares</p>
+                      <p>56 Positive | 65 Negative | 69 Neutral</p>
+                    </li>
+                    <li class="barStatus red_bar">
+                      <p>IAU | iShares Gold Trust</p>
+                      <p>48 Positive | 63 Negative | 67 Neutral</p>
+                    </li>
+                    <li class="barStatus green_bar">
+                      <p>GOOGL | Alphabet Inc.</p>
+                      <p>97 Positive | 25 Negative | 42 Neutral</p>
+                    </li>
+                    <li class="barStatus green_bar">
+                      <p>AMZN | Amazon.com, Inc.</p>
+                      <p>58 Positive | 44 Negative | 42 Neutral</p>
+                    </li>
+                    <li class="barStatus green_bar">
+                      <p>NVDA | NVIDIA Corporation</p>
+                      <p>68 Positive | 32 Negative | 40 Neutral</p>
+                    </li>
+                    <li class="barStatus green_bar">
+                      <p>PLTR | Palantir Technologies Inc.</p>
+                      <p>83 Positive | 15 Negative | 36 Neutral</p>
+                    </li>
+                    <li class="barStatus green_bar">
+                      <p>PLTR | Palantir Technologies Inc.</p>
+                      <p>83 Positive | 15 Negative | 36 Neutral</p>
+                    </li>
+                    <li class="barStatus green_bar">
+                      <p>DBP | Invesco DB Precious Metals</p>
+                      <p>40 Positive | 39 Negative | 51 Neutral</p>
+                    </li>
+                    <li class="barStatus green_bar">
+                      <p>GOOGL | Alphabet Inc.</p>
+                      <p>97 Positive | 25 Negative | 42 Neutral</p>
+                    </li>
+                    <li class="barStatus green_bar">
+                      <p>PLTR | Palantir Technologies Inc.</p>
+                      <p>83 Positive | 15 Negative | 36 Neutral</p>
+                    </li>
+                    <li class="barStatus green_bar">
+                      <p>DBP | Invesco DB Precious Metals</p>
+                      <p>40 Positive | 39 Negative | 51 Neutral</p>
+                    </li>
+                    <li class="barStatus green_bar">
+                      <p>DBP | Invesco DB Precious Metals</p>
+                      <p>40 Positive | 39 Negative | 51 Neutral</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
           <div class="news_4 padd_top">
@@ -1382,13 +1561,13 @@ if (localStorage.getItem('darkMode') === "on") {
     });
   });
 </script>
-<script>
+<!-- <script>
   $('.high_news .nav_link').on('click', function (e) {
     e.preventDefault();
     $('.high_news .nav_link').removeClass('active');
     $(this).toggleClass('active');
   });
-</script>
+</script> -->
 <script>
   $('.topic_news .nav_link').on('click', function (e) {
     e.preventDefault();
@@ -1529,126 +1708,99 @@ if (localStorage.getItem('darkMode') === "on") {
     { date: '29/12/2025', negative: 78, neutral: 60, positive: 88 },
     { date: '30/12/2025', negative: 80, neutral: 62, positive: 90 }
   ];
-var processedData = data.map(d => ({
-  x: Date.UTC(
-    d.date.split('/')[2],       
-    d.date.split('/')[1] - 1,   
-    d.date.split('/')[0]       
-  ),
-  negative: d.negative,
-  neutral: d.neutral,
-  positive: d.positive
-}));
-var negativeData = processedData.map(d => [d.x, d.negative]);
-var neutralData  = processedData.map(d => [d.x, d.neutral]);
-var positiveData = processedData.map(d => [d.x, d.positive]);
- 
-Highcharts.chart('sentimentChart2', {
-  chart: {
-    type: 'area',
-    spacing: [5, 0, -5, 0],
-    marginBottom: 70,
-    backgroundColor: 'transparent'
-  },
-  title: {
-    text: ''
-  },
-    xAxis: {
-    type: 'datetime',
- 
-       startOnTick: true,
-  endOnTick: false,
-    labels: {
-       align: 'left',
-    format: '{value:%d %b, %Y}',
-    style: {
-      fontSize: '10px',
-       color:'#808191'
-    }
+
+  // Convert to UTC format for datetime axis
+  var processedData = data.map(d => ({
+    x: Date.UTC(
+      d.date.split('/')[2],
+      d.date.split('/')[1] - 1,
+      d.date.split('/')[0]
+    ),
+    negative: d.negative,
+    neutral: d.neutral,
+    positive: d.positive
+  }));
+
+  var negativeData = processedData.map(d => [d.x, d.negative]);
+  var neutralData  = processedData.map(d => [d.x, d.neutral]);
+  var positiveData = processedData.map(d => [d.x, d.positive]);
+
+  Highcharts.chart('sentimentChart2', {
+    chart: {
+      type: 'line',
+      spacing: [5, 0, -5, 0],
+      marginBottom: 50,
+      backgroundColor: 'transparent'
     },
-    scrollbar:
-    {
-        enabled: true
-    },
-    },
-  yAxis: {
-    min:0,
-    max:220,
-    offset: -3,
-    gridLineColor: '#808191',
-    gridLineWidth: 0.4,
+
     title: { text: '' },
-    labels: {
-    style: {
-      fontSize: '10px',
-      color:'#808191'
+
+    xAxis: {
+      type: 'datetime',
+      labels: {
+        align: 'left',
+        format: '{value: %d %b, %Y}',
+        style: { fontSize: '10px', color: '#808191' }
+      },
+      scrollbar: {
+        enabled: true
+      }
+    },
+
+    yAxis: {
+      gridLineColor: '#808191',
+      gridLineWidth: 0.4,
+      title: { text: '' },
+      labels: {
+        style: { fontSize: '10px', color: '#808191' }
+      }
+    },
+
+    tooltip: {
+      shared: true,
+      style: { fontSize: '10px' }
+    },
+
+    plotOptions: {
+      line: {
+        lineWidth: 2,
+        marker: {
+          enabled: false   // removes bullets
+        }
+      }
+    },
+
+    legend: {
+      align: 'center',
+      verticalAlign: 'bottom',
+      itemStyle: { fontSize: '12px', color: '#808191' },
+      itemMarginTop: 2,
+      itemMarginBottom: 2,
+      symbolPadding: 2
+    },
+
+    series: [
+      {
+        name: 'Positive',
+        data: positiveData,
+        color: '#3CB371'
+      },
+      {
+        name: 'Negative',
+        data: negativeData,
+        color: '#D93872'
+      },
+      {
+        name: 'Neutral',
+        data: neutralData,
+        color: '#F2D14C'
+      }
+    ],
+
+    credits: {
+      enabled: false
     }
-    },
-  },
-  tooltip: {
-    shared: true,
-style: {
-    fontSize: '12px'
-  }
-  },
-  plotOptions: {
-  area: {
-    stacking: 'normal',
-    lineWidth: 0,
-    marker: { enabled: false }
-  }
-  },
-  legend: {
-   align: 'center',
-  verticalAlign: 'bottom',
-  itemStyle: {
-    fontSize: '14px',
-     color:'#808191'
-  },
-  itemMarginTop: 2,
-  itemMarginBottom: 2,
-  symbolPadding: 6
-  },
-  series: [
-    {
-      name: 'Negative',
-      data: negativeData,
-      color: {
-        linearGradient: { x1: 1, y1: 0.8, x2: 1, y2: 1 },
-        stops: [
-          [0, '#D93872'],  
-          [1, 'rgba(217,56,114,0.2)']
-        ]
-      }
-    },
-    {
-      name: 'Neutral',
-      data: neutralData,
-      color: {
-        linearGradient: { x1: 1, y1: 0.9, x2: 1, y2: 1 },
-        stops: [
-          [0, '#F2D14C'],
-          [1, 'rgba(242,209,76,0.25)']
-        ]
-      }
-    },
-    {
-      name: 'Positive',
-      data: positiveData,
-      color: {
-        linearGradient: { x1: 0, y1: 0, x2: 0, y2: 1 },
-        stops: [
-          [0, '#3CB371'],
-          [1, 'rgba(60,179,113,0.25)']
-        ]
-      }
-    }
-  ],
-  credits: {
-    enabled: false
-  },
-  
-});
+  });
 </script>
 </body>
 </html>
