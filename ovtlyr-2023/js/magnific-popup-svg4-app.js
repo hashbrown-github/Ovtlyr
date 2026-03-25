@@ -586,7 +586,7 @@ var navArrows = ['\n    <svg class="icon icon-arrow-prev">\n        <use xmlns:x
   });
 })();
 
-/*======= ovtlyr CHCEK ALL SCRIPT START =======*/
+/*======= ovtlyr CHECK ALL SCRIPT START =======*/
 (function () {
   var checkboxAll = $('.ovtlyr__row_head .checkbox__input');
   checkboxAll.on('click', function () {
@@ -597,7 +597,7 @@ var navArrows = ['\n    <svg class="icon icon-arrow-prev">\n        <use xmlns:x
       }
   });
 })();
-/*======== ovtlyr CHCEK ALL SCRIPT END ========*/
+/*======== ovtlyr CHECK ALL SCRIPT END ========*/
 
 $('.schedules__item').on('click', function (e) {
   e.preventDefault();
@@ -616,6 +616,7 @@ $('.tabs__link').on('click', function (e) {
   $('.tabs__link').removeClass('active');
   $(this).toggleClass('active');
 });
+
 
 $('.inbox__item').on('click', function () {
   $('.inbox__item').removeClass('active');
